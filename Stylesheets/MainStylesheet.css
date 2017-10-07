@@ -1,0 +1,196 @@
+﻿/*Color Palett:
+    light grey: #dddfd4
+    yellow: #fae596
+    light blue: #3fb0ac
+    navy blue: #173e43*/
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #fae596;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    animation: fadein 1s;
+    font-family: Calibri;
+    background-color: #dddfd4;
+    background-image: url('../Images/Backgrounds/Wavy Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: Impact;
+    color: #173e43;
+}
+
+h2 {
+    font-family: Impact;
+    color: #173e43;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#Beschreibung {
+    font-size: 25px;
+    border-color: #173e43;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 20px 0px 20px 0px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#PersonalImage {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#ContactButton {
+    display: block;
+    font-size: 35px;
+    border: 2px solid #173e43;
+    color: #173e43;
+    padding: 6px 6px 20px 20px;
+    align-content: center;
+    transition: font-size 0.5s;
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 35px;
+}
+
+#ContactButton:hover {
+    font-size: 40px;
+}
+
+#aboutMeImage {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 50px
+}
+
+#techdogLogo {
+    display: block;
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+}
+
+table.CV {
+    font-family: 'Agency FB';
+    font-size: 20px;
+}
+
+p.CV {
+    font-size: 17px;
+}
+
+td {
+    padding-left: 10px;
+}
+
+#AboutMe {
+    border-right: 1px solid #173e43;
+    border-left: 1px solid #173e43;
+    width: 85%;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}
+
+#datetime {
+    float: right;
+    margin-right: 20px;
+}
+
+#copyright {
+    margin-left: 20px;
+    float: left;
+}
+
+#AdobeAnimate {
+    display: block;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#GuitarVideoPlaceholder {
+    width: 80%;
+    padding-top: 45%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#GuitarVideo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#LeidenschaftenLink {
+    text-decoration: underline;
+    color: blue;
+}
+
+#ProgrammingImage {
+    display: block;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.videoButtonPlaceholder {
+    text-align: center;
+}
+
+.videoButton {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #173e43;
+    border-radius: 4px;
+}
+
+#sammelnTextPlcaeholder {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #173e43;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#sammelnText {
+    font-family: Roboto;
+}

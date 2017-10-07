@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<script src="../Scripts/w3.js"></script>
+<script src="../Scripts/Slideshow.js"></script>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../Stylesheets/MainStylesheet.css" rel="stylesheet" />
+    <link href="../Stylesheets/DisplayOnHover.css" rel="stylesheet" />
+    <link href="../Stylesheets/Kampfsport.css" rel="stylesheet" />
+    <link href="../Stylesheets/Slideshow.css" rel="stylesheet" />
+    <title>Kampfsport</title>
+</head>
+<body onload="showSlides(slideIndex);">
+    <div w3-include-html="../Standard Elements/Header.html"></div>
+
+    <main>
+        <h1>Kampfsport</h1>
+        <br />
+        <div id="KarateSlideshowContainer">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../Images/Karate/Blaugurt Prüfung.jpg" id="KarateSlideshowImage">
+                    <div class="text">Blaugurtprüfung</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../Images/Karate/Trophies/Trophies_Focus.jpg" id="KarateSlideshowImage">
+                    <div class="text">Karate Meisterschaft Trophäen</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../Images/Karate/Trophies/Trophies_Front.jpg" id="KarateSlideshowImage">
+                    <div class="text">Karate Meisterschaft Trophäen</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../Images/Karate/Trophies/Trophies_Side.jpg" id="KarateSlideshowImage">
+                    <div class="text">Karate Meisterschaft Trophäen</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dotPlaceholder">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <div class="parent" id="KarateHover">
+            <p class="parentText">Judo</p>
+            <p class="hoverIndicator">Hover Here</p>
+            <div class="child">
+                <p class="childText">Zwischen 2010 und 2013 ging ich ins Judo. Ich besuchte den Judo-Club in Oftringen wo ich lernte meinen Körper besser zu beherrschen und mich zu verteidigen. Kurz nachdem ich den Gelbgurt gemacht habe, verliess ich den Judo-Club, da in Zofingen vor kurzem einen Karate-Club eröffnete was mich sehr interessierte...</p>
+            </div>
+        </div>
+
+        <div class="parent" id="KarateHover">
+            <p class="parentText">Karate</p>
+            <p class="hoverIndicator">Hover Here</p>
+            <div class="child">
+                <p class="childText">Nachdem ich den Judo-Club verliess, besuchte ich für ein paar Wochen den Karate-Club in Zofingen bis ich merkte dass mir das Karate sehr gefiel und ich seit dem schon 4 volle Jahre ins Karate gehe. Ich habe momentan den ersten Blaugurt und habe schon an einigen Wettkämpfen teilgenommen und mehrere Pokale gewonnen. Auf dem ersten Bild sieht man neben dem Lehrer, meine 12-jährige Schwester.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div w3-include-html="../Standard Elements/Footer.html"></div>
+
+    <script>
+        w3.includeHTML(SetActive);
+        function SetActive() {
+            var links = document.getElementsByTagName("a");
+            for (var i = 0; i < links.length; i++) {
+                var fileName = location.href.split("/").slice(-1);
+                var link = links[i].href;
+                if (~link.indexOf(fileName)) {
+                    links[i].classList.add("active");
+                    var parentClass = links[i].parentNode.className;
+                    if (parentClass == "dropdown-content") {
+                        links[i].parentNode.classList.add("active");
+                        links[i].classList.add("dropdownActive");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

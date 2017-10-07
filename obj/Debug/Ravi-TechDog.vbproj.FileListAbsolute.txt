@@ -1,0 +1,11 @@
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\bin\Ravi-TechDog.dll.config
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\bin\Ravi-TechDog.dll
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\bin\Ravi-TechDog.pdb
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\bin\Ravi-TechDog.xml
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi-TechDog.vbprojResolveAssemblyReference.cache
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi_TechDog.Resources.resources
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi-TechDog.vbproj.GenerateResource.Cache
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi-TechDog.vbproj.CoreCompileInputs.cache
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi-TechDog.dll
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi-TechDog.xml
+D:\Data\IMS\Berufsbildung Baden\Module & Aufträge\M101 - Webauftritt Erstellen und Veröffentlichen\Ravi & TechDog\Ravi-TechDog\Ravi-TechDog\obj\Debug\Ravi-TechDog.pdb

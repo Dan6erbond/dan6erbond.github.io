@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<script src="../Scripts/w3.js"></script>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../Stylesheets/MainStylesheet.css" rel="stylesheet" />
+    <title>Steckbrief</title>
+</head>
+<body>
+    <div w3-include-html="../Standard Elements/Header.html"></div>
+
+    <main>
+        <h1>Über Mich</h1>
+        <div id="AboutMe">
+            <p class="CV">Hallo</p>
+            <p class="CV">Ich heisse RaviAnand Mohabir und besuche momentan die IMS in Aaarau und in Baden. Ich wohne mit meinen Eltern und 12-jährigen Schwester in Mühlethal AG und fahre in meiner Freizeit gerne Velo und Skateboard.</p>
+            <p class="CV">Ich gehe am Mittwoch und am Freitag ins Karate und am Montag gehe ich in den Musikunterricht wo ich Gitarre spielen lerne.</p>
+            <p class="CV">Die Primarschule absolvierte ich in Mühlethal an der QSM wo ich die 5. Klasse übersprungen habe und in die 1. Bezirksschule kam. Nach der Bezirksschule habe ich mich für die IMS in Aarau angemolden und jetzt bin ich hier. Nach der IMS möchte ich mithilfe der Passerelle die Universität in Zürich besuchen und danach als Applikationsentwickler tätig sein.</p>
+        </div>
+        <br />
+
+        <img src="../Images/Ravi/Ravi FaceQ 1.png" id="aboutMeImage" />
+        <table class="CV">
+            <tr>
+                <td>Voller Name:</td>
+                <td>RaviAnand Mohabir</td>
+            </tr>
+            <tr>
+                <td>Geburtsdatum:</td>
+                <td>19.09.2002</td>
+            </tr>
+            <tr>
+                <td>Nationalität:</td>
+                <td>Vereinigte Staaten von Amerika</td>
+            </tr>
+            <tr>
+                <td>Sprachen:</td>
+                <td>Englisch (Muttersprache), Deutsch, Französisch, Hindi (Verständnis)</td>
+            </tr>
+            <tr>
+                <td>Stärken:</td>
+                <td>3D-Modellieren, Videobearbeitung, Programmieren, Designen</td>
+            </tr>
+            <tr>
+                <td>Hobbys:</td>
+                <td>Programmieren, Gitarre, Kampfsport</td>
+            </tr>
+            <tr>
+                <td>Traumberuf:</td>
+                <td>Applikationsentwickler</td>
+            </tr>
+        </table>
+    </main>
+
+    <div w3-include-html="../Standard Elements/Footer.html"></div>
+
+    <script>
+        w3.includeHTML(SetActive);
+        function SetActive() {
+            var links = document.getElementsByTagName("a");
+            for (var i = 0; i < links.length; i++) {
+                var fileName = location.href.split("/").slice(-1);
+                var link = links[i].href;
+                if (~link.indexOf(fileName)) {
+                    links[i].classList.add("active");
+                    var parentClass = links[i].parentNode.className;
+                    if (parentClass == "dropdown-content") {
+                        links[i].parentNode.classList.add("active");
+                        links[i].classList.add("dropdownActive");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

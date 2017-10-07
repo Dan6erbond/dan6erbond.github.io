@@ -1,0 +1,23 @@
+﻿.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#guitarParallax {
+    background-image: url('../Images/Guitar/Guitar Black and White.jpg')
+}
+
+#programmingParallax {
+    background-image: url('../Images/Programming/Programming Focus Effect.jpg')
+}
+
+#kampfsportParallax {
+    background-image: url('../Images/Karate/Karate Foto 2016.jpg')
+}
+
+#digitaleMedienParallax {
+    background-image: url('../Images/Media/Blender Car.png')
+}

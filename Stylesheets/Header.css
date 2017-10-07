@@ -1,0 +1,71 @@
+﻿.title {
+    float: left;
+    margin: 0;
+    font-family: Impact;
+    font-size: 25px;
+    color: #173e43;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3fb0ac;
+}
+
+li {
+    float: left;
+    border-right: 1px solid azure;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #fae596;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #173e43;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #173e43;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fae596;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3fb0ac;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #173e43;
+}
+
+.dropdownActive {
+    background-color: #3fb0ac;
+}
