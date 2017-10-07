@@ -37,4 +37,10 @@
                     document.getElementById("sammelnText").innerHTML = "Die Uhr in der mitte ist eine der digital Uhren welche ich von Indien bekam";
                 if (slideIndex == 19)
                     document.getElementById("sammelnText").innerHTML = "Meine zweite Smartwatch war die Samsung Gear S2.";
+                if (slideIndex == 19)
+                    document.getElementById("sammelnText").innerHTML = "Diese Uhr habe ich bei meinem ersten Besuch in Kanada gekauft. Leider bekam sie schon bei der Heimreise einen Riss im Glas.";
+                if (slideIndex == 19)
+                    document.getElementById("sammelnText").innerHTML = "Meine allererste Uhr hat mir mein Vater in Hawaii gekauft.";
+                if (slideIndex == 19)
+                    document.getElementById("sammelnText").innerHTML = "Die erste Uhr welche ich mir selber gekauft habe, kostete nur 25 CHF.";
             }, 10);
