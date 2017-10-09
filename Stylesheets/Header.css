@@ -1,4 +1,9 @@
-﻿.title {
+﻿@font-face {
+    font-family: 'Impact';
+    src: url('/Fonts/Impact.ttf');
+}
+
+.title {
     float: left;
     margin: 0;
     font-family: Impact;

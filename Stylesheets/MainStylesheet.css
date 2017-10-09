@@ -14,6 +14,26 @@
     }
 }
 
+@font-face {
+    font-family: 'Calibri';
+    src: url('/Fonts/Calibri.ttf');
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('/Fonts/Impact.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Fonts/Robot.ttf');
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('/Fonts/Agency FB.ttf');
+}
+
 footer {
     background-color: #fae596;
     position: absolute;
@@ -193,4 +213,9 @@ td {
 
 #sammelnText {
     font-family: Roboto;
+}
+
+#OneDriveLink{
+    text-decoration: underline;
+    color: blue;
 }
