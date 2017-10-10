@@ -8,6 +8,7 @@ xmlhttp.onreadystatechange = function() {
           zusammenfassung = myArr[i];
           if (zusammenfassung != "Zusammenfassungen.json" && zusammenfassung != "Images"){
             var placeholder = document.createElement("div");
+            placeholder.classList.add("zusammenfassung");
 
             var img = document.createElement("img");
             img.classList.add("zusammenfassungImg");
