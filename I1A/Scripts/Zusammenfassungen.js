@@ -1,27 +1,35 @@
 function UpdateZusammenfassungen(){
-  $(document).ready(function ()
-    {
-        $.get("/I1A/Zusammenfassungen", function(zusammenfassung)
-        {
-          var placeholder = document.createElement("div");
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          var zusammenfassungen = JSON.parse(this.responseText);
+          for (var i = 0; i < zusammenfassungen.length; i++) {
+            var zusammenfassung = zusammenfassungen[i]
 
-          var title = document.createElement("p");
-          var titleText = document.createTextNode(zusammenfassung);
+            var placeholder = document.createElement("div");
 
-          var img = document.createElement("img");
-          img.src = "/I1A/Zusammenfassungen/Images/" + zusammenfassung;
+            var title = document.createElement("p");
+            var titleText = document.createTextNode(zusammenfassung);
+            title.appendChild(titleText);
 
-          var downloadButton = document.createElement("a");
-          downloadButton.classList.add("zusammenfassungDownload");
-          downloadButton.href = "I1A/Zusammenfassungen/" + zusammenfassung;
+            var img = document.createElement("img");
+            img.src = "/I1A/Zusammenfassungen/Images/" + zusammenfassung + ".png";
 
-          placeholder.appendChild(title);
-          placeholder.appendChild(img);
-          placeholder.appendChild(downloadButton);
-          title.appendChild(titleText);
+            var downloadButton = document.createElement("a");
+            downloadButton.classList.add("zusammenfassungDownload");
+            downloadButton.href = "I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
+            var downloadText = document.createTextNode(zusammenfassung);
+            downloadButton.appendChild(downloadText);
 
-          var zusammenfassungen = document.getElementById("Zusammenfassungen");
-          zusammenfassungen.appendChild(placeholder);
-        });
-    })
+            placeholder.appendChild(title);
+            placeholder.appendChild(img);
+            placeholder.appendChild(downloadButton);
+
+            var zusammenfassungen = document.getElementById("Zusammenfassungen");
+            zusammenfassungen.appendChild(placeholder);
+          }
+      }
+  };
+  xmlhttp.open("GET", "Zusammenfassungen.json", true);
+  xmlhttp.send();
 }
