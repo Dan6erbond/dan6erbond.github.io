@@ -1,18 +1,24 @@
 ﻿<!DOCTYPE html>
 <script src="/Scripts/w3.js"></script>
+<script src="/Scripts/GenerateSlideshow.js"></script>
 <html>
 <head>
     <meta charset="utf-8" />
     <link href="/Stylesheets/MainStylesheet.css" rel="stylesheet" />
     <title>I1A | Klassenreise 2017</title>
 </head>
-<body>
+<body onload="GenerateSlideshow('/I1A/Images/Klassenreise 2017/Images.json');">
     <div w3-include-html="Standard Elements/Header.html"></div>
 
     <main>
       <h1>Klassenreise 2017</h1>
-      <br>
-      <p class="Bearbeitung">Diese Seite wird noch bearbeitet!</p>
+      <div class="slideshow-container">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="dotPlaceholder">
+      </div>
     </main>
 
     <div w3-include-html="Standard Elements/Footer.html"></div>
