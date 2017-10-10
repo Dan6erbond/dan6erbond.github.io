@@ -1,4 +1,4 @@
-function GenerateSlideshow(jsonPath){
+function GenerateSlideshow)(jsonPath){
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -28,12 +28,15 @@ xmlhttp.onreadystatechange = function() {
           container.appendChild(slideshowImg);
           container.appendChild(text);
 
-          var slideshow-container = document.getElementsByClassName("slideshow-container")[0];
-          zusammenfassungen.appendChild(container);
+          var slideshowContainer = document.getElementsByClassName("slideshow-container")[0];
+          slideshowContainer.appendChild(container);
 
           var dot = document.createElement("span");
           dot.classList.add("dot");
           dot.onclick = function(){currentSlide(i+1);};
+
+          var dotPlaceholder = document.getElementsByClassName("dotPlaceholder")[0];
+          dotPlaceholder.appendChild(dot);
         }
     }
 };
