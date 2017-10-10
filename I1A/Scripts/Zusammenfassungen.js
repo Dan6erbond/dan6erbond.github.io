@@ -12,7 +12,7 @@ xmlhttp.onreadystatechange = function() {
 
             var img = document.createElement("img");
             img.classList.add("zusammenfassungImg");
-            img.src = "/I1A/Zusammenfassungen/Images/Thumbnail.png";
+            img.src = "Documents/Images/Zusammenfassung Thumbnail.png";
 
             var title = document.createElement("p");
             var titleText = document.createTextNode(zusammenfassung);
@@ -21,7 +21,7 @@ xmlhttp.onreadystatechange = function() {
 
             var downloadButton = document.createElement("a");
             downloadButton.classList.add("zusammenfassungDownload");
-            downloadButton.href = "/I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
+            downloadButton.href = "Documents/Zusammenfassungen/" + zusammenfassung + ".pdf";
             var downloadText = document.createTextNode("DOWNLOAD");
             downloadButton.appendChild(downloadText);
 

@@ -16,6 +16,11 @@
   margin: 0 auto;
 }
 
+.zusammenfassung {
+  float: left;
+  width: 33.3333333333%;
+}
+
 .zusammenfassungTitle {
   text-decoration: underline;
   font-size: 16px;
@@ -40,7 +45,31 @@
   font-size: 16px;
 }
 
-.zusammenfassung {
+.document {
   float: left;
-  width: 33.3333333333%;
+  width: 50%;
+}
+
+.documentTitle {
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.documentImg {
+  display: block;
+  width: auto;
+  height: 100px;
+  padding-right: 10px;
+  float: left;
+}
+
+.documentDownload {
+  border: 1px solid #173e43;
+  padding: 2px;
+  font-size: 14px;
+  transition: font-size 1s;
+}
+
+.documentDownload:hover {
+  font-size: 16px;
 }
