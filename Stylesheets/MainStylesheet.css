@@ -180,7 +180,7 @@ a {
     font-family: Roboto;
 }
 
-#OneDriveLink{
-    text-decoration: underline;
-    color: blue;
+.Bearbeitung {
+    color: red;
+    font-size: 30px;
 }
