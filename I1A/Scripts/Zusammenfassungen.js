@@ -24,8 +24,8 @@ xmlhttp.onreadystatechange = function() {
             var downloadText = document.createTextNode("DOWNLOAD");
             downloadButton.appendChild(downloadText);
 
-            placeholder.appendChild(title);
             placeholder.appendChild(img);
+            placeholder.appendChild(title);
             placeholder.appendChild(downloadButton);
 
             var zusammenfassungen = document.getElementById("Zusammenfassungen");
