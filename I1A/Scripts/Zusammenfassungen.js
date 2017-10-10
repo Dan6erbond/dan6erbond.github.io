@@ -6,6 +6,7 @@ function UpdateZusammenfassungen(){
           for (var i = 0; i < zusammenfassungen.length; i++) {
             var zusammenfassung = zusammenfassungen[i];
             console.log(zusammenfassung);
+            console.log(zusammenfassungen);
             var placeholder = document.createElement("div");
 
             var title = document.createElement("p");
