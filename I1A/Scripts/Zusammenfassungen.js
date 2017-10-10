@@ -6,6 +6,8 @@ xmlhttp.onreadystatechange = function() {
 
         for (var i = 0; i < myArr.length; i++) {
           zusammenfassung = myArr[i];
+          if(zusammenfassung == "Zusammenfassungen.json" || zusammenfassung == "Images")
+            return;
           var placeholder = document.createElement("div");
 
           var title = document.createElement("p");
