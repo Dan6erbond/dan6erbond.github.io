@@ -30,6 +30,6 @@ function UpdateZusammenfassungen(){
           }
       }
   };
-  xmlhttp.open("GET", "Zusammenfassungen.json", true);
+  xmlhttp.open("GET", "/I1A/Zusammenfassungen/Zusammenfassungen.json", true);
   xmlhttp.send();
 }
