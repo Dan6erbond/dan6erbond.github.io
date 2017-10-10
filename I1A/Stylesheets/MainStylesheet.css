@@ -24,7 +24,6 @@
 }
 
 .zusammenfassungDownload {
-  display: block;
   border: 1px solid #173e43;
   padding: 2px;
   font-size: 14px;
@@ -36,7 +35,6 @@
 }
 
 .zusammenfassung {
-  padding: 0px 60px 0px 40px;
   float: left;
   width: 33.3333333333%;
 }
