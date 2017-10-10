@@ -5,6 +5,7 @@ xmlhttp.onreadystatechange = function() {
         var myArr = JSON.parse(this.responseText);
 
         for (var i = 0; i < myArr.length; i++) {
+          zusammenfassung = myArr[i];
           var placeholder = document.createElement("div");
 
           var title = document.createElement("p");
