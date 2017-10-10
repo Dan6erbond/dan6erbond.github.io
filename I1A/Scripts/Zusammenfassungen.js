@@ -31,8 +31,6 @@ xmlhttp.onreadystatechange = function() {
 
             var zusammenfassungen = document.getElementById("Zusammenfassungen");
             zusammenfassungen.appendChild(placeholder);
-            var lineBreak = document.createElement("br");
-            zusammenfassungen.appendChild(lineBreak);
           }
         }
     }
