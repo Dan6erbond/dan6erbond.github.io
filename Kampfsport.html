@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <script src="Scripts/w3.js"></script>
 <script src="Scripts/Slideshow.js"></script>
+<script src="Scripts/GenerateSlideshow.js"></script>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,7 +11,7 @@
     <link href="Stylesheets/Slideshow.css" rel="stylesheet" />
     <title>RaviAnand | Kampfsport</title>
 </head>
-<body onload="showSlides(slideIndex);">
+<body onload="GenerateSlideshow('/Documents/KampfsportSlideshow.json');">
     <div w3-include-html="Standard Elements/Header.html"></div>
 
     <main>
@@ -18,36 +19,11 @@
         <br />
         <div id="KarateSlideshowContainer">
             <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="Images/Karate/Blaugurt Prüfung.jpg" id="KarateSlideshowImage">
-                    <div class="text">Blaugurtprüfung</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="Images/Karate/Trophies/Trophies_Focus.jpg" id="KarateSlideshowImage">
-                    <div class="text">Karate Meisterschaft Trophäen</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="Images/Karate/Trophies/Trophies_Front.jpg" id="KarateSlideshowImage">
-                    <div class="text">Karate Meisterschaft Trophäen</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="Images/Karate/Trophies/Trophies_Side.jpg" id="KarateSlideshowImage">
-                    <div class="text">Karate Meisterschaft Trophäen</div>
-                </div>
-
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
             <div class="dotPlaceholder">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
 
