@@ -16,6 +16,7 @@
 }
 
 .zusammenfassungImg {
+  display: block;
   width: auto;
   height: 60px;
   padding-right: 10px;
@@ -23,6 +24,7 @@
 }
 
 .zusammenfassungDownload {
+  display: block;
   border: 1px solid #173e43;
   padding: 2px;
   font-size: 14px;
