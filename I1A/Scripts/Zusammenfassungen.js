@@ -6,9 +6,8 @@ xmlhttp.onreadystatechange = function() {
 
         for (var i = 0; i < myArr.length; i++) {
           zusammenfassung = myArr[i];
-          if(zusammenfassung == "Zusammenfassungen.json" || zusammenfassung == "Images")
-            return;
-          var placeholder = document.createElement("div");
+          if (zusammenfassung != "Zusammenfassungen.json" && zusammenfassung != "Images"){
+            var placeholder = document.createElement("div");
 
           var title = document.createElement("p");
           var titleText = document.createTextNode(zusammenfassung);
@@ -19,7 +18,7 @@ xmlhttp.onreadystatechange = function() {
 
           var downloadButton = document.createElement("a");
           downloadButton.classList.add("zusammenfassungDownload");
-          downloadButton.href = "I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
+          downloadButton.href = "/I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
           var downloadText = document.createTextNode(zusammenfassung);
           downloadButton.appendChild(downloadText);
 
@@ -29,6 +28,7 @@ xmlhttp.onreadystatechange = function() {
 
           var zusammenfassungen = document.getElementById("Zusammenfassungen");
           zusammenfassungen.appendChild(placeholder);
+        }
         }
     }
 };
