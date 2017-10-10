@@ -8,7 +8,8 @@ xmlhttp.onreadystatechange = function() {
           img = myArr[i];
 
           var container = document.createElement("div");
-          container.classList.add("mySlide fade");
+          container.classList.add("mySlides");
+          container.classList.add("fade");
 
           var numbertext = document.createElement("div");
           numbertext.classList.add("numbertext");
