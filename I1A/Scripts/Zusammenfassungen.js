@@ -4,7 +4,7 @@ function UpdateZusammenfassungen(){
       if (this.readyState == 4 && this.status == 200) {
           var zusammenfassungen = JSON.parse(this.responseText);
           for (var i = 0; i < zusammenfassungen.length; i++) {
-            var zusammenfassung = zusammenfassungen[i]
+            var zusammenfassung = zusammenfassungen[i];
 
             var placeholder = document.createElement("div");
 
