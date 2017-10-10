@@ -1,0 +1,27 @@
+#aboutMeImage {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 50px
+}
+
+table.CV {
+    font-family: 'Agency FB';
+    font-size: 20px;
+}
+
+p.CV {
+    font-size: 17px;
+}
+
+td {
+    padding-left: 10px;
+}
+
+#AboutMe {
+    border-right: 1px solid #173e43;
+    border-left: 1px solid #173e43;
+    width: 85%;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}

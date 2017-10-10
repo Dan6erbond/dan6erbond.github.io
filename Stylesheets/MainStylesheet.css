@@ -34,6 +34,11 @@
     src: url('/Fonts/Agency FB.ttf');
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 footer {
     background-color: #fae596;
     position: absolute;
@@ -42,11 +47,6 @@ footer {
     height: auto;
     width: 100%;
     overflow: hidden;
-}
-
-html {
-    position: relative;
-    min-height: 100%;
 }
 
 body {
@@ -108,41 +108,6 @@ a {
 
 #ContactButton:hover {
     font-size: 40px;
-}
-
-#aboutMeImage {
-    float: left;
-    width: 200px;
-    height: auto;
-    margin-right: 50px
-}
-
-#techdogLogo {
-    display: block;
-    width: 450px;
-    height: auto;
-    margin: 0 auto;
-}
-
-table.CV {
-    font-family: 'Agency FB';
-    font-size: 20px;
-}
-
-p.CV {
-    font-size: 17px;
-}
-
-td {
-    padding-left: 10px;
-}
-
-#AboutMe {
-    border-right: 1px solid #173e43;
-    border-left: 1px solid #173e43;
-    width: 85%;
-    padding: 0px 10px 0px 10px;
-    margin: 0 auto;
 }
 
 #datetime {
