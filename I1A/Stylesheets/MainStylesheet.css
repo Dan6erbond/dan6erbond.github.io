@@ -34,5 +34,6 @@
 }
 
 .zusammenfassung {
-  padding-left: 20px;
+  padding: 0px 60px 0px 40px;
+  float: left;
 }
