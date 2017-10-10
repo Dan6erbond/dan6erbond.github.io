@@ -43,5 +43,5 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("GET", jsonPath, true);
 xmlhttp.send();
-showSlides(slideIndex);
+setTimeout(function() { showSlides(slideIndex); }, 500);
 }
