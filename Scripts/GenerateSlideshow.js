@@ -1,4 +1,4 @@
-function UpdateZusammenfassungen(jsonPath){
+function GenerateSlideshow(jsonPath){
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -17,7 +17,7 @@ xmlhttp.onreadystatechange = function() {
 
           var slideshowImg = document.createElement("img");
           slideshowImg.classList.add("collectionSlideshowImage");
-          slideshowImg.src = img;
+          slideshowImg.src = img.src;
 
           var text = document.createElement("div");
           text.classList.add("text");
