@@ -12,7 +12,7 @@ xmlhttp.onreadystatechange = function() {
 
             var img = document.createElement("img");
             img.classList.add("zusammenfassungImg");
-            img.src = "/I1A/Zusammenfassungen/Images/" + zusammenfassung + ".png";
+            img.src = "/I1A/Zusammenfassungen/Images/Thumbnail.png";
 
             var title = document.createElement("p");
             var titleText = document.createTextNode(zusammenfassung);
