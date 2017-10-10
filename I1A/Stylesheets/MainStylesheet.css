@@ -11,6 +11,7 @@
 
 .zusammenfassungTitle {
   text-decoration: underline;
+  font-size: 16px;
 }
 
 .zusammenfassungImg {
@@ -22,10 +23,10 @@
 .zusammenfassungDownload {
   border: 1px solid #173e43;
   padding: 2px;
-  font-size: 12px;
+  font-size: 14px;
   transition: font-size 1s;
 }
 
 .zusammenfassungDownload:hover {
-  font-size: 14px;
+  font-size: 16px;
 }

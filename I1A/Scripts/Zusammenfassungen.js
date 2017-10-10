@@ -9,28 +9,28 @@ xmlhttp.onreadystatechange = function() {
           if (zusammenfassung != "Zusammenfassungen.json" && zusammenfassung != "Images"){
             var placeholder = document.createElement("div");
 
-          var title = document.createElement("p");
-          var titleText = document.createTextNode(zusammenfassung);
-          title.classList.add("zusammenfassungTitle");
-          title.appendChild(titleText);
+            var img = document.createElement("img");
+            img.classList.add("zusammenfassungImg");
+            img.src = "/I1A/Zusammenfassungen/Images/" + zusammenfassung + ".png";
 
-          var img = document.createElement("img");
-          img.classList.add("zusammenfassungImg");
-          img.src = "/I1A/Zusammenfassungen/Images/" + zusammenfassung + ".png";
+            var title = document.createElement("p");
+            var titleText = document.createTextNode(zusammenfassung);
+            title.classList.add("zusammenfassungTitle");
+            title.appendChild(titleText);
 
-          var downloadButton = document.createElement("a");
-          downloadButton.classList.add("zusammenfassungDownload");
-          downloadButton.href = "/I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
-          var downloadText = document.createTextNode("DOWNLOAD");
-          downloadButton.appendChild(downloadText);
+            var downloadButton = document.createElement("a");
+            downloadButton.classList.add("zusammenfassungDownload");
+            downloadButton.href = "/I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
+            var downloadText = document.createTextNode("DOWNLOAD");
+            downloadButton.appendChild(downloadText);
 
-          placeholder.appendChild(title);
-          placeholder.appendChild(img);
-          placeholder.appendChild(downloadButton);
+            placeholder.appendChild(title);
+            placeholder.appendChild(img);
+            placeholder.appendChild(downloadButton);
 
-          var zusammenfassungen = document.getElementById("Zusammenfassungen");
-          zusammenfassungen.appendChild(placeholder);
-        }
+            var zusammenfassungen = document.getElementById("Zusammenfassungen");
+            zusammenfassungen.appendChild(placeholder);
+          }
         }
     }
 };
