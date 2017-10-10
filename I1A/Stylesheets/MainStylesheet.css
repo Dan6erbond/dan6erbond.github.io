@@ -16,6 +16,7 @@
 .zusammenfassungImg {
   width: 30px;
   height: auto;
+  float: left;
 }
 
 .zusammenfassungDownload {
