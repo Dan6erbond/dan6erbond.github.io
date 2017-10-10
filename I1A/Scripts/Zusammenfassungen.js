@@ -5,7 +5,7 @@ function UpdateZusammenfassungen(){
           var zusammenfassungen = JSON.parse(this.responseText);
           for (var i = 0; i < zusammenfassungen.length; i++) {
             var zusammenfassung = zusammenfassungen[i];
-
+            console.log(zusammenfassung);
             var placeholder = document.createElement("div");
 
             var title = document.createElement("p");
