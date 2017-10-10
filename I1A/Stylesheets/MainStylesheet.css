@@ -8,3 +8,23 @@
   height: auto;
   margin: 0 auto;
 }
+
+.zusammenfassungTitle {
+  text-decoration: underline;
+}
+
+.zusammenfassungImg {
+  width: 30px;
+  height: auto;
+}
+
+.zusammenfassungDownload {
+  border: 1px solid #173e43;
+  padding: 2px;
+  font-size: 12px;
+  transition: font-size 1s;
+}
+
+.zusammenfassungDownload:hover {
+  font-size: 14px;
+}

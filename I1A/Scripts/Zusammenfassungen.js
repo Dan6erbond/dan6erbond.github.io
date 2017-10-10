@@ -11,15 +11,17 @@ xmlhttp.onreadystatechange = function() {
 
           var title = document.createElement("p");
           var titleText = document.createTextNode(zusammenfassung);
+          title.classList.add("zusammenfassungTitle");
           title.appendChild(titleText);
 
           var img = document.createElement("img");
+          img.classList.add("zusammenfassungImg");
           img.src = "/I1A/Zusammenfassungen/Images/" + zusammenfassung + ".png";
 
           var downloadButton = document.createElement("a");
           downloadButton.classList.add("zusammenfassungDownload");
           downloadButton.href = "/I1A/Zusammenfassungen/" + zusammenfassung + ".pdf";
-          var downloadText = document.createTextNode(zusammenfassung);
+          var downloadText = document.createTextNode("DOWNLOAD");
           downloadButton.appendChild(downloadText);
 
           placeholder.appendChild(title);
