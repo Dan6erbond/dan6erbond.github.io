@@ -20,8 +20,7 @@ function UpdateZusammenfassungen(){
   zusammenfassungen.appendChild(placeholder);
 
   const fs = require('fs');
-
-  fs.readdir("I1A/Zusammenfassungen", (err, files) => {
+  fs.readdir("I1A/Zusammenfassungen/", (err, files) => {
     files.forEach(zusammenfassung => {
       var placeholder = document.createElement("div");
 
