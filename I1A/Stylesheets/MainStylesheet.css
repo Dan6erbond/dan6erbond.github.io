@@ -1,6 +1,12 @@
-.Link {
+#Link {
   text-decoration: underline;
   color: blue;
+  text-align: center;
+}
+
+#Welcome {
+  font-size: 16px;
+  text-align: center;
 }
 
 #Klassenfoto {
