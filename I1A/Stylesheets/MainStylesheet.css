@@ -51,7 +51,7 @@
 }
 
 .fullsizeDocument {
-  height: 100px;
+  height: auto;
   width: 100%;
 }
 
