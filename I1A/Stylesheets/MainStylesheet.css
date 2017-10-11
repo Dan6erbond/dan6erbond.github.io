@@ -73,3 +73,8 @@
 .documentDownload:hover {
   font-size: 16px;
 }
+
+.halfSizeImage {
+  width: 50%;
+  height: auto;
+}
