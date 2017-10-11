@@ -81,11 +81,13 @@
 }
 
 .halfSizeImage {
+  min-width: 400px;
   width: 50%;
   height: auto;
 }
 
 .quarterSizeImage {
+  min-width: 200px;
   width: 50%;
   height: auto;
 }
