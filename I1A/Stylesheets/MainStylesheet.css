@@ -50,6 +50,10 @@
   width: 50%;
 }
 
+.fullsizeDocument {
+  width: 100%;
+}
+
 .documentTitle {
   text-decoration: underline;
   font-size: 16px;
