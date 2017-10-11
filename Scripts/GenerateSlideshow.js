@@ -34,7 +34,10 @@ xmlhttp.onreadystatechange = function() {
 
           var dot = document.createElement("span");
           dot.classList.add("dot");
-          dot.onclick = function(){currentSlide(i+1);};
+          var input = i+1;
+          dot.onclick = function() {
+            currentSlide(input);
+          };
 
           var dotPlaceholder = document.getElementsByClassName("dotPlaceholder")[0];
           dotPlaceholder.appendChild(dot);
