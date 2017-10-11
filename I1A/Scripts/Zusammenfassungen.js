@@ -35,6 +35,6 @@ xmlhttp.onreadystatechange = function() {
         }
     }
 };
-xmlhttp.open("GET", "/I1A/Zusammenfassungen/Zusammenfassungen.json", true);
+xmlhttp.open("GET", "/I1A/Documents/Zusammenfassungen/Zusammenfassungen.json", true);
 xmlhttp.send();
 }
