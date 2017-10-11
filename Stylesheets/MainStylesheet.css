@@ -59,21 +59,21 @@ body {
 }
 
 h1 {
-  display: inline-block;
+  width: 100%;
   text-align: center;
   font-family: Impact;
   color: #173e43;
 }
 
 h2 {
-  display: inline-block;
+  width: 100%;
   font-family: Impact;
   color: #173e43;
   text-decoration: underline;
 }
 
 h3 {
-  display: inline-block;
+  width: 100%;
   font-family: Impact;
   color: #173e43;
   font-style: italic;
