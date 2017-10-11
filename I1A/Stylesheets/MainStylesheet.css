@@ -50,6 +50,8 @@
 }
 
 .document {
+  min-height: 100px;
+  height: auto;
   float: left;
   width: 50%;
 }
@@ -58,6 +60,13 @@
   min-height: 100px;
   height: auto;
   width: 100%;
+}
+
+.thirdDocument {
+  float: left;
+  min-height: 100px;
+  height: auto;
+  width: 33.3333333333%;
 }
 
 .documentTitle {
