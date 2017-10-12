@@ -150,16 +150,12 @@ a {
     right: 0;
 }
 
-#LeidenschaftenLink {
-    text-decoration: underline;
-    color: blue;
-}
-
 #ProgrammingImage {
     display: block;
-    width: 600px;
+    width: 60%;
     height: auto;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .videoButtonPlaceholder {
@@ -189,4 +185,22 @@ a {
 .Bearbeitung {
     color: red;
     font-size: 30px;
+}
+
+.FancyButton {
+    display: block;
+    font-size: 35px;
+    border: 2px solid #173e43;
+    color: #173e43;
+    padding: 6px 6px 20px 20px;
+    align-content: center;
+    transition: font-size 0.5s;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 35px;
+}
+
+.FancyButton:hover {
+    font-size: 40px;
 }
