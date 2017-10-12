@@ -37,6 +37,7 @@ xmlhttp.onreadystatechange = function() {
           dot.onclick = function() {
                currentSlide(i+1);
           };
+          dot.addEventListener("click",currentSlide(i+1),false);
 
           var dotPlaceholder = document.getElementsByClassName("dotPlaceholder")[0];
           dotPlaceholder.appendChild(dot);
