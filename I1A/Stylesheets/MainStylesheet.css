@@ -100,4 +100,5 @@
 .halfPage {
   width: 50%;
   height: auto;
+  float: left;
 }
