@@ -96,3 +96,8 @@
   height: 720px;
   margin: 0 auto;
 }
+
+.halfPage {
+  width: 50%;
+  height: auto;
+}
