@@ -34,6 +34,9 @@ xmlhttp.onreadystatechange = function() {
 
           var dot = document.createElement("span");
           dot.classList.add("dot");
+          dot[i].onclick = function() {
+               Slideshow.currentSlide(i+1);
+          };
 
           var dotPlaceholder = document.getElementsByClassName("dotPlaceholder")[0];
           dotPlaceholder.appendChild(dot);
@@ -44,14 +47,4 @@ xmlhttp.open("GET", jsonPath, true);
 xmlhttp.send();
 
 setTimeout(function() { showSlides(slideIndex); }, 500);
-SetOnClick();
-}
-
-function SetOnClick(){
-  var dots = document.getElementsByClassName("dot");
-  for(var i = 0; i < dots.length; i++){
-    dots[i].onclick = function() {
-         Slideshow.currentSlide(i+1);
-     };
-  }
 }
