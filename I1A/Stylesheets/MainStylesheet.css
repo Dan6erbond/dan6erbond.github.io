@@ -35,17 +35,17 @@
   font-size: 16px;
 }
 
-.document {
+.fullDocument {
+  min-height: 100px;
+  height: auto;
+  width: 100%;
+}
+
+.halfDocument {
   min-height: 100px;
   height: auto;
   float: left;
   width: 50%;
-}
-
-.fullsizeDocument {
-  min-height: 100px;
-  height: auto;
-  width: 100%;
 }
 
 .thirdDocument {
@@ -60,7 +60,7 @@
   font-size: 16px;
 }
 
-.documentImg {
+.documentThumbnail {
   display: block;
   width: auto;
   height: 100px;
