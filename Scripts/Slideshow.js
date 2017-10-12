@@ -34,7 +34,7 @@ xmlhttp.onreadystatechange = function() {
 
           var dot = document.createElement("span");
           dot.classList.add("dot");
-          dot[i].onclick = function() {
+          dot.onclick = function() {
                currentSlide(i+1);
           };
 
