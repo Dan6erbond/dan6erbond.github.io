@@ -81,7 +81,7 @@ a {
     color: inherit;
 }
 
-#Beschreibung {
+#WelcomeText {
     font-size: 25px;
     border-color: #173e43;
     border-bottom: 1px solid;
@@ -91,9 +91,9 @@ a {
     margin: 0 auto;
 }
 
-#PersonalImage {
-    width: 200px;
-    height: auto;
+#WelcomeImage {
+    height: 200px;
+    width: auto;
     display: block;
     margin: 0 auto;
 }
