@@ -1,61 +1,60 @@
-﻿/*Color Palett:
+/*Color Palett:
     light grey: #dddfd4
     yellow: #fae596
     light blue: #3fb0ac
     navy blue: #173e43*/
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @font-face {
-    font-family: 'Calibri';
-    src: url('/Fonts/Calibri.ttf');
+  font-family: 'Calibri';
+  src: url('/Fonts/Calibri.ttf');
 }
 
 @font-face {
-    font-family: 'Impact';
-    src: url('/Fonts/Impact.ttf');
+  font-family: 'Impact';
+  src: url('/Fonts/Impact.ttf');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('/Fonts/Roboto.ttf');
+  font-family: 'Roboto';
+  src: url('/Fonts/Roboto.ttf');
 }
 
 @font-face {
-    font-family: 'Agency FB';
-    src: url('/Fonts/Agency FB.ttf');
+  font-family: 'Agency FB';
+  src: url('/Fonts/Agency FB.ttf');
 }
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 footer {
-    background-color: #fae596;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
+  background-color: #fae596;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 body {
-    animation: fadein 1s;
-    font-family: Calibri;
-    background-color: #dddfd4;
-    background-image: url('../Images/Backgrounds/Vector Waves.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  animation: fadein 1s;
+  font-family: Calibri;
+  background-color: #dddfd4;
+  background-image: url('../Images/Backgrounds/Vector Waves.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -77,130 +76,130 @@ h3 {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #WelcomeText {
-    font-size: 25px;
-    border-color: #173e43;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    padding: 20px 0px 20px 0px;
-    width: 75%;
-    margin: 0 auto;
+  font-size: 25px;
+  border-color: #173e43;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 20px 0px 20px 0px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #WelcomeImage {
-    height: 200px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #ContactButton {
-    display: block;
-    font-size: 35px;
-    border: 2px solid #173e43;
-    color: #173e43;
-    padding: 6px 6px 20px 20px;
-    align-content: center;
-    transition: font-size 0.5s;
-    text-align: center;
-    margin: 0 auto;
-    width: 400px;
-    height: 35px;
+  display: block;
+  font-size: 35px;
+  border: 2px solid #173e43;
+  color: #173e43;
+  padding: 6px 6px 20px 20px;
+  align-content: center;
+  transition: font-size 0.5s;
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  height: 35px;
 }
 
 #ContactButton:hover {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #datetime {
-    float: right;
-    margin-right: 20px;
+  float: right;
+  margin-right: 20px;
 }
 
 #copyright {
-    margin-left: 20px;
-    float: left;
+  margin-left: 20px;
+  float: left;
 }
 
 #AdobeAnimate {
-    display: block;
-    width: 600px;
-    height: auto;
-    margin: 0 auto;
+  display: block;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
 }
 
 #GuitarVideoPlaceholder {
-    width: 80%;
-    padding-top: 45%;
-    margin: 0 auto;
-    position: relative;
+  width: 80%;
+  padding-top: 45%;
+  margin: 0 auto;
+  position: relative;
 }
 
 #GuitarVideo {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 #ProgrammingImage {
-    display: block;
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 20px;
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .videoButtonPlaceholder {
-    text-align: center;
+  text-align: center;
 }
 
 .videoButton {
-    width: 15%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 2px solid #173e43;
-    border-radius: 4px;
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #173e43;
+  border-radius: 4px;
 }
 
 #sammelnTextPlcaeholder {
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #173e43;
-    border-radius: 15px;
-    padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #173e43;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 #sammelnText {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 
 .Bearbeitung {
-    color: red;
-    font-size: 30px;
+  color: red;
+  font-size: 30px;
 }
 
 .FancyButton {
-    display: block;
-    font-size: 35px;
-    border: 2px solid #173e43;
-    color: #173e43;
-    padding: 6px 6px 20px 20px;
-    align-content: center;
-    transition: font-size 0.5s;
-    text-align: center;
-    margin: 0 auto;
-    width: 300px;
-    height: 35px;
+  display: block;
+  font-size: 35px;
+  border: 2px solid #173e43;
+  color: #173e43;
+  padding: 6px 6px 20px 20px;
+  align-content: center;
+  transition: font-size 0.5s;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 35px;
 }
 
 .FancyButton:hover {
-    font-size: 40px;
+  font-size: 40px;
 }
