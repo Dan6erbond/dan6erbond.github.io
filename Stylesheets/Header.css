@@ -1,6 +1,7 @@
 ﻿@font-face {
     font-family: 'Impact';
     src: url('/Fonts/Impact.ttf');
+    src: url('/Fonts/Impact.eot');
 }
 
 .title {
