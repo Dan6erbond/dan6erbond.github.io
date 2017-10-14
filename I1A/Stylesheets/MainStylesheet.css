@@ -8,10 +8,11 @@
 
 /*Zusammenfassungen*/
 .zusammenfassung {
+  height: auto;
+  min-height: 100px;
+  padding: 5px 0px 5px 0px;
   float: left;
   width: 33.3333333333%;
-  height: auto;
-  min-height: 125px;
 }
 
 .zusammenfassungTitle {
@@ -41,20 +42,23 @@
 /*Documents*/
 .fullDocument {
   height: auto;
-  min-height: 125px;
+  min-height: 100px;
+  padding: 5px 0px 5px 0px;
   width: 100%;
 }
 
 .halfDocument {
   height: auto;
-  min-height: 125px;
+  min-height: 100px;
+  padding: 5px 0px 5px 0px;
   float: left;
   width: 50%;
 }
 
 .thirdDocument {
   height: auto;
-  min-height: 125px;
+  min-height: 100px;
+  padding: 5px 0px 5px 0px;
   float: left;
   width: 33.3333333333%;
 }
@@ -96,6 +100,7 @@
   height: auto;
 }
 
+/*Misc*/
 .excelTable {
   width: 1280px;
   height: 720px;
