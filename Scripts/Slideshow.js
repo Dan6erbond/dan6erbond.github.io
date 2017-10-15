@@ -32,12 +32,12 @@ xmlhttp.onreadystatechange = function() {
           var slideshowContainer = document.getElementsByClassName("slideshow-container")[0];
           slideshowContainer.appendChild(container);
 
-          var onClick = 'onclick="currentSlide(' & i+1 & ');';
-          var dot = '<span class="dot "' & onClick & '></span>';
-          document.getElementsByClassName ("dotPlaceholder").innerHTML += dot;
-
-          var dotPlaceholder = document.getElementsByClassName("dotPlaceholder")[0];
-          dotPlaceholder.appendChild(dot);
+          var beginning = '<span class="dot" ';
+          var onClick = 'onclick="currentSlide(' + (i+1) + ');"';
+          var end = '></span>';
+          var dot = beginning + onClick + end;
+          console.log(dot);
+          document.getElementsByClassName ("dotPlaceholder")[0].innerHTML += dot;
         }
     }
 };
