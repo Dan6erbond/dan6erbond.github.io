@@ -7,3 +7,13 @@
   margin-left: 20px;
   float: left;
 }
+
+footer {
+  background-color: #fae596;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
