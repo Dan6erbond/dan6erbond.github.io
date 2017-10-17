@@ -1,0 +1,34 @@
+#WelcomeText {
+  font-size: 25px;
+  border-color: #173e43;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 20px 0px 20px 0px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#WelcomeImage {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#ContactButton {
+  display: block;
+  font-size: 35px;
+  border: 2px solid #173e43;
+  color: #173e43;
+  padding: 6px 6px 20px 20px;
+  align-content: center;
+  transition: font-size 0.5s;
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  height: 35px;
+}
+
+#ContactButton:hover {
+  font-size: 40px;
+}
