@@ -19,6 +19,7 @@ xmlhttp.onreadystatechange = function() {
           var slideshowImg = document.createElement("img");
           slideshowImg.classList.add("collectionSlideshowImage");
           slideshowImg.src = img.src;
+          slideshowImg.alt = img.caption;
 
           var text = document.createElement("div");
           text.classList.add("text");
