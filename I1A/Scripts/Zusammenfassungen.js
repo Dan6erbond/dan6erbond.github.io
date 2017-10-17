@@ -13,6 +13,7 @@ xmlhttp.onreadystatechange = function() {
             var img = document.createElement("img");
             img.classList.add("zusammenfassungImg");
             img.src = "Documents/Images/Zusammenfassung Thumbnail.png";
+            img.alt = zusammenfassung;
 
             var title = document.createElement("p");
             var titleText = document.createTextNode(zusammenfassung);
