@@ -51,6 +51,20 @@ body {
   background-size: cover;
 }
 
+#WelcomeText {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#WelcomeImage {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   font-family: Impact;
