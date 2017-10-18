@@ -53,10 +53,11 @@ body {
 
 #WelcomeText {
   text-align: center;
-  padding: 5px 20px 5px 20px;
+  margin: 5px 20px 5px 20px;
+  padding: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  font-size: 16px;
+  font-size: 28px;
 }
 
 #WelcomeImage {
