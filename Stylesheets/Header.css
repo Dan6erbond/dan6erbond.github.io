@@ -4,6 +4,10 @@
     src: url('/Fonts/Impact.eot');
 }
 
+nav {
+  position: fixed;
+}
+
 .title {
     float: left;
     margin: 0;
