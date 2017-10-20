@@ -88,15 +88,8 @@
 }
 
 /*Images*/
-.halfSizeImage {
-  min-width: 400px;
+.imageDocument {
   width: 50%;
-  height: auto;
-}
-
-.quarterSizeImage {
-  min-width: 200px;
-  width: 25%;
   height: auto;
 }
 

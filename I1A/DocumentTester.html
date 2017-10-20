@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <script src="/Scripts/w3.js"></script>
+<script src="Scripts/Documents.js"></script>
 <html>
 <head>
     <meta charset="utf-8" />
     <link href="/Stylesheets/MainStylesheet.css" rel="stylesheet" />
     <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
-    <title>I1A | Biologie</title>
+    <title>I1A | DocumentTester</title>
 </head>
-<body>
+<body onload="StartGenerating();">
     <div w3-include-html="Standard Elements/Header.html"></div>
 
     <main>
-      <h1>Biologie</h1>
-      <br>
-      <h2>Zellbiologie</h2>
-      <br>
-      <div class="fullDocument">
-        <p class=documentTitle>Einteilung der Zellen</p>
-        <a href="Documents/Biologie/Einteilung der Zellen.png" download>
-          <img class="imageDocument" src="Documents/Biologie/Einteilung der Zellen.png" alt="Einteilung der Zellen">
-      </div>
+      <h1>DocumentTester</h1>
+      <div class="halfSizeDocument" data-documentName="TestDocument" data-documentType="docx" data-documentPath="Documents/Zusammenfassungen/FRW - Kapitel 1.pdf">
       </div>
     </main>
 
