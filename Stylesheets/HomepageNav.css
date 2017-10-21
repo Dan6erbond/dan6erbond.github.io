@@ -3,7 +3,13 @@
   src: url('../Fonts/Lato-Light.ttf');
 }
 
-.homepageNav div {
+.homepageNav a {
+  display: block;
+  font-family: 'Lato-Light';
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s;
   width: 20%;
   margin: 0 auto;
   animation: fade-in 1.5s;
@@ -15,33 +21,25 @@
   text-align: center;
 }
 
-.homepageNav div a {
-  font-family: 'Lato-Light';
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: font-size 0.5s;
-}
-
-.homepageNav div {
+.homepageNav a {
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #4CAF50 50%, black 50%);
   transition: background-position 1s;
 }
 
-.homepageNav div:hover {
+.homepageNav a:hover {
   background-position: 0 -100%;
 }
 
-.homepageNav div:nth-child(1){
+.homepageNav a:nth-child(1){
   animation-delay: 0s;
 }
 
-.homepageNav div:nth-child(2){
+.homepageNav a:nth-child(2){
   animation-delay: 0.75s;
 }
 
-.homepageNav div:nth-child(3){
+.homepageNav a:nth-child(3){
   animation-delay: 1.5s;
 }
 

@@ -62,11 +62,3 @@
 .parent:hover .parentText, .parent:hover .hoverIndicator {
     opacity: 0.5;
 }
-
-#KarateHover {
-    width: 30%;
-}
-
-#LeidenschaftenHover {
-    width: 33%;
-}
