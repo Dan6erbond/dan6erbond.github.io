@@ -3,11 +3,13 @@
   src: url('../Fonts/Lato-Light.ttf');
 }
 
-#guitarVideo {
-  width: 680px;
-  height: 400px;
-  float: left;
-  margin-left: 100px;
+.guitarVideo {
+  display: block;
+  margin: 0 auto;
+  width: 1280px;
+  height: 720px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .hobbyText {
@@ -19,9 +21,4 @@
   border-radius: 15px;
   font-family: 'Lato-Light';
   padding: 20px;
-}
-
-.guitarText {
-  margin-left: 70%;
-  width: 25%;
 }

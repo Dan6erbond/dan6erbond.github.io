@@ -11,7 +11,8 @@
   font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
-  width: 40em;
+  width: 80%;
+  text-align: center;
   animation: type 4s steps(60, end);
 }
 
