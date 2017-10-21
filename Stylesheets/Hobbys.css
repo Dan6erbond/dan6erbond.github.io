@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../Fonts/Lato-Light.ttf');
+}
+
+#guitarVideo {
+  width: 680px;
+  height: 400px;
+  float: left;
+  margin-left: 100px;
+}
+
+.hobbyText {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  font-family: 'Lato-Light';
+  padding: 20px;
+}
+
+.guitarText {
+  margin-left: 70%;
+  width: 25%;
+}

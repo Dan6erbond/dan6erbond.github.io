@@ -1,0 +1,114 @@
+/*Color Palett:
+    light grey: #dddfd4
+    yellow: #fae596
+    light blue: #3fb0ac
+    navy blue: #173e43*/
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('/Fonts/Calibri.ttf');
+  src: url('/Fonts/Calibri.eot');
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('/Fonts/Impact.ttf');
+  src: url('/Fonts/Impact.eot');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Fonts/Roboto.ttf');
+  src: url('/Fonts/Roboto.eot');
+}
+
+@font-face {
+  font-family: 'Agency FB';
+  src: url('/Fonts/Agency FB.ttf');
+  src: url('/Fonts/Agency FB.eot');
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  animation: fadein 1s;
+  font-family: Calibri;
+  background-color: #dddfd4;
+  background-image: url('../Images/Backgrounds/Vector Waves.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#WelcomeText {
+  text-align: center;
+  margin: 5px 20px 5px 20px;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 28px;
+}
+
+#WelcomeImage {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact;
+  color: #173e43;
+}
+
+h2 {
+  font-family: Impact;
+  color: #173e43;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: Impact;
+  color: #173e43;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Bearbeitung {
+  color: red;
+  font-size: 30px;
+}
+
+.FancyButton {
+  display: block;
+  font-size: 35px;
+  border: 2px solid #173e43;
+  color: #173e43;
+  padding: 6px 6px 20px 20px;
+  align-content: center;
+  transition: font-size 0.5s;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 35px;
+}
+
+.FancyButton:hover {
+  font-size: 40px;
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../Fonts/Lato-Regular.ttf');
+}
+
+.ausbildung {
+  border-radius: 15px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.ausbildung p {
+  font-family: 'Lato-Regular';
+  font-size: 16px;
+  padding: 10px;
+  margin: 0px 20px 10px 20px;
+}
+
+.ausbildung p.title {
+  font-size: 20px;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: solid black 1px;
+}
+
+.ausbildung p.first {
+  font-size: 20px;
+  margin-top: 20px;
+  padding-top: 30px;
+}
