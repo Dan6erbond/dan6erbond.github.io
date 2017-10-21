@@ -6,14 +6,20 @@
 .typewriter {
   display: block;
   margin: 0 auto;
-  color: lime;
-  font-family: "Courier";
+  color: #4CAF50;
+  font-family: 'Courier';
   font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   width: 80%;
   text-align: center;
   animation: type 4s steps(60, end);
+}
+
+.homeTypewriter {
+  background-color: rgba(51, 51, 51, 0.75);
+  width: 760px;
+  padding: 5px;
 }
 
 .typewriter:nth-child(2){

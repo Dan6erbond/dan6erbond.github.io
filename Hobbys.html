@@ -8,7 +8,8 @@
   <meta name="author" content="RaviAnand Mohabir">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="/Scripts/w3.js"></script>
+  <script src="Scripts/w3.js"></script>
+  <script src="Scripts/Hobbys.js"></script>
   <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
   <link href="Stylesheets/Hobbys.css" rel="stylesheet" />
   <link href="Stylesheets/TextTyping.css" rel="stylesheet" />
@@ -38,7 +39,9 @@
         dem die elektrische Gitarre. Ich spiele gerne Rock & Pop Lieder und habe schon an einigen Konzerten mitgespielt.</p>
     </div>
 
-    <iframe class="guitarVideo" src="https://www.youtube.com/embed/RM5STH_n-I4" frameborder="0" allowfullscreen></iframe>
+    <div class="iframeContainer">
+      <iframe class="guitarVideo" src="https://www.youtube.com/embed/RM5STH_n-I4" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <div class="parallax2 kampfsportParallax">
       <br>
@@ -79,6 +82,32 @@
         3D-Modellier Programm mit welchem man 3D-Modelle erstellt die später in Spielen verwendet werden können oder mit einem 3D-Drucker ausgedruckt werden können. Ich habe meine Modelle schon in meinen Spiele verwendet und das Modell im Hintergrund
         habe auch ich erstellt und in eineme Spiel namens 'Segway Surfers' verwendet.</p>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="iframeContainer" align="center">
+      <iframe height="720" width="1280" src="https://sketchfab.com/models/8d2584eb705747be9d557d6145d66021/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+      <br>
+      <br>
+      <div class="buttonPlaceholder">
+          <a href="javascript:setModel('https://sketchfab.com/models/8d2584eb705747be9d557d6145d66021/embed');">Lincoln Memorial</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/ce4900b6703b433c94f4db65520a4473/embed');">Tank</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/b9ce84a10579407ea0d23d5d618424c3/embed');">Hoverboard</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/18af23ba639f4eceacd782023d258b41/embed');">Armoured Vehicle</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/bcf5d83bed5544598eb08d38deea5f73/embed');">World Map</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/a621b012add14d4bacbce347705a2cf9/embed');">Segway</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/d7e097e157c44e049662f7018a791c80/embed');">Humvee</a>
+          <a href="javascript:setModel('https://sketchfab.com/models/f528522571a04e4bb691e05fd66f6fc1/embed');">F-35 Lightning II</a>
+      </div>
+      <br>
+    </div>
+
+    <script type="text/javascript">
+      function setModel (modelURL){
+        document.getElementsByTagName('iframe')[1].src = modelURL;
+      }
+    </script>
 
     <div class="parallax2 reisenParallax">
       <br>

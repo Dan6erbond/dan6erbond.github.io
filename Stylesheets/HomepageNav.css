@@ -19,9 +19,6 @@
   margin-bottom: 20px;
   border: white solid 1px;
   text-align: center;
-}
-
-.homepageNav a {
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #4CAF50 50%, black 50%);
   transition: background-position 1s;
@@ -31,15 +28,15 @@
   background-position: 0 -100%;
 }
 
-.homepageNav a:nth-child(1){
+.homepageNav a:nth-child(1) {
   animation-delay: 0s;
 }
 
-.homepageNav a:nth-child(2){
+.homepageNav a:nth-child(2) {
   animation-delay: 0.75s;
 }
 
-.homepageNav a:nth-child(3){
+.homepageNav a:nth-child(3) {
   animation-delay: 1.5s;
 }
 

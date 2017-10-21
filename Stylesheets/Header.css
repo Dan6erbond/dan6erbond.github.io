@@ -45,11 +45,23 @@
   color: rgb(48, 48, 48);
 }
 
-.name {
-  display: block;
-  padding: 30px; 0px 0px 10px;
-  font-size: 20px;
-  font-family: 'Lato-Light';
+.home a{
   color: white;
   text-decoration: none;
+  float: left;
+  font-family: 'Lato-Light';
+  transition: color 0.5s;
+}
+
+.home:hover a {
+  color: #4CAF50;
+}
+
+.name {
+  padding-left: 10px;
+  font-size: 36px;
+}
+
+.icon {
+  font-size: 40px;
 }
