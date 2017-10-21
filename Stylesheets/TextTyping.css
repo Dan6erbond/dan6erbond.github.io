@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Courier';
-  src: url('../Fonts/Courier.ttf');
+  src: url('Fonts/Courier.ttf');
 }
 
 .typewriter {
