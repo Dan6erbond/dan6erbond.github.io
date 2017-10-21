@@ -46,7 +46,7 @@ body {
   animation: fadein 1s;
   font-family: Calibri;
   background-color: #dddfd4;
-  background-image: url('../Images/Backgrounds/Vector Waves.png');
+  background-image: url('/Images/Backgrounds/Vector Waves.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

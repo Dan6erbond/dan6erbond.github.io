@@ -46,8 +46,10 @@
 }
 
 .name {
-  font-family: 'Lato-Light';
+  display: block;
   padding: 30px; 0px 0px 10px;
   font-size: 20px;
+  font-family: 'Lato-Light';
   color: white;
+  text-decoration: none;
 }

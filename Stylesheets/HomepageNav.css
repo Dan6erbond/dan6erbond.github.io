@@ -23,8 +23,14 @@
   transition: font-size 0.5s;
 }
 
-.homepageNav div a:hover {
-  font-size: 20px;
+.homepageNav div {
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #4CAF50 50%, black 50%);
+  transition: background-position 1s;
+}
+
+.homepageNav div:hover {
+  background-position: 0 -100%;
 }
 
 .homepageNav div:nth-child(1){
