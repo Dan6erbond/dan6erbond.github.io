@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(17, 20, 28);
+}
+
+.sunsetImage {
+  background-image: url('../Images/Backgrounds/Sunset Panorama.jpg');
+}
+
+.topImage {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
