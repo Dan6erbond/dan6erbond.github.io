@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../Fonts/Lato-Light.ttf');
+}
+
 body {
   background-color: rgb(17, 20, 28);
 }
@@ -10,4 +15,27 @@ body {
   background-size: cover;
   background-position: center;
   height: 200px;
+}
+
+.aboutMe {
+  margin: 0 auto;
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: 'Lato-Light';
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.aboutMe h1 {
+  font-size: 24px;
+}
+
+.aboutMe p {
+  font-size: 18px;
+}
+
+.aboutMe table tr td {
+  font-size: 16px;
+  padding-bottom: 10px;
+  width: 50%;
 }
