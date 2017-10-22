@@ -27,8 +27,8 @@
 }
 
 .buttonPlaceholder {
-  width: 100%;
-  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
 }
 
 .buttonPlaceholder a {
