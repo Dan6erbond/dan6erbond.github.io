@@ -4,6 +4,9 @@
     light blue: #3fb0ac
     navy blue: #173e43*/
 
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -13,9 +16,6 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Anton');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 html {
   position: relative;
   min-height: 100%;
@@ -23,7 +23,7 @@ html {
 
 body {
   animation: fadein 1s;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   background-color: #dddfd4;
   background-image: url('/Images/Backgrounds/Vector Waves.png');
   background-repeat: no-repeat;
@@ -101,6 +101,7 @@ a {
 }
 
 /*Zusammenfassungen*/
+
 .zusammenfassung {
   height: auto;
   min-height: 100px;
@@ -134,6 +135,7 @@ a {
 }
 
 /*Documents*/
+
 .fullDocument {
   height: auto;
   min-height: 100px;
@@ -182,6 +184,7 @@ a {
 }
 
 /*Images*/
+
 .imageDocument {
   width: 50%;
   height: auto;
