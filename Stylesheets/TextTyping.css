@@ -15,7 +15,7 @@
 
 .homeTypewriter {
   background-color: rgba(51, 51, 51, 0.75);
-  width: 760px;
+  max-width: 640px;
   padding: 5px;
 }
 
