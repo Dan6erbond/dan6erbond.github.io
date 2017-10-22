@@ -1,12 +1,4 @@
-@font-face {
-  font-family: 'Lato-Regular';
-  src: url('../Fonts/Lato-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Lato-Light';
-  src: url('../Fonts/Lato-Light.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 .sidenav div {
     position: absolute;
@@ -35,7 +27,7 @@
 }
 
 .sidenav div ul li a {
-  font-family: 'Lato-Regular';
+  font-family: 'Lato';
   text-decoration: none;
   color: white;
   transition: color 0.5s;
@@ -49,7 +41,8 @@
   color: white;
   text-decoration: none;
   float: left;
-  font-family: 'Lato-Light';
+  font-family: 'Lato';
+  font-weight: lighter;
   transition: color 0.5s;
 }
 

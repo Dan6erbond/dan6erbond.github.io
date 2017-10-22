@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Lato-Regular';
-  src: url('../Fonts/Lato-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .ausbildung {
   border-radius: 15px;
@@ -11,7 +8,7 @@
 }
 
 .ausbildung p {
-  font-family: 'Lato-Regular';
+  font-family: 'Lato';
   font-size: 16px;
   padding: 10px;
   margin: 0px 20px 10px 20px;

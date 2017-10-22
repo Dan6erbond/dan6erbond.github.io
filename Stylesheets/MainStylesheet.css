@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Lato-Light';
-  src: url('../Fonts/Lato-Light.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
   background-color: rgb(17, 20, 28);
@@ -21,7 +18,8 @@ body {
   margin: 0 auto;
   width: 75%;
   background-color: rgba(255, 255, 255, 0.75);
-  font-family: 'Lato-Light';
+  font-family: 'Lato';
+  font-weight: lighter;
   padding: 20px;
   border-radius: 15px;
 }

@@ -1,13 +1,9 @@
-﻿@font-face {
-    font-family: 'Impact';
-    src: url('/Fonts/Impact.ttf');
-    src: url('/Fonts/Impact.eot');
-}
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 .title {
     float: left;
     margin: 0;
-    font-family: Impact;
+    font-family: 'Anton';
     font-size: 25px;
     color: #173e43;
     padding-right: 10px;

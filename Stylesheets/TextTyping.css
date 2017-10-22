@@ -1,13 +1,10 @@
-@font-face {
-  font-family: 'Courier';
-  src: url('/Fonts/Courier.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 .typewriter {
   display: block;
   margin: 0 auto;
   color: #4CAF50;
-  font-family: 'Courier';
+  font-family: 'Special Elite';
   font-size: 20px;
   white-space: nowrap;
   overflow: hidden;

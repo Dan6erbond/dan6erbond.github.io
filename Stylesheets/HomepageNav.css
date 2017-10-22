@@ -1,11 +1,9 @@
-@font-face {
-  font-family: 'Lato-Light';
-  src: url('../Fonts/Lato-Light.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .homepageNav a {
   display: block;
-  font-family: 'Lato-Light';
+  font-family: 'Lato';
+  font-weight: lighter;
   color: white;
   text-decoration: none;
   font-size: 16px;
