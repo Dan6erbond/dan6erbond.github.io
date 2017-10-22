@@ -23,7 +23,7 @@
   animation: type2 8s steps(60, end);
 }
 
-span{
+.typeLine {
   animation: blink 1s infinite;
 }
 

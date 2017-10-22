@@ -22,16 +22,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="/Scripts/w3.js"></script>
+  <script src="/Scripts/Slideshow.js"></script>
   <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
   <link href="Stylesheets/TextTyping.css" rel="stylesheet" />
+  <link href="Stylesheets/Slideshow.css" rel="stylesheet" />
   <title>RaviAnand | Über Mich</title>
 </head>
 
-<body>
+<body onload="GenerateSlideshow('Images/Travelling/ReisenSlideshow.json')">
   <div w3-include-html="Standard Elements/Header.html"></div>
 
   <main>
-    <p class="typewriter">Hier kannst du Grundsätzliches über mich lesen.<span>|</span></p>
+    <p class="typewriter">Hier kannst du Grundsätzliches über mich lesen.<span class="typeLine">|</span></p>
     <br>
     <div class="aboutMe">
         <p>Hallo</p>
@@ -69,6 +71,17 @@
                 <td>Applikationsentwickler</td>
             </tr>
         </table>
+    </div>
+    <br>
+    <br>
+    <h2>Reisen Slideshow</h2>
+    <br>
+    <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dotPlaceholder">
     </div>
   </main>
 
