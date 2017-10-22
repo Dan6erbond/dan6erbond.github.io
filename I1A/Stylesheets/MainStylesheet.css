@@ -14,7 +14,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Anton');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html {
   position: relative;
@@ -23,7 +23,7 @@ html {
 
 body {
   animation: fadein 1s;
-  font-family: 'OpenSans';
+  font-family: 'Raleway';
   background-color: #dddfd4;
   background-image: url('/Images/Backgrounds/Vector Waves.png');
   background-repeat: no-repeat;
