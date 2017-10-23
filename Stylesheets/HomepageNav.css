@@ -46,6 +46,10 @@
   animation-delay: 3s;
 }
 
+.homepageNav a:nth-child(6) {
+  animation-delay: 3.75s;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0
