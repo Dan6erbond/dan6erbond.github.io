@@ -20,7 +20,7 @@ footer {
   font-family: 'Lato';
   background-color: #4CAF50;
   border-radius: 15px 15px 0px 0px;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: -65px;
   transition: bottom 0.3s;
