@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
+
 .sidenav div {
   position: absolute;
   z-index: +1;
-  left: -155px;
+  left: -180px;
   transition: all ease 0.3s;
   padding: 15px;
-  width: 175px;
+  width: 200px;
   text-decoration: none;
   font-size: 20px;
   border-radius: 0 5px 5px 0;
