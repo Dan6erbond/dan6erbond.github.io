@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
-
 .sidenav div {
-    position: absolute;
-    z-index: +1;
-    left: -155px;
-    transition: all ease 0.3s;
-    padding: 15px;
-    width: 175px;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 0 5px 5px 0;
-    background-color: #4CAF50;
-    top: 150px;
+  position: absolute;
+  z-index: +1;
+  left: -155px;
+  transition: all ease 0.3s;
+  padding: 15px;
+  width: 175px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  background-color: #4CAF50;
+  top: 150px;
 }
 
 .sidenav div:hover {
-    left: 0;
+  left: 0;
 }
 
 .sidenav div ul {
   list-style-type: none;
 }
 
-.sidenav div ul li  {
+.sidenav div ul li {
   padding-bottom: 20px;
 }
 
@@ -37,22 +36,19 @@
   color: rgb(48, 48, 48);
 }
 
-.home a{
+.home {
   color: white;
   text-decoration: none;
   float: left;
   font-family: 'Lato';
   font-weight: lighter;
   transition: color 0.5s;
-}
-
-.home:hover a {
-  color: #4CAF50;
-}
-
-.name {
   padding-left: 10px;
   font-size: 36px;
+}
+
+.home:hover {
+  color: #4CAF50;
 }
 
 .icon {
@@ -60,7 +56,7 @@
 }
 
 @media screen and (max-width: 670px) {
-  .sidenav{
+  .sidenav {
     display: none;
   }
 }
