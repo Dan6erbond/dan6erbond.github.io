@@ -58,3 +58,9 @@
 .icon {
   font-size: 40px;
 }
+
+@media screen and (max-width: 670px) {
+  .sidenav{
+    display: none;
+  }
+}

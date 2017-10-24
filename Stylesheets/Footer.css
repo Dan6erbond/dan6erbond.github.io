@@ -12,8 +12,11 @@
 
 #disclaimer {
   display: block;
+  margin: 0 auto;
+  height: 200px;
   padding: 20px 0px 0px 20px;
-  width: 100%;
+  width: 90%;
+  margin-top: 50px;
 }
 
 footer {
@@ -21,15 +24,51 @@ footer {
   background-color: #4CAF50;
   border-radius: 15px 15px 0px 0px;
   position: fixed;
+}
+
+.mobileNav {
+  width: 100%;
+  height: 20px;
+  display: none;
+}
+
+.mobileNav ul {
+  height: 20px;
+  list-style-type: none;
+}
+
+.mobileNav ul li {
+  float: left;
+}
+
+.mobileNav ul li a {
+  text-decoration; none;
+  color: white;
+  transition: color 1s;
+}
+
+.mobileNav ul li a:hover {
+  color: rgb(78, 78, 78);
+}
+
+.footer {
   left: 0;
-  bottom: -65px;
-  transition: bottom 0.3s;
   height: auto;
   width: 100%;
   overflow: hidden;
+  bottom: -225px;
+  transition: bottom 0.3s;
 }
 
-
-footer:hover {
+.footer:hover {
   bottom: 0px;
+}
+
+@media screen and (max-width: 670px) {
+  .footer {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
 }

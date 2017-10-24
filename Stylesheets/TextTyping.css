@@ -15,7 +15,7 @@
 
 .homeTypewriter {
   background-color: rgba(51, 51, 51, 0.75);
-  max-width: 640px;
+  width: 500px;
   padding: 5px;
 }
 
@@ -43,4 +43,13 @@
 
 ::selection{
   background: black;
+}
+
+@media screen and (max-width: 550px) {
+  .typewriter {
+    font-size: 15px;
+  }
+  .homeTypewriter {
+    width: 400px;
+  }
 }

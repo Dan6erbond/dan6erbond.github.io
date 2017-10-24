@@ -58,3 +58,9 @@
     opacity: 1
   }
 }
+
+@media screen and (max-width: 450px) {
+  .homepageNav a{
+    font-size: 13px;
+  }
+}

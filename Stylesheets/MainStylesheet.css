@@ -40,3 +40,13 @@ h2 {
   color: white;
   text-align: center;
 }
+
+@media screen and (max-width: 550px) {
+  .aboutMe p {
+    font-size: 16px;
+  }
+
+  .aboutMe table tr td {
+    font-size: 14px;
+  }
+}
