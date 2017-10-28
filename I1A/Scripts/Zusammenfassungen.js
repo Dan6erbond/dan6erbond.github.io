@@ -1,3 +1,7 @@
+setTimeout(function() {
+  UpdateZusammenfassungen();
+}, 1);
+
 function UpdateZusammenfassungen(){
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
@@ -8,21 +12,23 @@ xmlhttp.onreadystatechange = function() {
           zusammenfassung = myArr[i];
           if (zusammenfassung != "Zusammenfassungen.json" && zusammenfassung != "Images"){
             var placeholder = document.createElement("div");
-            placeholder.classList.add("zusammenfassung");
+            placeholder.classList.add("document");
+            placeholder.classList.add("third");
 
             var img = document.createElement("img");
-            img.classList.add("zusammenfassungImg");
+            img.classList.add("documentThumbnail");
             img.src = "Documents/Images/Zusammenfassung Thumbnail.png";
             img.alt = zusammenfassung;
 
             var title = document.createElement("p");
             var titleText = document.createTextNode(zusammenfassung);
-            title.classList.add("zusammenfassungTitle");
+            title.classList.add("documentTitle");
             title.appendChild(titleText);
 
             var downloadButton = document.createElement("a");
-            downloadButton.classList.add("zusammenfassungDownload");
+            downloadButton.classList.add("downloadButton");
             downloadButton.href = "Documents/Zusammenfassungen/" + zusammenfassung + ".pdf";
+            downloadButton.target = '_blank';
             downloadButton.innerHTML = '<i class="fa fa-download"></i>' + ' DOWNLOAD';
 
             placeholder.appendChild(img);
@@ -35,6 +41,6 @@ xmlhttp.onreadystatechange = function() {
         }
     }
 };
-xmlhttp.open("GET", "/I1A/Documents/Zusammenfassungen/Zusammenfassungen.json", true);
+xmlhttp.open("GET", "/Documents/Zusammenfassungen/Zusammenfassungen.json", true);
 xmlhttp.send();
 }

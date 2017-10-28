@@ -1,41 +1,41 @@
+setTimeout(function() {
+  StartGenerating();
+}, 1);
+
 function StartGenerating() {
   var divs = document.getElementsByTagName('div');
   for (i = 0; i < divs.length; i++) {
     var div = divs[i];
-    var documentType = div.getAttribute('data-documentType');
-    var documentName = div.getAttribute('data-documentName');
-    var documentPath = div.getAttribute('data-documentPath');
+    var documentName = div.getAttribute('name');
+    var documentPath = div.getAttribute('path');
 
-    console.log(documentType);
     console.log(documentName);
     console.log(documentPath);
 
-    if (documentType) {
-      if (documentType == 'img') {
+    if (documentPath) {
+      if (documentPath.indexOf('png') >= 0 | documentPath.indexOf('jpg') >= 0) {
         GenerateImage(div, documentName, documentPath);
         console.log('Generating Image...');
       } else {
-        GenerateDocument(div, documentName, documentType, documentPath);
+        GenerateDocument(div, documentName, documentPath);
         console.log('Generating Document...');
       }
     }
   }
 }
 
-function GenerateDocument(element, documentName, documentType, documentPath) {
+function GenerateDocument(element, documentName, documentPath) {
   var thumbnail = document.createElement('img');
-  if (documentType == 'pdf')
+  if (documentPath.indexOf('pdf') >= 0)
     thumbnail.src = 'Documents/Images/PDF Thumbnail.png';
-  if (documentType == 'doc')
+  if (documentPath.indexOf('doc') >= 0)
     thumbnail.src = 'Documents/Images/Word Thumbnail.png';
-  if (documentType == 'docx')
+  if (documentPath.indexOf('docx') >= 0)
     thumbnail.src = 'Documents/Images/Word Thumbnail.png';
-  if (documentType == 'xlsx')
+  if (documentPath.indexOf('xlsx') >= 0)
     thumbnail.src = 'Documents/Images/Excel Thumbnail.png';
-  if (documentType == 'zip')
+  if (documentPath.indexOf('zip') >= 0)
     thumbnail.src = 'Documents/Images/ZIP Thumbnail.png';
-  if (documentType == 'zusammenfassung')
-    thumbnail.src = 'Documents/Images/Zusammenfassung Thumbnail.png';
   thumbnail.alt = documentName;
   thumbnail.classList.add('documentThumbnail');
 
@@ -45,10 +45,10 @@ function GenerateDocument(element, documentName, documentType, documentPath) {
   title.classList.add('documentTitle');
 
   var download = document.createElement('a');
-  var downloadText = document.createTextNode('DOWNLOAD');
-  download.appendChild(downloadText);
+  download.innerHTML = '<i class="fa fa-download"></i> DOWNLOAD';
   download.href = documentPath;
-  download.classList.add('documentDownload');
+  download.target = '_blank';
+  download.classList.add('downloadButton');
 
   element.appendChild(thumbnail);
   element.appendChild(title);
@@ -63,8 +63,14 @@ function GenerateImage(element, imageName, imagePath) {
 
   var img = document.createElement('img');
   img.src = imagePath;
-  img.classList.add('imageDocument');
+  img.classList.add('image');
+
+  var imgParent = document.createElement('a');
+  imgParent.alt = imageName;
+  imgParent.href = imagePath;
+  imgParent.target = '_blank';
+  imgParent.appendChild(img);
 
   element.appendChild(title);
-  element.appendChild(img);
+  element.appendChild(imgParent);
 }

@@ -84,7 +84,7 @@ a {
   transition: font-size 0.5s;
   text-align: center;
   margin: 0 auto;
-  width: 300px;
+  width: 750px;
   height: 35px;
 }
 
@@ -100,71 +100,33 @@ a {
   margin: 0 auto;
 }
 
-/*Zusammenfassungen*/
-
-.zusammenfassung {
-  height: auto;
-  min-height: 100px;
-  padding: 5px 0px 5px 0px;
-  float: left;
-  width: 33.3333333333%;
-}
-
-.zusammenfassungTitle {
-  text-decoration: underline;
-  font-size: 16px;
-}
-
-.zusammenfassungImg {
-  display: block;
-  width: auto;
-  height: 100px;
-  padding-right: 10px;
-  float: left;
-}
-
-.zusammenfassungDownload {
-  border: 1px solid #173e43;
-  padding: 2px;
-  font-size: 14px;
-  transition: font-size 1s;
-}
-
-.zusammenfassungDownload:hover {
-  font-size: 16px;
-}
-
 /*Documents*/
 
-.fullDocument {
+.document {
   height: auto;
   min-height: 100px;
   padding: 5px 0px 5px 0px;
+  float: left;
+}
+
+.full {
   width: 100%;
 }
 
-.halfDocument {
-  height: auto;
-  min-height: 100px;
-  padding: 5px 0px 5px 0px;
-  float: left;
+.half {
   width: 50%;
 }
 
-.thirdDocument {
-  height: auto;
-  min-height: 100px;
-  padding: 5px 0px 5px 0px;
-  float: left;
+.third {
   width: 33.3333333333%;
 }
 
 .documentThumbnail {
-  display: block;
-  width: auto;
   height: 100px;
-  padding-right: 10px;
+  width: auto;
+  display: block;
   float: left;
+  padding-right: 10px;
 }
 
 .documentTitle {
@@ -172,31 +134,23 @@ a {
   font-size: 16px;
 }
 
-.documentDownload {
+.downloadButton {
   border: 1px solid #173e43;
   padding: 2px;
   font-size: 14px;
   transition: font-size 1s;
 }
 
-.documentDownload:hover {
+.downloadButton:hover {
   font-size: 16px;
 }
 
-/*Images*/
-
-.imageDocument {
+.image {
   width: 50%;
   height: auto;
 }
 
-#excelTable {
+#homeworkTable {
   height: 720px;
   width: 1280px;
-}
-
-.halfPage {
-  width: 50%;
-  height: auto;
-  float: left;
 }
