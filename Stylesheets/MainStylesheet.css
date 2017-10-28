@@ -20,3 +20,40 @@ h2 {
   color: white;
   text-align: center;
 }
+
+.FancyButton {
+  font-family: 'Lato';
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  border: 2px solid white;
+  color: white;
+  padding: 6px 6px 20px 20px;
+  align-content: center;
+  transition: font-size 0.5s;
+  text-align: center;
+  margin: 0 auto;
+  width: 175px;
+  height: 20px;
+}
+
+.FancyButton:hover {
+  font-size: 25px;
+}
+
+.mobile {
+  display: none;
+}
+
+.notMobile {
+  display: block;
+}
+
+@media screen and (max-width: 670px) {
+  .notMobile {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}

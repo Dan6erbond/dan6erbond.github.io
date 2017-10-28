@@ -28,6 +28,11 @@
   padding: 20px;
 }
 
+.hobbyText .hobbyTitle {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 .buttonPlaceholder {
   width: 1050px;
   margin: 0 auto;
@@ -54,7 +59,7 @@
   background-position: 0 -100%;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .buttonPlaceholder {
     width: 90%;
     margin-right: 5%;
@@ -69,5 +74,8 @@
   .hobbyText {
     font-size: 15px;
     width: 75%;
+  }
+  .hobbyText .hobbyTitle {
+    font-size: 17px;
   }
 }

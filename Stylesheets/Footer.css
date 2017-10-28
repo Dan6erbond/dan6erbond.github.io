@@ -47,8 +47,7 @@ footer {
 }
 
 .mobileNav ul li a {
-  text-decoration;
-  none;
+  text-decoration: none;
   color: white;
   transition: color 1s;
 }
@@ -75,10 +74,13 @@ footer {
 }
 
 @media screen and (max-width: 670px) {
-  .footer {
-    display: none;
-  }
   .mobileNav {
     display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mobileNav ul li a {
+    font-size: 12px;
   }
 }

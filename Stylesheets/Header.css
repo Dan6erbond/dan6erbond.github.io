@@ -56,8 +56,23 @@
   font-size: 40px;
 }
 
-@media screen and (max-width: 670px) {
-  .sidenav {
-    display: none;
-  }
+.dropbtn .dropdownContent {
+  overflow: hidden;
+  left: 0px;
+  padding: 0px;
+  position: static;
+  max-height: 0px;
+  transition: all ease 1s;
+  width: auto;
+}
+
+.dropbtn .dropdownContent a {
+  display: inline-block;
+  padding: 5px;
+}
+
+.dropbtn:hover .dropdownContent {
+  padding-top: 10px;
+  height: auto;
+  max-height: 1000px;
 }
