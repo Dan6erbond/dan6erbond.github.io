@@ -41,6 +41,6 @@ xmlhttp.onreadystatechange = function() {
         }
     }
 };
-xmlhttp.open("GET", "/Documents/Zusammenfassungen/Zusammenfassungen.json", true);
+xmlhttp.open("GET", "Documents/Zusammenfassungen/Zusammenfassungen.json", true);
 xmlhttp.send();
 }
