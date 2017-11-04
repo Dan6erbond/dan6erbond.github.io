@@ -84,12 +84,8 @@ a {
   transition: font-size 0.5s;
   text-align: center;
   margin: 0 auto;
-  width: 750px;
+  width: 75%;
   height: 35px;
-}
-
-.FancyButton:hover {
-  font-size: 40px;
 }
 
 #Klassenfoto {
@@ -153,4 +149,10 @@ a {
 #homeworkTable {
   height: 720px;
   width: 1280px;
+}
+
+@media screen and (max-width: 550px){
+  .document{
+    width: 100%;
+  }
 }
