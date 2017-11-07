@@ -28,6 +28,7 @@ xmlhttp.onreadystatechange = function() {
             var downloadButton = document.createElement("a");
             downloadButton.classList.add("downloadButton");
             downloadButton.href = "Documents/Zusammenfassungen/" + zusammenfassung + ".pdf";
+            downloadButton.download = zusammenfassung;
             downloadButton.target = '_blank';
             downloadButton.innerHTML = '<i class="fa fa-download"></i>' + ' DOWNLOAD';
 

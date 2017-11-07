@@ -50,6 +50,7 @@ function GenerateDocument(element, documentName, documentPath) {
   download.innerHTML = '<i class="fa fa-download"></i> DOWNLOAD';
   download.href = documentPath;
   download.target = '_blank';
+  download.download = documentName;
   download.classList.add('downloadButton');
 
   element.appendChild(thumbnail);
