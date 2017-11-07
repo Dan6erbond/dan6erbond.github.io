@@ -157,6 +157,14 @@ a {
   width: 1280px;
 }
 
+.hide {
+  display: none;
+}
+
+:target {
+  display: block;
+}
+
 @media screen and (max-width: 550px){
   .document{
     width: 100%;
