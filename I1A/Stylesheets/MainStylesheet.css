@@ -124,6 +124,12 @@ a {
   width: 33.3333333333%;
 }
 
+.documentHolder {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .documentThumbnail {
   height: 100px;
   width: auto;
@@ -159,11 +165,13 @@ a {
 }
 
 .hide {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all ease 1s;
 }
 
 :target {
-  display: block;
+  max-height: 1000px;
 }
 
 @media screen and (max-width: 550px){
