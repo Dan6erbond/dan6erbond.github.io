@@ -86,6 +86,7 @@ a {
   margin: 0 auto;
   width: 75%;
   height: 35px;
+  transition: all ease 1s;
 }
 
 .FancyButton:hover {
