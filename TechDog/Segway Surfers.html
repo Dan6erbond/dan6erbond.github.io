@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <script src="/Scripts/w3.js"></script>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
@@ -14,23 +15,31 @@
 
     gtag('config', 'UA-108473273-1');
   </script>
-  
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
-    <title>TechDog | Segway Surfers</title>
+
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
+  <link href="/Stylesheets/Parallax.css" rel="stylesheet" />
+  <title>TechDog | Segway Surfers</title>
 </head>
+
 <body>
-    <div w3-include-html="Standard Elements/Header.html"></div>
+  <div class="vertical-menu" w3-include-html="Standard Elements/Navigation.html"></div>
 
-    <main>
-        <h1>Domination</h1>
-    </main>
+  <main>
+    <h1>Segway Surfers</h1>
 
-    <div w3-include-html="Standard Elements/Footer.html"></div>
+    <div class="parallax segwayParallax">
+    </div>
 
-    <script>
-        w3.includeHTML();
-    </script>
+    <p class="gameDescription">Play this end-less runner for the fun of it!</p>
+  </main>
+
+  <div w3-include-html="Standard Elements/Footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
 </body>
+
 </html>
