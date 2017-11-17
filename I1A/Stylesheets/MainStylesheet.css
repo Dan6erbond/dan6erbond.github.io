@@ -178,6 +178,12 @@ a {
   max-height: 1000px;
 }
 
+@media screen and (max-width: 650px){
+  .document{
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 550px){
   .document{
     width: 100%;
