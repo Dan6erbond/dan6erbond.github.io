@@ -39,6 +39,10 @@ body {
   font-size: 28px;
 }
 
+#Zusammenfassungen {
+  overflow: auto;
+}
+
 #WelcomeImage {
   height: 300px;
   width: auto;
