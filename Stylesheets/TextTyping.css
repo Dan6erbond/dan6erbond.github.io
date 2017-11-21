@@ -47,9 +47,6 @@
 
 @media screen and (max-width: 650px) {
   .typewriter {
-    font-size: 15px;
-  }
-  .homeTypewriter {
-    width: 500px;
+    display: none;
   }
 }

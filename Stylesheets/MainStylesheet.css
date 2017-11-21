@@ -3,10 +3,20 @@
 
 body {
   background-color: rgb(17, 20, 28);
+  animation: fade-in ease 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
 
 .sunsetImage {
-  background-image: url('../Images/Backgrounds/Sunset Panorama.png');
+  background-image: url('../Images/Backgrounds/Leaves.jpg');
 }
 
 .topImage {

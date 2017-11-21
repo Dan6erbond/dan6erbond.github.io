@@ -13,26 +13,21 @@
   display: block;
   margin: 0 auto;
   height: 200px;
-  padding: 20px 0px 0px 0px;
   width: 90%;
-  margin-top: 50px;
-}
-
-footer {
-  font-family: 'Lato';
-  background-color: #4CAF50;
-  border-radius: 15px 15px 0px 0px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: auto;
+  padding: 100px 0px 0px 40px;
 }
 
 .mobileNav {
-  height: 35px;
+  height: 50px;
   width: 100%;
-  display: none;
+  display: none;color: white;
+  font-family: 'Lato';
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px 15px 0px 0px;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
 }
 
 .mobileNav ul {
@@ -43,7 +38,7 @@ footer {
 
 .mobileNav ul li {
   float: left;
-  margin-right: 10px;
+  margin: 0px 10px 10px 0px;
 }
 
 .mobileNav ul li a {
@@ -57,12 +52,13 @@ footer {
 }
 
 .footer {
+  color: white;
   font-family: 'Lato';
-  background-color: #4CAF50;
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 15px 15px 0px 0px;
   position: fixed;
   left: 0;
-  height: auto;
+  height: 275px;
   width: 100%;
   overflow: hidden;
   bottom: -225px;

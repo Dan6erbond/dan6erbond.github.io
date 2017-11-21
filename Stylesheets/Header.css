@@ -10,7 +10,7 @@
   text-decoration: none;
   font-size: 20px;
   border-radius: 0 5px 5px 0;
-  background-color: #4CAF50;
+  background-color: rgba(0, 0, 0, 0.9);
   top: 150px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .sidenav div ul li a:hover {
-  color: rgb(48, 48, 48);
+  color: rgb(143, 143, 143);
 }
 
 .home {
@@ -64,6 +64,7 @@
   max-height: 0px;
   transition: all ease 1s;
   width: auto;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .dropbtn .dropdownContent a {
