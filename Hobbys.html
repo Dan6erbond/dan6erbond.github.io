@@ -22,6 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="Scripts/w3.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script src="Scripts/Hobbys.js"></script>
   <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
   <link href="Stylesheets/Hobbys.css" rel="stylesheet" />
@@ -54,30 +55,14 @@
 
     <br>
     <br>
+    
     <a class="mobile FancyButton" href="https://www.youtube.com/a47WojOuROM">Gittaren Video</a>
     <div class="notMobile iframeContainer">
       <iframe class="guitarVideo iframe" src="https://www.youtube.com/embed/a47WojOuROM" frameborder="0" allowfullscreen></iframe>
     </div>
-    <br>
-    <br>
 
-    <div id="kampfsport" class="parallax kampfsportParallax">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p class="hobbyText"><span class="hobbyTitle">Kampfsport</span><br><br>3 Jahre lang ging ich ins Judo nach Oftringen wo ich lernte, mich selber zu verteidigen und meinen Körper besser zu beherrschen. Ein wenig später fand ich den Karateclub in Zofingen und ich meldete mich dort an weil es mich mehr interessierte.<br><br>Ich
-        trainiere heute noch im Karateclub in Zofingen wo ich schon an mehreren Turnieren teilgenommen habe und schon eine Pokale gewonnen habe.</p>
-    </div>
+    <br>
+    <br>
 
     <div id="programmieren" class="parallax programmingParallax">
       <br>
@@ -90,8 +75,34 @@
         heute noch auf Google Play zu finden ist.<br><br>Ich arbeite momentan daran, eine App für Android zu erstellen die mir und anderen beim Schulalltag helfen sollte.<br><br>Diese Website habe ich mit HTML & CSS für die IMS erstellt.</p>
     </div>
 
+    <br>
+
+    <pre class="prettyprint" style="background-color: white;width: 600px; margin: 0 auto;">
+//WhatsApp Web Spammer
+
+//Insert this code in console to spam
+//the person currently open in WhatsApp Web
+
+setInterval(function sendMessage() {
+  var message = ""; //insert custom message to be spammed
+
+  var evt = new Event('input', {
+    bubbles: true
+  });
+
+  var input = document.getElementsByClassName('pluggable-input-body')[0];
+  input.innerHTML = message;
+  input.dispatchEvent(evt);
+
+  document.getElementsByClassName('compose-btn-send')[0].click();
+}, 1000); //set time interval of spam in miliseconds, to end spamming close window
+
+//enjoy!
+    </pre>
+
+    <br>
+
     <div id="digitaleMedien" class="parallax digitaleMedienParallax">
-      <br>
       <br>
       <br>
       <p class="hobbyText"><span class="hobbyTitle">Digitale Medien</span><br><br>Ich arbeite schon lange mit den verschiedensten Multimedia Programmen wie:<br><br>- Blender 3D<br>- Adobe Illustrator<br>-Adobe Premiere Pro<br>-Adobe PhotoShop<br>- ...<br><br>Mit Blender 3D areite ich am längsten.<br>Blender 3D ist ein Open-Source
@@ -129,27 +140,6 @@
         document.getElementsByTagName('iframe')[1].src = modelURL;
       }
     </script>
-
-    <div class="parallax reisenParallax">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p class="hobbyText">Ich reise sehr gerne mit dem Flugzeug.<br><br>Da wir Familie in Indien und den USA, sowie Kanada haben, reisen wir fast jedes Jahr zu einem dieser Orte. Letztes Jahr waren wir in Kanada & den USA. Meine Lieblings-Reise war als wir nach Hawaii gingen.</p>
-    </div>
   </main>
 
   <div w3-include-html="Standard Elements/Footer.html"></div>
