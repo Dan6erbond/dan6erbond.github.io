@@ -49,13 +49,13 @@
       <br>
       <br>
       <br>
-      <p class="hobbyText"><span class="hobbyTitle">Gittare</span><br><br>Schon seit der 3. Klasse in Mühlethal gehe ich nach Zofingen um bei meinem Gitarrenlehrer Sebastian Haas Gitarre zu lernen. Bis zur 5. Klasse habe ich die spanische Gitarre gespielt, danach habe ich mir die Rockson TL Series gekauft und spiele seit
-        dem die elektrische Gitarre. Ich spiele gerne Rock & Pop Lieder und habe schon an einigen Konzerten mitgespielt.</p>
+      <p class="hobbyText"><span class="hobbyTitle">Gittare</span><br><br>Schon seit der 3. Klasse in Mühlethal gehe ich nach Zofingen um bei meinem Gitarrenlehrer Sebastian Haas Gitarre zu lernen. Bis zur 5. Klasse habe ich die spanische Gitarre gespielt, danach habe ich
+        mir die Rockson TL Series gekauft und spiele seit dem die elektrische Gitarre. Ich spiele gerne Rock & Pop Lieder und habe schon an einigen Konzerten mitgespielt.</p>
     </div>
 
     <br>
     <br>
-    
+
     <a class="mobile FancyButton" href="https://www.youtube.com/a47WojOuROM">Gittaren Video</a>
     <div class="notMobile iframeContainer">
       <iframe class="guitarVideo iframe" src="https://www.youtube.com/embed/a47WojOuROM" frameborder="0" allowfullscreen></iframe>
@@ -71,33 +71,35 @@
       <br>
       <br>
       <br>
-      <p class="hobbyText"><span class="hobbyTitle">Programmieren</span><br><br>Seit der Bezirksschule lerne ich fortlaufend neue Programmiersprachen wie C#, JavaScript, Lua, HTML, CSS, Batch und mehr.<br><br>Ich habe als Projekt für die Bezirksschule ein Spiel für Android, Windows und OsX mit Unity & C# programmiert welches
-        heute noch auf Google Play zu finden ist.<br><br>Ich arbeite momentan daran, eine App für Android zu erstellen die mir und anderen beim Schulalltag helfen sollte.<br><br>Diese Website habe ich mit HTML & CSS für die IMS erstellt.</p>
+      <p class="hobbyText"><span class="hobbyTitle">Programmieren</span><br><br>Seit der Bezirksschule lerne ich fortlaufend neue Programmiersprachen wie C#, JavaScript, Lua, HTML, CSS, Batch und mehr.<br><br>Ich habe als Projekt für die Bezirksschule ein Spiel für Android,
+        Windows und OsX mit Unity & C# programmiert welches heute noch auf Google Play zu finden ist.<br><br>Ich arbeite momentan daran, eine App für Android zu erstellen die mir und anderen beim Schulalltag helfen sollte.<br><br>Diese Website habe ich
+        mit HTML & CSS für die IMS erstellt.</p>
     </div>
 
     <br>
 
-    <pre class="prettyprint" style="background-color: white;width: 600px; margin: 0 auto;">
-//WhatsApp Web Spammer
+    <pre class="prettyprint" style="background-color: white;width: 700px; margin: 0 auto;">
+      //WhatsApp Web Spammer
+      //Insert this code into console
 
-//Insert this code in console to spam
-//the person currently open in WhatsApp Web
+      var interval = parseInt (prompt('Please enter spam-interval:', ''));
+      var message = prompt('Please enter message to be spammed :)', '');
 
-setInterval(function sendMessage() {
-  var message = ""; //insert custom message to be spammed
+      window.setInterval(function(){
+            sendMessage();
+      }, interval); //interval to spam in miliseconds
 
-  var evt = new Event('input', {
-    bubbles: true
-  });
+      function sendMessage () {
+        var evt = new Event('input', {
+          bubbles: true
+        });
 
-  var input = document.getElementsByClassName('pluggable-input-body')[0];
-  input.innerHTML = message;
-  input.dispatchEvent(evt);
+        var input = document.getElementsByClassName('pluggable-input-body')[0];
+        input.innerHTML = message;
+        input.dispatchEvent(evt);
 
-  document.getElementsByClassName('compose-btn-send')[0].click();
-}, 1000); //set time interval of spam in miliseconds, to end spamming close window
-
-//enjoy!
+        document.getElementsByClassName('compose-btn-send')[0].click();
+      }
     </pre>
 
     <br>
@@ -105,9 +107,9 @@ setInterval(function sendMessage() {
     <div id="digitaleMedien" class="parallax digitaleMedienParallax">
       <br>
       <br>
-      <p class="hobbyText"><span class="hobbyTitle">Digitale Medien</span><br><br>Ich arbeite schon lange mit den verschiedensten Multimedia Programmen wie:<br><br>- Blender 3D<br>- Adobe Illustrator<br>-Adobe Premiere Pro<br>-Adobe PhotoShop<br>- ...<br><br>Mit Blender 3D areite ich am längsten.<br>Blender 3D ist ein Open-Source
-        3D-Modellier Programm mit welchem man 3D-Modelle erstellt die später in Spielen verwendet werden können oder mit einem 3D-Drucker ausgedruckt werden können. Ich habe meine Modelle schon in meinen Spiele verwendet und das Modell im Hintergrund
-        habe auch ich erstellt und in eineme Spiel namens 'Segway Surfers' verwendet.</p>
+      <p class="hobbyText"><span class="hobbyTitle">Digitale Medien</span><br><br>Ich arbeite schon lange mit den verschiedensten Multimedia Programmen wie:<br><br>- Blender 3D<br>- Adobe Illustrator<br>-Adobe Premiere Pro<br>-Adobe PhotoShop<br>- ...<br><br>Mit Blender 3D
+        areite ich am längsten.<br>Blender 3D ist ein Open-Source 3D-Modellier Programm mit welchem man 3D-Modelle erstellt die später in Spielen verwendet werden können oder mit einem 3D-Drucker ausgedruckt werden können. Ich habe meine Modelle schon
+        in meinen Spiele verwendet und das Modell im Hintergrund habe auch ich erstellt und in eineme Spiel namens 'Segway Surfers' verwendet.</p>
     </div>
 
     <br>
@@ -119,14 +121,14 @@ setInterval(function sendMessage() {
       <br>
       <br>
       <div class="buttonPlaceholder">
-          <a href="javascript:setModel('https://sketchfab.com/models/8d2584eb705747be9d557d6145d66021/embed');">Lincoln Memorial</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/ce4900b6703b433c94f4db65520a4473/embed');">Tank</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/b9ce84a10579407ea0d23d5d618424c3/embed');">Hoverboard</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/18af23ba639f4eceacd782023d258b41/embed');">Armoured Vehicle</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/bcf5d83bed5544598eb08d38deea5f73/embed');">World Map</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/a621b012add14d4bacbce347705a2cf9/embed');">Segway</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/d7e097e157c44e049662f7018a791c80/embed');">Humvee</a>
-          <a href="javascript:setModel('https://sketchfab.com/models/f528522571a04e4bb691e05fd66f6fc1/embed');">F-35 Lightning II</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/8d2584eb705747be9d557d6145d66021/embed');">Lincoln Memorial</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/ce4900b6703b433c94f4db65520a4473/embed');">Tank</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/b9ce84a10579407ea0d23d5d618424c3/embed');">Hoverboard</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/18af23ba639f4eceacd782023d258b41/embed');">Armoured Vehicle</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/bcf5d83bed5544598eb08d38deea5f73/embed');">World Map</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/a621b012add14d4bacbce347705a2cf9/embed');">Segway</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/d7e097e157c44e049662f7018a791c80/embed');">Humvee</a>
+        <a href="javascript:setModel('https://sketchfab.com/models/f528522571a04e4bb691e05fd66f6fc1/embed');">F-35 Lightning II</a>
       </div>
     </div>
     <br>
@@ -136,7 +138,7 @@ setInterval(function sendMessage() {
     <br>
 
     <script type="text/javascript">
-      function setModel (modelURL){
+      function setModel(modelURL) {
         document.getElementsByTagName('iframe')[1].src = modelURL;
       }
     </script>

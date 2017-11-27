@@ -8,14 +8,14 @@
 }
 
 .vertical-menu a {
-    color: black;
-    padding: 12px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
 }
 
 .vertical-menu .underlined {
-    border-bottom: solid black 1px;
+  border-bottom: solid black 1px;
 }
 
 .vertical-menu img {
@@ -24,10 +24,10 @@
 }
 
 .vertical-menu a:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 .vertical-menu a.active {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4CAF50;
+  color: white;
 }
