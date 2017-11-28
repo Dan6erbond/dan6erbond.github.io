@@ -79,62 +79,61 @@
     <br>
 
     <pre class="prettyprint" style="background-color: white;width: 700px; margin: 0 auto;">
-      //WhatsApp Web Spammer
-      //Insert this code into console
+//WhatsApp Web Spammer
+//Insert this code into console
 
-      var interval = parseInt (prompt('Please enter spam-interval:', ''));
-      var message = prompt('Please enter message to be spammed :)', '');
+var interval = parseInt (prompt('Please enter spam-interval:', ''));
+var message = prompt('Please enter message to be spammed :)', '');
 
-      window.setInterval(function(){
-            sendMessage();
-      }, interval); //interval to spam in miliseconds
+window.setInterval(function(){
+  sendMessage();
+}, interval);
 
-      function sendMessage () {
-        var evt = new Event('input', {
-          bubbles: true
-        });
+function sendMessage () {
+  var evt = new Event('input', {
+    bubbles: true
+  });
 
-        var input = document.getElementsByClassName('pluggable-input-body')[0];
-        input.innerHTML = message;
-        input.dispatchEvent(evt);
+  var input = document.getElementsByClassName('pluggable-input-body')[0];
+  input.innerHTML = message;
+  input.dispatchEvent(evt);
 
-        document.getElementsByClassName('compose-btn-send')[0].click();
-      }
+  document.getElementsByClassName('compose-btn-send')[0].click();
+}
     </pre>
 
     <br>
 
     <pre class="prettyprint" style="background-color: white;width: 700px; margin: 0 auto;">
       //schulNetz Durchschnitt Berechner
-      //Kopiere dieses Skript in die Konsole
+//Kopiere dieses Skript in die Konsole
 
-      var table = document.getElementsByClassName('list')[0];
+var table = document.getElementsByClassName('list')[0];
 
-      var tableRows = table.childNodes[1].childNodes;
-      var grades = [];
+var tableRows = table.childNodes[1].childNodes;
+var grades = [];
 
-      for (var i = 0; i < tableRows.length; i++) {
-        if (tableRows[i].childNodes[3] != null) {
-          var grade = parseFloat(tableRows[i].childNodes[3].innerHTML);
-          if (!isNaN(grade))
+for (var i = 0; i < tableRows.length; i++) {
+    if (tableRows[i].childNodes[3] != null) {
+        var grade = parseFloat(tableRows[i].childNodes[3].innerHTML);
+        if (!isNaN(grade))
             grades.push(grade);
-        }
-      }
+    }
+}
 
-      var sum = 0;
+var sum = 0;
 
-      for (var j = 0; j < grades.length; j++) {
-        sum += grades[j];
-      }
+for (var j = 0; j < grades.length; j++) {
+    sum += grades[j];
+}
 
-      var avg = sum / grades.length;
-      if (!isNaN(avg)){
-        var ul = document.getElementsByClassName('information')[0].childNodes[1];
-        var li = document.createElement('li');
-        var text = document.createTextNode('Dein Durchschnitt ist: ' + avg);
-        li.appendChild(text);
-        ul.appendChild (li);
-      }
+var avg = sum / grades.length;
+if (!isNaN(avg)){
+    var ul = document.getElementsByClassName('information')[0].childNodes[1];
+    var li = document.createElement('li');
+    li.innerHTML = 'Dein Durchschnitt ist: ' + avg;
+    ul.insertBefore (li, ul.childNodes[0]);
+}
     </pre>
 
     <br>
