@@ -128,8 +128,13 @@
       }
 
       var avg = sum / grades.length;
-      if (!isNaN(avg))
-        window.alert('Dein Durchschnitt ist: ' + avg);
+      if (!isNaN(avg)){
+        var ul = document.getElementsByClassName('information')[0].childNodes[1];
+        var li = document.createElement('li');
+        var text = document.createTextNode('Dein Durchschnitt ist: ' + avg);
+        li.appendChild(text);
+        ul.appendChild (li);
+      }
     </pre>
 
     <br>
