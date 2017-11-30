@@ -1,0 +1,26 @@
+.downloadButton {
+  display: block;
+  background: linear-gradient(to bottom right, black, grey);
+  border-radius: 5px;
+  height: 75px;
+  width: 300px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  color: white;
+}
+
+.downloadButton:hover {
+  background: linear-gradient(to bottom right, grey, black);
+}
+
+.downloadButton img {
+  float: left;
+  height: 65px;
+  margin: 5px 0px 0px 5px;
+  width: auto;
+}
+
+.downloadButton p {
+  padding: 27.5px 0px 0px 75px;
+  display: block;
+}

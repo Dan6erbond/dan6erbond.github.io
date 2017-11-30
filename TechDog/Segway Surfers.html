@@ -19,6 +19,7 @@
   <meta charset="utf-8" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
+  <link href="Stylesheets/DownloadButton.css" rel="stylesheet" />
   <link href="/Stylesheets/Parallax.css" rel="stylesheet" />
   <title>TechDog | Segway Surfers</title>
 </head>
@@ -33,6 +34,21 @@
     </div>
 
     <p class="gameDescription">Play this end-less runner for the fun of it!</p>
+
+    <h2>Downloads</h2>
+
+    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.TechDog.HandsFreeSegway" class="downloadButton">
+      <img src="Images/Logos/Google Play.png" alt="Download Segway Surfers for Android">
+      <p>Download for Android</p>
+    </a>
+
+    <script type="text/javascript">
+      var parallax = document.getElementsByClassName('segwayParallax')[0];
+      var width = parallax.clientWidth;
+      var height = width / 16 * 9;
+      var heightString = height + 'px';
+      parallax.style.height = heightString;
+    </script>
   </main>
 
   <div w3-include-html="Standard Elements/Footer.html"></div>
