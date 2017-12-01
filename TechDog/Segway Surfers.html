@@ -43,11 +43,17 @@
     </a>
 
     <script type="text/javascript">
-      var parallax = document.getElementsByClassName('parallax')[0];
-      var width = parallax.clientWidth;
-      var height = width / 16 * 9;
-      var heightString = height + 'px';
-      parallax.style.height = heightString;
+      window.onresize = resizeParallax;
+
+      resizeParallax();
+
+      function resizeParallax() {
+        var parallax = document.getElementsByClassName('parallax')[0];
+        var width = parallax.clientWidth;
+        var height = width / 16 * 9;
+        var heightString = height + 'px';
+        parallax.style.height = heightString;
+      }
     </script>
   </main>
 
