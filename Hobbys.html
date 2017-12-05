@@ -105,37 +105,77 @@ function sendMessage () {
     <br>
 
     <pre class="prettyprint" style="background-color: white;width: 700px; margin: 0 auto;">
-      //schulNetz Durchschnitt Berechner
+//schulNetz Durchschnitt Berechner
 //Kopiere dieses Skript in die Konsole
+//Dieses Skript ist auch für Tampermonkey verfügbar:
+//https://greasyfork.org/scripts/35796-schulnetz-durchschnitt-berechner/code/schulNetz%20Durchschnitt%20Berechner.user.js
 
+//Tabellen-Elemente
 var table = document.getElementsByClassName('list')[0];
-
 var tableRows = table.childNodes[1].childNodes;
+
+//Zahlen zur Berechnung des Durchschnitts
 var grades = [];
-
-for (var i = 0; i < tableRows.length; i++) {
-    if (tableRows[i].childNodes[3] != null) {
-        var grade = parseFloat(tableRows[i].childNodes[3].innerHTML);
-        if (!isNaN(grade))
-            grades.push(grade);
-    }
-}
-
 var sum = 0;
 
-for (var j = 0; j < grades.length; j++) {
+getGrades();
+
+function getGrades(){
+  for (var i = 0; i < tableRows.length; i++) {
+    if (tableRows[i].childNodes[3] != null) {
+      var grade = parseFloat(tableRows[i].childNodes[3].innerHTML);
+      if (isNaN(grade) && tableRows[i].childNodes[3].innerHTML != 'Notendurchschnitt') {
+        var input = document.createElement('input');
+        input.type = 'input';
+        input.onkeypress = function(){
+          addGrade(this, event);
+        };
+        tableRows[i].childNodes[3].innerHTML = '';
+        tableRows[i].childNodes[3].appendChild (input);
+      }
+      if (!isNaN(grade))
+        grades.push(grade);
+    }
+  }
+  calculateAverage();
+}
+
+function calculateAverage(){
+  sum = 0;
+
+  for (var j = 0; j < grades.length; j++) {
     sum += grades[j];
+  }
+
+  var avg = sum / grades.length;
+
+  insertAverage(avg);
 }
 
-var avg = sum / grades.length;
-if (!isNaN(avg)){
-    var ul = document.getElementsByClassName('information')[0].childNodes[1];
-    var li = document.createElement('li');
-    li.innerHTML = 'Dein Durchschnitt ist: ' + avg;
-    ul.insertBefore (li, ul.childNodes[0]);
+function insertAverage(avg){
+  if (!isNaN(avg)) {//Ist der Durchschnitt wirklich eine Zahl?
+    var avgUL = document.getElementById('avg');
+    if(avgUL == null){//Existiert das Durchschnitts-Element schon?
+      var ul = document.getElementsByClassName('information')[0].childNodes[1];
+      var li = document.createElement('li');
+      li.id = 'avg';
+      li.innerHTML = 'Dein Durchschnitt ist: ' + avg;
+      ul.insertBefore(li, ul.childNodes[0]);
+    } else {//Nein?
+      avgUL.innerHTML = 'Dein Durchschnitt ist: ' + avg;
+    }
+  }
 }
 
-//Tampermonkey-Link: https://greasyfork.org/scripts/35796-schulnetz-durchschnitt-berechner/code/schulNetz%20Durchschnitt%20Berechner.user.js
+function addGrade(element, event){
+  if(event.keyCode == 13){
+    var grade = element.value;
+    element.readOnly = true;
+    if (!isNaN(grade))
+      grades.push(parseFloat(grade));
+    calculateAverage();
+  }
+}
     </pre>
 
     <br>
