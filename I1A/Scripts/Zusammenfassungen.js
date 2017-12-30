@@ -16,19 +16,18 @@ xmlhttp.onreadystatechange = function() {
             placeholder.classList.add("third");
 
             var img = document.createElement("img");
-            img.classList.add("documentThumbnail");
+            img.classList.add("zusammenfassungThumbnail");
             img.src = "Documents/Images/Zusammenfassung Thumbnail.png";
             img.alt = zusammenfassung;
 
             var title = document.createElement("p");
-            var titleText = document.createTextNode(zusammenfassung);
-            title.classList.add("documentTitle");
-            title.appendChild(titleText);
+            var titleString = zusammenfassung.fach + "<br><u>" + zusammenfassung.thema + "</u><br>" + zusammenfassung.datum;
+            title.innerHTML = titleString;
 
             var downloadButton = document.createElement("a");
             downloadButton.classList.add("downloadButton");
-            downloadButton.href = "Documents/Zusammenfassungen/" + zusammenfassung + ".pdf";
-            downloadButton.download = zusammenfassung;
+            downloadButton.href = "Documents/Zusammenfassungen/" + zusammenfassung.fach + " - " + zusammenfassung.thema + ".pdf";
+            downloadButton.download = zusammenfassung.fach + " - " + zusammenfassung.thema + ".pdf";
             downloadButton.target = '_blank';
             downloadButton.innerHTML = '<i class="fa fa-download"></i>' + ' DOWNLOAD';
 
