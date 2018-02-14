@@ -16,7 +16,12 @@ function UpdateZusammenfassungen() {
 
         var img = document.createElement("img");
         img.classList.add("zusammenfassungThumbnail");
-        img.src = "Documents/Images/Zusammenfassung Thumbnail.png";
+        var src = "Documents/Images/Zusammenfassung Thumbnail.png";
+        if(zusammenfassung.autor == "Aron Eggenberger")
+          src = "Documents/Images/Zusammenfassung Thumbnail - Aron.png";
+        if(zusammenfassung.autor == "Albion Spahija")
+          src = "Documents/Images/Zusammenfassung Thumbnail - Albion.png";
+        img.src = src;
         img.alt = zusammenfassung;
 
         var title = document.createElement("p");
