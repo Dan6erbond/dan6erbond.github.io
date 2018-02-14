@@ -1,19 +1,109 @@
-﻿[
-	{"fach":"Geschichte", "thema":"1. Weltkrieg", "datum":"21.09.2017"},
-	{"fach":"FRW", "thema":"Kapitel 1", "datum":"20.10.2017"},
-	{"fach":"Wirtschaft", "thema":"Bedürfnisse und Wirtschaft", "datum":"26.10.2017"},
-	{"fach":"Wirtschaft", "thema":"Unternehmungsmodell", "datum":"26.10.2017"},
-	{"fach":"Geografie", "thema":"Wetter & Klima - Albion", "datum":"27.10.2017"},
-	{"fach":"Geografie", "thema":"Wetter & Klima", "datum":"27.10.2017"},
-	{"fach":"Chemie", "thema":"Die Welt der Stoffe", "datum":"02.11.2017"},
-	{"fach":"Chemie", "thema":"Stoffeinteilung", "datum":"02.11.2017"},
-	{"fach":"Chemie", "thema":"Teilchenmodell", "datum":"02.11.2017"},
-	{"fach":"Chemie", "thema":"Chemische Berechnungen", "datum":"02.11.2017"},
-	{"fach":"Chemie", "thema":"Chemische Sprache und Reaktionsgleichungen", "datum":"02.11.2017"},
-	{"fach":"Biologie", "thema":"Mikroskopieren", "datum":"20.11.2017"},
-	{"fach":"Biologie", "thema":"Zellbiologie", "datum":"20.11.2017"},
-	{"fach":"Informatik", "thema":"M114", "datum":"21.11.2017"},
-	{"fach":"Wirtschaft", "thema":"Organisation", "datum":"14.12.2017"},
-	{"fach":"Wirtschaft", "thema":"Recht", "datum":"14.12.2017"},
-	{"fach":"Geografie", "thema":"Klimazonen & Klimawandel", "datum":"22.12.2017"}
+﻿[{
+		"fach": "Geschichte",
+		"thema": "1. Weltkrieg",
+		"datum": "21.09.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "FRW",
+		"thema": "Kapitel 1",
+		"datum": "20.10.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Wirtschaft",
+		"thema": "Bedürfnisse und Wirtschaft",
+		"datum": "26.10.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Wirtschaft",
+		"thema": "Unternehmungsmodell",
+		"datum": "26.10.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Geografie",
+		"thema": "Wetter & Klima",
+		"datum": "27.10.2017",
+		"autor": "Albion Spahija"
+	},
+	{
+		"fach": "Geografie",
+		"thema": "Wetter & Klima",
+		"datum": "27.10.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Die Welt der Stoffe",
+		"datum": "02.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Stoffeinteilung",
+		"datum": "02.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Teilchenmodell",
+		"datum": "02.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Chemische Berechnungen",
+		"datum": "02.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Chemische Sprache und Reaktionsgleichungen",
+		"datum": "02.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Biologie",
+		"thema": "Mikroskopieren",
+		"datum": "20.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Biologie",
+		"thema": "Zellbiologie",
+		"datum": "20.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Informatik",
+		"thema": "M114",
+		"datum": "21.11.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Wirtschaft",
+		"thema": "Organisation",
+		"datum": "14.12.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Wirtschaft",
+		"thema": "Recht",
+		"datum": "14.12.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Geografie",
+		"thema": "Klimazonen & Klimawandel",
+		"datum": "22.12.2017",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "FRW",
+		"thema": "Kalkulation",
+		"datum": "",
+		"autor": "Aron Eggenberger"
+	}
 ]
