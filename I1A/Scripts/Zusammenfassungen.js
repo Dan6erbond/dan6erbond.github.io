@@ -26,7 +26,10 @@ xmlhttp.onreadystatechange = function() {
 
             var downloadButton = document.createElement("a");
             downloadButton.classList.add("downloadButton");
-            downloadButton.href = "Documents/Zusammenfassungen/" + zusammenfassung.fach + " - " + zusammenfassung.thema + ".pdf";
+            var link = "Documents/Zusammenfassungen/" + zusammenfassung.fach + " - " + zusammenfassung.thema + ".pdf";
+            if(zusammenfassung.autor != "RaviAnand Mohabir")
+              link = "Documents/Zusammenfassungen/" + zusammenfassung.fach + " - " + zusammenfassung.thema + " - " + zusammenfassung.autor + ".pdf";
+            downloadButton.href = link;
             downloadButton.download = zusammenfassung.fach + " - " + zusammenfassung.thema + ".pdf";
             downloadButton.target = '_blank';
             downloadButton.innerHTML = '<i class="fa fa-download"></i>' + ' DOWNLOAD';
