@@ -17,10 +17,8 @@ function UpdateZusammenfassungen() {
         var img = document.createElement("img");
         img.classList.add("zusammenfassungThumbnail");
         var src = "Documents/Images/Zusammenfassung Thumbnail.png";
-        if(zusammenfassung.autor == "Aron Eggenberger")
-          src = "Documents/Images/Zusammenfassung Thumbnail - Aron.png";
-        if(zusammenfassung.autor == "Albion Spahija")
-          src = "Documents/Images/Zusammenfassung Thumbnail - Albion.png";
+		if (zusammenfassung.autor != "RaviAnand Mohabir")
+          src = "Documents/Images/Zusammenfassung Thumbnail" + " - " + zusammenfassung.autor + ".png";
         img.src = src;
         img.alt = zusammenfassung;
 
