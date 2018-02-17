@@ -105,5 +105,23 @@
 		"thema": "Kalkulation",
 		"datum": "",
 		"autor": "Aron Eggenberger"
+	},
+	{
+		"fach": "Geschichte",
+		"thema": "Weltwirtschaftskrise",
+		"datum": "22.02.2018",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Geschichte",
+		"thema": "Russische Revolution",
+		"datum": "22.02.2018",
+		"autor": "Russische Revolution"
+	},
+	{
+		"fach": "Geschichte",
+		"thema": "Weltwirtschaftskrise",
+		"datum": "22.02.2018",
+		"autor": "Alexander Greuter"
 	}
 ]
