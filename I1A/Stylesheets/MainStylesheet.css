@@ -171,9 +171,9 @@ a {
   height: auto;
 }
 
-#homeworkTable {
-  height: 720px;
-  width: 1280px;
+#homeworkTable tr td {
+  border-bottom: solid black 1px;
+  padding: 5px 10px 5px 10px;
 }
 
 .hide {
