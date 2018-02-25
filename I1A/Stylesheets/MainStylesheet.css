@@ -178,6 +178,7 @@ a {
 
 #homeworkTable tr th {
   padding-bottom: 10px;
+  border-bottom: solid black 2px;
 }
 
 .hide {
