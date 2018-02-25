@@ -8,7 +8,7 @@ function UpdateHomework() {
     if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText)[''];
       for (var i = 0; i < myArr.length; i++) {
-        var table = document.getElementById('homeworkTable');
+        var table = document.getElementById('homeworkTable').childNodes[0];
         var tableRow = document.createElement('tr');
         var date = document.createElement('td');
         var subject = document.createElement('td');
