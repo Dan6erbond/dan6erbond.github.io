@@ -8,18 +8,14 @@ function UpdateHomework() {
     if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
       for (var i = 0; i < myArr.length; i++) {
-        var table = document.getElementById('homeworkTable');
-        var tableRow = document.createElement('tr');
-        var date = document.createElement('td');
-        var subject = document.createElement('td');
-        var job = document.createElement('td');
+        var table = document.getElementById('homeworkTable').getElementsByTagName('tbody')[0];
+        var tableRow = table.insertRow();
+        var date = tableRow.insertCell();
+        var subject = tableRow.insertCell();
+        var job = tableRow.insertCell();
         date.innerHTML = myArr[i].datum;
         subject.innerHTML = myArr[i].fach;
         job.innerHTML = myArr[i].aufgabe;
-        tableRow.appendChild(date);
-        tableRow.appendChild(subject);
-        tableRow.appendChild(job);
-        table.appendChild(tableRow);
       }
     }
   };
