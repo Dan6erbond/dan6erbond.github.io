@@ -9,17 +9,13 @@ function UpdateHomework() {
       var myArr = JSON.parse(this.responseText)[''];
       for (var i = 0; i < myArr.length; i++) {
         var table = document.getElementById('homeworkTable').childNodes[0];
-        var tableRow = document.createElement('tr');
-        var date = document.createElement('td');
-        var subject = document.createElement('td');
-        var job = document.createElement('td');
+        var tableRow = table.insertRow(tableRef.rows.length);
+        var date = tableRow.insertCell(0);
+        var subject = tableRow.insertCell(1);
+        var job = tableRow.insertCell(2);
         date.innerHTML = myArr[i].datum;
         subject.innerHTML = myArr[i].fach;
         job.innerHTML = myArr[i].aufgabe;
-        tableRow.appendChild(date);
-        tableRow.appendChild(subject);
-        tableRow.appendChild(job);
-        table.appendChild(tableRow);
       }
     }
   };
