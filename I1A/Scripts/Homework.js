@@ -23,6 +23,6 @@ function UpdateHomework() {
       }
     }
   };
-  xmlhttp.open("GET", "http://cors.io/?http://dan6erbond.bplaced.net/Hausaufgaben.json", true);
+  xmlhttp.open("GET", "https://cors.io/?http://dan6erbond.bplaced.net/Hausaufgaben.json", true);
   xmlhttp.send();
 }
