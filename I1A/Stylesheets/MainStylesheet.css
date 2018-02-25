@@ -171,14 +171,16 @@ a {
   height: auto;
 }
 
+#homeworkTable tr {
+    border-bottom: solid black 1px;
+}
+
 #homeworkTable tr td {
-  border-bottom: solid black 1px;
   padding: 5px 10px 5px 10px;
 }
 
 #homeworkTable tr th {
   padding-bottom: 10px;
-  border-bottom: solid black 2px;
 }
 
 .hide {
