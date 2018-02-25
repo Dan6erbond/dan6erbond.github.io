@@ -172,7 +172,8 @@ a {
 }
 
 #homeworkTable {
-    margin-left: 20px;
+    border-collapse: collapse;
+    margin-left: 40px;
 }
 
 #homeworkTable tbody tr {
