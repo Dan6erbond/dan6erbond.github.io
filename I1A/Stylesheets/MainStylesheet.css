@@ -171,6 +171,10 @@ a {
   height: auto;
 }
 
+#homeworkTable {
+    margin-left: 20px;
+}
+
 #homeworkTable tr {
     border-bottom: solid black 1px;
 }
