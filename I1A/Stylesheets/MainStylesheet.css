@@ -175,15 +175,15 @@ a {
     margin-left: 20px;
 }
 
-#homeworkTable tr {
+#homeworkTable tbody tr {
     border-bottom: solid black 1px;
 }
 
-#homeworkTable tr td {
+#homeworkTable tbody tr td {
   padding: 5px 10px 5px 10px;
 }
 
-#homeworkTable tr th {
+#homeworkTable tbody tr th {
   padding-bottom: 10px;
 }
 
