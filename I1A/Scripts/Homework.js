@@ -19,6 +19,6 @@ function UpdateHomework() {
       }
     }
   };
-  xmlhttp.open("GET", "http://cors-anywhere.herokuapp.com/http://dan6erbond.bplaced.net/Hausaufgaben.json", true);
+  xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/http://dan6erbond.bplaced.net/Hausaufgaben.json", true);
   xmlhttp.send();
 }
