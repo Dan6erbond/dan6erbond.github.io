@@ -38,7 +38,7 @@ function GenerateDocument(element, documentName, documentPath) {
     thumbnail.src = 'Documents/Images/ZIP Thumbnail.png';
   if (documentPath.indexOf('pptx') >= 0)
     thumbnail.src = 'Documents/Images/PowerPoint Thumbnail.png';
-  if (documentPath.indexOf('schoolhelper') >= 0 && documentPath.indexOf('SchoolHelper') >= 0)
+  if (documentPath.indexOf('schoolhelper') >= 0 || documentPath.indexOf('SchoolHelper') >= 0)
     thumbnail.src = 'Images/SchoolHelper.png';
   thumbnail.alt = documentName;
   thumbnail.classList.add('documentThumbnail');
