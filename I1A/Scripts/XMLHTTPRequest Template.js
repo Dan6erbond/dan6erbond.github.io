@@ -1,0 +1,8 @@
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.open("PUT", "https://api.myjson.com/bins/1h8sp7", true);
+xmlhttp.setRequestHeader('Content-type','application/json; charset=utf-8');
+xmlhttp.send("[{\"datum\":\"15.03.2018\",\"fach\":\"Deutsch\",\"aufgabe\":\"Sunrise bis S. 84 lesen\"},{\"datum\":\"15.03.2018\",\"fach\":\"Geschichte\",\"aufgabe\":\"Laptop mitnehmen\"},{\"datum\":\"16.03.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 81 lesen\"},{\"datum\":\"20.03.2018\",\"fach\":\"Informatik\",\"aufgabe\":\"LA_404_1704_Sch\u00FCler_erfassen\"},{\"datum\":\"20.03.2018\",\"fach\":\"Informatik\",\"aufgabe\":\"9910 und 1704\"},{\"datum\":\"22.03.2018\",\"fach\":\"ETEU: Chemie\",\"aufgabe\":\"Buch lesen + A Aufgaben l\u00F6sen\"},{\"datum\":\"06.04.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 137 lesen\"},{\"datum\":\"04.05.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 157 lesen\"},{\"datum\":\"11.05.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 176 lesen\"},{\"datum\":\"18.05.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 205 lesen\"},{\"datum\":\"25.05.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 221 lesen\"},{\"datum\":\"01.06.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 242 lesen\"},{\"datum\":\"08.06.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 256 lesen\"},{\"datum\":\"15.06.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 278 lesen\"},{\"datum\":\"22.06.2018\",\"fach\":\"Englisch\",\"aufgabe\":\"Eye of Minds bis S. 299 lesen\"}]");
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "https://api.myjson.com/bins/1h8sp7", true);
+xmlhttp.send();
