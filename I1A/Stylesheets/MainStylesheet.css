@@ -188,6 +188,30 @@ a {
   padding-bottom: 10px;
 }
 
+#homeworkDate {
+  border-radius: 5px;
+  height: 20px;
+  border-color: #173e43;
+}
+
+#homeworkSubject {
+  border-radius: 5px;
+  height: 20px;
+  border-color: #173e43;
+}
+
+#homeworkJob {
+  border-radius: 5px;
+  height: 20px;
+  border-color: #173e43;
+}
+
+#homeworkAdd {
+    border-radius: 5px;
+    height: 20px;
+    border-color: #173e43;
+}
+
 .hide {
   max-height: 0px;
   overflow: hidden;
