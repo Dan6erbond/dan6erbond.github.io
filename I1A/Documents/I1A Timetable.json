@@ -98,7 +98,56 @@
             "endTime":"08:30:00",
             "location":"location",
             "startTime":"07:45:00",
-            "subject":"subject",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"08:35:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"09:30:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"10:30:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"11:25:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"14:00:00",
+            "subject":"Englisch",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"14:55:00",
+            "subject":"Mathematik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"15:50:00",
+            "subject":"Finanz- und Rechnungswesen",
             "teacher":"teacher"
          }
       ]
