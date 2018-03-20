@@ -1,55 +1,11 @@
-﻿{
-   "endTimes":[
-      "08:30:00"
-   ],
-   "friday":{
-      "classes":[
-         {
-            "endTime":"08:30:00",
-            "location":"location",
-            "startTime":"07:45:00",
-            "subject":"subject",
-            "teacher":"teacher"
-         }
-      ]
-   },
-   "monday":{
-      "classes":[
-         {
-            "endTime":"08:30:00",
-            "location":"location",
-            "startTime":"07:45:00",
-            "subject":"subject",
-            "teacher":"teacher"
-         }
-      ]
-   },
-   "saturday":{
-      "classes":[
-         {
-            "endTime":"08:30:00",
-            "location":"location",
-            "startTime":"07:45:00",
-            "subject":"subject",
-            "teacher":"teacher"
-         }
-      ]
-   },
+{
    "startTimes":[
       "07:45:00"
    ],
-   "sunday":{
-      "classes":[
-         {
-            "endTime":"08:30:00",
-            "location":"location",
-            "startTime":"07:45:00",
-            "subject":"subject",
-            "teacher":"teacher"
-         }
-      ]
-   },
-   "thursday":{
+   "endTimes":[
+      "08:30:00"
+   ],
+   "monday":{
       "classes":[
          {
             "endTime":"08:30:00",
@@ -72,6 +28,50 @@
       ]
    },
    "wednesday":{
+      "classes":[
+         {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"07:45:00",
+            "subject":"subject",
+            "teacher":"teacher"
+         }
+      ]
+   },
+   "thursday":{
+      "classes":[
+         {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"07:45:00",
+            "subject":"subject",
+            "teacher":"teacher"
+         }
+      ]
+   },
+   "friday":{
+      "classes":[
+         {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"07:45:00",
+            "subject":"subject",
+            "teacher":"teacher"
+         }
+      ]
+   },
+   "saturday":{
+      "classes":[
+         {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"07:45:00",
+            "subject":"subject",
+            "teacher":"teacher"
+         }
+      ]
+   },
+   "sunday":{
       "classes":[
          {
             "endTime":"08:30:00",
