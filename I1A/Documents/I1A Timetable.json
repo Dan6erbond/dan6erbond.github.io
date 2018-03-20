@@ -158,7 +158,56 @@
             "endTime":"08:30:00",
             "location":"location",
             "startTime":"07:45:00",
-            "subject":"subject",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"08:35:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"09:30:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"10:30:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"11:25:00",
+            "subject":"Informatik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"13:05:00",
+            "subject":"Abteilungsstunde",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"14:00:00",
+            "subject":"Finanz- und Rechnungswesen",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"14:55:00",
+            "subject":"Französisch",
             "teacher":"teacher"
          }
       ]
@@ -186,25 +235,9 @@
       ]
    },
    "saturday":{
-      "classes":[
-         {
-            "endTime":"08:30:00",
-            "location":"location",
-            "startTime":"07:45:00",
-            "subject":"subject",
-            "teacher":"teacher"
-         }
-      ]
+      "classes":[]
    },
    "sunday":{
-      "classes":[
-         {
-            "endTime":"08:30:00",
-            "location":"location",
-            "startTime":"07:45:00",
-            "subject":"subject",
-            "teacher":"teacher"
-         }
-      ]
+      "classes":[]
    }
 }
