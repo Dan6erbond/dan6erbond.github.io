@@ -1,6 +1,6 @@
 {
    "startTimes":[
-      "07:45:00",
+	   "07:45:00",
 	   "08:35:00",
 	   "09:30:00",
 	   "10:30:00",
@@ -13,7 +13,17 @@
 	   "16:45:00"
    ],
    "endTimes":[
-      "08:30:00"
+	   "08:30:00",
+	   "09:20:00",
+	   "10:15:00",
+	   "11:15:00",
+	   "12:10:00",
+	   "13:00:00",
+	   "13:50:00",
+	   "14:45:00",
+	   "15:40:00",
+	   "16:35:00",
+	   "17:30:00"
    ],
    "monday":{
       "classes":[
@@ -21,7 +31,63 @@
             "endTime":"08:30:00",
             "location":"location",
             "startTime":"07:45:00",
-            "subject":"subject",
+            "subject":"Wirtschaft und Recht",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"08:35:00",
+            "subject":"Geschichte und Politik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"09:30:00",
+            "subject":"Finanz- und Rechnungswesen",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"10:30:00",
+            "subject":"Französisch",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"11:25:00",
+            "subject":"Mathematik",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"13:05:00",
+            "subject":"ETEU: Biologie",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"14:00:00",
+            "subject":"Deutsch",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"15:50:00",
+            "subject":"Sport",
+            "teacher":"teacher"
+         },
+		 {
+            "endTime":"08:30:00",
+            "location":"location",
+            "startTime":"16:45:00",
+            "subject":"Sport",
             "teacher":"teacher"
          }
       ]
