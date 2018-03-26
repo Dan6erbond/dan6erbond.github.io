@@ -103,7 +103,7 @@
 	{
 		"fach": "FRW",
 		"thema": "Kalkulation",
-		"datum": "",
+		"datum": "21.03.2018",
 		"autor": "Aron Eggenberger"
 	},
 	{
@@ -135,12 +135,17 @@
 		"thema": "M431",
 		"datum": "14.03.2018",
 		"autor": "RaviAnand Mohabir"
-	},
-	
+	},	
 	{
 		"fach": "Informatik",
 		"thema": "M117",
 		"datum": "21.03.2018",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Wirtschaft",
+		"thema": "ZGB & OR",
+		"datum": "29.03.2018",
 		"autor": "RaviAnand Mohabir"
 	}
 ]
