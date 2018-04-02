@@ -153,5 +153,17 @@
 		"thema": "ZGB & OR",
 		"datum": "29.03.2018",
 		"autor": "Aron Eggenberger"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Kohlenstoffdioxid-Kreislauf",
+		"datum": "05.04.2018",
+		"autor": "RaviAnand Mohabir"
+	},
+	{
+		"fach": "Chemie",
+		"thema": "Atomaufbau und Periodensystem",
+		"datum": "05.04.2018",
+		"autor": "RaviAnand Mohabir"
 	}
 ]
