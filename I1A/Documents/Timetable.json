@@ -29,66 +29,66 @@
       "classes":[
          {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"17",
             "startTime":"07:45:00",
             "subject":"Wirtschaft und Recht",
-            "teacher":"teacher"
+            "teacher":"Daniel Schneeberger"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"33",
             "startTime":"08:35:00",
             "subject":"Geschichte und Politik",
-            "teacher":"teacher"
+            "teacher":"Peter Sutter"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"39",
             "startTime":"09:30:00",
             "subject":"Finanz- und Rechnungswesen",
-            "teacher":"teacher"
+            "teacher":"Lil Klink"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"221",
             "startTime":"10:30:00",
             "subject":"Französisch",
-            "teacher":"teacher"
+            "teacher":"Loredana Arleo"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"222",
             "startTime":"11:25:00",
             "subject":"Mathematik",
-            "teacher":"teacher"
+            "teacher":"Graf Matthias"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"236",
             "startTime":"13:05:00",
             "subject":"ETEU: Biologie",
-            "teacher":"teacher"
+            "teacher":"Daniel Blanc"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"14",
             "startTime":"14:00:00",
             "subject":"Deutsch",
-            "teacher":"teacher"
+            "teacher":"Markus Bundi"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"Telli",
             "startTime":"15:50:00",
             "subject":"Sport",
-            "teacher":"teacher"
+            "teacher":"Sportlehrer"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"Telli",
             "startTime":"16:45:00",
             "subject":"Sport",
-            "teacher":"teacher"
+            "teacher":"Sportlehrer"
          }
       ]
    },
@@ -96,59 +96,59 @@
       "classes":[
          {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"412",
             "startTime":"07:45:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Alexander Flick"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"412",
             "startTime":"08:35:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Alexander Flick"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"412",
             "startTime":"09:30:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Alexander Flick"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"412",
             "startTime":"10:30:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Alexander Flick"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"412",
             "startTime":"11:25:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Alexander Flick"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"262",
             "startTime":"14:00:00",
             "subject":"Englisch",
-            "teacher":"teacher"
+            "teacher":"Marielle Guignard"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"222",
             "startTime":"14:55:00",
             "subject":"Mathematik",
-            "teacher":"teacher"
+            "teacher":"Graf Matthias"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"39",
             "startTime":"15:50:00",
             "subject":"Finanz- und Rechnungswesen",
-            "teacher":"teacher"
+            "teacher":"Lil Klink"
          }
       ]
    },
@@ -156,59 +156,59 @@
       "classes":[
          {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"427",
             "startTime":"07:45:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Lars Meyer"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"427",
             "startTime":"08:35:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Lars Meyer"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"427",
             "startTime":"09:30:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Lars Meyer"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"427",
             "startTime":"10:30:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Lars Meyer"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"427",
             "startTime":"11:25:00",
             "subject":"Informatik",
-            "teacher":"teacher"
+            "teacher":"Lars Meyer"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"39",
             "startTime":"13:05:00",
             "subject":"Abteilungsstunde",
-            "teacher":"teacher"
+            "teacher":"Lil Klink"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"39",
             "startTime":"14:00:00",
             "subject":"Finanz- und Rechnungswesen",
-            "teacher":"teacher"
+            "teacher":"Lil Klink"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"228",
             "startTime":"14:55:00",
             "subject":"Französisch",
-            "teacher":"teacher"
+            "teacher":"Loredana Arleo"
          }
       ]
    },
@@ -216,52 +216,52 @@
       "classes":[
          {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"14",
             "startTime":"07:45:00",
             "subject":"Deutsch",
-            "teacher":"teacher"
+            "teacher":"Markus Bundi"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"5",
             "startTime":"08:35:00",
             "subject":"Geschichte und Politik",
-            "teacher":"teacher"
+            "teacher":"Peter Sutter"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"221",
             "startTime":"09:30:00",
             "subject":"Französisch",
-            "teacher":"teacher"
+            "teacher":"Loredana Arleo"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"244",
             "startTime":"12:15:00",
             "subject":"ETEU: Chemie",
-            "teacher":"teacher"
+            "teacher":"Claudia Wyler"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"29",
             "startTime":"13:05:00",
             "subject":"Englisch",
-            "teacher":"teacher"
+            "teacher":"Marielle Guignard"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"16",
             "startTime":"14:00:00",
             "subject":"Wirtschaft und Recht",
-            "teacher":"teacher"
+            "teacher":"Daniel Schneeberger"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"16",
             "startTime":"14:55:00",
             "subject":"Wirtschaft und Recht",
-            "teacher":"teacher"
+            "teacher":"Daniel Schneeberger"
          }
       ]
    },
@@ -269,38 +269,38 @@
       "classes":[
          {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"20",
             "startTime":"08:35:00",
             "subject":"ETEU: Geografie",
-            "teacher":"teacher"
+            "teacher":"Hans Jäger"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"29",
             "startTime":"09:30:00",
             "subject":"Englisch",
-            "teacher":"teacher"
+            "teacher":"Marielle Guignard"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"214",
             "startTime":"11:25:00",
             "subject":"Mathematik",
-            "teacher":"teacher"
+            "teacher":"Matthias Graf"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"515",
             "startTime":"14:00:00",
             "subject":"Deutsch",
-            "teacher":"teacher"
+            "teacher":"Markus Bundi"
          },
 		 {
             "endTime":"08:30:00",
-            "location":"location",
+            "location":"515",
             "startTime":"14:55:00",
             "subject":"Deutsch",
-            "teacher":"teacher"
+            "teacher":"Markus Bundi"
          }
       ]
    },
