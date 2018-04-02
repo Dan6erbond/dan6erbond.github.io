@@ -34,7 +34,13 @@ function AddHomework() {
   var date = new Date(document.getElementById("homeworkDate").value + 'T00:00');
   if(isNaN(date.getDate()) || isNaN(date.getMonth()) || isNaN(date.getFullYear()) || document.getElementById("homeworkJob").value == "")
     return;
-  var dateString = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
+  var day = date.getDate();
+  if(day < 10)
+    day = "0" + day;
+  var month = date.getMonth() + 1;
+  if(month < 10)
+    month = "0" + month;
+  var dateString = day + "." + month + "." + date.getFullYear();
   homework.datum = dateString;
   homework.fach = document.getElementById("homeworkSubject").value;
   homework.aufgabe = document.getElementById("homeworkJob").value;
