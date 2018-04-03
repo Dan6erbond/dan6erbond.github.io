@@ -5,7 +5,7 @@
       "startTime":"07:45:00",
       "subject":"Wirtschaft und Recht",
       "teacher":"Daniel Schneeberger",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -13,7 +13,7 @@
       "startTime":"08:35:00",
       "subject":"Geschichte und Politik",
       "teacher":"Peter Sutter",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -21,7 +21,7 @@
       "startTime":"09:30:00",
       "subject":"Finanz- und Rechnungswesen",
       "teacher":"Lil Klink",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -29,7 +29,7 @@
       "startTime":"10:30:00",
       "subject":"Französisch",
       "teacher":"Loredana Arleo",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -37,7 +37,7 @@
       "startTime":"11:25:00",
       "subject":"Mathematik",
       "teacher":"Graf Matthias",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -45,7 +45,7 @@
       "startTime":"13:05:00",
       "subject":"ETEU: Biologie",
       "teacher":"Daniel Blanc",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -53,7 +53,7 @@
       "startTime":"14:00:00",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -61,7 +61,7 @@
       "startTime":"15:50:00",
       "subject":"Sport",
       "teacher":"Sportlehrer",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -69,7 +69,7 @@
       "startTime":"16:45:00",
       "subject":"Sport",
       "teacher":"Sportlehrer",
-	   "day":"monday"
+	   "day":"0"
    },
    {
       "endTime":"08:30:00",
@@ -77,7 +77,7 @@
       "startTime":"07:45:00",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -85,7 +85,7 @@
       "startTime":"08:35:00",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -93,7 +93,7 @@
       "startTime":"09:30:00",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -101,7 +101,7 @@
       "startTime":"10:30:00",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -109,7 +109,7 @@
       "startTime":"11:25:00",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -117,7 +117,7 @@
       "startTime":"14:00:00",
       "subject":"Englisch",
       "teacher":"Marielle Guignard",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -125,7 +125,7 @@
       "startTime":"14:55:00",
       "subject":"Mathematik",
       "teacher":"Graf Matthias",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -133,7 +133,7 @@
       "startTime":"15:50:00",
       "subject":"Finanz- und Rechnungswesen",
       "teacher":"Lil Klink",
-	   "day":"tuesday"
+	   "day":"1"
    },
    {
       "endTime":"08:30:00",
@@ -141,7 +141,7 @@
       "startTime":"07:45:00",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -149,7 +149,7 @@
       "startTime":"08:35:00",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -157,7 +157,7 @@
       "startTime":"09:30:00",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -165,7 +165,7 @@
       "startTime":"10:30:00",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -173,7 +173,7 @@
       "startTime":"11:25:00",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -181,7 +181,7 @@
       "startTime":"13:05:00",
       "subject":"Abteilungsstunde",
       "teacher":"Lil Klink",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -189,7 +189,7 @@
       "startTime":"14:00:00",
       "subject":"Finanz- und Rechnungswesen",
       "teacher":"Lil Klink",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -197,7 +197,7 @@
       "startTime":"14:55:00",
       "subject":"Französisch",
       "teacher":"Loredana Arleo",
-	   "day":"wednesday"
+	   "day":"2"
    },
    {
       "endTime":"08:30:00",
@@ -205,7 +205,7 @@
       "startTime":"07:45:00",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -213,7 +213,7 @@
       "startTime":"08:35:00",
       "subject":"Geschichte und Politik",
       "teacher":"Peter Sutter",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -221,7 +221,7 @@
       "startTime":"09:30:00",
       "subject":"Französisch",
       "teacher":"Loredana Arleo",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -229,7 +229,7 @@
       "startTime":"12:15:00",
       "subject":"ETEU: Chemie",
       "teacher":"Claudia Wyler",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -237,7 +237,7 @@
       "startTime":"13:05:00",
       "subject":"Englisch",
       "teacher":"Marielle Guignard",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -245,7 +245,7 @@
       "startTime":"14:00:00",
       "subject":"Wirtschaft und Recht",
       "teacher":"Daniel Schneeberger",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -253,7 +253,7 @@
       "startTime":"14:55:00",
       "subject":"Wirtschaft und Recht",
       "teacher":"Daniel Schneeberger",
-	   "day":"thursday"
+	   "day":"3"
    },
    {
       "endTime":"08:30:00",
@@ -261,7 +261,7 @@
       "startTime":"08:35:00",
       "subject":"ETEU: Geografie",
       "teacher":"Hans Jäger",
-	   "day":"friday"
+	   "day":"4"
    },
    {
       "endTime":"08:30:00",
@@ -269,7 +269,7 @@
       "startTime":"09:30:00",
       "subject":"Englisch",
       "teacher":"Marielle Guignard",
-	   "day":"friday"
+	   "day":"4"
    },
    {
       "endTime":"08:30:00",
@@ -277,7 +277,7 @@
       "startTime":"11:25:00",
       "subject":"Mathematik",
       "teacher":"Matthias Graf",
-	   "day":"friday"
+	   "day":"4"
    },
    {
       "endTime":"08:30:00",
@@ -285,7 +285,7 @@
       "startTime":"14:00:00",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
-	   "day":"friday"
+	   "day":"4"
    },
    {
       "endTime":"08:30:00",
@@ -293,6 +293,6 @@
       "startTime":"14:55:00",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
-	   "day":"friday"
+	   "day":"4"
    }
 ]
