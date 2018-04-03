@@ -1,296 +1,296 @@
 [
    {
-      "endTime":"08:30:00",
+      "endTime":"08:30",
       "location":"17",
-      "startTime":"07:45:00",
+      "startTime":"07:45",
       "subject":"Wirtschaft und Recht",
       "teacher":"Daniel Schneeberger",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"09:20",
       "location":"33",
-      "startTime":"08:35:00",
+      "startTime":"08:35",
       "subject":"Geschichte und Politik",
       "teacher":"Peter Sutter",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"10:15",
       "location":"39",
-      "startTime":"09:30:00",
+      "startTime":"09:30",
       "subject":"Finanz- und Rechnungswesen",
       "teacher":"Lil Klink",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"11:15",
       "location":"221",
-      "startTime":"10:30:00",
+      "startTime":"10:30",
       "subject":"Französisch",
       "teacher":"Loredana Arleo",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"11:25",
       "location":"222",
-      "startTime":"11:25:00",
+      "startTime":"11:25",
       "subject":"Mathematik",
       "teacher":"Graf Matthias",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"13:50",
       "location":"236",
-      "startTime":"13:05:00",
+      "startTime":"13:05",
       "subject":"ETEU: Biologie",
       "teacher":"Daniel Blanc",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"14:45",
       "location":"14",
-      "startTime":"14:00:00",
+      "startTime":"14:00",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"16:35",
       "location":"Telli",
-      "startTime":"15:50:00",
+      "startTime":"15:50",
       "subject":"Sport",
       "teacher":"Sportlehrer",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"17:30",
       "location":"Telli",
-      "startTime":"16:45:00",
+      "startTime":"16:45",
       "subject":"Sport",
       "teacher":"Sportlehrer",
 	   "day":"0"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"08:30",
       "location":"412",
-      "startTime":"07:45:00",
+      "startTime":"07:45",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"09:20",
       "location":"412",
-      "startTime":"08:35:00",
+      "startTime":"08:35",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"10:15",
       "location":"412",
-      "startTime":"09:30:00",
+      "startTime":"09:30",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"11:15",
       "location":"412",
-      "startTime":"10:30:00",
+      "startTime":"10:30",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"12:10",
       "location":"412",
-      "startTime":"11:25:00",
+      "startTime":"11:25",
       "subject":"Informatik",
       "teacher":"Alexander Flick",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"14:45",
       "location":"262",
-      "startTime":"14:00:00",
+      "startTime":"14:00",
       "subject":"Englisch",
       "teacher":"Marielle Guignard",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"15:40",
       "location":"222",
-      "startTime":"14:55:00",
+      "startTime":"14:55",
       "subject":"Mathematik",
       "teacher":"Graf Matthias",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"16:35",
       "location":"39",
-      "startTime":"15:50:00",
+      "startTime":"15:50",
       "subject":"Finanz- und Rechnungswesen",
       "teacher":"Lil Klink",
 	   "day":"1"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"08:30",
       "location":"427",
-      "startTime":"07:45:00",
+      "startTime":"07:45",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"09:20",
       "location":"427",
-      "startTime":"08:35:00",
+      "startTime":"08:35",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"10:15",
       "location":"427",
-      "startTime":"09:30:00",
+      "startTime":"09:30",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"11:15",
       "location":"427",
-      "startTime":"10:30:00",
+      "startTime":"10:30",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"12:10",
       "location":"427",
-      "startTime":"11:25:00",
+      "startTime":"11:25",
       "subject":"Informatik",
       "teacher":"Lars Meyer",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"13:50",
       "location":"39",
-      "startTime":"13:05:00",
+      "startTime":"13:05",
       "subject":"Abteilungsstunde",
       "teacher":"Lil Klink",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"14:45",
       "location":"39",
-      "startTime":"14:00:00",
+      "startTime":"14:00",
       "subject":"Finanz- und Rechnungswesen",
       "teacher":"Lil Klink",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"15:40",
       "location":"228",
-      "startTime":"14:55:00",
+      "startTime":"14:55",
       "subject":"Französisch",
       "teacher":"Loredana Arleo",
 	   "day":"2"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"08:30",
       "location":"14",
-      "startTime":"07:45:00",
+      "startTime":"07:45",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"09:20",
       "location":"5",
-      "startTime":"08:35:00",
+      "startTime":"08:35",
       "subject":"Geschichte und Politik",
       "teacher":"Peter Sutter",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"10:15",
       "location":"221",
-      "startTime":"09:30:00",
+      "startTime":"09:30",
       "subject":"Französisch",
       "teacher":"Loredana Arleo",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"13:00",
       "location":"244",
-      "startTime":"12:15:00",
+      "startTime":"12:15",
       "subject":"ETEU: Chemie",
       "teacher":"Claudia Wyler",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"13:50",
       "location":"29",
-      "startTime":"13:05:00",
+      "startTime":"13:05",
       "subject":"Englisch",
       "teacher":"Marielle Guignard",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"14:45",
       "location":"16",
-      "startTime":"14:00:00",
+      "startTime":"14:00",
       "subject":"Wirtschaft und Recht",
       "teacher":"Daniel Schneeberger",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"15:40",
       "location":"16",
-      "startTime":"14:55:00",
+      "startTime":"14:55",
       "subject":"Wirtschaft und Recht",
       "teacher":"Daniel Schneeberger",
 	   "day":"3"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"09:20",
       "location":"20",
-      "startTime":"08:35:00",
+      "startTime":"08:35",
       "subject":"ETEU: Geografie",
       "teacher":"Hans Jäger",
 	   "day":"4"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"10:15",
       "location":"29",
-      "startTime":"09:30:00",
+      "startTime":"09:30",
       "subject":"Englisch",
       "teacher":"Marielle Guignard",
 	   "day":"4"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"12:10",
       "location":"214",
-      "startTime":"11:25:00",
+      "startTime":"11:25",
       "subject":"Mathematik",
       "teacher":"Matthias Graf",
 	   "day":"4"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"14:45",
       "location":"515",
-      "startTime":"14:00:00",
+      "startTime":"14:00",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
 	   "day":"4"
    },
    {
-      "endTime":"08:30:00",
+      "endTime":"15:40",
       "location":"515",
-      "startTime":"14:55:00",
+      "startTime":"14:55",
       "subject":"Deutsch",
       "teacher":"Markus Bundi",
 	   "day":"4"
