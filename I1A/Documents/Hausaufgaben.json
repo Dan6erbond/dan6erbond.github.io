@@ -1,63 +1,48 @@
 [
    {
-      "datum":"20.03.2018",
+      "datum":"04.04.2018",
       "fach":"Informatik",
-      "aufgabe":"LA_404_1704_Schüler_erfassen"
+      "aufgabe":"Quizfragen an Herr Meyer schicken"
    },
    {
-      "datum":"20.03.2018",
+      "datum":"04.04.2018",
+      "fach":"Finanz- und Rechnungswesen",
+      "aufgabe":"Aufgabe A und B auf neuem Blatt beenden"
+   },
+   {
+      "datum":"04.04.2018",
+      "fach":"Finanz- und Rechnungswesen",
+      "aufgabe":"Auftrag zu Devisen beenden"
+   },
+   {
+      "datum":"04.04.2018",
       "fach":"Informatik",
-      "aufgabe":"9910 und 1704"
+      "aufgabe":"test"
    },
    {
-      "datum":"22.03.2018",
-      "fach":"Deutsch",
-      "aufgabe":"Konjuktiv üben"
+      "datum":"05.04.2018",
+      "fach":"Geschichte",
+      "aufgabe":"Staatsaufbau kennenlernen"
    },
    {
-      "datum":"22.03.2018",
-      "fach":"Deutsch",
-      "aufgabe":"Sunrise fertiglesen"
-   },
-   {
-      "datum":"22.03.2018",
-      "fach":"Deutsch",
-      "aufgabe":"Aufgabenblatt zu Sunrise beenden"
-   },
-   {
-      "datum":"22.03.2018",
-      "fach":"ETEU: Chemie",
-      "aufgabe":"Buch lesen + A Aufgaben lösen"
-   },
-   {
-      "datum":"23.03.2018",
-      "fach":"Englisch",
-      "aufgabe":"Eye of Minds S. 103"
-   },
-   {
-      "datum":"26.03.2018",
-      "fach":"Französisch",
-      "aufgabe":"Cadac Aufgabe 3"
-   },
-   {
-      "datum":"27.03.2018",
-      "fach":"Informatik",
-      "aufgabe":"PPT Hardware"
-   },
-   {
-      "datum":"27.03.2018",
-      "fach":"Informatik",
-      "aufgabe":"9913 fertig \u0026 9908"
-   },
-   {
-      "datum":"28.03.2018",
-      "fach":"Informatik",
-      "aufgabe":"KLP ausfüllen"
+      "datum":"05.04.2018",
+      "fach":"Geschichte",
+      "aufgabe":"Meinung zu Stimmrecht für Ausländer"
    },
    {
       "datum":"06.04.2018",
       "fach":"Englisch",
       "aufgabe":"Eye of Minds bis S. 137 lesen"
+   },
+   {
+      "datum":"11.04.2018",
+      "fach":"Informatik",
+      "aufgabe":"KG_304_1724_OS_Erläutern"
+   },
+   {
+      "datum":"02.05.2018",
+      "fach":"Finanz- und Rechnungswesen",
+      "aufgabe":"keine Klassenstunde"
    },
    {
       "datum":"04.05.2018",
