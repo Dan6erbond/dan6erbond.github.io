@@ -30,7 +30,7 @@ function GenerateDocument(element, documentName, documentPath) {
     thumbnail.src = 'Documents/Images/PDF Thumbnail.png';
   if (documentPath.indexOf('doc') >= 0)
     thumbnail.src = 'Documents/Images/Word Thumbnail.png';
-  if (documentPath.indexOf('docx') >= 0 || documentPath.indexOf('docx') >= 0)
+  if (documentPath.indexOf('docx') >= 0 || documentPath.indexOf('dotx') >= 0)
     thumbnail.src = 'Documents/Images/Word Thumbnail.png';
   if (documentPath.indexOf('xlsx') >= 0)
     thumbnail.src = 'Documents/Images/Excel Thumbnail.png';
