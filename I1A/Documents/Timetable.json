@@ -6,5 +6,300 @@
       "subject":"Informatik",
       "teacher":"Sascha Fiechter",
 	   "day":"0"
+   },
+   {
+      "startTime":"08:35",
+      "endTime":"09:20",
+      "location":"412",
+      "subject":"Informatik",
+      "teacher":"Sascha Fiechter",
+	   "day":"0"
+   },
+   {
+      "startTime":"09:30",
+      "endTime":"10:15",
+      "location":"412",
+      "subject":"Informatik",
+      "teacher":"Sascha Fiechter",
+	   "day":"0"
+   },
+   {
+      "startTime":"10:30",
+      "endTime":"11:15",
+      "location":"412",
+      "subject":"Informatik",
+      "teacher":"Sascha Fiechter",
+	   "day":"0"
+   },
+   {
+      "startTime":"11:25",
+      "endTime":"12:10",
+      "location":"412",
+      "subject":"Informatik",
+      "teacher":"Sascha Fiechter",
+	   "day":"0"
+   },
+   {
+      "startTime":"14:00",
+      "endTime":"14:15",
+      "location":"14",
+      "subject":"Deutsch",
+      "teacher":"Markus Bundi",
+	   "day":"0"
+   },
+   {
+      "startTime":"14:55",
+      "endTime":"15:40",
+      "location":"223",
+      "subject":"Mathematik",
+      "teacher":"Graf Matthias",
+	   "day":"0"
+   },
+   {
+      "startTime":"15:50",
+      "endTime":"16:35",
+      "location":"17",
+      "subject":"Abteilungsstunde",
+      "teacher":"Lil Klink",
+	   "day":"0"
+   },
+   {
+      "startTime":"07:45",
+      "endTime":"08:30",
+      "location":"411",
+      "subject":"Informatik",
+      "teacher":"René Weidmann",
+	   "day":"1"
+   },
+   {
+      "startTime":"08:35",
+      "endTime":"09:20",
+      "location":"411",
+      "subject":"Informatik",
+      "teacher":"René Weidmann",
+	   "day":"1"
+   },
+   {
+      "startTime":"09:30",
+      "endTime":"10:15",
+      "location":"411",
+      "subject":"Informatik",
+      "teacher":"René Weidmann",
+	   "day":"1"
+   },
+   {
+      "startTime":"10:30",
+      "endTime":"11:15",
+      "location":"411",
+      "subject":"Informatik",
+      "teacher":"René Weidmann",
+	   "day":"1"
+   },
+   {
+      "startTime":"11:25",
+      "endTime":"12:10",
+      "location":"411",
+      "subject":"Informatik",
+      "teacher":"René Weidmann",
+	   "day":"1"
+   },
+   {
+      "startTime":"14:00",
+      "endTime":"14:45",
+      "location":"13",
+      "subject":"Französisch",
+      "teacher":"Christoph Meier",
+	   "day":"1"
+   },
+   {
+      "startTime":"14:55",
+      "endTime":"15:40",
+      "location":"17",
+      "subject":"Finanz- und Rechnungswesen",
+      "teacher":"Lil Klink",
+	   "day":"1"
+   },
+   {
+      "startTime":"15:50",
+      "endTime":"16:35",
+      "location":"13",
+      "subject":"Französisch",
+      "teacher":"Christoph Meier",
+	   "day":"1"
+   },
+   {
+      "startTime":"10:30",
+      "endTime":"11:15",
+      "location":"29",
+      "subject":"Englisch",
+      "teacher":"Marielle Guignard",
+	   "day":"2"
+   },
+   {
+      "startTime":"11:25",
+      "endTime":"12:10",
+      "location":"39",
+      "subject":"Finanz- und Rechnungswesen",
+      "teacher":"Lil Klink",
+	   "day":"2"
+   },
+   {
+      "startTime":"13:05",
+      "endTime":"13:50",
+      "location":"517",
+      "subject":"Wirtschaft und Recht",
+      "teacher":"Daniel Schneeberger",
+	   "day":"2"
+   },
+   {
+      "startTime":"14:00",
+      "endTime":"14:45",
+      "location":"33",
+      "subject":"Geschichte",
+      "teacher":"Peter Sutter",
+	   "day":"2"
+   },
+   {
+      "startTime":"14:55",
+      "endTime":"15:40",
+      "location":"29",
+      "subject":"Englisch",
+      "teacher":"Marielle Guignard",
+	   "day":"2"
+   },
+   {
+      "startTime":"08:35",
+      "endTime":"09:20",
+      "location":"223",
+      "subject":"Mathematik",
+      "teacher":"Matthias Graf",
+	   "day":"3"
+   },
+   {
+      "startTime":"09:30",
+      "endTime":"10:15",
+      "location":"21",
+      "subject":"Geschichte",
+      "teacher":"Peter Sutter",
+	   "day":"3"
+   },
+   {
+      "startTime":"10:30",
+      "endTime":"11:15",
+      "location":"37",
+      "subject":"Deutsch",
+      "teacher":"Markus Bundi",
+	   "day":"3"
+   },
+   {
+      "startTime":"11:25",
+      "endTime":"12:10",
+      "location":"37",
+      "subject":"Deutsch",
+      "teacher":"Markus Bundi",
+	   "day":"3"
+   },
+   {
+      "startTime":"13:05",
+      "endTime":"13:50",
+      "location":"518",
+      "subject":"Wirtschaft und Recht",
+      "teacher":"Daniel Schneeberger",
+	   "day":"3"
+   },{
+      "startTime":"14:00",
+      "endTime":"14:45",
+      "location":"518",
+      "subject":"Wirtschaft und Recht",
+      "teacher":"Daniel Schneeberger",
+	   "day":"3"
+   },
+   {
+      "startTime":"15:50",
+      "endTime":"16:35",
+      "location":"Tellizentrum",
+      "subject":"Sport",
+      "teacher":"",
+	   "day":"3"
+   },
+   {
+      "startTime":"16:45",
+      "endTime":"17:30",
+      "location":"Tellizentrum",
+      "subject":"Sport",
+      "teacher":"",
+	   "day":"3"
+   },
+   {
+      "startTime":"07:45",
+      "endTime":"08:30",
+      "location":"29/6",
+      "subject":"Englisch/Französisch",
+      "teacher":"Marielle Guignard/Christoph Meier",
+	   "day":"4"
+   },
+   {
+      "startTime":"08:35",
+      "endTime":"09:20",
+      "location":"6",
+      "subject":"Französisch",
+      "teacher":"Christoph Meier",
+	   "day":"4"
+   },
+   {
+      "startTime":"09:30",
+      "endTime":"10:15",
+      "location":"29",
+      "subject":"Englisch",
+      "teacher":"Marielle Guignard",
+	   "day":"4"
+   },
+   {
+      "startTime":"10:30",
+      "endTime":"11:15",
+      "location":"39",
+      "subject":"Finanz- und Rechnungswesen",
+      "teacher":"Lil Klink",
+	   "day":"4"
+   },
+   {
+      "startTime":"13:05",
+      "endTime":"13:50",
+      "location":"512",
+      "subject":"Informatik",
+      "teacher":"Fabian Jerg",
+	   "day":"4"
+   },
+   {
+      "startTime":"14:00",
+      "endTime":"14:45",
+      "location":"512",
+      "subject":"Informatik",
+      "teacher":"Fabian Jerg",
+	   "day":"4"
+   },
+   {
+      "startTime":"14:55",
+      "endTime":"15:40",
+      "location":"512",
+      "subject":"Informatik",
+      "teacher":"Fabian Jerg",
+	   "day":"4"
+   },
+   {
+      "startTime":"15:50",
+      "endTime":"16:35",
+      "location":"512",
+      "subject":"Informatik",
+      "teacher":"Fabian Jerg",
+	   "day":"4"
+   },
+   {
+      "startTime":"16:45",
+      "endTime":"17:30",
+      "location":"512",
+      "subject":"Informatik",
+      "teacher":"Fabian Jerg",
+	   "day":"4"
    }
 ]
