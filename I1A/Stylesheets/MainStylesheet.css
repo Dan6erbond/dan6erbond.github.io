@@ -24,10 +24,6 @@ html {
 body {
   animation: fadein 1s;
   font-family: 'Open Sans';
-  background-color: #dddfd4;
-  background-image: url('/Images/Backgrounds/Vector Waves.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #WelcomeText {
@@ -156,14 +152,11 @@ a {
 }
 
 .downloadButton {
-  border: 1px solid #173e43;
-  padding: 2px;
   font-size: 14px;
-  transition: font-size 1s;
 }
 
 .downloadButton:hover {
-  font-size: 16px;
+  color: #0D47A1;
 }
 
 .image {
