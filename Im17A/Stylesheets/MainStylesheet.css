@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @keyframes fadein {
   from {
     opacity: 0;
@@ -24,15 +24,18 @@ html {
 body {
   animation: fadein 1s;
   font-family: 'Open Sans';
+  background: #f1f6ff;
 }
 
-#WelcomeText {
+h1 {
+  color: black;
   text-align: center;
-  margin: 5px 20px 5px 20px;
+  margin: 20px 20px 5px 20px;
   padding: 10px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   font-size: 28px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 #Zusammenfassungen {
@@ -46,23 +49,11 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: 'Anton';
-  color: #173e43;
-}
-
 h2 {
-  text-align: center;
-  font-family: 'Anton';
-  color: #173e43;
-  text-decoration: underline;
-}
-
-h3 {
-  text-align: center;
-  font-family: 'Anton';
-  color: #173e43;
-  font-style: italic;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  color: black;
+  font-size: 20px;
 }
 
 a {
@@ -70,29 +61,20 @@ a {
   color: inherit;
 }
 
-.Bearbeitung {
-  color: red;
-  font-size: 30px;
-}
-
-.FancyButton {
-  display: block;
-  font-size: 35px;
-  border: 2px solid #173e43;
-  color: #173e43;
-  padding: 6px 6px 20px 20px;
-  align-content: center;
-  transition: font-size 0.5s;
+#FancyButton {
   text-align: center;
   margin: 0 auto;
-  width: 75%;
-  height: 35px;
-  transition: all ease 1s;
 }
 
-.FancyButton:hover {
-  background-color: #173e43;
-  color: #fae596;
+#FancyButton a {
+  font-size: 35px;
+  color: black;
+  border-bottom: 2px solid white;
+  transition: border-bottom 250ms;
+}
+
+#FancyButton a:hover {
+  border-bottom: 2px solid #0D47A1;
 }
 
 #Klassenfoto {
@@ -106,22 +88,13 @@ a {
 /*Documents*/
 
 .document {
-  height: auto;
-  min-height: 100px;
-  padding: 5px 0px 5px 0px;
-  float: left;
-}
-
-.full {
-  width: 100%;
-}
-
-.half {
-  width: 50%;
-}
-
-.third {
-  width: 33.3333333333%;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  display: inline-block;
+  position: relative;
+  background: white;
 }
 
 .documentHolder {
@@ -134,8 +107,25 @@ a {
   height: 100px;
   width: auto;
   display: block;
+  margin-right: 10px;
   float: left;
-  padding-right: 10px;
+}
+
+.documentTitle {
+  display: inline;
+  font-size: 16px;
+}
+
+.downloadButton {
+  min-width: 200px;
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: color 250ms;
+}
+
+.downloadButton:hover {
+  color: #0D47A1;
 }
 
 .zusammenfassungThumbnail {
@@ -146,31 +136,18 @@ a {
   padding-right: 10px;
 }
 
-.documentTitle {
-  text-decoration: underline;
-  font-size: 16px;
-}
-
-.downloadButton {
-  font-size: 14px;
-}
-
-.downloadButton:hover {
-  color: #0D47A1;
-}
-
 .image {
   width: 50%;
   height: auto;
 }
 
 #homeworkTable {
-    border-collapse: collapse;
-    margin-left: 40px;
+  border-collapse: collapse;
+  margin-left: 40px;
 }
 
 #homeworkTable tbody tr {
-    border-bottom: solid black 1px;
+  border-bottom: solid black 1px;
 }
 
 #homeworkTable tbody tr td {
@@ -200,29 +177,7 @@ a {
 }
 
 #homeworkAdd {
-    border-radius: 5px;
-    height: 20px;
-    border-color: #173e43;
-}
-
-.hide {
-  max-height: 0px;
-  overflow: hidden;
-  transition: all ease 1s;
-}
-
-:target {
-  max-height: 1000px;
-}
-
-@media screen and (max-width: 1000px){
-  .document{
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 750px){
-  .document{
-    width: 100%;
-  }
+  border-radius: 5px;
+  height: 20px;
+  border-color: #173e43;
 }

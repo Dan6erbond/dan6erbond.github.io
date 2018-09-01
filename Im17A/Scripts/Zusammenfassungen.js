@@ -15,7 +15,7 @@ function UpdateZusammenfassungen() {
         placeholder.classList.add("third");
 
         var img = document.createElement("img");
-        img.classList.add("zusammenfassungThumbnail");
+        img.classList.add("documentThumbnail");
         var src = "Documents/Images/Zusammenfassung Thumbnail.png";
 		if (zusammenfassung.autor != "RaviAnand Mohabir")
           src = "Documents/Images/Zusammenfassung Thumbnail" + " - " + zusammenfassung.autor + ".png";

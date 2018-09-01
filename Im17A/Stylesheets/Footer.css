@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+#datetime {
+  font: 'Roboto';
+  color: white;
+  float: right;
+  margin-right: 20px;
+}
+
+#copyright {
+  font: 'Roboto';
+  color: white;
+  margin-left: 20px;
+  float: left;
+}
+
+footer {
+  background-color: #0D47A1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}

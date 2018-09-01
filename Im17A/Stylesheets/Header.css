@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 nav {
   overflow: auto;
-  margin-bottom: 60px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
 }
 
 ul, .title {
@@ -15,7 +16,7 @@ ul, .title {
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 25px;
-  color: black;
+  transition: color 250ms;
 }
 
 ul {
@@ -35,6 +36,7 @@ li {
 }
 
 li a, .dropbtn {
+  transition: color 250ms;
   display: inline-block;
   color: black;
   text-align: center;

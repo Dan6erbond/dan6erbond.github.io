@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -17,29 +18,24 @@
 
   <meta charset="utf-8" />
   <script src="/Scripts/w3.js"></script>
-  <script src="Scripts/Documents.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/Scripts/Slideshow.js"></script>
   <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
-  <title>I1A | Biologie</title>
+  <link href="/Stylesheets/Slideshow.css" rel="stylesheet" />
+  <title>Im17A | Klassenreise 2017</title>
 </head>
 
-<body>
+<body onload="GenerateSlideshow('/I1A/Images/Klassenreise 2017/Images.json');">
   <div w3-include-html="Standard Elements/Header.html"></div>
 
   <main>
-    <h1>Biologie</h1>
+    <h1>Klassenreise 2017</h1>
     <br>
-
-    <h2><a href="#mikroskopieren">Mikroskopieren</a></h2>
-    <div class="hide documentHolder" id="mikroskopieren">
-      <div class="document full" name="Übersicht Mikroskopieren" path="Documents/Biologie/Übersicht Mikroskopieren.pptx">
-      </div>
+    <div class="slideshow-container">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <h2><a href="#zellbiologie">Zellbiologie</a></h2>
-    <div class="hide documentHolder" id="zellbiologie">
-      <div class="document full" name="Einteilung der Zellen" path="Documents/Biologie/Einteilung der Zellen.png">
-      </div>
+    <div class="dotPlaceholder">
     </div>
   </main>
 
