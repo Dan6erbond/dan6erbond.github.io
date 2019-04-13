@@ -17,43 +17,40 @@
 
   <meta charset="UTF-8">
   <meta name="description" content="Website About RaviAnand Mohabir">
-  <meta name="keywords" content="HTML,CSS,JavaScript,RaviAnand,Mohabir,Alte Kantonsschule Aarau,AKSA,Informatik,Informatikmittelschule,BBBaden">
+  <meta name="keywords" content="Dan6erbond,Zofingen,HTML,CSS,JavaScript,RaviAnand,Mohabir,Alte Kantonsschule Aarau,AKSA,Informatik,Informatikmittelschule,BBBaden">
   <meta name="author" content="RaviAnand Mohabir">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="de">
-  <script src="/Scripts/w3.js"></script>
-  <link href="Stylesheets/MainStylesheet.css" rel="stylesheet" />
-  <link href="Stylesheets/TextTyping.css" rel="stylesheet" />
-  <link href="Stylesheets/HomepageNav.css" rel="stylesheet" />
-  <title>RaviAnand</title>
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="css/css.css" rel="stylesheet" />
+
+  <script src="Scripts/w3.js"></script>
+  <title>Dan6erbond</title>
 </head>
 
 <body>
-  <!--<script>window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"</script>-->
-  
-  <div w3-include-html="Standard Elements/Header.html"></div>
+  <!--<div w3-include-html="html/header.html"></div>-->
+  <div w3-include-html="html/header.html"></div>
 
   <main>
-    <div class="topImage sunsetImage">
-      <br>
-      <br>
-      <br>
-      <p class="typewriter homeTypewriter">Hallo. Mein Name ist Ravi und ich habe diese Website erstellt.<span class="typeLine">|</span></p>
-      <br>
-      <br>
-      <div class="homepageNav">
-        <a href="Über Mich.html">Über Mich</a>
-        <a href="Ausbildung.html">Ausbildung</a>
-        <a href="Hobbys.html">Hobbys</a>
-        <a href="/TechDog">TechDog</a>
-        <a href="/I1A">I1A</a>
-        <a href="mailto://ravianand.mohabir@stud.bbbaden.ch">Mich Kontaktieren</a>
+    <h2>Projects</h2>
+    <div class="box">
+      <div class="title">
+        <a href="#">Fuzzle</a>
+        <img src="img/fuzzle.png" alt="">
+      </div>
+      <div class="content">
+        <p>A open-source, scaleable search engine written in Python. available on GitHub and used in Discord bots such as Melon!</p>
+        <div class="tags">
+          <a href="#" class="tag">GitHub</a>
+          <a href="#" class="tag">Discord</a>
+        </div>
       </div>
     </div>
   </main>
 
-  <div w3-include-html="Standard Elements/Footer.html"></div>
+  <div w3-include-html="html/footer.html" class="menu"></div>
 
   <script>
     w3.includeHTML();
