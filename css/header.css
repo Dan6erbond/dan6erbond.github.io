@@ -1,4 +1,4 @@
-nav ul {
+.menu ul {
   position: fixed;
   list-style-type: none;
   margin: 0;
@@ -13,18 +13,18 @@ nav ul {
   overflow: visible;
 }
 
-nav ul li {
+.menu ul li {
   display: block;
   font-size: 16px;
   padding: 20px;
   float: right;
 }
 
-nav ul li:first-child {
+.menu ul li:first-child {
   float: left;
 }
 
-nav ul li a {
+.menu ul li a {
   position: relative;
   text-transform: uppercase;
   display: block;
@@ -33,20 +33,20 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li > a:not(.dropbtn):hover {
+.menu ul li > a:not(.dropbtn):hover {
   text-decoration: underline;
   /*color: var(--dark-turqoise);*/
 }
 
-nav ul li .dropbtn {
+.menu ul li .dropbtn {
 
 }
 
-nav ul li.dropdown {
+.menu ul li.dropdown {
   display: inline-block;
 }
 
-nav ul li .dropcnt {
+.menu ul li .dropcnt {
   margin-top: 15px;
   display: none;
   position: absolute;
@@ -56,13 +56,13 @@ nav ul li .dropcnt {
   box-shadow: var(--material-shadow)
 }
 
-nav ul li .dropcnt a {
+.menu ul li .dropcnt a {
   text-align: left;
   display: block;
   padding: 10px;
 }
 
-nav ul li .dropcnt a:hover {
+.menu ul li .dropcnt a:hover {
   background: var(--dark-blue-pressed);
 }
 
