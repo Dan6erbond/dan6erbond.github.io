@@ -1,8 +1,12 @@
 .box-container {
+  min-width: 500px;
   width: 47vw;
-  min-width: 350px;
   margin: 0px 20px 20px 0px;
   display: inline-block;
+}
+
+.half {
+    width: 47vw;
 }
 
 .box {
@@ -19,21 +23,45 @@
 .box .title {
   text-align: center;
   width: 25%;
+  min-width: 150px;
   background-color: white;
   font-weight: bold;
   padding: 20px 5px 20px 5px;
 }
 
+.box .title.banhammer {
+  background-color: var(--banhammer-purple);
+}
+
+.box .title.substarters {
+  background-color: var(--substarters-yellow);
+}
+
+.box .title.substarters a p {
+  color: white;
+}
+
+.box .title.reddify a img {
+  box-shadow: var(--material-shadow-light);
+}
+
 .box .title a {
   width: 100%;
-  margin-bottom: 15px;
   display: block;
+  margin: 0;
   text-decoration: none;
   font-size: 24px;
   color: var(--dark-grey);
 }
 
-.box .title img {
+.box .title a p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box .title a img {
+  margin-top: 30px;
   width: 60%;
 }
 
@@ -43,10 +71,15 @@
   width: 75%;
 }
 
+.box .content p {
+  min-height: 150px;
+  padding: 0px 15px 0px 15px;
+}
+
 .box .content .tags {
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
+  padding-top: 25px;
+  position: relative;
+  bottom: 15px;
   width: 100%;
 }
 
@@ -64,4 +97,10 @@
 
 .box .content .tags a:hover {
   background-color: var(--dark-turqoise-pressed);
+}
+
+@media only screen and (max-width: 1000px) {
+  .box-container {
+    width: 94vw;
+  }
 }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Website About RaviAnand Mohabir">
+  <meta name="keywords" content="Dan6erbond,Zofingen,HTML,CSS,JavaScript,RaviAnand,Mohabir,Alte Kantonsschule Aarau,AKSA,Informatik,Informatikmittelschule,BBBaden">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="css/css.css" rel="stylesheet" />
+  <link href="css/box.css" rel="stylesheet" />
+
+  <script src="Scripts/w3.js"></script>
+  <title>Mariavi</title>
+</head>
+
+<body>
+  <div w3-include-html="html/header.html"></div>
+
+  <main>
+    <h1>Mariavi</h1>
+
+    <p>
+      Mariavi is the dev team behind Discord bots like <b>Banhammer</b>, <b>Melon</b> and <b>Reddify</b> as well as projects such as /r/substarters.
+    </p>
+
+    <hr>
+
+    <h2>Index</h2>
+
+    <ol class="index">
+      <li>
+        <a href="#about">About us</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+        <ul>
+          <li>
+            <a href="#banhammer">Banhammer</a>
+          </li>
+          <li>
+            <a href="#reddify">Reddify</a>
+          </li>
+          <li>
+            <a href="#melon">Melon</a>
+          </li>
+          <li>
+            <a href="#substarters">Substarters</a>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <hr>
+
+    <h2 id="about">About us</h2>
+    <p>
+      The devs are <b>Amy</b> and <b>Ravi</b> who both met each other through Reddit.
+      Ravi saw an ad she put up for people interested in moderating her subreddit /r/casualChildAbuse (RIP - 2019) and volunteered.
+      They quickly became friends and started chatting about all their /r/CrazyIdeas such as a bot that would let them moderate the subreddit at the time.
+      A concept quickly became reality and soon enough, /r/casualChildAbuse was being run through Discord.
+      It would allow the mod-team to vote on things easier and get pinged through reports and new items. They were able to step up our moderation game quite a bit.
+      That bot has now been expanded into the project Mariavi calls <b>The Banhammer Bot</b> and the more the two talked, the more projects that emerged.
+      They decided to give their digital friendship and dev team a name to work under, and shuffled the letters from their names and <b>Mariavi</b> was born.
+    </p>
+
+    <hr>
+
+    <h2 id="projects">Projects</h2>
+
+    <div class="box-container" id="banhammer">
+      <div class="box">
+        <div class="title banhammer">
+          <a href="#banhammer">
+            <p>Banhammer</p>
+            <img src="img/mariavi/banhammer.png" alt="">
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            <b>The Banhammer Bot</b> is a Discord bot, currently in development, that allows Reddit moderators to moderate their subreddit from within Discord.
+            <br>
+            It has been inspired the concept of the bot we used to use back at /r/casualChildAbuse and is very simple to setup! Simply invite it to your Discord server and use <code>!addsub</code> to add your subreddit to it's database.
+            <br>
+            <br>
+            <b>Important:</b> /u/TheBanhammerBot needs to be a moderator of your subreddit in order to function properly.
+          </p>
+          <div class="tags">
+            <a href="https://discord.gg/9JrGC8f" target="_blank" class="tag">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container" id="reddify">
+      <div class="box">
+        <div class="title reddify">
+          <a href="#reddify">
+            <p>Reddify</p>
+            <img src="img/mariavi/reddify.png" alt="">
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            <b>Reddify</b> is a Discord bot, that intends to connect your Reddit account with your Discord one via 2FA. Simply use <code>!verify</code> to have it send you a message and respond with "verify" to the message in Reddit and Reddify will take care of the rest!
+            <br>
+            <br>
+            <i>Server admins can use <code>!toggle [nick/role]</code> to disable or enable the nickname and role feature on Reddify which changes the user's nickname (Reddit username)/role ('VERIFIED REDDITOR').</i>
+          </p>
+          <div class="tags">
+            <a href="https://discord.gg/XyKZgzN" target="_blank" class="tag">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container" id="melon">
+      <div class="box">
+        <div class="title">
+          <a href="#melon">
+            <p>Melon</p>
+            <img src="img/mariavi/melon.png" alt="">
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            <b>Melon</b> is the first Discord bot to officially use <a href="fuzzle.html">Fuzzle</a>.
+            <b>She</b> is capable of storing "Melons" categorized by the devs that can be summoned by typing <code>!melon [search]</code>.
+            She will then find the closest matches and if there isn't a 100% match, offer you to select one of them with reactions.
+            <br>
+            <br>
+            Other handy feature include reaction-roles: use <code>!addreactrole [emoji, role, msg, channel]</code> to have her add a reaction to a message that allows users to sign-up for roles in that server!
+          </p>
+          <div class="tags">
+            <a href="https://discord.gg/XyKZgzN" target="_blank" class="tag">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container" id="substarters">
+      <div class="box">
+        <div class="title substarters">
+          <a href="#substarters">
+            <p>Substarters</p>
+            <img src="img/mariavi/substarters.png" alt="">
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            <b>Substarters</b> is a service by Mariavi for new and old subreddits to grow and expand. We offer tips for moderating a subreddit as well as help people start their own.
+            <br>
+            <br>
+            Substarters also is the first official user of Melon, with the intention of using her to display frequently asked questions through a simple command.
+          </p>
+          <div class="tags">
+            <a href="https://discord.gg/njYdKYH" target="_blank" class="tag">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="html/footer.html" class="menu"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
