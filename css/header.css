@@ -35,7 +35,7 @@
 
 .menu ul li > a:not(.dropbtn):hover {
   text-decoration: underline;
-  /*color: var(--dark-turqoise);*/
+  /*color: var(--dark-turquoise);*/
 }
 
 .menu ul li .dropbtn {

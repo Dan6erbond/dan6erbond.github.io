@@ -34,11 +34,23 @@
 }
 
 .box .title.substarters {
-  background-color: var(--substarters-yellow);
+  /*background-color: var(--substarters-yellow);*/
+}
+
+.box .title.substarters a img {
+  /*box-shadow: var(--material-shadow-light);*/
 }
 
 .box .title.substarters a p {
-  color: white;
+  /*color: white;*/
+}
+
+.box .title.fuzzle {
+  background-image: url("../img/fuzzle/bg.png");
+}
+
+.box .title.fuzzle a p {
+  color: var(--light-dark-turquoise);
 }
 
 .box .title.reddify a img {
@@ -85,7 +97,7 @@
 
 .box .content .tags a {
   padding: 5px 10px 5px 10px;
-  background-color: var(--dark-turqoise);
+  background-color: var(--dark-turquoise);
   border-radius: 5px;
   box-shadow: var(--material-shadow-light);
   display: inilne-block;
@@ -96,10 +108,10 @@
 }
 
 .box .content .tags a:hover {
-  background-color: var(--dark-turqoise-pressed);
+  background-color: var(--dark-turquoise-pressed);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .box-container {
     width: 94vw;
   }

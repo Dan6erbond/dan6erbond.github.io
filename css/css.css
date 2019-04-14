@@ -9,8 +9,9 @@
   --dark-grey: rgb(44, 45, 48);
   --dark-blue: rgb(56, 63, 86);
   --dark-blue-pressed: rgb(51, 56, 71);
-  --dark-turqoise: rgb(70, 109, 99);
-  --dark-turqoise-pressed: rgb(65, 94, 86);
+  --light-dark-turquoise: rgb(64, 153, 130);
+  --dark-turquoise: rgb(70, 109, 99);
+  --dark-turquoise-pressed: rgb(65, 94, 86);
   --material-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 1);
   --material-shadow-light: 0px 0px 10px 0px rgb(0, 0, 0, 0.5);
   --banhammer-purple: rgb(205,206,255);
@@ -25,6 +26,10 @@ h1 {
 body {
   background-color: var(--dark-grey);
   font-family: Nunito Sans;
+  color: white;
+}
+
+a:link, a:visited, a:link:active, a:visited:active {
   color: white;
 }
 
@@ -53,15 +58,16 @@ main {
 
 ol.index {
   list-style-type: none;
+  counter-reset: custom-counter;
 }
 
 ol.index li::before {
-  content: counter(li)".";
+  content: counter(custom-counter)".";
   color: white;
 }
 
-ol.index li {
-  counter-increment: li;
+ol.index > li {
+  counter-increment: custom-counter;
 }
 
 ol.index ul {
