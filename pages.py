@@ -26,6 +26,8 @@ for f in files:
                 if meta.get("name").lower() == "keywords":
                     page["tags"] = [s.strip() for s in meta.get("content").split(",")]
 
+            page["url"] = f.name
+
             pages.append(page)
 
 with open("pages.json", "w+", encoding="utf8") as f:

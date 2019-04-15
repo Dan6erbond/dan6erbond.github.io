@@ -15,7 +15,7 @@ if (url.get("q") != "" && url.get("q") != null){
 
       document.getElementsByTagName("h1")[1].innerHTML = "'" + query + "'";
 
-      var results = find(array, query, ["description"]);
+      var results = find(array, query, ["description"], true);
 
       if (results.length < 1){
         document.getElementById("badSearch").style = "visibility: visible;";

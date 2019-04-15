@@ -8,7 +8,8 @@
             "Python",
             "Search",
             "Engine"
-        ]
+        ],
+        "url": "fuzzle.html"
     },
     {
         "key": "Dan6erbond",
@@ -26,7 +27,8 @@
             "Informatik",
             "Informatikmittelschule",
             "BBBaden"
-        ]
+        ],
+        "url": "index.html"
     },
     {
         "key": "Mariavi",
@@ -42,7 +44,8 @@
             "Banhammer",
             "Reddify",
             "Substarters"
-        ]
+        ],
+        "url": "mariavi.html"
     },
     {
         "key": "Search",
@@ -50,6 +53,7 @@
         "tags": [
             "RaviAnand",
             "Dan6erbond"
-        ]
+        ],
+        "url": "search.html"
     }
 ]
