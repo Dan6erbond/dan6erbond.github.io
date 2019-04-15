@@ -70,8 +70,8 @@
   box-shadow: var(--material-shadow-light);
 }
 
-.menu ul li .dropcnt.search form input[type=text]:active {
-  border: none;
+.menu ul li .dropcnt.search form input[type=text]:focus {
+  outline: none;
 }
 
 .menu ul li .dropcnt.search form input[type=submit]{
@@ -101,4 +101,10 @@
 
 .menu ul li.dropdown:hover .dropcnt {
   display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu ul li {
+    padding: 10px;
+  }
 }

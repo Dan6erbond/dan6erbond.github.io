@@ -17,9 +17,14 @@ for f in files:
 
             page["key"] = soup.title.string
 
+            add = True
             for meta in soup.find_all("meta"):
                 if meta.get("name") is None:
                     continue
+
+                if meta.get("name").lower() == "index" and meta.get("content").lower() == "false":
+                    add = False
+                    break
 
                 if meta.get("name").lower() == "description":
                     page["description"] = meta.get("content")
@@ -28,7 +33,7 @@ for f in files:
 
             page["url"] = f.name
 
-            pages.append(page)
+            if add: pages.append(page)
 
 with open("pages.json", "w+", encoding="utf8") as f:
     f.write(json.dumps(pages, indent=4))

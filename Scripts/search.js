@@ -32,6 +32,7 @@ if (url.get("q") != "" && url.get("q") != null){
         a.href = result["url"];
 
         var p = document.createElement("p");
+        p.style = "color: rgb(213, 213, 213)";
         p.innerHTML = result["description"];
 
         li.appendChild(a);

@@ -7,14 +7,22 @@
             "JavaScript",
             "Python",
             "Search",
-            "Engine"
+            "Engine",
+            "Project",
+            "GitHub",
+            "Data"
         ],
         "url": "fuzzle.html"
     },
     {
         "key": "Dan6erbond",
-        "description": "Website About RaviAnand Mohabir",
+        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
         "tags": [
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
             "Dan6erbond",
             "Zofingen",
             "HTML",
@@ -48,12 +56,23 @@
         "url": "mariavi.html"
     },
     {
-        "key": "Search",
-        "description": "Search for a page.",
+        "key": "Projects",
+        "description": "An overview of all the projects I've worked on so far.",
         "tags": [
-            "RaviAnand",
-            "Dan6erbond"
+            "Fuzzle",
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Mariavi",
+            "Reddit",
+            "Discord"
         ],
-        "url": "search.html"
+        "url": "projects.html"
     }
 ]

@@ -78,3 +78,18 @@ ol.index ul li::before {
   content: "•";
   color: white;
 }
+
+.tag {
+  padding: 5px 10px 5px 10px;
+  background-color: var(--dark-turquoise);
+  border-radius: 5px;
+  box-shadow: var(--material-shadow-light);
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+.tag:hover {
+  background-color: var(--dark-turquoise-pressed);
+}
