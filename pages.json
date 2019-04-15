@@ -1,0 +1,55 @@
+[
+    {
+        "key": "Fuzzle",
+        "description": "Fuzzle is a scaleable, customizable search engine written in Python and JavaScript",
+        "tags": [
+            "Dan6erbond",
+            "JavaScript",
+            "Python",
+            "Search",
+            "Engine"
+        ]
+    },
+    {
+        "key": "Dan6erbond",
+        "description": "Website About RaviAnand Mohabir",
+        "tags": [
+            "Dan6erbond",
+            "Zofingen",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ]
+    },
+    {
+        "key": "Mariavi",
+        "description": "Mariavi is the dev team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters.",
+        "tags": [
+            "Reddit",
+            "Discord",
+            "Amy",
+            "Ravi",
+            "Dan6erbond",
+            "Lydocia",
+            "Mariavi",
+            "Banhammer",
+            "Reddify",
+            "Substarters"
+        ]
+    },
+    {
+        "key": "Search",
+        "description": "Search for a page.",
+        "tags": [
+            "RaviAnand",
+            "Dan6erbond"
+        ]
+    }
+]

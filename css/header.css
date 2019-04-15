@@ -14,7 +14,7 @@
 }
 
 .menu ul li {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   padding: 20px;
   float: right;
@@ -53,7 +53,40 @@
   padding: 10px;
   background: var(--dark-blue);
   position: fixed;
-  box-shadow: var(--material-shadow)
+  box-shadow: var(--material-shadow);
+}
+
+.menu ul li .dropcnt.search {
+  right: 15px;
+}
+
+.menu ul li .dropcnt.search form input[type=text] {
+  max-width: 150px;
+  padding: 5px;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin-right: -2px;
+  box-shadow: var(--material-shadow-light);
+}
+
+.menu ul li .dropcnt.search form input[type=text]:active {
+  border: none;
+}
+
+.menu ul li .dropcnt.search form input[type=submit]{
+  padding: 5px;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-left: -2px;
+  color: white;
+  box-shadow: var(--material-shadow-light);
+  background-color: var(--dark-turquoise);
+}
+
+.menu ul li .dropcnt.search form input[type=submit]:hover {
+  background-color: var(--dark-turquoise-pressed);
 }
 
 .menu ul li .dropcnt a {

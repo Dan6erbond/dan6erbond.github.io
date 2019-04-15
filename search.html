@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Search for a page.">
+  <meta name="keywords" content="RaviAnand,Dan6erbond">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="css/css.css" rel="stylesheet" />
+  <link href="css/box.css" rel="stylesheet" />
+
+  <script src="Scripts/w3.js"></script>
+  <script type="module" src="Scripts/search.js"></script>
+  <title>Search</title>
+</head>
+
+<body>
+  <div w3-include-html="html/header.html"></div>
+
+  <main>
+    <h1>Search results for...</h1>
+    <h1></h1>
+
+    <h2 id="badSearch" style="visibility: hidden;">No results found!</h2>
+
+    <ul>
+    </ul>
+  </main>
+
+  <div w3-include-html="html/footer.html" class="menu"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
