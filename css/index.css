@@ -1,10 +1,6 @@
-.page-container {
-  display: flex;
-}
-
 .page {
   font-size: 24px;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   box-shadow: var(--material-shadow-light);
   padding: 50px;
