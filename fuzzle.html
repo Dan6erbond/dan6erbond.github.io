@@ -26,6 +26,8 @@
   <link href="css/css.css" rel="stylesheet" />
 
   <script src="Scripts/w3.js"></script>
+  <script type="module" src="Scripts/fuzzle.js"></script>
+
   <title>Fuzzle</title>
 </head>
 
@@ -51,6 +53,27 @@
       <br>
       The full code as well as documentation can be found on <a href="https://github.com/Dan6erbond/Fuzzle">GitHub</a>.
     </p>
+
+    <hr>
+
+    <h2>Demo</h2>
+    <form id="fuzzleDemo" action="#" onsubmit="search();return false;">
+      <select onchange="update();" id="group">
+        <option value="movies">Movies</option>
+        <option value="games">Games</option>
+        <option value="countries">Countries</option>
+        <option value="companies">Companies</option>
+      </select>
+      <input id="query" type="text" placeholder="Powered by Fuzzle">
+      <input class="tag" type="submit" value="Search">
+    </form>
+    <p id="amount">Search through 1000 movies.</p>
+    <br>
+
+    <h3>Results</h3>
+    <ul>
+    </ul>
+    <p id="searchTime"></p>
   </main>
 
   <div w3-include-html="html/footer.html"></div>

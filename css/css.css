@@ -93,3 +93,35 @@ ol.index ul li::before {
 .tag:hover {
   background-color: var(--dark-turquoise-pressed);
 }
+
+#fuzzleDemo select {
+  padding: 2px 10px 2px 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--light-dark-turquoise);
+  border-bottom: 1px solid var(--light-dark-turquoise);
+}
+
+#fuzzleDemo select:after {
+  background-color: white;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+#fuzzleDemo input[type=text]{
+  padding: 4px;
+  margin: 0;
+  border: none;
+}
+
+#fuzzleDemo input[type=text]:focus {
+  outline: none;
+}
+
+#fuzzleDemo input[type=submit]{
+  padding: 5px;
+  margin: 0;
+  border: none;
+}
