@@ -1,0 +1,25 @@
+.page-container {
+  display: flex;
+}
+
+.page {
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  box-shadow: var(--material-shadow-light);
+  padding: 50px;
+  margin: 10px;
+  transition: color 0.5s;
+  transition: box-shadow 0.25s;
+  background-position: center;
+  background-size: cover;
+}
+
+.page:hover {
+  /*color: var(--light-grey);*/
+  box-shadow: var(--material-shadow);
+}
+
+.page {
+  background-image: url("../img/fuzzle/bg.png");
+}

@@ -109,4 +109,8 @@
   .box .title {
     width: 98%;
   }
+
+  .box .content {
+    width: auto;
+  }
 }

@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
 :root {
+  --light-grey: rgb(176, 176, 176);
   --dark-grey: rgb(44, 45, 48);
   --dark-blue: rgb(56, 63, 86);
   --dark-blue-pressed: rgb(51, 56, 71);
