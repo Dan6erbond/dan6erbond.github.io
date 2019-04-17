@@ -1,9 +1,11 @@
 .page {
+  text-align: center;
   font-size: 24px;
   display: inline-block;
   text-decoration: none;
   box-shadow: var(--material-shadow-light);
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
+  min-width: 100px;
   margin: 10px;
   transition: color 0.5s;
   transition: box-shadow 0.25s;
