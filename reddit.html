@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Mariavi is the dev team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters.">
+  <meta name="keywords" content="Reddit,Discord,Amy,Ravi,Dan6erbond,Lydocia,Mariavi,Banhammer,Reddify,Substarters">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="css/css.css" rel="stylesheet" />
+  <link href="css/box.css" rel="stylesheet" />
+
+  <script src="Scripts/w3.js"></script>
+  <title>Mariavi</title>
+</head>
+
+<body>
+  <div w3-include-html="html/header.html"></div>
+
+  <main>
+    <h1>Reddit</h1>
+
+    <p>
+      As mentioned, I spend a lot of time on Reddit. But I don't just <s>farm karma</s> contribute, I also make bots and scripts for it!
+    </p>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="title">
+          <a href="https://github.com/Dan6erbond/Egosaurus">
+            <p>Egosaurus</p>
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            Egosaurus is a simple script that allows you to <b>print</b>, <b>save</b> and <s>post</s> your Reddit statistics to your local system or to your user profile on Reddit.
+            <br>
+            <br>
+            It grabs your karma breakdown, your moderated subreddits as well as miscellaneous information such as age of the account and top post which is also posted to the user's profile.
+          </p>
+          <div class="tags">
+            <a href="https://github.com/Dan6erbond/Egosaurus" target="_blank" class="tag">GitHub</a>
+            <a href="https://www.reddit.com/user/Dan6erbond/comments/beqsng/udan6erbond_statistics/" target="_blank" class="tag">Example on Reddit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="title">
+          <a href="https://github.com/Dan6erbond/Seedless">
+            <p>Seedless</p>
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            Seedless is a simple script to edit and remove your Reddit comments and submissions.
+            <br>
+            <br>
+            Unlike other, similar setups it's not limited to removing everything or maybe having a few sliders, but instead is heavily customizable.
+            Rules can be added and each rule has a set of criteria that all need to be met if a comment should be removed under that rule.
+            Only one rule needs to be true for the post to be removed, but each rule supports multiple criteria which all need to be met so that a post is removed.
+            <br>
+            <br>
+            The available criteria are <code>max_age, min_age, min_upvotes, max_upvotes, nsfw</code> and <code>subreddit</code>.
+          </p>
+          <div class="tags">
+            <a href="https://github.com/Dan6erbond/Seedless" target="_blank" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="html/footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
