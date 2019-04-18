@@ -44,6 +44,10 @@
   background-image: url("../img/fuzzle/bg.png");
 }
 
+.box .title.reddit {
+  background: rgba(255,64,6);
+}
+
 .box .title.fuzzle a p {
   color: var(--light-dark-turquoise);
 }
