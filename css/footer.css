@@ -7,5 +7,44 @@ footer {
   right: 0;
   padding: 10px;
   color: white;
-  text-align: right;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer div {
+  height: 20px;
+}
+
+footer .right {
+  float: right;
+  /*margin-right: 20px;*/
+}
+
+footer .left {
+  float: left;
+  margin-left: 20px;
+}
+
+footer .sm {
+  height: 100%;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+footer .sm.reddit {
+  background: rgba(255, 69, 0);
+}
+
+footer .sm.github {
+  /*background: #181717;*/
+}
+
+footer .sm.patreon {
+  background: #F96854;
+}
+
+footer .sm.youtube {
+  background: #FF0000;
 }
