@@ -57,7 +57,7 @@
     },
     {
         "key": "Projects",
-        "description": "An overview of all the projects I've worked on so far.",
+        "description": "An overview of all the projects I've worked on so far and have on my roadmap.",
         "tags": [
             "Fuzzle",
             "Programming",
@@ -74,5 +74,23 @@
             "Discord"
         ],
         "url": "projects.html"
+    },
+    {
+        "key": "Reddit",
+        "description": "I spend a lot of time on Reddit and have already made a few bots for the platform.",
+        "tags": [
+            "Reddit",
+            "1000DOP",
+            "1000DaysOfPractice",
+            "Stats",
+            "Egosaurus",
+            "Seedless",
+            "Comment",
+            "Clear",
+            "Delete",
+            "Account",
+            "Management"
+        ],
+        "url": "reddit.html"
     }
 ]
