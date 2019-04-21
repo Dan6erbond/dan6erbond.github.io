@@ -21,3 +21,11 @@
 .page {
   background-image: url("../img/fuzzle/bg.png");
 }
+
+@media only screen and (max-width: 600px) {
+  .page {
+    width: 97%;
+    margin-right: 0;
+    padding: 20px 0px 20px 0px;
+  }
+}

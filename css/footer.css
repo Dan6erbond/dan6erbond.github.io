@@ -33,18 +33,18 @@ footer .sm {
   border-radius: 4px;
 }
 
-footer .sm.reddit {
-  background: rgba(255, 69, 0);
-}
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 14px;
+    padding: 5px;
+  }
 
-footer .sm.github {
-  /*background: #181717;*/
-}
+  footer div {
+    height: 12px;
+    padding-bottom: 5px;
+  }
 
-footer .sm.patreon {
-  background: #F96854;
-}
-
-footer .sm.youtube {
-  background: #FF0000;
+  footer .left {
+    margin-left: 10px;
+  }
 }
