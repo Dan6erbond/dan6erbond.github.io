@@ -53,8 +53,18 @@ function search(){
       document.getElementById("searchTime").innerHTML = results.length + " Results in " + (timeEnded - timeStarted) + "ms";
 
       for (var i = 0; i < maxRes; i++){
+        var result = results[i];
         var li = document.createElement("li");
-        li.innerHTML = results[i]["key"];
+
+        if ("appid" in result){
+          var a = document.createElement("a");
+          a.href = "https://store.steampowered.com/app/" + result["appid"];
+          a.target = "_blank";
+          a.innerHTML = result["key"];
+          li.appendChild(a);
+        } else {
+          li.innerHTML = result["key"];
+        }
 
         ul.appendChild(li);
       }
