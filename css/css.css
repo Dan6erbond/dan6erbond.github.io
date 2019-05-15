@@ -35,10 +35,13 @@ a:link, a:visited, a:link:active, a:visited:active {
 }
 
 main {
+  margin: 0 auto;
+  width: 90vw;
   margin-top: 75px;
   padding: 5px;
   animation: fade-in 0.75s;
   margin-bottom: 50px;
+  max-width: 1200px;
 }
 
 @keyframes fade-in {
