@@ -1,7 +1,8 @@
 .box-container {
-  width: 47vw;
+  width: 100%;
   margin: 0px 20px 20px 0px;
   display: inline-block;
+  max-width: 1050px;
 }
 
 .box {
@@ -87,20 +88,9 @@
   padding: 0px 15px 0px 15px;
 }
 
-.box .content .tags {
-  padding-top: 25px;
-  position: relative;
-  bottom: 15px;
-  width: 100%;
-}
-
-.box .content .tags .tag {
-  float: right;
-}
-
 @media only screen and (max-width: 1200px) {
   .box-container {
-    width: 94vw;
+    width: 100%;
     margin-right: 0;
   }
 }

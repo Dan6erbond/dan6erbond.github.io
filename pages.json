@@ -1,5 +1,29 @@
 [
     {
+        "key": "Dan6erbond",
+        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
+        "tags": [
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "Zofingen",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "about-me.html"
+    },
+    {
         "key": "Fuzzle",
         "description": "Fuzzle is a scaleable, customizable search engine written in Python and JavaScript",
         "tags": [

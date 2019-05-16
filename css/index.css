@@ -1,25 +1,72 @@
-.page {
-  text-align: center;
-  font-size: 24px;
-  display: inline-block;
-  text-decoration: none;
-  box-shadow: var(--material-shadow-light);
-  padding: 50px 0px 50px 0px;
-  min-width: 200px;
-  margin: 10px;
-  transition: color 0.5s;
-  transition: box-shadow 0.25s;
-  background-position: center;
+.hero {
+  margin: 0px 10px 0px 10px;
+  padding-top: 5px;
+  box-shadow: var(--material-shadow);
+  height: 400px;
+  background: url("../img/code.jpg");
   background-size: cover;
 }
 
-.page:hover {
-  /*color: var(--light-grey);*/
+.page {
+  min-height: 200px;
+  flex: 1 1 0;
+  background-color: var(--dark-turquoise);
   box-shadow: var(--material-shadow);
+  margin: 10px;
+  /*transition: color 0.5s;
+  transition: box-shadow 0.25s;*/
 }
 
-.page {
+.page .content {
+  padding: 0px 20px 0px 20px;
+}
+
+/*.page:hover {
+  color: var(--light-grey);
+  box-shadow: var(--material-shadow);
+}*/
+
+.page .title {
+  padding-left: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  margin: 0;
+  padding-top: 25px;
+  background-color: var(--dark-grey);
+}
+
+.page p {
+  font-size: 18px;
+  min-height: 150px;
+}
+
+.page .title.fuzzle {
+  background-size: cover;
   background-image: url("../img/fuzzle/bg.png");
+}
+
+.page .title.mariavi {
+  background-image: url("../img/mariavi/logo.png");
+}
+
+.page .title.reddit  {
+  background-image: url("../img/icons/reddit.svg");
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 5px solid white;
+  margin: 10px 0px 10px 0px;
 }
 
 @media only screen and (max-width: 600px) {

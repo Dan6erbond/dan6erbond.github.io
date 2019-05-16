@@ -98,6 +98,17 @@ ol.index ul li::before {
   background-color: var(--dark-turquoise-pressed);
 }
 
+.tags {
+  padding-top: 25px;
+  position: relative;
+  bottom: 15px;
+  width: 100%;
+}
+
+.tags .tag {
+  float: right;
+}
+
 #fuzzleDemo select {
   padding: 2px 10px 2px 10px;
   background-color: transparent;
