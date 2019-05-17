@@ -1,10 +1,41 @@
 .hero {
   margin: 0px 10px 0px 10px;
-  padding-top: 5px;
   box-shadow: var(--material-shadow);
-  height: 400px;
+  overflow: hidden;
+}
+
+.hero .img {
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
   background: url("../img/code.jpg");
+  background-position: center;
   background-size: cover;
+  transition: transform 0.75s;
+  padding-top: 20px;
+}
+
+.img:hover {
+  transform: scale(1.05);
+}
+
+/*.hero .img .h1 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}*/
+.hero .img h1 {
+  background-color: rgba(0, 0, 0, .5);
+  margin: 0;
+  padding-top: 40px;
+}
+
+.hero .img p {
+  margin-top: 0;
+  padding: 40px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .page {
@@ -25,7 +56,6 @@
   color: var(--light-grey);
   box-shadow: var(--material-shadow);
 }*/
-
 .page .title {
   padding-left: 25px;
   font-size: 24px;
@@ -53,7 +83,7 @@
   background-image: url("../img/mariavi/logo.png");
 }
 
-.page .title.reddit  {
+.page .title.reddit {
   background-image: url("../img/icons/reddit.svg");
 }
 
