@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Carter+One');
-@import url('https://fonts.googleapis.com/css?family=Coda');
+@import url('https://fonts.googleapis.com/css?family=Coda:400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
 :root {
@@ -22,6 +22,7 @@
 h1 {
   text-align: center;
   font-family: Coda;
+  font-weight: bold;
 }
 
 body {

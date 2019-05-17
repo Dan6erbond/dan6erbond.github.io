@@ -15,7 +15,7 @@
   padding-top: 20px;
 }
 
-.img:hover {
+.hero:hover img, .img:hover {
   transform: scale(1.05);
 }
 
@@ -26,6 +26,10 @@
   margin: 0 auto;
 }*/
 .hero .img h1 {
+  /*color: black;*/
+  font-size: 50px;
+  /*background-color: var(--light-dark-turquoise);*/
+  /*mix-blend-mode: screen;*/
   background-color: rgba(0, 0, 0, .5);
   margin: 0;
   padding-top: 40px;
@@ -35,6 +39,8 @@
   margin-top: 0;
   padding: 40px;
   bottom: 0;
+  /*mix-blend-mode: screen;
+  background-color: var(--light-dark-turquoise);*/
   background-color: rgba(0, 0, 0, .5);
 }
 
