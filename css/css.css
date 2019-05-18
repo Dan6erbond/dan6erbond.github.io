@@ -19,16 +19,47 @@
   --substarters-yellow: rgb(252, 175, 23);
 }
 
-h1 {
-  text-align: center;
-  font-family: Coda;
-  font-weight: bold;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark-blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark-turquoise);
+  /*border-radius: 3px;
+  box-shadow: var(--material-shadow);*/
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-turquoise-pressed);
+}
+
+::selection {
+  color: white;
+  background: var(--light-dark-turquoise);
 }
 
 body {
   background-color: var(--dark-grey);
   font-family: Nunito Sans;
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-align: center;
+  font-family: Coda;
+  font-weight: bold;
 }
 
 a:link, a:visited, a:link:active, a:visited:active {
@@ -43,6 +74,27 @@ main {
   animation: fade-in 0.75s;
   margin-bottom: 50px;
   max-width: 1200px;
+}
+
+#scrollUp {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  height: 50px;
+  width: 50px;
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--dark-turquoise); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 24px; /* Increase font size */
+}
+
+#scrollUp:hover {
+  background-color: var(--dark-turquoise-pressed); /* Add a dark-grey background on hover */
 }
 
 @keyframes fade-in {
