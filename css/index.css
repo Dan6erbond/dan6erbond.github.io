@@ -45,6 +45,7 @@
 }
 
 .page {
+  min-width: 250px;
   min-height: 200px;
   flex: 1 1 0;
   background-color: var(--dark-turquoise);
@@ -100,15 +101,9 @@
 .page-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 10px;
+  padding-right: 10px;
   border-bottom: 5px solid white;
   margin: 10px 0px 10px 0px;
-}
-
-@media only screen and (max-width: 600px) {
-  .page {
-    width: 97%;
-    margin-right: 0;
-    padding: 20px 0px 20px 0px;
-  }
 }
