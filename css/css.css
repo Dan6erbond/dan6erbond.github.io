@@ -15,7 +15,7 @@
   --dark-turquoise-pressed: rgb(65, 94, 86);
   --material-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
   --material-shadow-light: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  --banhammer-purple: rgb(205,206,255);
+  --banhammer-purple: rgb(205, 206, 255);
   --substarters-yellow: rgb(252, 175, 23);
 }
 
@@ -27,7 +27,8 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.25);/*var(--dark-blue);*/
+  background: rgba(0, 0, 0, 0.25);
+  /*var(--dark-blue);*/
 }
 
 /* Handle */
@@ -78,31 +79,45 @@ main {
 }
 
 #scrollUp {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
   height: 50px;
   width: 50px;
-  bottom: 50px; /* Place the button at the bottom of the page */
-  right: 10px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--dark-turquoise); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 24px; /* Increase font size */
+  bottom: 50px;
+  /* Place the button at the bottom of the page */
+  right: 10px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: var(--dark-turquoise);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 24px;
+  /* Increase font size */
 }
 
 #scrollUp:hover {
-  background-color: var(--dark-turquoise-pressed); /* Add a dark-grey background on hover */
+  background-color: var(--dark-turquoise-pressed);
+  /* Add a dark-grey background on hover */
 }
 
 @keyframes fade-in {
-   from {
+  from {
     margin-top: 100px;
     opacity: 0.25;
   }
+
   to {
     margin-top: 75px;
     opacity: 1;
@@ -124,7 +139,7 @@ ol.index li::before {
   color: white;
 }
 
-ol.index > li {
+ol.index>li {
   counter-increment: custom-counter;
 }
 
@@ -163,6 +178,72 @@ ol.index ul li::before {
   float: right;
 }
 
+#contact {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#contact div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact div input {
+  min-width: 0;
+  flex: 1 1 0;
+  padding: 5px;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  box-sizing: content-box;
+  background-color: transparent;
+  color: white;
+  font-family: Roboto;
+}
+
+#contact div input:first-of-type {
+  margin: 0px 10px 0px 0px;
+}
+
+#contact textarea {
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  box-sizing: content-box;
+  background-color: transparent;
+  padding: 1.5rem 0;
+  resize: none;
+  color: white;
+  width: 100%;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#contact input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  min-width: 150px;
+  width: 25%;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  box-shadow: var(--material-shadow-light);
+  transition: box-shadow 0.25s;
+  background-color: var(--dark-turquoise);
+}
+
+#contact input[type=submit]:hover {
+  box-shadow: var(--material-shadow);
+}
+
 #fuzzleDemo select {
   padding: 2px 10px 2px 10px;
   background-color: transparent;
@@ -179,7 +260,7 @@ ol.index ul li::before {
   color: black;
 }
 
-#fuzzleDemo input[type=text]{
+#fuzzleDemo input[type=text] {
   padding: 4px;
   margin: 0;
   border: none;
@@ -189,8 +270,23 @@ ol.index ul li::before {
   outline: none;
 }
 
-#fuzzleDemo input[type=submit]{
+#fuzzleDemo input[type=submit] {
   padding: 5px;
   margin: 0;
   border: none;
+}
+
+@media only screen and (max-width: 900px) {
+  #contact {
+    width: 95%;
+  }
+
+  #contact div input {
+    width: 100%;
+    flex: none;
+  }
+
+  #contact div input:first-of-type {
+    margin: 0px 0px 10px 0px;
+  }
 }
