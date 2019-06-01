@@ -4,7 +4,20 @@ from bs4 import BeautifulSoup
 
 pages = list()
 
-files = [f for f in os.listdir('.') if os.path.isfile(f)]
+folders = [f for f in os.listdir('.') if os.path.isdir(f)]
+
+# print(folders)
+
+files = list()
+
+for _f in folders:
+    # print(_f)
+    _files = [_f + "/" + f for f in os.listdir(_f) if os.path.isfile(_f + "/" + f)]
+    # print(_files)
+    files.extend(_files)
+
+# print(files)
+
 for f in files:
     if f.endswith(".html"):
         with open(f, encoding="utf8") as f:

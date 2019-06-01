@@ -1,127 +1,180 @@
 [
     {
-        "key": "Dan6erbond",
-        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
-        "tags": [
-            "Programming",
-            "Python",
-            "C#",
-            "TechDog",
-            "Domination",
-            "Dan6erbond",
-            "Zofingen",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "RaviAnand",
-            "Mohabir",
-            "Alte Kantonsschule Aarau",
-            "AKSA",
-            "Informatik",
-            "Informatikmittelschule",
-            "BBBaden"
-        ],
-        "url": "about-me.html"
+        "key": "I1A",
+        "url": "I1A/index.html"
     },
     {
-        "key": "Dan6erbond",
-        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
-        "tags": [
-            "Programming",
-            "Python",
-            "C#",
-            "TechDog",
-            "Domination",
-            "Dan6erbond",
-            "Zofingen",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "RaviAnand",
-            "Mohabir",
-            "Alte Kantonsschule Aarau",
-            "AKSA",
-            "Informatik",
-            "Informatikmittelschule",
-            "BBBaden"
-        ],
-        "url": "contact.html"
+        "key": "Im17A | Biologie",
+        "url": "Im17A/Biologie.html"
     },
     {
-        "key": "Fuzzle",
-        "description": "Fuzzle is a scaleable, customizable search engine written in Python and JavaScript",
-        "tags": [
-            "Dan6erbond",
-            "JavaScript",
-            "Python",
-            "Search",
-            "Engine",
-            "Project",
-            "GitHub",
-            "Data"
-        ],
-        "url": "fuzzle.html"
+        "key": "Im17A | Chemie",
+        "url": "Im17A/Chemie.html"
     },
     {
-        "key": "Dan6erbond",
-        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
-        "tags": [
-            "Programming",
-            "Python",
-            "C#",
-            "TechDog",
-            "Domination",
-            "Dan6erbond",
-            "Zofingen",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "RaviAnand",
-            "Mohabir",
-            "Alte Kantonsschule Aarau",
-            "AKSA",
-            "Informatik",
-            "Informatikmittelschule",
-            "BBBaden"
-        ],
-        "url": "index.html"
+        "key": "Im17A | Deutsch",
+        "url": "Im17A/Deutsch.html"
     },
     {
-        "key": "Projects",
-        "description": "An overview of all the projects I've worked on so far and have on my roadmap.",
+        "key": "Im17A | Englisch",
+        "url": "Im17A/Englisch.html"
+    },
+    {
+        "key": "Im17A | Finanz- und Rechnungswesen",
+        "url": "Im17A/Finanzwesen.html"
+    },
+    {
+        "key": "Im17A | Franz\u00f6sisch",
+        "url": "Im17A/Franz\u00f6sisch.html"
+    },
+    {
+        "key": "Im17A | Geschichte",
+        "url": "Im17A/Geschichte.html"
+    },
+    {
+        "key": "Im17A | Hausaufgaben",
+        "url": "Im17A/Hausaufgaben.html"
+    },
+    {
+        "key": "Im17A",
+        "url": "Im17A/index.html"
+    },
+    {
+        "key": "Im17A | Informatik",
+        "url": "Im17A/Informatik.html"
+    },
+    {
+        "key": "Im17A | Klassenreise 2017",
+        "url": "Im17A/Klassenreise 2017.html"
+    },
+    {
+        "key": "Im17A | Mathematik",
+        "url": "Im17A/Mathematik.html"
+    },
+    {
+        "key": "Im17A | Wirtschaft und Recht",
+        "url": "Im17A/Wirtschaft.html"
+    },
+    {
+        "key": "Im17A | Zusammenfassungen",
+        "url": "Im17A/Zusammenfassungen.html"
+    },
+    {
+        "key": "Im17A | Startseite",
+        "url": "Im17A v2/index.html"
+    },
+    {
+        "key": "Mariavi",
+        "description": "Mariavi is the team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters and SMART.",
         "tags": [
-            "Fuzzle",
-            "Programming",
-            "Python",
-            "C#",
-            "TechDog",
-            "Domination",
+            "Reddit",
+            "Discord",
+            "Amy",
+            "Ravi",
             "Dan6erbond",
-            "HTML",
-            "CSS",
-            "JavaScript",
+            "Lydocia",
             "Mariavi",
-            "Reddit",
-            "Discord"
+            "Banhammer",
+            "Reddify",
+            "Substarters"
         ],
-        "url": "projects.html"
+        "url": "mariavi/index.html"
     },
     {
-        "key": "Reddit",
-        "description": "I spend a lot of time on Reddit and have already made a few bots for the platform.",
+        "key": "Mariavi",
+        "description": "Mariavi is the dev team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters.",
         "tags": [
             "Reddit",
-            "1000DOP",
-            "1000DaysOfPractice",
-            "Stats",
-            "Egosaurus",
-            "Seedless",
-            "Comment",
-            "Clear",
-            "Delete",
-            "Account",
-            "Management"
+            "Discord",
+            "Amy",
+            "Ravi",
+            "Dan6erbond",
+            "Lydocia",
+            "Mariavi",
+            "Banhammer",
+            "Reddify",
+            "Substarters"
         ],
-        "url": "reddit.html"
+        "url": "mariavi/melon.html"
+    },
+    {
+        "key": "RaviAnand | Ausbildung",
+        "description": "Website About RaviAnand Mohabir",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "old/Ausbildung.html"
+    },
+    {
+        "key": "RaviAnand | Hobbys",
+        "description": "Website About RaviAnand Mohabir",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "old/Hobbys.html"
+    },
+    {
+        "key": "RaviAnand",
+        "description": "Website About RaviAnand Mohabir",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "old/index.html"
+    },
+    {
+        "key": "RaviAnand | \u00dcber Mich",
+        "description": "Website About RaviAnand Mohabir",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "old/\u00dcber Mich.html"
+    },
+    {
+        "key": "TechDog | Domination",
+        "url": "TechDog/Domination.html"
+    },
+    {
+        "key": "TechDog",
+        "url": "TechDog/index.html"
+    },
+    {
+        "key": "TechDog | Segway Surfers",
+        "url": "TechDog/Segway Surfers.html"
     }
 ]
