@@ -8,48 +8,48 @@ h2 {
 
 .top {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
-.card {
+.top .card {
   padding: 10px;
   flex: 3;
   min-height: 350px;
-  margin-left: 25px;
+  margin: 0px 0px 25px 25px;
   max-width: 30%;
-  min-width: 200px;
+  min-width: 300px;
   box-shadow: var(--material-shadow-light);
 }
 
-.card img {
+.top .card img {
   width: 60%;
   padding: 0% 20% 10px 20%;
 }
 
-.card .table {
+.top .card .table {
   overflow-x: auto;
 }
 
-.card table {
+.top .card table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.card table th {
+.top .card table th {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   padding: 5px 0px 5px 0px;
 }
 
-.card table tr td {
+.top .card table tr td {
   padding: 5px 0px 5px 0px;
 }
 
-.card table tr td:first-of-type {
+.top .card table tr td:first-of-type {
   padding-left: 5px;
 }
 
-.top .text {
+.top .summary {
   width: auto;
   flex: 7;
   overflow: auto;
@@ -77,8 +77,4 @@ h2 {
 .wiki-img p {
   margin: 0;
   padding: 5px;
-}
-
-.wiki-img .reactrole {
-  max-height: 400px;
 }
