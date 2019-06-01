@@ -54,10 +54,18 @@
             <a href="#reactionroles">Reaction-Roles</a>
           </li>
           <li>
-            <a href="#msgmanagement">Message Management</a>
+            <a href="#messages">Messages</a>
+            <ul>
+              <li>
+                <a href="#msgmanagement">Management</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#melons">Melons</a>
+          </li>
+          <li>
+            <a href="#utility">Utility</a>
           </li>
         </ol>
       </div>
@@ -103,16 +111,78 @@
 
     <div class="img-container">
       <div class="wiki-img">
-        <img class="reactrole" style="max-height: 400px;" src="img/melon/reaction-roles.jpg" alt="">
+        <img style="max-height: 400px;" src="img/melon/reaction-roles.jpg" alt="">
         <p>Reactions beneath the message can be clicked on for the user to receive a role.</p>
       </div>
     </div>
 
-    <h2 id="msgmanagement">Message Management<a onclick="copyToClipboard(this.href);" href="#msgmanagement">🔗</a></h2>
-    <p>👷‍♂️ In progress!</p>
+    <h2 id="messages">Messages<a onclick="copyToClipboard(this.href);" href="#messages">🔗</a></h2>
+    <p>
+      Melon has two handy commands that allow you to quote people, evaluate poll results and more!
+      <br>
+      <br>
+      <code>!quote [id, breakdown]</code>: This command will return a message in the form of an embed. The <code>id</code> of the message must be fed, whereas the boolean parameter <code>breakdown</code> is optional.
+      If a message has reactions added to it, they will be shown as part of the embed Melon returns quoting the message. Otherwise an embed with the author's name, a URL to the message as well as the text (including markdown) will be returned:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/melon/melon-quote.jpg" alt="">
+        <p>Melon will return the message info including reactions.</p>
+      </div>
+    </div>
+    <p>
+      <code>!rawmsg [id]</code>: <code>!rawmsg</code> follows a similar design pattern to <code>!quote</code> and will return the message within a simple code block allowing you to see the markdown which proves useful for when a message needs to be posted somewhere else and you aren't the author.
+    </p>
+    <h3 id="msgmanagement">Management<a onclick="copyToClipboard(this.href);" href="#msgmanagement">🔗</a></h3>
+    <p>
+      Given you have the <code>Manage Messages</code> permission in the channel you are trying to use either of the following commands, Melon allows you bulk remove messages:
+      <br>
+      <br>
+      <code>!nuke</code>: Removes a maximum of 1000 messages in the current channel, ignores pinned messages.
+      <br>
+      <code>!clear [amt]</code>: Removes the given amount of messages, again ignoring pinned messages.
+    </p>
 
     <h2 id="melons">Melons<a onclick="copyToClipboard(this.href);" href="#melons">🔗</a></h2>
-    <p>👷‍♂️ In progress!</p>
+    <p>
+      Melons are a way of storing information that derrived from the Tags Substarter's bot, Substar, used to manage.
+      Currently Melons are solely managed by Amy and Ravi and split in to a couple categories, amongst them <code>programming</code> and <code>reddit</code>.
+      <br>
+      <br>
+      Searching through the Melons is easy, type <code>!melon [search]</code> and Melon will return any findings or display exact matches:
+    </p>
+    <div class="imgs-container">
+      <div class="wiki-img" style="width: 30%; min-width:350px;">
+        <img src="img/melon/melon-re.jpg" style="max-height: 220px;" alt="">
+        <p>Clicking on any of the numbers will display the appropriate Melon.</p>
+      </div>
+      <div class="wiki-img" style="width: 60%; min-width: 620px;">
+        <img src="img/melon/melon-redesign.jpg" style="max-height: 250px;" alt="">
+        <p>The information is then displayed in an orderly fashion.</p>
+      </div>
+    </div>
+    <p>
+      Server administrators can view the currently existing Melon categories by using the command <code>!meloncats</code> and en-/disable a particular one with <code>!enablecat [cat]</code> and <code>!disablecat [cat]</code> respectively.
+      This gives a lot of control over what kind of information is shared and prioritized.
+      The search engine powering Melon is Fuzzle and allows for users to search through tags which are added by Mariavi as well to supercharge the experience.
+    </p>
+
+    <h2 id="utility">Utility<a onclick="copyToClipboard(this.href);" href="#melons">🔗</a></h2>
+    <p>
+      Alongside the previously elaborated commands Melon has some miscellaneous utility commands which have been proven useful in the past:
+      <br>
+      <br>
+      <code>!color [amt, tolerance]</code>: Melon will find the most previous image attachment and return a color grid with the RGB and HEX values of the most common colors.
+      <br>
+      In addition, the <code>amt</code> value can be fed to specify how many colors the grid should contain and <code>tolerance</code> should be a value between 3-45 to specify how close the colors should be to one another.
+      Higher <code>tolerance</code> values means the colors will be more unique than if they are closer to the default value of <code>6</code>.
+      <br>
+      <br>
+      <code>!avatar [user]</code>: This command will return the given user's (if not specified, your own) avatar in either a <code>png</code> or URL format (for animated avatars).
+      <br>
+      <br>
+      <code>!rand [options]</code>: If the <code>option</code> parameter follows the format <code>[int]-[int]</code> Melon will generate a random number, otherwise she will split the options with a space between them and return a random pick.
+    </p>
   </main>
 
   <div w3-include-html="/html/tags.html"></div>

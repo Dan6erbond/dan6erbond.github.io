@@ -61,6 +61,15 @@ h2 {
   text-align: center;
 }
 
+.imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgs-container .wiki-img {
+  margin-bottom: 10px;
+}
+
 .wiki-img {
   padding: 5px;
   box-shadow: var(--material-shadow-light);
