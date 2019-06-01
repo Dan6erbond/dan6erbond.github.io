@@ -23,31 +23,30 @@
 
   <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
 
-  <link href="css/css.css" rel="stylesheet" />
+  <link href="/css/css.css" rel="stylesheet" />
+  <link href="/css/box.css" rel="stylesheet" />
   <link href="css/box.css" rel="stylesheet" />
 
-  <script src="Scripts/w3.js"></script>
-  <script src="Scripts/d6b.js"></script>
+  <script src="/js/w3.js"></script>
+  <script src="/js/d6b.js"></script>
 
   <title>Mariavi</title>
 </head>
 
 <body>
-  <div w3-include-html="html/header.html"></div>
+  <div w3-include-html="/html/header.html"></div>
 
   <main>
-    <h1>Mariavi</h1>
+    <h1>Mariavi<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
 
     <p>
-      Mariavi is the dev team behind Discord bots like <b>Banhammer</b>, <b>Melon</b> and <b>Reddify</b> as well as projects such as /r/substarters.
-      <br>
-      <br>
+      Mariavi is the team behind Discord bots like <b>Banhammer</b>, <b>Melon</b> and <b>Reddify</b> as well as projects such as <a href="https://www.reddit.com/r/substarters" target="_blank">/r/substarters</a> and <a href="https://www.github.com/Dan6erbond/SMART" target="_blank">SMART</a>.
       Amy also has a <a href="http://wiki.lydocia.com/2019/mariavi/">website</a>!
     </p>
 
     <hr>
 
-    <h2>Index</h2>
+    <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
 
     <ol class="index">
       <li>
@@ -74,40 +73,34 @@
 
     <hr>
 
-    <h2 id="about">About us</h2>
+    <h2 id="about">About us<a onclick="copyToClipboard(this.href);" href="#about">🔗</a></h2>
     <p>
-      The devs are <b>Amy</b> and <b>Ravi</b> who both met each other through Reddit.
-      Ravi saw an ad she put up for people interested in moderating her subreddit /r/casualChildAbuse (RIP - 2019) and volunteered.
-      They quickly became friends and started chatting about all their /r/CrazyIdeas such as a bot that would let them moderate the subreddit at the time.
-      A concept quickly became reality and soon enough, /r/casualChildAbuse was practically being run through Discord.
-      It would allow the mod-team to vote on things easier and get pinged through reports and new items.
-      They were able to step up our moderation game quite a bit.
+      The members are <b>Amy</b> and <b>Ravi</b> who both met each other through Reddit.
+      Ravi saw an ad she put up for people interested in moderating her subreddit and volunteered.
+      They quickly became friends and started chatting about all their ideas such as a bot that would let them moderate the subreddit through Discord.
+      A concept quickly became reality and soon enough, the subreddit was practically being run through Discord.
+      It would allow the mod-team to vote on things easier and get pinged through reports and new posts.
+      They were able to step up their moderation game quite a bit.
       <br>
       <br>
-      After /r/casualChildAbuse was quarantined and the moderator team parted ways, Amy and Ravi thought about creating a more customizeable version of the Discord moderation bot which they called <b>Banhammer</b>.
+      After the subreddit's moderator team dissolved, Amy and Ravi thought about creating a more customizeable version of the Discord moderation bot which they called <b>Banhammer</b>.
       A couple weeks into the project security flaws were discovered and the project was put to a hault and <b>Reddify</b> was born to ensure a secure connection between Discord and Reddit via 2FA.
-      As they took on more projects such as revamping <u>Substarters</u> they decided to give their digital friendship a name and by mixing letters of their names, Mariavi was born.
+      As they took on more projects such as revamping <u>Substarters</u> they decided their digital friendship needed a name, Mariavi was born.
       <br>
       <br>
-      With time they took on more and more projects such as <b>Substarters</b> - a community for Reddit users and moderators alike with the main goal of helping the communities grow as well as others!
-      Substarters got a facelift when Mariavi was founded with bots that automated simple processes as well as <u>Tags</u> which were a way for information to be searched and added to and from a database that the moderator team had access to.
-      The Tags have since been moved to the <b>Melon</b> - a utility bot for Discord servers that <u>Substarters</u> makes good use of.
-      <br>
-      <br>
-      Since then they take custom bot requests for a <i>fee</i> and are open to teaching you how to code for <u>free</u> as well as share bots and ideas with the community to encourage the creation of <b><u>good bots</u></b> on Reddit and Discord alike.
       They have a <a href="https://discord.gg/XyKZgzN">Discord server</a> which you are always welcome to join and Amy has a <a href="http://wiki.lydocia.com/2019/mariavi/">website</a> of her own! Check it out!
     </p>
 
     <hr>
 
-    <h2 id="projects">Projects</h2>
+    <h2 id="projects">Projects<a onclick="copyToClipboard(this.href);" href="#projects">🔗</a></h2>
 
     <div class="box-container" id="banhammer">
       <div class="box">
         <div class="title banhammer">
           <a href="#banhammer">
             <p>Banhammer</p>
-            <img src="img/mariavi/banhammer.png" alt="">
+            <img src="img/banhammer.png" alt="">
           </a>
         </div>
         <div class="content">
@@ -131,7 +124,7 @@
         <div class="title reddify">
           <a href="#reddify">
             <p>Reddify</p>
-            <img src="img/mariavi/reddify.png" alt="">
+            <img src="img/reddify.png" alt="">
           </a>
         </div>
         <div class="content">
@@ -151,9 +144,9 @@
     <div class="box-container" id="melon">
       <div class="box">
         <div class="title">
-          <a href="#melon">
+          <a href="melon.html">
             <p>Melon</p>
-            <img src="img/mariavi/melon.png" alt="">
+            <img src="img/melon/melon.png" alt="">
           </a>
         </div>
         <div class="content">
@@ -174,10 +167,10 @@
 
     <div class="box-container" id="substarters">
       <div class="box">
-        <div class="title">
+        <div class="title substarters">
           <a href="#substarters">
             <p>Substarters</p>
-            <img src="img/mariavi/substarters.png" alt="">
+            <img src="img/substarters.png" alt="">
           </a>
         </div>
         <div class="content">
@@ -195,8 +188,8 @@
     </div>
   </main>
 
-  <div w3-include-html="html/tags.html"></div>
-  <div w3-include-html="html/footer.html"></div>
+  <div w3-include-html="/html/tags.html"></div>
+  <div w3-include-html="/html/footer.html"></div>
 
   <script>
     w3.includeHTML();

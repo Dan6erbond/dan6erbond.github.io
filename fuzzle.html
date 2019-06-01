@@ -24,10 +24,11 @@
   <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
 
   <link href="css/css.css" rel="stylesheet" />
+  <link href="css/fuzzle.css" rel="stylesheet" />
 
-  <script src="Scripts/w3.js"></script>
-  <script src="Scripts/d6b.js"></script>
-  <script type="module" src="Scripts/fuzzle.js"></script>
+  <script src="js/w3.js"></script>
+  <script src="js/d6b.js"></script>
+  <script type="module" src="js/fuzzle.js"></script>
 
   <title>Fuzzle</title>
 </head>
@@ -36,7 +37,7 @@
   <div w3-include-html="html/header.html"></div>
 
   <main>
-    <h1>Fuzzle</h1>
+    <h1>Fuzzle<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
 
     <p>
       <b>Fuzzle</b> is a simple-to-use search engine written in Python.
@@ -57,7 +58,7 @@
 
     <hr>
 
-    <h2>Demo</h2>
+    <h2 id="demo">Demo<a onclick="copyToClipboard(this.href);" href="#demo">🔗</a></h2>
     <p>Be the first to try Fuzzle over here! The datasets are all open as part of Fuzzle's Git repository.</p>
     <br>
     <form id="fuzzleDemo" action="#" onsubmit="search();return false;">

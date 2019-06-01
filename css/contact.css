@@ -1,0 +1,80 @@
+#contact {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#contact div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact div input {
+  min-width: 0;
+  flex: 1 1 0;
+  padding: 5px;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  box-sizing: content-box;
+  background-color: transparent;
+  color: white;
+  font-family: Roboto;
+}
+
+#contact div input:first-of-type {
+  margin: 0px 10px 0px 0px;
+}
+
+#contact textarea {
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  box-sizing: content-box;
+  background-color: transparent;
+  padding: 1.5rem 0;
+  resize: none;
+  color: white;
+  width: 100%;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#contact input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  min-width: 150px;
+  width: 25%;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  box-shadow: var(--material-shadow-light);
+  transition: box-shadow 0.25s;
+  background-color: var(--dark-turquoise);
+}
+
+#contact input[type=submit]:hover {
+  box-shadow: var(--material-shadow);
+}
+
+@media only screen and (max-width: 900px) {
+  #contact {
+    width: 95%;
+  }
+
+  #contact div input {
+    width: 100%;
+    flex: none;
+  }
+
+  #contact div input:first-of-type {
+    margin: 0px 0px 10px 0px;
+  }
+}

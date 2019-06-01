@@ -1,0 +1,15 @@
+.box .title.banhammer {
+  background-color: var(--banhammer-purple);
+}
+
+.box .title.substarters {
+  background-color: var(--substarters-blue);
+}
+
+.box .title.substarters a img {
+  /*box-shadow: var(--material-shadow-light);*/
+}
+
+.box .title.substarters a p {
+  color: white;
+}

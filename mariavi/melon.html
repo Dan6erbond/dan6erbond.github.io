@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Mariavi is the dev team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters.">
+  <meta name="keywords" content="Reddit,Discord,Amy,Ravi,Dan6erbond,Lydocia,Mariavi,Banhammer,Reddify,Substarters">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="/css/css.css" rel="stylesheet" />
+  <link href="/css/box.css" rel="stylesheet" />
+  <link href="/css/wiki.css" rel="stylesheet" />
+  <link href="css/box.css" rel="stylesheet" />
+
+  <script src="/js/w3.js"></script>
+  <script src="/js/d6b.js"></script>
+
+  <title>Mariavi</title>
+</head>
+
+<body>
+  <div w3-include-html="/html/header.html"></div>
+
+  <main>
+    <h1>Melon<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+
+    <div class="top">
+      <div class="text">
+        Melon is a general utility bot ranging from utilities such as reaction-roles and message management to Melons (and upcoming Tags) to make it a portable knowledge database.
+        <br>
+        <br>
+        Melon's initial feature-set was limited to reaction-roles and management as the bot served as a utility bot for the use of Mariavi and was capable of advertising certain projects.
+        The addition of Melons makes the bot an ideal companion for servers based around productivity as the Melons are split in to categories which can be enabled and disabled by server administrators.
+
+        <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
+        <ol class="index">
+          <li>
+            <a href="#reactionroles">Reaction-Roles</a>
+          </li>
+          <li>
+            <a href="#msgmanagement">Message Management</a>
+          </li>
+          <li>
+            <a href="#melons">Melons</a>
+          </li>
+        </ol>
+      </div>
+      <div class="card">
+        <img src="img/melon/melon.png" alt="">
+        <div class="table">
+          <table>
+            <th colspan=2>Overview</th>
+            <tr>
+              <td>Name</td>
+              <td>Melon</td>
+            </tr>
+            <tr>
+              <td>Developer</td>
+              <td>Mariavi</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Released</td>
+            </tr>
+            <tr>
+              <td>Framework</td>
+              <td><a href="https://github.com/Rapptz/discord.py">Discord.py</a></td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Released</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="reactionroles">Reaction-Roles<a onclick="copyToClipboard(this.href);" href="#reactionroles">🔗</a></h2>
+    <p>
+      Reaction-roles can be setup by administrators of a server and allow the users to click on reactions of a certain message to receive a role.
+      The command <code>!addreactrole [emoji, role, message, channel]</code> will have Melon add a reaction with the <code>[emoji]</code> of your choice to the messsage, as well as an entry to her database that creates a link between the message's reaction and a given role.
+    </p>
+    <h3 id="remreactrole">Removing a Reaction-Role<a onclick="copyToClipboard(this.href);" href="#remreactrole">🔗</a></h3>
+    <p>
+      Reaction-roles can be removed by using the command <code>!remreactrole [emoji, message, channel]</code> after calling it Melon will remove the reaction from the message as well as the link to avoid assigning the reaction in the future.
+    </p>
+
+    <div class="img-container">
+      <div class="wiki-img">
+        <img class="reactrole" src="img/melon/reaction-roles.jpg" alt="">
+        <p>Reactions beneath the message can be clicked on for the user to receive a role.</p>
+      </div>
+    </div>
+
+    <h2 id="msgmanagement">Message Management<a onclick="copyToClipboard(this.href);" href="#msgmanagement">🔗</a></h2>
+    <p>👷‍♂️ In progress!</p>
+
+    <h2 id="melons">Melons<a onclick="copyToClipboard(this.href);" href="#melons">🔗</a></h2>
+    <p>👷‍♂️ In progress!</p>
+  </main>
+
+  <div w3-include-html="/html/tags.html"></div>
+  <div w3-include-html="/html/footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
