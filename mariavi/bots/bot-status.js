@@ -3,16 +3,10 @@ function loadStatus(botName){
   var led = document.getElementById("led");
 
   if (url.get("textColor") != null){
-    ps = document.getElementsByTagName("p");
-    for (i in ps){
-      if (ps[i].style != null){
-        ps[i].style.color = url.get("textColor");
-      }
-    }
+    ps = document.getElementsByTagName("a")[0].style.color = url.get("textColor");
   }
 
   if (url.get("borderColor") != null){
-    console.log(url.get("borderColor"));
     led.style.borderColor = url.get("borderColor");
   }
 
@@ -28,11 +22,15 @@ function loadStatus(botName){
         led.childNodes[0].innerHTML = "Online";
       } else {
         led.classList.add("red");
-        led.childNodes[0].innerHTML = "Offline";
+        led.childNodes[0].innerHTML = "Online";
       }
     }
   };
 
   xmlhttp.open("GET", "https://api.myjson.com/bins/1f1baf", true);
   xmlhttp.send();
+}
+
+function card(){
+  console.log("test");
 }
