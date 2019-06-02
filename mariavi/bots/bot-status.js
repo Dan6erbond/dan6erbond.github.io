@@ -25,8 +25,10 @@ function loadStatus(botName){
 
       if (diff < 10){
         led.classList.add("green");
+        led.childNodes[0].innerHTML = "Online";
       } else {
         led.classList.add("red");
+        led.childNodes[0].innerHTML = "Offline";
       }
     }
   };
