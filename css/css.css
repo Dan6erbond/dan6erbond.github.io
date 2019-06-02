@@ -70,6 +70,10 @@ h1 {
   font-weight: bold;
 }
 
+h1:target, h2:target, h3:target {
+  padding-top: 75px;
+}
+
 h1 a, h2 a, h3 a {
   margin: 0;
   padding: 0;
