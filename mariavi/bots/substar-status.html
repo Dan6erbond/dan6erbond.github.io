@@ -1,46 +1,5 @@
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-
-  :root {
-    font-family: Nunito Sans;
-  }
-
-  div {
-    display: flex;
-    border: none;
-  }
-
-  img {
-    width: 50px;
-    height: auto;
-    align-self: center;
-    border-radius: 50%;
-  }
-
-  p {
-    padding: 0;
-    margin: 0;
-    margin: 15px 0px 0px 20px;
-  }
-
-  #led {
-    position: absolute;
-    top: 45px;
-    left: 45px;
-    border-radius: 50%;
-    border: 2px solid white;
-    height: 10px;
-    width: 10px;
-  }
-
-  .green {
-    background-color: green;
-  }
-
-  .red {
-    background-color: red;
-  }
-</style>
+<script src="bot-status.js"></script>
+<link href="bot-status.css" rel="stylesheet" />
 
 <div class="bot">
   <a href="https://discordapp.com/oauth2/authorize?client_id=563957035763236864&scope=bot&permissions=8" style="display: block;">
@@ -52,37 +11,5 @@
 </div>
 
 <script type="text/javascript">
-  var url = new URL(document.location.href).searchParams;
-  var led = document.getElementById("led");
-
-  if (url.get("textColor") != null){
-    ps = document.getElementsByTagName("p");
-    for (i in ps){
-      if (ps[i].style != null){
-        ps[i].style.color = url.get("textColor");
-      }
-    }
-  }
-
-  if (url.get("borderColor") != null){
-    led.style.borderColor = url.get("borderColor");
-  }
-
-  var xmlhttp = new XMLHttpRequest();
-
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var bots = JSON.parse(this.responseText);
-      diff = (new Date() - new Date(bots["substar"] * 1000)) / 1000 / 60;
-
-      if (diff < 10){
-        led.classList.add("green");
-      } else {
-        led.classList.add("red");
-      }
-    }
-  };
-
-  xmlhttp.open("GET", "https://api.myjson.com/bins/1f1baf", true);
-  xmlhttp.send();
+  loadStatus("substar");
 </script>
