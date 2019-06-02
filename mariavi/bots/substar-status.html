@@ -44,11 +44,11 @@
 
 <div class="bot">
   <a href="https://discordapp.com/oauth2/authorize?client_id=563957035763236864&scope=bot&permissions=8" style="display: block;">
-    <img src="../img/melon/melon.png" alt="">
+    <img src="../img/substar/substar.png" alt="">
     <div id="led"></div>
   </a>
 
-  <p>Melon</p>
+  <p>Substar</p>
 </div>
 
 <script type="text/javascript">
@@ -73,7 +73,7 @@
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var bots = JSON.parse(this.responseText);
-      diff = (new Date() - new Date(bots["melon"] * 1000)) / 1000 / 60;
+      diff = (new Date() - new Date(bots["substar"] * 1000)) / 1000 / 60;
 
       if (diff < 10){
         led.classList.add("green");
