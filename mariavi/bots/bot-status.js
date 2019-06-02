@@ -15,11 +15,22 @@ function loadStatus(botName){
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var bots = JSON.parse(this.responseText);
-      diff = (new Date() - new Date(bots[botName] * 1000)) / 1000 / 60;
-      led.childNodes[0].innerHTML = diff < 10 ? "Online" : "Offline";
+
+      var online = false;
+
+      if (botName in bots){
+        if (typeof bots[botName] == "number"){
+          var diff = (new Date() - new Date(bots[botName] * 1000)) / 1000 / 60;
+          online = diff < 10;
+        } else if (typeof bots[botName] == "boolean") {
+          online = bots[botName];
+        }
+      }
+
+      led.childNodes[0].innerHTML = online ? "Online" : "Offline";
 
       setTimeout(function(){
-        if (diff < 10){
+        if (online){
           led.classList.add("green");
         } else {
           led.classList.add("red");
