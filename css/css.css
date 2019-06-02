@@ -70,49 +70,33 @@ h1 {
   font-weight: bold;
 }
 
-h1 a {
-  font-size: 20px;
+h1 a, h2 a, h3 a {
   margin: 0;
   padding: 0;
-  padding-top: 7px;
   padding-left: 5px;
   text-decoration: none;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.05s;
   position: absolute;
+}
+
+h1 a {
+  font-size: 20px;
+  padding-top: 7px;
 }
 
 h2 a {
   font-size: 16px;
-  margin: 0;
-  padding: 0;
   padding-top: 5px;
-  padding-left: 5px;
-  text-decoration: none;
-  display: none;
-  position: absolute;
 }
 
 h3 a {
   font-size: 12px;
-  margin: 0;
-  padding: 0;
   padding-top: 3px;
-  padding-left: 5px;
-  text-decoration: none;
-  display: none;
-  position: absolute;
 }
 
-h1:hover a {
-  display: inline-block;
-}
-
-h2:hover a {
-  display: inline-block;
-}
-
-h3:hover a {
-  display: inline-block;
+h1:hover a, h2:hover a, h3:hover a {
+  opacity: 1;
 }
 
 a:link, a:visited, a:link:active, a:visited:active {
@@ -127,6 +111,23 @@ main {
   animation: fade-in 0.75s;
   margin-bottom: 50px;
   max-width: 1200px;
+}
+
+.copyText {
+  position: fixed;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--light-dark-turquoise);
+  transition: bottom 0.25s;
+}
+
+.copyText.active {
+  bottom: 0;
 }
 
 #scrollUp {

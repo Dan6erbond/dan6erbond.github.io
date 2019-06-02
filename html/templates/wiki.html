@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="DESCRIPTION">
+  <meta name="keywords" content="KEYWORDS">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="/css/css.css" rel="stylesheet" />
+  <link href="/css/wiki.css" rel="stylesheet" />
+
+  <script src="/js/w3.js"></script>
+  <script src="/js/d6b.js"></script>
+
+  <title>TITLE</title>
+</head>
+
+<body>
+  <div w3-include-html="/html/header.html"></div>
+
+  <main>
+    <h1>TITLE<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+
+    <div class="top">
+      <div class="summary">
+        SUMMARY
+
+        <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
+        <ol class="index">
+          <li>
+            <a href="#">H2</a>
+            <ul>
+              <li>
+                <a href="#">H3</a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="card">
+        <img src="SRC" alt="">
+        <div class="table">
+          <table>
+            <th colspan="2">Overview</th>
+            <tr>
+              <td>TD</td>
+              <td>TD</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="/html/tags.html"></div>
+  <div w3-include-html="/html/footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>

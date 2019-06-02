@@ -22,4 +22,16 @@ function copyToClipboard(str){
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
+
+  div = document.createElement("div");
+  div.innerHTML = "Link copied to clipboard!";
+  document.getElementsByTagName("body")[0].appendChild(div);
+  div.className = "copyText";
+
+  setTimeout(function(){
+    div.classList.add("active");
+    setTimeout(function(){
+      div.classList.remove("active");
+    }, 1000);
+  }, 5);
 }
