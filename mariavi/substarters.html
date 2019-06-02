@@ -203,10 +203,39 @@
         <p>Substarters uses Starma to incentivize being helpful.</p>
       </div>
     </div>
+    <p>
+      Every 24 hours, Substar will analyze the users based on how much Starma they've given, how much Starma they've received etc. and regenerates the leaderboard:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/substar/leaderboard.jpg" alt="">
+        <p>The leaderboard shows the most active Starma users for the day/overall.</p>
+      </div>
+    </div>
+    <p>
+      The Starma information is stored in a very simple JSON DB that follows the following structure:
+    </p>
+    <pre>
+      [
+        {
+          "id": [int],
+          "stars-given": [int],
+          "total-stars": [int],
+          "star-budget": [int],
+          "stars": {
+            "date": [float],
+            "user": [int]
+          }
+        }
+      ]</pre>
 
     <h2 id="astronauts">Astronauts<a onclick="copyToClipboard(this.href);" href="#astronauts">🔗</a></h2>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      Astronauts is what Substarters calls their mods.
+      Their main job is being helpful and helping out the admins when there's a lot to do.
+      In return Astronauts gets 5 Stars a day to give out (Which we encourage them to do when someone's helpful!) and have access to Submoon's findings.
+      You too, can become an Astronaut.
+      Just be helpful and we'll notice you!
     </p>
 
     <h2 id="subflippers">Subflippers<a onclick="copyToClipboard(this.href);" href="#subflippers">🔗</a></h2>

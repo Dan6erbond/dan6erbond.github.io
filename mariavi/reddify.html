@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Reddify is the Discord/Reddit verification bot by Mariavi!">
+  <meta name="keywords" content="Reddit,Discord,Amy,Lydocia,Ravi,Dan6erbond,Mariavi,2FA,Reddify,">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="/css/css.css" rel="stylesheet" />
+  <link href="/css/wiki.css" rel="stylesheet" />
+
+  <script src="/js/w3.js"></script>
+  <script src="/js/d6b.js"></script>
+
+  <title>Reddify</title>
+</head>
+
+<body>
+  <div w3-include-html="/html/header.html"></div>
+
+  <main>
+    <h1>Reddify<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+
+    <div class="top">
+      <div class="summary">
+        Reddify is the Discord bot that intuitively allows you to connect your Reddit account with your Discord and communicates the information with other Mariavi bots.
+        <br>
+        <br>
+        The idea arose as Banhammer was in the making and ensuring a secure connection to verify a user wasn't trying to highjack a subreddit was important, so instead of building in a simple verification system into Banhammer, Reddify was born.
+        <br>
+        <br>
+        Status:
+        <br>
+        <br>
+        <iframe src="bots/reddify-status.html?textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="180px" height="70px"></iframe>
+
+        <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
+        <ol class="index">
+          <li>
+            <a href="#usage">Usage</a>
+            <ul>
+              <li>
+                <a href="#verify">Verification</a>
+              </li>
+              <li>
+                <a href="#admin">Admin setup</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#technical">Technical information</a>
+          </li>
+        </ol>
+      </div>
+      <div class="card">
+        <img src="img/reddify.png" alt="">
+        <div class="table">
+          <table>
+            <th colspan="2">Overview</th>
+            <tr>
+              <td>Type</td>
+              <td>Discord bot</td>
+            </tr>
+            <tr>
+              <td>Developer</td>
+              <td>Mariavi</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Released</td>
+            </tr>
+            <tr>
+              <td>APIs</td>
+              <td><a href="https://github.com/Rapptz/discord.py">Discord.py</a>, <a href="https://github.com/praw-dev/praw">PRAW</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="usage">Usage<a onclick="copyToClipboard(this.href);" href="#usage">🔗</a></h2>
+    <p>
+      By design Reddify is supposed to be very simple.
+      No logging into your account through shady third-party sites, no security codes, just a response to a very specific message from the bot and you're verified.
+      The best part, you'll never need to verify again in any servers using Reddify!
+    </p>
+
+    <h3 id="verify">Verification<a onclick="copyToClipboard(this.href);" href="#verify">🔗</a></h3>
+    <p>
+      Users of Reddify can connect as many Reddit accounts as they wish to their Discord account.
+      But for the username Reddify will alwasy use the first one you connect, so you'll need to <code>!unverify</code> before you can change your "main" account so to speak.
+      <br>
+      <br>
+      Connecting a Reddit account to your Discord is very simple, just type <code>!verify [reddit_username]</code> and respond to the PM you receive from the bot account <a href="https://www.reddit.com/u/TheReddifyBot">/u/TheReddifyBot</a> with <code>verify</code>.
+      If you do not want to connect the account, or someone else attempted to connect accounts, don't respond to the bot at all or respond with a string that does <b>not</b> contain <code>verify</code> in it.
+    </p>
+
+    <h3 id="admin">Admin setup<a onclick="copyToClipboard(this.href);" href="#admin">🔗</a></h3>
+    <p>
+      Admins of a server using Reddify have quite a few options to enable/disable features Reddify has and the following are available:
+    </p>
+    <ul>
+      <li><code>!toggle role</code>: assigns the <code>Verified Redditor</code> role to anyone who has verified their acccount with Reddify. This can be useful for restricting certain parts of a server behind this role.</li>
+      <li><code>!toggle username</code>: changes the nickname of all the verified users to <code>/u/[reddit_username]</code> which is handy to keep large servers organized and restrict usernames.</li>
+      <li><code>!toggle nick</code>: enables the <code>!nick [new_nick]</code> command which will change a user's nickname to <code>new_nick /u/[reddit_username]</code> and prioritizes the Reddit username.</li>
+    </ul>
+
+    <h2 id="technical">Technical information<a onclick="copyToClipboard(this.href);" href="#technical">🔗</a></h2>
+    <p>
+      👷‍ 🚧 Work in progress! 🚧
+    </p>
+  </main>
+
+  <div w3-include-html="/html/tags.html"></div>
+  <div w3-include-html="/html/footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>

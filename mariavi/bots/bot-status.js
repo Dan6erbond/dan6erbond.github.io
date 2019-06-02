@@ -16,14 +16,15 @@ function loadStatus(botName){
     if (this.readyState == 4 && this.status == 200) {
       var bots = JSON.parse(this.responseText);
       diff = (new Date() - new Date(bots[botName] * 1000)) / 1000 / 60;
+      led.childNodes[0].innerHTML = diff < 10 ? "Online" : "Offline";
 
-      if (diff < 10){
-        led.classList.add("green");
-        led.childNodes[0].innerHTML = "Online";
-      } else {
-        led.classList.add("red");
-        led.childNodes[0].innerHTML = "Online";
-      }
+      setTimeout(function(){
+        if (diff < 10){
+          led.classList.add("green");
+        } else {
+          led.classList.add("red");
+        }
+      }, 5);
     }
   };
 
