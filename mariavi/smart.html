@@ -97,13 +97,30 @@
 
     <h2 id="components">Components<a onclick="copyToClipboard(this.href);" href="#components">🔗</a></h2>
     <p>
-      This section focuses on the technical implementation of the individual components built into the software to aid contributors in understanding the design of the systems.
+      This section focuses on the technical implementation of the software's individual components to aid contributors in understanding the design of the systems.
       For information on how to use the software, such as building a lang file, go to <a href="#usage">usage</a>.
     </p>
     <h3 id="filehandler">File Handler<a onclick="copyToClipboard(this.href);" href="#filehandler">🔗</a></h3>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      The <a href="https://github.com/Dan6erbond/SMART/blob/master/Builder/src/main/java/FileHandler.java" target="_blank">File Handler</a> is essential to many of this program's processes and contains a couple important methods that are used throughout the other classes.
+      <br>
+      <br>
+      The method <code>getSubFolders)()</code> can be found twice. Using method-overloads you can pick whether you want to use the loop or recursive version of essentially the same method depending on whether you favor efficiency or tolerance.
+      Taking a look at the <code>getSubFolders(File)</code> method, we can see it takes a single parameter of the type [File] which is the root folder in which the method should find sub-folders.
+      This method is not recursive:
     </p>
+    <pre src="code/getSubFolders.java"></pre>
+
+    <p>
+      As you can see, the loop runs as long as the folder being scanned has sub-folders, determined by the <code>folders.size() > 0</code> boolean expression and those sub-folders are added to the <code>directories</code> within the loop.
+      To avoid duplicates, a variable <code>remove</code> of the type <code>ArrayList<File>()</code> is created in which any duplicate folders are stored and used in the <code>folders.removeAll(remove);</code> line.
+    </p>
+    <br>
+    <p>
+      In addition to <code>getFiles(File)</code> the FileHandler contains a method <code>getFiles(String, File, boolean)</code> which allows you to get all the files within a folder (and its subfolders if the last boolean is passed as <code>true</code>) and in combination with the Lang Builder, for example, is used to find all the <code>.tile</code> and <code>.item</code> files for which a Lang file can be built:
+    </p>
+    <pre src="code/getFiles.java"></pre>
+
     <h3 id="langbuilder">Lang Builder<a onclick="copyToClipboard(this.href);" href="#langbuilder">🔗</a></h3>
     <p>
       👷‍ 🚧 Work in progress! 🚧
@@ -115,6 +132,7 @@
 
   <script>
     w3.includeHTML();
+    includeCode();
   </script>
 </body>
 

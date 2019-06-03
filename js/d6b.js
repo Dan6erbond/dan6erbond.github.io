@@ -50,3 +50,30 @@ function openMenu(){
     btn.classList.add("close");
   }
 }
+
+function includeCode(){
+  var elmnts, elmnt, file;
+
+  elmnts = document.getElementsByTagName("pre");
+  for (i in elmnts){
+    elmnt = elmnts[i];
+    try {
+      file = elmnt.getAttribute("src");
+    } catch {
+      continue;
+    }
+    if (file != null){
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            elmnt.innerHTML = this.responseText;
+            elmnt.removeAttribute("src");
+            includeCode();
+          }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+}

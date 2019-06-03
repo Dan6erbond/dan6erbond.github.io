@@ -213,19 +213,7 @@
     <p>
       The Starma information is stored in a very simple JSON DB that follows the following structure:
     </p>
-    <pre>
-      [
-        {
-          "id": [int],
-          "stars-given": [int],
-          "total-stars": [int],
-          "star-budget": [int],
-          "stars": {
-            "date": [float],
-            "user": [int]
-          }
-        }
-      ]</pre>
+    <pre src="code/starma-structure.json"></pre>
 
     <h2 id="astronauts">Astronauts<a onclick="copyToClipboard(this.href);" href="#astronauts">🔗</a></h2>
     <p>
@@ -247,6 +235,7 @@
 
   <script>
     w3.includeHTML();
+    includeCode();
   </script>
 </body>
 

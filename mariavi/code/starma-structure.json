@@ -1,0 +1,12 @@
+[
+  {
+    "id": [int],
+    "stars-given": [int],
+    "total-stars": [int],
+    "star-budget": [int],
+    "stars": {
+      "date": [float],
+      "user": [int]
+    }
+  }
+]
