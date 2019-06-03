@@ -12,6 +12,7 @@
   right: -1px;
   box-shadow: var(--material-shadow);
   overflow: visible;
+  transition: top 0.5s;
 }
 
 .menu ul li {
@@ -61,7 +62,7 @@
   right: 15px;
 }
 
-.menu ul li .dropcnt.search form input[type=text] {
+.menu ul li .dropcnt.search form input[type=search] {
   max-width: 150px;
   padding: 5px;
   border: none;
@@ -71,7 +72,7 @@
   box-shadow: var(--material-shadow-light);
 }
 
-.menu ul li .dropcnt.search form input[type=text]:focus {
+.menu ul li .dropcnt.search form input[type=search]:focus {
   outline: none;
 }
 
@@ -104,12 +105,86 @@
   display: block;
 }
 
+.menu ul li.mobile-open {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
+  .menu ul {
+    top: -320px;
+  }
+
+  .menu ul.open {
+    top: 0px;
+  }
+
   .menu ul li {
     padding: 10px;
   }
 
+  .menu ul li {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu ul li.mobile-open {
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu ul li.mobile-open a div {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .menu ul li.mobile-open a div.close {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid white;
+  }
+
+  .menu ul li.mobile-open a div.open {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+  }
+
+  .menu ul li .dropcnt {
+    display: block;
+    text-align: center;
+    position: relative;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .menu ul li .dropcnt a {
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+  }
+
+  .menu ul li {
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+  }
+
+  .dropbtn.search {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
   .menu ul li .dropcnt {
     margin-top: 10px;
+  }
+
+  .menu ul li .search {
+    margin: 0;
   }
 }

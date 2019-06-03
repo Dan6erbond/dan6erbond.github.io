@@ -1,3 +1,46 @@
+#scrollUp {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  height: 50px;
+  width: 50px;
+  bottom: 50px;
+  /* Place the button at the bottom of the page */
+  right: 10px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: var(--dark-turquoise);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 24px;
+  /* Increase font size */
+}
+
+#scrollUp:hover {
+  background-color: var(--dark-turquoise-pressed);
+  /* Add a dark-grey background on hover */
+}
+
+#scrollUp div {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid white;
+}
+
 footer {
   position: fixed;
   width: 100%;

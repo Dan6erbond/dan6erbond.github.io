@@ -35,3 +35,18 @@ function copyToClipboard(str){
     }, 1000);
   }, 5);
 }
+
+function openMenu(){
+  var ul = document.getElementsByTagName("ul")[0];
+  var btn = document.getElementsByClassName("mobile-open")[0].childNodes[1].childNodes[1];
+
+  if (!ul.classList.contains("open")){
+    ul.classList.add("open");
+    btn.classList.remove("close");
+    btn.classList.add("open");
+  } else {
+    ul.classList.remove("open");
+    btn.classList.remove("open");
+    btn.classList.add("close");
+  }
+}

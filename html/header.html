@@ -6,10 +6,10 @@
       <a href="/">Home</a>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropbtn">Search</a>
+      <a href="#" class="dropbtn search">Search</a>
       <div class="dropcnt search">
         <form class="" action="/search.html" method="get">
-          Search:&nbsp;&nbsp;<input type="text" name="q" placeholder="Powered by Fuzzle">
+          Search:&nbsp;&nbsp;<input type="search" name="q" placeholder="Powered by Fuzzle">
           <input type="submit" value="Search">
         </form>
       </div>
@@ -27,6 +27,11 @@
     </li>
     <li>
       <a href="/about-me.html">About</a>
+    </li>
+    <li class="mobile-open">
+      <a onclick="openMenu();">
+        <div class="close"></div>
+      </a>
     </li>
   </ul>
 </nav>
