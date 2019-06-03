@@ -111,7 +111,7 @@
 
 @media only screen and (max-width: 600px) {
   .menu ul {
-    top: -320px;
+    top: -310px;
   }
 
   .menu ul.open {
@@ -167,6 +167,7 @@
   }
 
   .menu ul li .dropcnt a {
+    font-size: 14px;
     text-align: center;
     padding: 5px 0px 5px 0px;
     width: 100%;
