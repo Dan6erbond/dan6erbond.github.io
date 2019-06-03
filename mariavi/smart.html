@@ -60,6 +60,9 @@
               <li>
                 <a href="#langbuilder">Lang Builder</a>
               </li>
+              <li>
+                <a href="#staxelobject">Staxel Object</a>
+              </li>
             </ul>
           </li>
         </ol>
@@ -120,6 +123,25 @@
       In addition to <code>getFiles(File)</code> the FileHandler contains a method <code>getFiles(String, File, boolean)</code> which allows you to get all the files within a folder (and its subfolders if the last boolean is passed as <code>true</code>) and in combination with the Lang Builder, for example, is used to find all the <code>.tile</code> and <code>.item</code> files for which a Lang file can be built:
     </p>
     <pre src="code/getFiles.java"></pre>
+
+    <p>
+      The previously shown method can thus be used as follows to get all the files from the current directory:
+    </p>
+
+    <pre src="code/getFilesExample.java"></pre>
+
+    <p>
+      The third line only adds <code>.item</code> files found in the current directory whereas the second also scans for <code>.tile</code> files in the sub directories.
+    </p>
+
+    <h3 id="staxelobject">Staxel Object<a onclick="copyToClipboard(this.href);" href="#staxelobject">🔗</a></h3>
+    <p>
+      <code>StaxelObject</code> is an interface used throughout the project that represents a simple <code>.tile</code> or <code>.item</code> mod.
+      Its main purpose is to, for example, allow the Lang Builder to create entries for both Tile and Item mods since the general structure remains the same.
+      The most important methods it contains are the <code>getLang()</code> as well as other getters and setters while any logic for parsing Lang/Object files is written into the <code>Tile</code> and <code>Item</code> class.
+      <br>
+      <br>
+    </p>
 
     <h3 id="langbuilder">Lang Builder<a onclick="copyToClipboard(this.href);" href="#langbuilder">🔗</a></h3>
     <p>

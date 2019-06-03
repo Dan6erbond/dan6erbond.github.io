@@ -2,6 +2,10 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  if (document.getElementById("scrollUp") == null){
+    return;
+  }
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("scrollUp").style.display = "block";
   } else {
@@ -66,7 +70,11 @@ function includeCode(){
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
-            elmnt.innerHTML = this.responseText;
+            var div = document.createElement("div");
+            div.innerHTML = file.split("/")[file.split("/").length-1];
+            div.style = 'text-decoration: underline;margin: -15px -15px 15px -15px;padding: 2px;"';
+            elmnt.appendChild(div);
+            elmnt.appendChild(document.createTextNode(this.responseText));
             elmnt.removeAttribute("src");
             includeCode();
           }
