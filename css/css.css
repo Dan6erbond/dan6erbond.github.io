@@ -125,6 +125,7 @@ main {
 pre {
   box-shadow: var(--material-shadow);
   padding: 15px;
+  overflow: auto;
 }
 
 .copyText {
