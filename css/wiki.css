@@ -27,13 +27,10 @@ h2 {
   padding: 0% 20% 10px 20%;
 }
 
-.top .card .table {
-  overflow-x: auto;
-}
-
 .top .card table {
   width: 100%;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 .top .card table th {
