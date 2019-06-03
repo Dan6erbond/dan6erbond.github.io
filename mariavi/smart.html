@@ -141,6 +141,21 @@
       The most important methods it contains are the <code>getLang()</code> as well as other getters and setters while any logic for parsing Lang/Object files is written into the <code>Tile</code> and <code>Item</code> class.
       <br>
       <br>
+      Using the <code>StaxelObject</code> interface there's the implementation of a <code>Tile</code> mod object as well as an <code>Item</code> mod object.
+      Both have yet to include all the necessary attributes to easily export back to a JSON model, which is why the <code>org.json</code> library is being used to simply fill in attributes instead of recreating the object when exporting.
+      In addition that allows the object's <code>code</code> attribute for example to be manipulated within the Lang Builder while retaining the other attributes.
+      <br>
+      <br>
+      Following is the example of the <code>Tile</code> object:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/master/Builder/src/main/java/Tile.java" start="7"></pre>
+    <p>
+      Notworthy in this example is how the code searches for an entry in a Lang file with RegEx which can be "disabled" by using a method-overload with a different signature (for example by emitting the String parameter) for the constructor where that logic isn't included.
+      That also means, though, that <code>getName()</code>, <code>getDescription()</code> and <code>getLang()</code> as well as the setters won't be reliable unless the setters are used before to sets pseudo names and descriptions.
+      <br>
+      <br>
+      <code>Item</code> is built similarly to <code>Tile</code> with the main difference being that it's fed a <code>.item</code> file which <i>slightly</i> changes some String operations but mainly serves to retain the object-oriented approach for future implementations of GUIs and the sorts.
+      Once a Mod Builder for <code>Tile</code> or <code>Item</code> files is created, these classes will have far more methods and attributes with some of them being unique which means separating them beforehand makes future additions easier.
     </p>
 
     <h3 id="langbuilder">Lang Builder<a onclick="copyToClipboard(this.href);" href="#langbuilder">🔗</a></h3>

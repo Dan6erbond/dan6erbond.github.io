@@ -74,7 +74,23 @@ function includeCode(){
             div.innerHTML = file.split("/")[file.split("/").length-1];
             div.style = 'text-decoration: underline;margin: -15px -15px 15px -15px;padding: 2px;"';
             elmnt.appendChild(div);
-            elmnt.appendChild(document.createTextNode(this.responseText));
+
+            var start = elmnt.getAttribute("start");
+            var length = elmnt.getAttribute("length");
+
+            var content = this.responseText;
+
+            if (start != null){
+              var lines = content.split("\n");
+              content = lines.slice(start, lines.length-1).join("\n");
+            }
+
+            if (length != null){
+              var lines = content.split("\n");
+              content = lines.slice(0, length).join("\n");
+            }
+
+            elmnt.appendChild(document.createTextNode(content));
             elmnt.removeAttribute("src");
             includeCode();
           }
