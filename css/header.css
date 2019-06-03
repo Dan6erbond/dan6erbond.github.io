@@ -163,7 +163,7 @@
   }
 
   .menu ul li .dropcnt a::before {
-    content: "> ";
+    content: "» ";
   }
 
   .menu ul li .dropcnt a {
