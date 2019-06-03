@@ -64,6 +64,24 @@
         "url": "Im17A v2/index.html"
     },
     {
+        "key": "Banhammer",
+        "description": "Banhammer is a Discord bot that allows you moderate your subreddit from the comfort of your Discord server!",
+        "tags": [
+            "Banhammer",
+            "Discord",
+            "Reddit",
+            "Mariavi",
+            "Ravi",
+            "Reddify",
+            "Moderate",
+            "Moderation",
+            "Mod",
+            "Lydocia",
+            "Amy"
+        ],
+        "url": "mariavi/banhammer.html"
+    },
+    {
         "key": "Mariavi",
         "description": "Mariavi is the team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters and SMART.",
         "tags": [
@@ -84,18 +102,66 @@
         "key": "Melon",
         "description": "Melon is Mariavi's walking knowledge database and the ideal server utility bot!",
         "tags": [
-            "Reddit",
-            "Discord",
             "Amy",
             "Ravi",
             "Dan6erbond",
             "Lydocia",
             "Mariavi",
-            "Banhammer",
-            "Reddify",
-            "Substarters"
+            "Melon",
+            "Bot",
+            "Discord",
+            "Reddit"
         ],
         "url": "mariavi/melon.html"
+    },
+    {
+        "key": "Reddify",
+        "description": "Reddify is the Discord/Reddit verification bot by Mariavi!",
+        "tags": [
+            "Reddit",
+            "Discord",
+            "Amy",
+            "Lydocia",
+            "Ravi",
+            "Dan6erbond",
+            "Mariavi",
+            "2FA",
+            "Reddify",
+            ""
+        ],
+        "url": "mariavi/reddify.html"
+    },
+    {
+        "key": "SMART",
+        "description": "SMART is a tool to aid in creating mods and the sorts for the game Staxel.",
+        "tags": [
+            "Discord",
+            "Reddit",
+            "Mariavi",
+            "Ravi",
+            "Mod",
+            "Lydocia",
+            "Amy",
+            "Staxel",
+            "Game",
+            "SMART"
+        ],
+        "url": "mariavi/smart.html"
+    },
+    {
+        "key": "Substarters",
+        "description": "Substarters is a community by Redditor for Redditors with the intention of helping new moderators/subreddits getting started.",
+        "tags": [
+            "Amy",
+            "Ravi",
+            "Lydocia",
+            "Subtar",
+            "Submoon",
+            "Astronaut",
+            "Reddit",
+            "Discord"
+        ],
+        "url": "mariavi/substarters.html"
     },
     {
         "key": "RaviAnand | Ausbildung",
