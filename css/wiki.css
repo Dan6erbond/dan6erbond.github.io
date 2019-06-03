@@ -9,6 +9,7 @@ h2 {
 .top {
   display: flex;
   flex-wrap: wrap-reverse;
+  align-items: flex-end;
 }
 
 .top .card {
