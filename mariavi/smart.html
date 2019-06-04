@@ -99,12 +99,16 @@
               <td>Stage</td>
               <td>In Development</td>
             </tr>
+            <tr>
+              <td>Source Code</td>
+              <td>Open on <a href="https://github.com/Dan6erbond/SMART">GitHub</a></td>
+            </tr>
           </table>
         </div>
       </div>
     </div>
 
-    <h2 id="components">Usage<a onclick="copyToClipboard(this.href);" href="#usage">🔗</a></h2>
+    <h2 id="usage">Usage<a onclick="copyToClipboard(this.href);" href="#usage">🔗</a></h2>
     <p>
       If you plan on using the GUI version, you'll need to have the <a href="https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java Runtime Environment</a> installed as well as the latest <code>.exe</code> which can be found <a href="https://github.com/Dan6erbond/SMART/releases/latest">here</a>.
     </p>
@@ -126,8 +130,8 @@
 
     <h3 id="langbuilder">Lang Builder<a onclick="copyToClipboard(this.href);" href="#langbuilder">🔗</a></h3>
     <p>
-      The Lang Builder is the first of many features to be implemented in both the CLI and GUI version of SMART.
-      It finds all the <code>.tile</code> and <code>.item</code> files within the selected directory (using the relative or absolute path in the CLI version) and generates a <code>.lang</code> file in the root of the selected folder.
+      The Lang Builder is the first of many features to be implemented in SMART and exists in both the CLI and GUI version.
+      The GUI version finds all the <code>.tile</code> and <code>.item</code> files within the selected directory (using the relative or absolute path in the CLI version) whereas the CLI version only supports <code>.tile</code> files. After finding the files it generates a <code>.lang</code> file in the root of the selected folder.
       <br>
       <br>
       The CLI version only adds lines to the <code>.lang</code> file or creates one from scratch, it does not allow you to edit fields or reliably edit a pre-existing <code>.lang</code> file.
@@ -140,12 +144,15 @@
       The program will also search for pre-existing entries in the Lang file to import the name/description and if none was found, it will use the object's file-name.
       <br>
       <br>
-      Once you're done editing the fields you want to edit (editing <code>code</code> will also affect the JSON and may require manual intervention in <code>.recipe</code> files and the sorts linking to said code) using "Write Lang File" the program will search for a pre-existing Lang file, if non was found a new one will be created that has the name of the root folder, otherwise the one that was found will be overwritten.
+      Once you're done editing the fields you want to edit (editing <code>code</code> will also affect the JSON and may require manual intervention in <code>.recipe</code> files and the sorts linking to said code) using "Write Lang File" the program will search for a pre-existing Lang file, if none was found a new one will be created that has the name of the root folder, otherwise the one that was found will be overwritten.
+      <br>
+      <br>
+      If no <code>.tile</code> or <code>.item</code> files were found, the program will block you from generating a LANG file.
     </p>
     <div class="img-container">
       <div class="wiki-img">
         <img src="https://user-images.githubusercontent.com/32235074/58615354-243d4080-82bb-11e9-8be4-129a913dfa96.png" alt="">
-        <p>The Lang Builder will find all the <code>.tile</code> and <code>.item</code> files within a folder and allow you to edit certain fields before generating/saving the new Lang. Credit to <a href="https://discord.gg/9tmPaUV">lydocia</a> for the mods used to test this feature.</p>
+        <p>The LANG Builder will find all the <code>.tile</code> and <code>.item</code> files within a folder and allow you to edit certain fields before generating/saving the new LANG. Credit to <a href="https://discord.gg/9tmPaUV">lydocia</a> for the mods used to test this feature.</p>
       </div>
     </div>
 

@@ -14,10 +14,9 @@ h2 {
 
 .top .card {
   padding: 10px;
-  flex: 3;
+  flex: 1;
   min-height: 350px;
   margin-bottom: 25px;
-  max-width: 30%;
   min-width: 300px;
   box-shadow: var(--material-shadow-light);
 }
@@ -50,10 +49,10 @@ h2 {
 .top .summary {
   margin-right: 25px;
   width: auto;
-  flex: 7;
+  flex: 100;
   overflow: auto;
   display: inline-block;
-  min-width: 150px;
+  min-width: 200px;
 }
 
 .img-container {
@@ -86,4 +85,10 @@ h2 {
 .wiki-img p {
   margin: 0;
   padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top .card {
+    margin-right: 25px;
+  }
 }
