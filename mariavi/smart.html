@@ -50,6 +50,14 @@
         <ol class="index">
           <li>
             <a href="#usage">Usage</a>
+            <ul>
+              <li>
+                <a href="#general">General</a>
+              </li>
+              <li>
+                <a href="#langbuilder">Lang Builder</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#components">Components</a>
@@ -58,12 +66,15 @@
                 <a href="#filehandler">File Handler</a>
               </li>
               <li>
-                <a href="#langbuilder">Lang Builder</a>
-              </li>
-              <li>
                 <a href="#staxelobject">Staxel Object</a>
               </li>
+              <li>
+                <a href="#langgenerator">Lang Generator</a>
+              </li>
             </ul>
+          </li>
+          <li>
+            <a href="#glossary">Glossary</a>
           </li>
         </ol>
       </div>
@@ -95,8 +106,48 @@
 
     <h2 id="components">Usage<a onclick="copyToClipboard(this.href);" href="#usage">🔗</a></h2>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      If you plan on using the GUI version, you'll need to have the <a href="https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java Runtime Environment</a> installed as well as the latest <code>.exe</code> which can be found <a href="https://github.com/Dan6erbond/SMART/releases/latest">here</a>.
     </p>
+    <h3 id="general">General<a onclick="copyToClipboard(this.href);" href="#general">🔗</a></h3>
+    <p>
+      Upon opening the application the very first time, the program will create a <code>config.json</code> file that currently stores information about the user's selected background and accent color.
+      The file uses the following structure and can be edited with a text editor as well as within the menu of the application:
+    </p>
+    <pre>{"backgroundColor":"#154D6B","accentColor":"#BEC9DF"}</pre>
+    <p>
+      As can be seen in the image below, the accent color will change the colors of buttons, input fields etc. while the background color strictly modifies the application's background. The changes are persistent over the different windows the application contains and it automatically adjusts the text colors based on what background/accent colors were selected.
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/smart/menu.jpg" alt="">
+        <p>The background and accent color controls the GUI's look and feel and can be edited in the menu on the fly.</p>
+      </div>
+    </div>
+
+    <h3 id="langbuilder">Lang Builder<a onclick="copyToClipboard(this.href);" href="#langbuilder">🔗</a></h3>
+    <p>
+      The Lang Builder is the first of many features to be implemented in both the CLI and GUI version of SMART.
+      It finds all the <code>.tile</code> and <code>.item</code> files within the selected directory (using the relative or absolute path in the CLI version) and generates a <code>.lang</code> file in the root of the selected folder.
+      <br>
+      <br>
+      The CLI version only adds lines to the <code>.lang</code> file or creates one from scratch, it does not allow you to edit fields or reliably edit a pre-existing <code>.lang</code> file.
+      It also does not support <code>.itme</code> files and surrounds the fields with <code>""</code> making it quite a limited tool in terms of functionality as it is not being updated anymore.
+      Thus the following documentation only applies to the GUI version.
+      <br>
+      <br>
+      After using "Select Directory" to pick the folder in which the program should search for Item and Tile mods, the program will display all the files found in the ListView to the left.
+      The <code>code</code> field found in the object's JSON is used as the title and can be edited at the right-hand site along with the <code>name</code> and <code>description</code> fields.
+      The program will also search for pre-existing entries in the Lang file to import the name/description and if none was found, it will use the object's file-name.
+      <br>
+      <br>
+      Once you're done editing the fields you want to edit (editing <code>code</code> will also affect the JSON and may require manual intervention in <code>.recipe</code> files and the sorts linking to said code) using "Write Lang File" the program will search for a pre-existing Lang file, if non was found a new one will be created that has the name of the root folder, otherwise the one that was found will be overwritten.
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="https://user-images.githubusercontent.com/32235074/58615354-243d4080-82bb-11e9-8be4-129a913dfa96.png" alt="">
+        <p>The Lang Builder will find all the <code>.tile</code> and <code>.item</code> files within a folder and allow you to edit certain fields before generating/saving the new Lang. Credit to <a href="https://discord.gg/9tmPaUV">lydocia</a> for the mods used to test this feature.</p>
+      </div>
+    </div>
 
     <h2 id="components">Components<a onclick="copyToClipboard(this.href);" href="#components">🔗</a></h2>
     <p>
@@ -112,7 +163,7 @@
       Taking a look at the <code>getSubFolders(File)</code> method, we can see it takes a single parameter of the type [File] which is the root folder in which the method should find sub-folders.
       This method is not recursive:
     </p>
-    <pre src="code/getSubFolders.java"></pre>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/master/Builder/src/main/java/FileHandler.java" start="42" length="14"></pre>
 
     <p>
       As you can see, the loop runs as long as the folder being scanned has sub-folders, determined by the <code>folders.size() > 0</code> boolean expression and those sub-folders are added to the <code>directories</code> within the loop.
@@ -122,7 +173,7 @@
     <p>
       In addition to <code>getFiles(File)</code> the FileHandler contains a method <code>getFiles(String, File, boolean)</code> which allows you to get all the files within a folder (and its subfolders if the last boolean is passed as <code>true</code>) and in combination with the Lang Builder, for example, is used to find all the <code>.tile</code> and <code>.item</code> files for which a Lang file can be built:
     </p>
-    <pre src="code/getFiles.java"></pre>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/master/Builder/src/main/java/FileHandler.java" start="24" length="18"></pre>
 
     <p>
       The previously shown method can thus be used as follows to get all the files from the current directory:
@@ -158,10 +209,24 @@
       Once a Mod Builder for <code>Tile</code> or <code>Item</code> files is created, these classes will have far more methods and attributes with some of them being unique which means separating them beforehand makes future additions easier.
     </p>
 
-    <h3 id="langbuilder">Lang Builder<a onclick="copyToClipboard(this.href);" href="#langbuilder">🔗</a></h3>
+    <h3 id="langgenerator">Lang Generator<a onclick="copyToClipboard(this.href);" href="#langgenerator">🔗</a></h3>
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>
+
+    <h2 id="glossary">Glossary<a onclick="copyToClipboard(this.href);" href="#glossary">🔗</a></h2>
+    <ul>
+      <li>
+        <u><b>CLI</b></u>
+        <br>
+        A command-line interface is a form of user interface that uses simple text-based in- and outputs to communicate with the user.
+      </li>
+      <li>
+        <u><b>GUI</b></u>
+        <br>
+        GUIs are a user interface that don't solely rely on text inputs and outputs to interact with the user.
+      </li>
+    </ul>
   </main>
 
   <div w3-include-html="/html/tags.html"></div>
