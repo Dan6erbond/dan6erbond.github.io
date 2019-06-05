@@ -127,7 +127,7 @@ pre {
   box-shadow: var(--material-shadow);
   padding: 15px;
   overflow: auto;
-  background-color: var(--light-dark-grey);
+  background-color: var(--dark-turquoise);
 }
 
 .copyText {
