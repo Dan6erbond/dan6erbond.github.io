@@ -220,8 +220,16 @@
 
     <h3 id="langgenerator">Lang Generator<a onclick="copyToClipboard(this.href);" href="#langgenerator">🔗</a></h3>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      Past the GUI interactions with the user, building the actual LANG file is quite easy since both the <code>Tile</code> and <code>Item</code> handle importing previous data from the LANG file.
+      In the following lines of code the <code>Tile</code> and <code>Item</code> objects generate the string that is inserted into the LANG file:
     </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/master/Builder/src/main/java/Tile.java" start="65" length="5"></pre>
+    <p>
+      The LANG builder will loop over all the <code>Tile</code> and <code>Item</code> objects it found in the folder(s), add them to an <code>ArrayList</code> of the type <code>String</code> which is then joined to a long string and written to the LANG file with the <code>FileHandler</code>.
+      If a LANG file was found, that will be overwritten, otherwise a new one will be created.
+      <code>language.code=en-GB</code> and <code>language=English</code> are added as the first two lines since every LANG file needs those:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/master/Builder/src/main/java/LangBuilderController.java" start="159" length="8"></pre>
 
     <h2 id="glossary">Glossary<a onclick="copyToClipboard(this.href);" href="#glossary">🔗</a></h2>
     <ul>
