@@ -7,6 +7,7 @@
 
 :root {
   --light-grey: rgb(176, 176, 176);
+  --light-dark-grey: rgb(68, 68, 68);
   --dark-grey: rgb(44, 45, 48);
   --dark-blue: rgb(56, 63, 86);
   --dark-blue-pressed: rgb(51, 56, 71);
@@ -126,6 +127,7 @@ pre {
   box-shadow: var(--material-shadow);
   padding: 15px;
   overflow: auto;
+  background-color: var(--light-dark-grey);
 }
 
 .copyText {
