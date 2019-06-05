@@ -42,7 +42,7 @@ bots = [
   }
 ]
 
-function loadStatus(id){
+function loadData(id){
   var url = new URL(document.location.href).searchParams;
 
   if (id == null){
@@ -87,37 +87,49 @@ function loadStatus(id){
     led.style.borderColor = url.get("borderColor");
   }
 
-  var xmlhttp = new XMLHttpRequest();
+  if (url.get("mobile") != null && url.get("mobile").toLowerCase() == "true"){
+    document.getElementById("bot").className = "mobile";
+  }
 
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var bots = JSON.parse(this.responseText);
+  loadStatus(id, led);
+}
 
-      var online = false;
+function loadStatus(id, led){
+  setTimeout(function(){
+    var xmlhttp = new XMLHttpRequest();
 
-      if (id in bots){
-        if (typeof bots[id] == "number"){
-          var diff = (new Date() - new Date(bots[id] * 1000)) / 1000 / 60;
-          online = diff < 10;
-        } else if (typeof bots[id] == "boolean") {
-          online = bots[id];
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var bots = JSON.parse(this.responseText);
+
+        var online = false;
+
+        if (id in bots){
+          if (typeof bots[id] == "number"){
+            var diff = (new Date() - new Date(bots[id] * 1000)) / 1000 / 60;
+            online = diff < 10;
+          } else if (typeof bots[id] == "boolean") {
+            online = bots[id];
+          }
         }
+
+        document.getElementById("status").innerHTML = online ? "Online" : "Offline";
+
+        setTimeout(function(){
+          if (online){
+            led.className = "green";
+          } else {
+            led.className = "red";
+          }
+        }, 5);
       }
+    };
 
-      led.childNodes[0].innerHTML = online ? "Online" : "Offline";
+    xmlhttp.open("GET", "https://api.myjson.com/bins/1f1baf", true);
+    xmlhttp.send();
 
-      setTimeout(function(){
-        if (online){
-          led.classList.add("green");
-        } else {
-          led.classList.add("red");
-        }
-      }, 5);
-    }
-  };
-
-  xmlhttp.open("GET", "https://api.myjson.com/bins/1f1baf", true);
-  xmlhttp.send();
+    loadStatus(id, led);
+  }, 1000);
 }
 
 function card(){

@@ -4,7 +4,7 @@
   font-family: Nunito Sans;
 }
 
-div {
+#bot {
   display: flex;
   border: none;
 }
@@ -21,13 +21,12 @@ img:hover {
   opacity: 0.75;
 }
 
-a, p {
+#name {
   display: block;
   color: black;
   text-decoration: none;
   padding: 0;
-  margin: 0;
-  margin: 15px 0px 0px 20px;
+  margin: 15px 0 0 20px;
 }
 
 #led {
@@ -42,20 +41,20 @@ a, p {
   transition: background-color 0.25s;
 }
 
-#led div {
+#status {
   font-size: 14px;
   color: white;
   background-color: black;
   padding: 5px;
   border-radius: 5px;
   position: absolute;
-  top: -37.5px;
-  left: -20px;
+  top: 5px;
+  left: 25px;
   opacity: 0;
   transition: opacity 0.15s;
 }
 
-#led div:after {
+#status:after {
   content:'';
   position: absolute;
   top: 100%;
@@ -67,7 +66,7 @@ a, p {
   border-right: solid 5px transparent;
 }
 
-#led:hover div {
+#led:hover + div > #status {
   opacity: 1;
 }
 
@@ -77,4 +76,28 @@ a, p {
 
 .red {
   background-color: red !important;
+}
+
+#bot.mobile #name {
+  margin-top: 7px;
+}
+
+#bot.mobile #status {
+  position: relative;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: grey;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+
+#bot.mobile #status:after {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: none;
 }

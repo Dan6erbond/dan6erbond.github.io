@@ -1,13 +1,14 @@
 <script src="bot-status.js"></script>
 <link href="bot-status.css" rel="stylesheet" />
 
-<div class="bot">
-  <div>
-    <img src="" alt="">
-    <div id="led"><div>Offline</div></div>
-  </div>
+<div id="bot">
+  <img src="" alt="">
+  <div id="led"></div>
 
-  <a id="name" href="" target="_blank"></a>
+  <div>
+    <a id="name" href="" target="_blank"></a>
+    <div id="status">Offline</div>
+  </div>
 </div>
 
 <div style="display: none;" class="not-found">
@@ -17,5 +18,5 @@
 </div>
 
 <script type="text/javascript">
-  loadStatus();
+  loadData();
 </script>
