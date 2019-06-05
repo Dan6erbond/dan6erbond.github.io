@@ -87,12 +87,17 @@ function loadData(id){
     led.style.borderColor = url.get("borderColor");
   }
 
-  if (url.get("mobile") != null && url.get("mobile").toLowerCase() == "true"){
+  var mobileReq = url.get("mobile") != null && url.get("mobile").toLowerCase() == "true";
+  if (mobileReq || isMobileDevice()){
     document.getElementById("bot").className = "mobile";
   }
 
   loadStatus(id, led);
 }
+
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 function loadStatus(id, led){
   setTimeout(function(){
