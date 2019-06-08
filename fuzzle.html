@@ -42,23 +42,21 @@
 
     <div class="top">
       <div class="summary">
-        <b>Fuzzle</b> is a simple-to-use search engine written in Python.
-        The main goal is to have something that doesn't take time to index your data and could be easily used in smaller applications while still retaining key features like tag-support.
+        <b>Fuzzle</b> is a search algorithm which uses iterations and calculations to split data into categories as well as sort by coverage and accuracy values to find the most suitable results based on a search.
         <br>
         <br>
-        As it was written in Python, and then ported to JavaScript, it can prove quite useful in applications such as simple websites as well as bots for Discord and Reddit.
-        <br>
-        <br>
-        Compared to its competitors, Fuzzle is dead-simple to use and still supports two fields (at the moment) which means you can feed in data with <code>key</code> and <code>tag</code> and get the entire data fed into Fuzzle back.
-        <br>
-        <br>
-        Fuzzle even powers this website!
-        <br>
-        <br>
-        The full code as well as documentation can be found on <a href="https://github.com/Dan6erbond/Fuzzle" target="_blank">GitHub</a>.
+        Due to it being designed as a general use algorithm, it can be written into many object-oriented languages such as Java, C# as well as more scripting-oriented languages such as Python and JavaScript.
 
         <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
         <ol class="index">
+          <li>
+            <a href="#algorithm">Algorithm</a>
+            <ul>
+              <li>
+                <a href="#searchsplit">Splitting the Search into Parts</a>
+              </li>
+            </ul>
+          </li>
           <li>
             <a href="#versions">Versions</a>
             <ul>
@@ -105,7 +103,7 @@
             </tr>
             <tr>
               <td>Source Code</td>
-              <td>Open on <a href="https://github.com/Dan6erbond/Fuzzle">GitHub</a></td>
+              <td>Open on <a href="https://github.com/Dan6erbond/Fuzzle" target="_blank">GitHub</a></td>
             </tr>
           </table>
         </div>
@@ -114,7 +112,36 @@
 
 
     <h2 id="algorithm">Algorithm<a onclick="copyToClipboard(this.href);" href="#algorithm">🔗</a></h2>
-    <p>👷 🚧 Work in progress! 🚧</p>
+    <p>
+      Fuzzle's algorithm can be broken into many little parts allowing it to easily be implemented step-by-step into different languages as well as for new features to be added.
+      The key aspects of the way Fuzzle works are documented in this section.
+      The code examples are written in Python as it's the first language with which Fuzzle was implemented and more readable for programmers that aren't familiar with any of the used languages.
+    </p>
+    <h3 id="searchsplit">Splitting the Search into Parts<a onclick="copyToClipboard(this.href);" href="#searchsplit">🔗</a></h3>
+    <p>
+      One of the first things Fuzzle does is split the search query into smaller parts for the code to later use to calculate coverage in an efficient matter.
+      Depending on how this part of the algorithm is implemented, certain steps can be skipped, but the most concise version that has been implemented is used in the documentation for clarity.
+      <br>
+      <br>
+      This process is done with nested <code>for</code> loops we get all the possible sub-strings within a given string:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a2020/python/fuzzle.py" start="1" length="8"></pre>
+    <p>
+      The first <code>for</code> loop iterates over all the possible lengths the sub-strings can have, being the range from 1 to whatever length the string is.
+      <br>
+      <i>In the Python example <code>range()</code> does not include the last number which is why 1 is being added to <code>len(s)</code>.</i>
+      <br>
+      <br>
+      Within the loop iterating over all the possible lengths, we go through every index in the string until the position where no new sub-strings can be found as the length of the current iteration dictates where that is, we use <code>len(s) - size + 1</code> to limit that.
+      For good measure, before adding the sub-string to the list of sub-strings (here called <code>parts</code>), we check if the sub-string is already to be found in the list to avoid duplicates and optimize performance in future iterations over this list.
+      <br>
+      <br>
+      To further optimize, the function sorts the list by each sub-string's length in descending order as the original search algorithm only needed to find the longest sub-string that covered a certain key in the dataset.
+      <br>
+      <br>
+      With the example of the String "Python", the code will break it into the following list:
+    </p>
+    <pre>['Python', 'Pytho', 'ython', 'Pyth', 'ytho', 'thon', 'Pyt', 'yth', 'tho', 'hon', 'Py', 'yt', 'th', 'ho', 'on', 'P', 'y', 't', 'h', 'o', 'n']</pre>
 
     <h2 id="versions">Versions<a onclick="copyToClipboard(this.href);" href="#versions">🔗</a></h2>
     <p>👷 🚧 Work in progress! 🚧</p>
@@ -150,6 +177,7 @@
 
   <script>
     w3.includeHTML();
+    includeCode();
   </script>
 </body>
 
