@@ -14,18 +14,29 @@
   color: black;
 }
 
-#fuzzleDemo input[type=text] {
-  padding: 4px;
-  margin: 0;
+#fuzzleDemo input[type=search] {
+  background-color: transparent;
+  max-width: 150px;
+  padding: 2px;
   border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin-right: -2px;
+  border-bottom: solid white 1px;
+  color: white;
 }
 
-#fuzzleDemo input[type=text]:focus {
+#fuzzleDemo input[type=search]:focus {
   outline: none;
 }
 
 #fuzzleDemo input[type=submit] {
   padding: 5px;
-  margin: 0;
   border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-left: -2px;
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
 }

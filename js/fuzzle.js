@@ -5,7 +5,7 @@ import find from "https://raw.githack.com/Dan6erbond/Fuzzle/master/javascript/fu
 window.search = search;
 window.update = update;
 
-document.getElementsByTagName("h3")[0].style = "visibility:hidden;"
+document.getElementById("results").style = "visibility:hidden;"
 
 update();
 
@@ -38,7 +38,7 @@ function search(){
 
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var ul = document.getElementsByTagName("ul")[1];
+      var ul = document.getElementById("searchResults");
       while (ul.firstChild) {
         ul.removeChild(ul.firstChild);
       }
@@ -49,7 +49,7 @@ function search(){
       var timeEnded = new Date();
       var maxRes = Math.min(10, results.length);
 
-      document.getElementsByTagName("h3")[0].style = "visibility:visible;"
+      document.getElementById("results").style = "visibility:visible;"
       document.getElementById("searchTime").innerHTML = results.length + " Results in " + (timeEnded - timeStarted) + "ms";
 
       for (var i = 0; i < maxRes; i++){
