@@ -28,7 +28,7 @@ function copyToClipboard(str){
   document.body.removeChild(el);
 
   div = document.createElement("div");
-  div.innerHTML = "Link copied to clipboard!";
+  div.innerHTML = "Copied to clipboard!";
   document.getElementsByTagName("body")[0].appendChild(div);
   div.className = "copyText";
 
@@ -70,14 +70,8 @@ function includeCode(){
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
-            var div = document.createElement("div");
-            div.innerHTML = file.split("/")[file.split("/").length-1];
-            div.style = 'text-decoration: underline;margin: -15px -15px 15px -15px;padding: 2px;"';
-            elmnt.appendChild(div);
-
             var start = elmnt.getAttribute("start");
             var length = elmnt.getAttribute("length");
-
             var content = this.responseText;
 
             if (start != null){
@@ -89,6 +83,19 @@ function includeCode(){
               var lines = content.split("\n");
               content = lines.slice(0, length).join("\n");
             }
+
+            var div = document.createElement("div");
+            div.innerHTML = file.split("/")[file.split("/").length-1];
+            div.style = 'text-decoration: underline;margin: -15px -15px 15px -15px;padding: 2px;"';
+
+            var a = document.createElement("a");
+            a.innerHTML = "📄";
+            a.onclick = function(){
+              copyToClipboard(content)
+            };
+            div.appendChild(a);
+
+            elmnt.appendChild(div);
 
             elmnt.appendChild(document.createTextNode(content));
             elmnt.removeAttribute("src");

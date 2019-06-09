@@ -80,7 +80,7 @@ h1 {
   pointer-events: none;
 }
 
-h1 a, h2 a, h3 a {
+h1 a, h2 a, h3 a, pre div a {
   margin: 0;
   padding: 0;
   padding-left: 5px;
@@ -88,6 +88,11 @@ h1 a, h2 a, h3 a {
   opacity: 0;
   transition: opacity 0.05s;
   position: absolute;
+  cursor: pointer;
+}
+
+h1:hover a, h2:hover a, h3:hover a, pre div:hover a {
+  opacity: 1;
 }
 
 h1 a {
@@ -105,8 +110,9 @@ h3 a {
   padding-top: 3px;
 }
 
-h1:hover a, h2:hover a, h3:hover a {
-  opacity: 1;
+pre div a {
+  font-size: 10px;
+  padding-top: 1px;
 }
 
 a:link, a:visited, a:link:active, a:visited:active {
