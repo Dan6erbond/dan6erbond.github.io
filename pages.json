@@ -1,5 +1,150 @@
 [
     {
+        "key": "Dan6erbond",
+        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
+        "tags": [
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "Zofingen",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "./about-me.html"
+    },
+    {
+        "key": "Dan6erbond",
+        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
+        "tags": [
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "Zofingen",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "./contact.html"
+    },
+    {
+        "key": "Documentations",
+        "description": "Documentations of my projects, scripts, programs, organizations and more!.",
+        "tags": [
+            "Ravi",
+            "Amy",
+            "Lydocia",
+            "Mariavi",
+            "Discord",
+            "Reddit",
+            "Program",
+            "Java",
+            "C#",
+            "Python",
+            "Fuzzle",
+            "JavaScript",
+            "Dan6erbond"
+        ],
+        "url": "./docs.html"
+    },
+    {
+        "key": "Fuzzle",
+        "description": "Fuzzle is a scaleable, customizable search engine written in Python and JavaScript",
+        "tags": [
+            "Dan6erbond",
+            "JavaScript",
+            "Python",
+            "Search",
+            "Engine",
+            "Project",
+            "GitHub",
+            "Data"
+        ],
+        "url": "./fuzzle.html"
+    },
+    {
+        "key": "Dan6erbond",
+        "description": "Hi! I'm Ravi. A programmer that likes to mess around on Reddit and Discord.",
+        "tags": [
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "Zofingen",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "./index.html"
+    },
+    {
+        "key": "Projects",
+        "description": "An overview of all the projects I've worked on so far and have on my roadmap.",
+        "tags": [
+            "Fuzzle",
+            "Programming",
+            "Python",
+            "C#",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Mariavi",
+            "Reddit",
+            "Discord"
+        ],
+        "url": "./projects.html"
+    },
+    {
+        "key": "Reddit",
+        "description": "I spend a lot of time on Reddit and have already made a few bots for the platform.",
+        "tags": [
+            "Reddit",
+            "1000DOP",
+            "1000DaysOfPractice",
+            "Stats",
+            "Egosaurus",
+            "Seedless",
+            "Comment",
+            "Clear",
+            "Delete",
+            "Account",
+            "Management"
+        ],
+        "url": "./reddit.html"
+    },
+    {
         "key": "I1A",
         "url": "I1A/index.html"
     },

@@ -173,7 +173,7 @@
       Taking a look at the <code>getSubFolders(File)</code> method, we can see it takes a single parameter of the type [File] which is the root folder in which the method should find sub-folders.
       This method is not recursive:
     </p>
-    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/d66cd32/Builder/src/main/java/FileHandler.java" start="42" length="14"></pre>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/SMART/d66cd32/Builder/src/main/java/FileHandler.java" start="57" length="23"></pre>
 
     <p>
       As you can see, the loop runs as long as the folder being scanned has sub-folders, determined by the <code>folders.size() > 0</code> boolean expression and those sub-folders are added to the <code>directories</code> within the loop.
