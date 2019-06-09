@@ -2,22 +2,22 @@ import os
 import json
 from bs4 import BeautifulSoup
 
-subFolders = True
-
-while subFolders:
-    subFolders = False
-    
-
 folders = ["."]
-folders.extend([f for f in os.listdir('.') if os.path.isdir(f)])
-
-print(folders)
+dirs = ["."]
+while len(dirs) > 0:
+    ds = dirs.copy()
+    for dir in ds:
+        subDirs = [dir + "/" + f for f in os.listdir(dir) if os.path.isdir(dir + "/" + f)]
+        dirs.extend(subDirs)
+        folders.extend(subDirs)
+        dirs.remove(dir)
+# print(folders)
 
 files = list()
-
 for _f in folders:
     _files = [_f + "/" + f for f in os.listdir(_f) if os.path.isfile(_f + "/" + f) and f.endswith(".html")]
     files.extend(_files)
+# print(files)
 
 pages = list()
 

@@ -146,67 +146,67 @@
     },
     {
         "key": "I1A",
-        "url": "I1A/index.html"
+        "url": "./I1A/index.html"
     },
     {
         "key": "Im17A | Biologie",
-        "url": "Im17A/Biologie.html"
+        "url": "./Im17A/Biologie.html"
     },
     {
         "key": "Im17A | Chemie",
-        "url": "Im17A/Chemie.html"
+        "url": "./Im17A/Chemie.html"
     },
     {
         "key": "Im17A | Deutsch",
-        "url": "Im17A/Deutsch.html"
+        "url": "./Im17A/Deutsch.html"
     },
     {
         "key": "Im17A | Englisch",
-        "url": "Im17A/Englisch.html"
+        "url": "./Im17A/Englisch.html"
     },
     {
         "key": "Im17A | Finanz- und Rechnungswesen",
-        "url": "Im17A/Finanzwesen.html"
+        "url": "./Im17A/Finanzwesen.html"
     },
     {
         "key": "Im17A | Franz\u00f6sisch",
-        "url": "Im17A/Franz\u00f6sisch.html"
+        "url": "./Im17A/Franz\u00f6sisch.html"
     },
     {
         "key": "Im17A | Geschichte",
-        "url": "Im17A/Geschichte.html"
+        "url": "./Im17A/Geschichte.html"
     },
     {
         "key": "Im17A | Hausaufgaben",
-        "url": "Im17A/Hausaufgaben.html"
+        "url": "./Im17A/Hausaufgaben.html"
     },
     {
         "key": "Im17A",
-        "url": "Im17A/index.html"
+        "url": "./Im17A/index.html"
     },
     {
         "key": "Im17A | Informatik",
-        "url": "Im17A/Informatik.html"
+        "url": "./Im17A/Informatik.html"
     },
     {
         "key": "Im17A | Klassenreise 2017",
-        "url": "Im17A/Klassenreise 2017.html"
+        "url": "./Im17A/Klassenreise 2017.html"
     },
     {
         "key": "Im17A | Mathematik",
-        "url": "Im17A/Mathematik.html"
+        "url": "./Im17A/Mathematik.html"
     },
     {
         "key": "Im17A | Wirtschaft und Recht",
-        "url": "Im17A/Wirtschaft.html"
+        "url": "./Im17A/Wirtschaft.html"
     },
     {
         "key": "Im17A | Zusammenfassungen",
-        "url": "Im17A/Zusammenfassungen.html"
+        "url": "./Im17A/Zusammenfassungen.html"
     },
     {
         "key": "Im17A | Startseite",
-        "url": "Im17A v2/index.html"
+        "url": "./Im17A v2/index.html"
     },
     {
         "key": "Banhammer",
@@ -224,7 +224,7 @@
             "Lydocia",
             "Amy"
         ],
-        "url": "mariavi/banhammer.html"
+        "url": "./mariavi/banhammer.html"
     },
     {
         "key": "Mariavi",
@@ -241,7 +241,7 @@
             "Reddify",
             "Substarters"
         ],
-        "url": "mariavi/index.html"
+        "url": "./mariavi/index.html"
     },
     {
         "key": "Melon",
@@ -257,7 +257,7 @@
             "Discord",
             "Reddit"
         ],
-        "url": "mariavi/melon.html"
+        "url": "./mariavi/melon.html"
     },
     {
         "key": "Reddify",
@@ -274,7 +274,7 @@
             "Reddify",
             ""
         ],
-        "url": "mariavi/reddify.html"
+        "url": "./mariavi/reddify.html"
     },
     {
         "key": "SMART",
@@ -291,7 +291,7 @@
             "Game",
             "SMART"
         ],
-        "url": "mariavi/smart.html"
+        "url": "./mariavi/smart.html"
     },
     {
         "key": "Substarters",
@@ -306,7 +306,7 @@
             "Reddit",
             "Discord"
         ],
-        "url": "mariavi/substarters.html"
+        "url": "./mariavi/substarters.html"
     },
     {
         "key": "RaviAnand | Ausbildung",
@@ -323,7 +323,7 @@
             "Informatikmittelschule",
             "BBBaden"
         ],
-        "url": "old/Ausbildung.html"
+        "url": "./old/Ausbildung.html"
     },
     {
         "key": "RaviAnand | Hobbys",
@@ -340,7 +340,7 @@
             "Informatikmittelschule",
             "BBBaden"
         ],
-        "url": "old/Hobbys.html"
+        "url": "./old/Hobbys.html"
     },
     {
         "key": "RaviAnand",
@@ -357,7 +357,7 @@
             "Informatikmittelschule",
             "BBBaden"
         ],
-        "url": "old/index.html"
+        "url": "./old/index.html"
     },
     {
         "key": "RaviAnand | \u00dcber Mich",
@@ -374,18 +374,34 @@
             "Informatikmittelschule",
             "BBBaden"
         ],
-        "url": "old/\u00dcber Mich.html"
+        "url": "./old/\u00dcber Mich.html"
     },
     {
         "key": "TechDog | Domination",
-        "url": "TechDog/Domination.html"
+        "url": "./TechDog/Domination.html"
     },
     {
         "key": "TechDog",
-        "url": "TechDog/index.html"
+        "url": "./TechDog/index.html"
     },
     {
         "key": "TechDog | Segway Surfers",
-        "url": "TechDog/Segway Surfers.html"
+        "url": "./TechDog/Segway Surfers.html"
+    },
+    {
+        "key": "TITLE",
+        "description": "DESCRIPTION",
+        "tags": [
+            "KEYWORDS"
+        ],
+        "url": "./html/templates/page.html"
+    },
+    {
+        "key": "TITLE",
+        "description": "DESCRIPTION",
+        "tags": [
+            "KEYWORDS"
+        ],
+        "url": "./html/templates/wiki.html"
     }
 ]
