@@ -22,8 +22,8 @@
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   margin-right: -2px;
-  border-bottom: solid white 1px;
-  color: white;
+  color: var(--light-dark-turquoise);
+  border-bottom: solid var(--light-dark-turquoise) 1px;
 }
 
 #fuzzleDemo input[type=search]:focus {
@@ -36,7 +36,7 @@
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   margin-left: -2px;
-  color: white;
+  color: var(--light-dark-turquoise);
   background-color: transparent;
   box-shadow: none;
 }

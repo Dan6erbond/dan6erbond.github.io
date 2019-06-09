@@ -36,10 +36,12 @@ h2 {
   border-bottom: 2px solid var(--dark-blue);
   border-top: 2px solid var(--dark-blue);
   padding: 5px 0px 5px 0px;
+  vertical-align: top;
 }
 
 .top .card table tr td {
   padding: 5px 0px 5px 0px;
+  vertical-align: top;
 }
 
 .top .card table tr td:first-of-type {

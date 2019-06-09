@@ -55,6 +55,9 @@
               <li>
                 <a href="#searchsplit">Splitting the Search into Parts</a>
               </li>
+              <li>
+                <a href="#optionloop">Iterating over all the options</a>
+              </li>
             </ul>
           </li>
           <li>
@@ -99,7 +102,11 @@
             </tr>
             <tr>
               <td>Contributors</td>
-              <td><a href="https://github.com/Xelaalex1234" target="_blank">XelaaleX1234</a></td>
+              <td>
+                <a href="https://github.com/Xelaalex1234" target="_blank">XelaaleX1234</a>,
+                <br>
+                <a href="https://github.com/Dan6erbond" target="_blank">Dan6erbond</a>
+              </td>
             </tr>
             <tr>
               <td>Source Code</td>
@@ -117,6 +124,7 @@
       The key aspects of the way Fuzzle works are documented in this section.
       The code examples are written in Python as it's the first language with which Fuzzle was implemented and more readable for programmers that aren't familiar with any of the used languages.
     </p>
+
     <h3 id="searchsplit">Splitting the Search into Parts<a onclick="copyToClipboard(this.href);" href="#searchsplit">🔗</a></h3>
     <p>
       One of the first things Fuzzle does is split the search query into smaller parts for the code to later use to calculate coverage in an efficient matter.
@@ -143,12 +151,95 @@
     </p>
     <pre>['Python', 'Pytho', 'ython', 'Pyth', 'ytho', 'thon', 'Pyt', 'yth', 'tho', 'hon', 'Py', 'yt', 'th', 'ho', 'on', 'P', 'y', 't', 'h', 'o', 'n']</pre>
 
+    <h3 id="optionloop">Iterating over all the options<a onclick="copyToClipboard(this.href);" href="#optionloop">🔗</a></h3>
+    <p>
+      After we have the different parts of a search query as well as calculated some of the more constant values, we can iterate over the given keys.
+      The following variables should be properly initialized before the loop to optimize for performance:
+    </p>
+    <ul>
+      <li><code>search</code>: The stripped and undercased version of the given search query</li>
+      <li><code>parts</code>: The different possible parts of the search query as seen above in the example with 'Python'.</li>
+      <li><code>words</code>: The search query split into "words" using the delimiters ' ', '-' and '_'.</li>
+      <li>
+        <code>max_coverage</code>: How many characters of the result the search should <b>at least</b> cover to return it. Calculated as follows:
+        <br>
+        <code>1 - length of search * coverage multiplier (default to something around 0.02975)</code>
+      </li>
+      <li><code>results</code>: A currently empty list of the results you'll be returning after iterating over the keys.</li>
+    </ul>
+
+    <h4>Ensuring input meets the requirements</h4>
+    <p>
+      Depending on what language you're working with, you will want to normalize the given key before moving to the next steps.
+      In the Python and JavaScript version, strings as well as dictionaries (objects in JavaScript) are accepted which means in this step they must all be converted to dictionaries/objects.
+      <br>
+      <br>
+      In languages such as C# and Java a class can be created to enforce certain parameters for the user whereas in languages like Python and JavaScript this step is necessary.
+    </p>
+
+    <h4>Iterating over Parts</h4>
+    <p>
+      In this step we iterate over the different parts we previously stored in a list of strings as well as initialize some variables which are set within the loop (or while initalizing) to later check if the current key is eligible to be returned.
+      <br>
+      <br>
+      For that we need to initialize both the <code>best</code> and <code>construct</code> variable where we store the best part as well as create a pseudo-string of sub-strings that were found in both the key and the search query.
+      Following shows how this is done in the Python version:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="31" length="10"></pre>
+    <p>
+      After looping over all the parts, we can calculate the <code>coverage</code> variable which shows us how much of the search query's parts/letters were found in the key with a certain tolerance.
+    </p>
+
+    <h4>Iterating over Words</h4>
+    <p>
+      In this step we first initialize some more variables before iterating over the words we previously stored in a list of strings as this iteration will manipulate some of those values:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="42" length="10"></pre>
+    <p>
+      Even though some of these variables could be of the type <code>boolean</code> in typesafe languages, we're using <code>integer</code> for the most part as it allows us to calculate the <code>accuracy</code> later on.
+      With a simple ternary operator the variables can be set to either their maximum value or zero depending on whether the ternary yields <code>True</code> or <code>False</code>.
+      <br>
+      <br>
+      Now that those variables have been initialized and some of them given a value we can iterate over the words in the search query to set some of those variables' values and then calculate the accuracy:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="52" length="16"></pre>
+    <p>
+      Knowing the <code>coverage</code> value as well as whether the search's words were found in the tags (if there are any for this key), we can decide if the current key is eligible to be added to the list, otherwise return.
+      That is the case if there were either no words found in the tags or the <code>coverage</code> value is below a certain threshold:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="69" length="2"></pre>
+
+    <h4>Splitting into Categories</h4>
+    <p>
+      At this step we know whether the current key will even be returned, so now we can assign it a category and then add it to the list which will be sorted later on and returned at the end of the method/function:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="74" length="19"></pre>
+    <p>
+      The last statement should <i>technically</i> never be executed as the previous <code>if</code> statement <i>should</i> have ensured no more keys make it through, but in the event that one does, the loop will just <code>continue</code> to the next element.
+    </p>
+
+    <h4>Assigning values to the result</h4>
+    <p>
+      In this step we'll be assigning some of the calculated variables to the object that will be returned as in the next step we'll be using these attributes to sort the list before returning it:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="94" length="5"></pre>
+
+    <h4>Sorting and returning the results</h4>
+    <p>
+      All that we're left with at this point is a list of dictionaries/objects with the attributes <code>key</code>, <code>tags</code>, <code>coverage</code>, <code>accuracy</code>, <code>cat</code> and <code>match</code>.
+      At the end of the function we want to sort the list we'll be returning by <code>accuracy</code> <i>first</i> and then by <code>category</code> as we want to have the list "split" into categories and within the "sub-lists" they're sorted by <code>accuracy</code>:
+    </p>
+    <pre src="https://raw.githubusercontent.com/Dan6erbond/Fuzzle/e8a20202c2047bd21fc98ef87d436a26b998e34c/python/fuzzle.py" start="103" length="5"></pre>
+
     <h2 id="versions">Versions<a onclick="copyToClipboard(this.href);" href="#versions">🔗</a></h2>
     <p>👷 🚧 Work in progress! 🚧</p>
+
     <h3 id="python">Python<a onclick="copyToClipboard(this.href);" href="#python">🔗</a></h3>
     <p>👷 🚧 Work in progress! 🚧</p>
+
     <h3 id="javascript">JavaScript<a onclick="copyToClipboard(this.href);" href="#javascript">🔗</a></h3>
     <p>👷 🚧 Work in progress! 🚧</p>
+
     <h3 id="java">Java<a onclick="copyToClipboard(this.href);" href="#java">🔗</a></h3>
     <p>👷 🚧 Work in progress! 🚧</p>
 
