@@ -50,5 +50,7 @@ for f in files:
 
         if add: pages.append(page)
 
+print(len(pages), " pages found.")
+
 with open("pages.json", "w+", encoding="utf8") as f:
     f.write(json.dumps(pages, indent=4))
