@@ -68,6 +68,9 @@
             <a href="#melons">Melons</a>
           </li>
           <li>
+            <a href="#automoji">Automoji</a>
+          </li>
+          <li>
             <a href="#utility">Utility</a>
           </li>
         </ol>
@@ -107,10 +110,6 @@
       Reaction-roles can be setup by administrators of a server and allow the users to click on reactions of a certain message to receive a role.
       The command <code>!addreactrole [emoji, role, message, channel]</code> will have Melon add a reaction with the <code>[emoji]</code> of your choice to the messsage, as well as an entry to her database that creates a link between the message's reaction and a given role.
     </p>
-    <h3 id="remreactrole">Removing a Reaction-Role<a onclick="copyToClipboard(this.href);" href="#remreactrole">🔗</a></h3>
-    <p>
-      Reaction-roles can be removed by using the command <code>!remreactrole [emoji, message, channel]</code> after calling it Melon will remove the reaction from the message as well as the link to avoid assigning the reaction in the future.
-    </p>
 
     <div class="img-container">
       <div class="wiki-img">
@@ -118,23 +117,31 @@
         <p>Reactions beneath the message can be clicked on for the user to receive a role.</p>
       </div>
     </div>
+    
+    <h3 id="remreactrole">Removing a Reaction-Role<a onclick="copyToClipboard(this.href);" href="#remreactrole">🔗</a></h3>
+    <p>
+      Reaction-roles can be removed by using the command <code>!remreactrole [emoji, message, channel]</code> after calling it Melon will remove the reaction from the message as well as the link to avoid assigning the reaction in the future.
+    </p>
 
     <h2 id="messages">Messages<a onclick="copyToClipboard(this.href);" href="#messages">🔗</a></h2>
     <p>
       Melon has two handy commands that allow you to quote people, evaluate poll results and more!
       <br>
       <br>
-      <code>!quote [id, breakdown]</code>: This command will return a message in the form of an embed. The <code>id</code> of the message must be fed, whereas the boolean parameter <code>breakdown</code> is optional.
+      <code>!quote [id, channel]</code>: This command will return a message in the form of an embed. The <code>id</code> of the message must be fed, whereas the boolean parameter <code>breakdown</code> is optional.
       If a message has reactions added to it, they will be shown as part of the embed Melon returns quoting the message. Otherwise an embed with the author's name, a URL to the message as well as the text (including markdown) will be returned:
     </p>
     <div class="img-container">
       <div class="wiki-img">
-        <img src="img/melon/melon-quote.jpg" alt="">
+        <img src="img/melon/quote.jpg" alt="">
         <p>Melon will return the message info including reactions.</p>
       </div>
     </div>
     <p>
-      <code>!rawmsg [id]</code>: <code>!rawmsg</code> follows a similar design pattern to <code>!quote</code> and will return the message within a simple code block allowing you to see the markdown which proves useful for when a message needs to be posted somewhere else and you aren't the author.
+      <code>!poll [id, channel]</code>: <code>!poll</code> posts a similar embed to <code>!quote</code>, but instead of showing a minified version of how many reactions were added, it shows a breakdown which can be useful if you want to see the results of a poll in a nice summary form.
+      <br>
+      <br>
+      <code>!rawmsg [id, channel]</code>: <code>!rawmsg</code> will return the message within a simple code block allowing you to see the markdown which proves useful for when a message needs to be posted somewhere else and you aren't the author.
     </p>
     <h3 id="msgmanagement">Management<a onclick="copyToClipboard(this.href);" href="#msgmanagement">🔗</a></h3>
     <p>
@@ -169,6 +176,24 @@
       This gives a lot of control over what kind of information is shared and prioritized.
       The search engine powering Melon is Fuzzle and allows for users to search through tags which are added by Mariavi as well to supercharge the experience.
     </p>
+
+    <h2 id="automoji">Automoji<a onclick="copyToClipboard(this.href);" href="#automoji">🔗</a></h2>
+    <p>
+      Automojis are simple reactions that Melon will add to every message written into a certain channel!
+      <br>
+      <br>
+      Using <code>!addemoji [emoji]</code> in the channel you want to have the setup, Melon will first add the emoji to every message made in the past and then create an entry in her database so that every message made in the future gets the emoji. This is especially useful for to-do lists and channels with a voting system.
+      If you try to add an emoji that isn't valid, she will let you know and if the emoji is already setup, the same thing.
+      <br>
+      <br>
+      To remove an emoji you can simply use the command <code>!remoji [emoji]</code> that will retroactively remove all the emojis previously added as well as the entry in the database, if nothing was found, you'll be notified.
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/melon/automoji.jpg" alt="">
+        <p>Automojis allow channels to have persistent emojis and aren't limited to messages by the bot.</p>
+      </div>
+    </div>
 
     <h2 id="utility">Utility<a onclick="copyToClipboard(this.href);" href="#melons">🔗</a></h2>
     <p>
