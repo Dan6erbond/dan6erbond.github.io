@@ -75,6 +75,11 @@
           </li>
           <li>
             <a href="#utility">General Utility</a>
+            <ul>
+              <li>
+                <a href="#color">Color</a>
+              </li>
+            </ul>
           </li>
         </ol>
       </div>
@@ -232,17 +237,25 @@
       Alongside the previously elaborated commands Melon has some miscellaneous utility commands which have been proven useful in the past:
       <br>
       <br>
-      <code>!color [amt, tolerance]</code>: Melon will find the most previous image attachment and return a color grid with the RGB and HEX values of the most common colors.
-      <br>
-      In addition, the <code>amt</code> value can be fed to specify how many colors the grid should contain and <code>tolerance</code> should be a value between 3-45 to specify how close the colors should be to one another.
-      Higher <code>tolerance</code> values means the colors will be more unique than if they are closer to the default value of <code>6</code>.
-      <br>
-      <br>
       <code>!avatar [user]</code>: This command will return the given user's (if not specified, your own) avatar in either a <code>png</code> or URL format (for animated avatars).
       <br>
       <br>
       <code>!rand [options]</code>: If the <code>option</code> parameter follows the format <code>[int]-[int]</code> Melon will generate a random number, otherwise she will split the options with a space between them and return a random pick.
     </p>
+    <h3 id="color">Color<a onclick="copyToClipboard(this.href);" href="#color">🔗</a></h3>
+    <p>
+      <code>!color [amt, tolerance]</code> is a very useful command for when you want to setup roles for example or even when you're doing visual work such as web-design and need a color-palette.
+      By attaching an image to the command Melon will know to turn that image into a color palette, with the default <code>amt</code> set to 4, if you need more you can always increase that and the default <code>tolerance</code> set to <code>6</code>.
+      <br>
+      <br>
+      If you do not attach an image, Melon will scan the last 25 messages for an attachment, though currently URLs are not supported, you can use <code>!color</code> in combination with <code>!avatar</code> to get the color palette of someone's avatar.
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/melon/color.jpg" alt="">
+        <p>Color will show you the most used colors in an image.</p>
+      </div>
+    </div>
   </main>
 
   <div w3-include-html="/html/tags.html"></div>
