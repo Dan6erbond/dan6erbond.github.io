@@ -132,60 +132,11 @@
     </p>
 
     <h2 id="bots">Bots<a onclick="copyToClipboard(this.href);" href="#bots">🔗</a></h2>
-    <iframe src="../bots/bot-status.html?bot=substar&textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="175px" height="70px"></iframe>
-    <iframe src="../bots/bot-status.html?bot=submoon&textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="175px" height="70px"></iframe>
+    <iframe src="/bots/bot-status.html?bot=substar&textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="175px" height="70px"></iframe>
+    <iframe src="/bots/bot-status.html?bot=submoon&textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="175px" height="70px"></iframe>
     <p>
-      Substarters makes lots of use of Discord as well as Reddit bots to aid new moderators in getting their community setup.
-      Alongside using the Mariavi bots <a href="reddify.html">Reddify</a> and <a href="melon.html">Melon</a>, they have two custom bots designed for particularly this community.
+      Substarters currently utilizes two bots made by Mariavi for which the documentation can be found <a href="mariavi/sbsbots.html">here</a>.
     </p>
-    <h3 id="substar">Substar<a onclick="copyToClipboard(this.href);" href="#substar">🔗</a></h3>
-    <p>
-      Substar was the first bot created for the community and has helped guide the users through the basic processes, especially as it used to hold Tags which have since been rebranded to Melons and delivered lots of general information.
-      <br>
-      <br>
-      The bot has changed a lot with the founding of Mariavi and now guides users through the verification and introduction process as well as organizes the list of Subreddits in the Discord server to ensure an organized community.
-      <br>
-      <br>
-      There are a couple useful commands Substar offers in addition to the automated processes and he also runs <a href="#starma">Starma</a>!
-      <br>
-      <br>
-      <code>!addsub</code> will guide you through the process of creating a channel for your subreddit. It will ask you some general questions so it can ping roles and suggest commands once the channel has been created as well as determine whether your subreddit is eligible:
-    </p>
-    <div class="img-container">
-      <div class="wiki-img">
-        <img src="img/substarters/substar/addsub.jpg" alt="">
-        <p><code>!addsub</code> will guide you through the process of creating a channel for your subreddit.</p>
-      </div>
-    </div>
-    <p>
-      Once your channel has been created, many things can be done! One of the more recent features added to Substar is the command <code>!css</code>.
-      This command will apply a modified version of the <a href="https://github.com/Axel--/Naut-for-reddit">Naut</a> theme, we like to call Astro<b>naut</b>.
-      The bot will needed to be added as a moderator to the subreddit in order for this feature to work, but it will unmod itself immediately after applying the theme.
-      The roadmap for this command includes a color picker to allow you to pick the accent and main colors and maybe a dedicated dark theme.
-    </p>
-    <div class="img-container">
-      <div class="wiki-img">
-        <img style="opacity: 0.75;" src="img/substarters/substar/Astronaut.png" alt="">
-        <p>This theme will be applied to the subreddit for which the command is being ran. A live preview can be seen <a href="https://old.reddit.com/r/Dan6erbond" target="_blank">here</a>.</p>
-      </div>
-    </div>
-
-    <h3 id="submoon">Submoon<a onclick="copyToClipboard(this.href);" href="#submoon">🔗</a></h3>
-    <p>
-      Submoon is our advertisement bot that doesn't interact too much with the actual Substarters community.
-      She uses a couple algorithms to scan through newly created subreddits as well as advertisement-based subreddits to find eligible members and streams them to a channel only the team has access to.
-      After an authorization by a singular team member the bot will send an invite and after that it's all up to Substar to retain the users.
-      <br>
-      <br>
-      In addition to finding eligible members, Submoon makes use of the scan to find subreddits that may have potential, but lost their moderator team and backing.
-      She will forward those subreddits to a channel by the name <code>#💀dead-subs</code> and the members can use /r/redditrequest or check on /r/AdoptAReddit to retrieve it:
-    </p>
-    <div class="img-container">
-      <div class="wiki-img">
-        <img src="img/substarters/submoon/dead-sub.jpg" alt="">
-        <p>Subs found in <code>#💀dead-subs</code> can be requested on /r/redditrequest.</p>
-      </div>
-    </div>
 
     <h2 id="starma">Starma<a onclick="copyToClipboard(this.href);" href="#starma">🔗</a></h2>
     <p>
@@ -201,7 +152,7 @@
     </p>
     <div class="img-container">
       <div class="wiki-img">
-        <img src="img/substarters/substar/starma.jpg" alt="">
+        <img src="img/substarters/starma.jpg" alt="">
         <p>Substarters uses Starma to incentivize being helpful.</p>
       </div>
     </div>
@@ -210,14 +161,14 @@
     </p>
     <div class="img-container">
       <div class="wiki-img">
-        <img src="img/substarters/substar/leaderboard.jpg" alt="">
+        <img src="img/substarters/leaderboard.jpg" alt="">
         <p>The leaderboard shows the most active Starma users for the day/overall.</p>
       </div>
     </div>
     <p>
       The Starma information is stored in a very simple JSON DB that follows the following structure:
     </p>
-    <pre src="code/starma-structure.json"></pre>
+    <pre src="mariavi/code/starma-structure.json"></pre>
 
     <h2 id="astronauts">Astronauts<a onclick="copyToClipboard(this.href);" href="#astronauts">🔗</a></h2>
     <p>

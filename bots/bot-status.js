@@ -33,12 +33,12 @@ bots = [
   {
     "id": "submoon",
     "name": "Submoon",
-    "img": "/mariavi/img/substarters/submoon/submoon.png"
+    "img": "/mariavi/img/sbsbots/submoon/submoon.png"
   },
   {
     "id": "substar",
     "name": "Substar",
-    "img": "/mariavi/img/substarters/substar/substar.png"
+    "img": "/mariavi/img/sbsbots/substar/substar.png"
   }
 ]
 
@@ -68,6 +68,8 @@ function loadData(id){
     }
     if (bot["url"] != null){
       document.getElementById("name").href = bot["url"];
+    } else {
+      document.getElementById("name").target = "";
     }
   }
   if (bot["img"] != null){

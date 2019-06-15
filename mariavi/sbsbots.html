@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Substarters uses bots made by Mariavi to aid in users in growing their subs and more!">
+  <meta name="keywords" content="Amy,Ravi,Lydocia,Subtar,Submoon,Astronaut,Reddit,Discord">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="/css/css.css" rel="stylesheet" />
+  <link href="/css/wiki.css" rel="stylesheet" />
+
+  <script src="/js/w3.js"></script>
+  <script src="/js/d6b.js"></script>
+
+  <title>Substarters' Bots</title>
+</head>
+
+<body>
+  <div w3-include-html="/html/header.html"></div>
+
+  <main>
+    <h1>Substarters' Bots<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+
+    <div class="top">
+      <div class="summary">
+        Substarters is a Discord-based Reddit community <b>by Redditors for Redditors</b>.
+        In addition to all the friendly guys and gals that help users grow their subs, in true Mariavi fashion, we use bots!
+
+        <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
+        <ol class="index">
+          <li>
+            <a href="#substar">Substar</a>
+          </li>
+          <li>
+            <a href="#submoon">Submoon</a>
+          </li>
+        </ol>
+      </div>
+      <div class="card">
+        <img src="/img/substarters/substarters-bg.png" alt="">
+        <div class="table">
+          <table>
+            <th colspan="2">Overview</th>
+            <tr>
+              <td>Type</td>
+              <td>Discord bots</td>
+            </tr>
+            <tr>
+              <td>Creator</td>
+              <td>Amy</td>
+            </tr>
+            <tr>
+              <td>Developer</td>
+              <td>Ravi</td>
+            </tr>
+            <tr>
+              <td>Names</td>
+              <td>Substar, Submoon</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Released</td>
+            </tr>
+            <tr>
+              <td>Link</td>
+              <td><a href="https://discord.gg/njYdKYH">Discord server</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="substar">Substar<a onclick="copyToClipboard(this.href);" href="#substar">🔗</a></h2>
+    <p>Status</p>
+    <iframe src="../bots/bot-status.html?bot=substar&textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="175px" height="70px"></iframe>
+    <p>
+      Substar was the first bot created for the community and has helped guide the users through the basic processes, especially as it used to hold Tags which have since been rebranded to Melons and delivered lots of general information.
+      <br>
+      <br>
+      The bot has changed a lot with the founding of Mariavi and now guides users through the verification and introduction process as well as organizes the list of Subreddits in the Discord server to ensure an organized community.
+      <br>
+      <br>
+      There are a couple useful commands Substar offers in addition to the automated processes and he also runs <a href="#starma">Starma</a>!
+      <br>
+      <br>
+      <code>!addsub</code> will guide you through the process of creating a channel for your subreddit. It will ask you some general questions so it can ping roles and suggest commands once the channel has been created as well as determine whether your subreddit is eligible:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/sbsbots/substar/addsub.jpg" alt="">
+        <p><code>!addsub</code> will guide you through the process of creating a channel for your subreddit.</p>
+      </div>
+    </div>
+    <p>
+      Once your channel has been created, many things can be done! One of the more recent features added to Substar is the command <code>!css</code>.
+      This command will apply a modified version of the <a href="https://github.com/Axel--/Naut-for-reddit">Naut</a> theme, we like to call Astro<b>naut</b>.
+      The bot will needed to be added as a moderator to the subreddit in order for this feature to work, but it will unmod itself immediately after applying the theme.
+      The roadmap for this command includes a color picker to allow you to pick the accent and main colors and maybe a dedicated dark theme.
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img style="opacity: 0.75;" src="img/sbsbots/substar/Astronaut.png" alt="">
+        <p>This theme will be applied to the subreddit for which the command is being ran. A live preview can be seen <a href="https://old.reddit.com/r/Dan6erbond" target="_blank">here</a>.</p>
+      </div>
+    </div>
+
+    <h2 id="submoon">Submoon<a onclick="copyToClipboard(this.href);" href="#submoon">🔗</a></h2>
+    <p>Status</p>
+    <iframe src="../bots/bot-status.html?bot=submoon&textColor=white&borderColor=2c2d30" style="margin-left: 5px;border: none;box-shadow: var(--material-shadow);" width="175px" height="70px"></iframe>
+    <p>
+      Submoon is our advertisement bot that doesn't interact too much with the actual Substarters community.
+      She uses a couple algorithms to scan through newly created subreddits as well as advertisement-based subreddits to find eligible members and streams them to a channel only the team has access to.
+      After an authorization by a singular team member the bot will send an invite and after that it's all up to Substar to retain the users.
+      <br>
+      <br>
+      In addition to finding eligible members, Submoon makes use of the scan to find subreddits that may have potential, but lost their moderator team and backing.
+      She will forward those subreddits to a channel by the name <code>#💀dead-subs</code> and the members can use /r/redditrequest or check on /r/AdoptAReddit to retrieve it:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/sbsbots/submoon/dead-sub.jpg" alt="">
+        <p>Subs found in <code>#💀dead-subs</code> can be requested on /r/redditrequest.</p>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="/html/tags.html"></div>
+  <div w3-include-html="/html/footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+    includeCode();
+  </script>
+</body>
+
+</html>
