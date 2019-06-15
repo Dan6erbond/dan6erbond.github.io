@@ -71,7 +71,10 @@
             <a href="#automoji">Automoji</a>
           </li>
           <li>
-            <a href="#utility">Utility</a>
+            <a href="#poll">Poll</a>
+          </li>
+          <li>
+            <a href="#utility">General Utility</a>
           </li>
         </ol>
       </div>
@@ -138,9 +141,6 @@
       </div>
     </div>
     <p>
-      <code>!poll [id, channel]</code>: <code>!poll</code> posts a similar embed to <code>!quote</code>, but instead of showing a minified version of how many reactions were added, it shows a breakdown which can be useful if you want to see the results of a poll in a nice summary form.
-      <br>
-      <br>
       <code>!rawmsg [id, channel]</code>: <code>!rawmsg</code> will return the message within a simple code block allowing you to see the markdown which proves useful for when a message needs to be posted somewhere else and you aren't the author.
     </p>
     <h3 id="msgmanagement">Management<a onclick="copyToClipboard(this.href);" href="#msgmanagement">🔗</a></h3>
@@ -163,11 +163,11 @@
     </p>
     <div class="imgs-container">
       <div class="wiki-img" style="width: 30%;min-width: 300px;">
-        <img src="img/melon/melon-re.jpg" style="max-height: 220px;max-width: 97%;" alt="">
+        <img src="img/melon/melon-re.jpg" style="max-height: 220px;" alt="">
         <p>Clicking on any of the numbers will display the appropriate Melon.</p>
       </div>
       <div class="wiki-img" style="width: 60%;min-width: 500px;">
-        <img src="img/melon/melon-redesign.jpg" style="max-height: 250px;max-width: 97%;" alt="">
+        <img src="img/melon/melon-redesign.jpg" style="max-height: 250px;" alt="">
         <p>The information is then displayed in an orderly fashion.</p>
       </div>
     </div>
@@ -195,7 +195,39 @@
       </div>
     </div>
 
-    <h2 id="utility">Utility<a onclick="copyToClipboard(this.href);" href="#melons">🔗</a></h2>
+    <h2 id="poll">Poll<a onclick="copyToClipboard(this.href);" href="#poll">🔗</a></h2>
+    <p>
+      Melon has a couple of commands and features that allow users to setup poll channels as well as evaluate the results of a poll after it has taken place.
+      <br>
+      <br>
+      One command is <code>!poll [id, channel]</code> which works similarly to <code>!quote</code>, in terms of what arguments it takes, but instead of a minified version of the reactions you see a full breakdown of who pressed what reaction:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/melon/poll.jpg" alt="">
+        <p>The <code>!poll</code> command shows you a breakdown of all the reactions pressed in a poll.</p>
+      </div>
+    </div>
+    <p>
+      In addition to using <code>!poll</code> to see a breakdown of the reactions, channels can be setup as poll channels.
+      Melon will then check if a message sent/edited in the channel has any emojis (certain emojis aren't supported yet) and add those as reactions, if none were found, she will add some default emojis that can be configured, but are set to 👍 and 👎 in the beginning.
+      <br>
+      <br>
+      With the command <code>!togglepoll</code> the feature can be enabled/disabled.
+      If you want custom generic poll emojis, the commands <code>!adddefault [emoji]</code> and <code>!remdefault [emoji]</code> will help as they will add/remove the emojis to Melon's DB and in the case that a message in the poll channel does not have any emojis, those will be added.
+    </p>
+    <div class="imgs-container">
+      <div class="wiki-img" style="width: 60%;min-width: 300px;">
+        <img src="img/melon/poll-customoji.png" alt="">
+        <p>If no emojis were found in the message, generic ones will be added.</p>
+      </div>
+      <div class="wiki-img" style="width: 30%;min-width: 100px;">
+        <img src="img/melon/poll-messagemoji.png" alt="">
+        <p>If there are emojis in the message, Melon will add those.</p>
+      </div>
+    </div>
+
+    <h2 id="utility">General Utility<a onclick="copyToClipboard(this.href);" href="#utility">🔗</a></h2>
     <p>
       Alongside the previously elaborated commands Melon has some miscellaneous utility commands which have been proven useful in the past:
       <br>
