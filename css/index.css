@@ -96,6 +96,10 @@
   background-image: url("../img/icons/reddit.svg");
 }
 
+.page .title.sbs {
+  background-image: url("../img/substarters/substarters-bg.png");
+}
+
 .page a {
   text-decoration: none;
 }

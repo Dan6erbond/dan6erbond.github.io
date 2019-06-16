@@ -145,6 +145,21 @@
         "url": "./reddit.html"
     },
     {
+        "key": "Substarters",
+        "description": "Substarters is a community by Redditor for Redditors with the intention of helping new moderators/subreddits getting started.",
+        "tags": [
+            "Amy",
+            "Ravi",
+            "Lydocia",
+            "Subtar",
+            "Submoon",
+            "Astronaut",
+            "Reddit",
+            "Discord"
+        ],
+        "url": "./substarters.html"
+    },
+    {
         "key": "I1A",
         "url": "./I1A/index.html"
     },
@@ -228,7 +243,7 @@
     },
     {
         "key": "Mariavi",
-        "description": "Mariavi is the team behind bots like Banhammer and Reddify as well as projecs such as /r/Substarters and SMART.",
+        "description": "Mariavi is the team behind bots like Banhammer and Reddify as well as projecs such as SMART.",
         "tags": [
             "Reddit",
             "Discord",
@@ -277,6 +292,21 @@
         "url": "./mariavi/reddify.html"
     },
     {
+        "key": "Substarters' Bots",
+        "description": "Substarters uses bots made by Mariavi to aid in users in growing their subs and more!",
+        "tags": [
+            "Amy",
+            "Ravi",
+            "Lydocia",
+            "Subtar",
+            "Submoon",
+            "Astronaut",
+            "Reddit",
+            "Discord"
+        ],
+        "url": "./mariavi/sbsbots.html"
+    },
+    {
         "key": "SMART",
         "description": "SMART is a tool to aid in creating mods and the sorts for the game Staxel.",
         "tags": [
@@ -292,21 +322,6 @@
             "SMART"
         ],
         "url": "./mariavi/smart.html"
-    },
-    {
-        "key": "Substarters",
-        "description": "Substarters is a community by Redditor for Redditors with the intention of helping new moderators/subreddits getting started.",
-        "tags": [
-            "Amy",
-            "Ravi",
-            "Lydocia",
-            "Subtar",
-            "Submoon",
-            "Astronaut",
-            "Reddit",
-            "Discord"
-        ],
-        "url": "./mariavi/substarters.html"
     },
     {
         "key": "RaviAnand | Ausbildung",
