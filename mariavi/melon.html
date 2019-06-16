@@ -66,6 +66,11 @@
           </li>
           <li>
             <a href="#melons">Melons</a>
+            <ul>
+              <li>
+                <a href="#tags">Tags</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#automoji">Automoji</a>
@@ -180,6 +185,21 @@
       Server administrators can view the currently existing Melon categories by using the command <code>!meloncats</code> and en-/disable a particular one with <code>!enablecat [cat]</code> and <code>!disablecat [cat]</code> respectively.
       This gives a lot of control over what kind of information is shared and prioritized.
       The search engine powering Melon is Fuzzle and allows for users to search through tags which are added by Mariavi as well to supercharge the experience.
+    </p>
+
+    <h3 id="tags">Tags<a onclick="copyToClipboard(this.href);" href="#tags">🔗</a></h3>
+    <p>
+      Tags are a subset of Melons in the sense that they can be configured on a per-guild basis but still run through the Melon framework to deliver the information.
+      To enable the Tag feature a server admin will need to run the command <code>!enabletags</code> upon which Melon will create a role called <code>🍉 Tag Role</code> whose name can be changed, and it can be given to annoy that should have write access to the server's Tags.
+      <br>
+      <br>
+      If the role is deleted and you would like to re-enable the feature, just call <code>!enabletags</code> again.
+      <br>
+      <br>
+      Anyone with the role can now use <code>!addtag [key]</code>, <code>!deltag [key]</code> as well as <code>!edittag [key]</code> to perform actions on the particular server's database.
+      <br>
+      <br>
+      Viewing a Tag is done over the Melon framework which means that you can call <code>!melon [search]</code> as usual and Melon will scan through both the enabled Melon categories as well as the server's Tags to display all the results that were found.
     </p>
 
     <h2 id="automoji">Automoji<a onclick="copyToClipboard(this.href);" href="#automoji">🔗</a></h2>
