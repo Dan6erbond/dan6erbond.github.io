@@ -6,10 +6,10 @@
   width: 100%;
   min-width: 360px;
   background-color: var(--dark-blue);
-  top: -1px;
+  top: 0;
   z-index: 1;
-  left: -1px;
-  right: -1px;
+  left: 0;
+  right: 0;
   box-shadow: var(--material-shadow);
   overflow: visible;
   transition: top 0.5s;
