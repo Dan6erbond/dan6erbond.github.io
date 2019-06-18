@@ -1,0 +1,55 @@
+.page {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  box-shadow: var(--material-shadow-light);
+  height: 100px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.page .img {
+  position: absolute;
+  height: 75px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -37.5px;
+  margin-left: -50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.page.lydocia .img {
+  background-image: url("../../img/icons/lydocia.png")
+}
+
+.page.patreon .img {
+  background-image: url("../../img/icons/patreon.svg")
+}
+
+.page .text {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  height: 100px;
+  width: 150px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(56, 63, 86, 0.9);
+}
+
+.page:hover .text {
+  opacity: 1;
+}
+
+.text p {
+  margin: 0;
+  padding: 3px;
+}
