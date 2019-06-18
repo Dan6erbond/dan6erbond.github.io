@@ -122,6 +122,9 @@
     <p>
       Reaction-roles can be setup by administrators of a server and allow the users to click on reactions of a certain message to receive a role.
       The command <code>!addreactrole [emoji, role, message, channel]</code> will have Melon add a reaction with the <code>[emoji]</code> of your choice to the messsage, as well as an entry to her database that creates a link between the message's reaction and a given role.
+      <br>
+      <br>
+      If the message ID points to a message in the current channel, you do not need to feed the <code>channel</code> parameter.
     </p>
 
     <div class="img-container">
@@ -134,6 +137,9 @@
     <h3 id="remreactrole">Removing a Reaction-Role<a onclick="copyToClipboard(this.href);" href="#remreactrole">🔗</a></h3>
     <p>
       Reaction-roles can be removed by using the command <code>!remreactrole [emoji, message, channel]</code> after calling it Melon will remove the reaction from the message as well as the link to avoid assigning the reaction in the future.
+      <br>
+      <br>
+      Just like with <code>!addreactrole</code> the <code>channel</code> parameter defaults to the current channel.
     </p>
 
     <h2 id="messages">Messages<a onclick="copyToClipboard(this.href);" href="#messages">🔗</a></h2>
