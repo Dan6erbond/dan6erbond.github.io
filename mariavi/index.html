@@ -58,6 +58,12 @@
         <p>Consider supporting us on Patreon!</p>
       </a>
     </div>
+    <div class="page discord">
+      <div class="img"></div>
+      <a class="text" href="https://discord.gg/XyKZgzN">
+        <p>Join our Discord server!</p>
+      </a>
+    </div>
 
     <hr>
 
@@ -75,6 +81,9 @@
         <ul>
           <li>
             <a href="#banhammer">Banhammer</a>
+          </li>
+          <li>
+            <a href="#banhammer-py">Banhammer.py</a>
           </li>
           <li>
             <a href="#reddify">Reddify</a>
@@ -147,14 +156,35 @@
           <p>
             <b>The Banhammer Bot</b> is a Discord bot, currently in development, that allows Reddit moderators to moderate their subreddit from within Discord.
             <br>
-            It has been inspired by the concept of the bot we used to use back at /r/casualChildAbuse and is very simple to setup! Simply invite it to your Discord server and use <code>!addsub</code> to add your subreddit to it's database.
             <br>
-            <br>
-            <b>Important:</b> /u/TheBanhammerBot needs to be a moderator of your subreddit in order to function properly.
+            It makes use of the <a href="#banhammer-py">Banhammer.py</a> framework and requires zero coding experience to be setup in your own Discord server!
           </p>
           <div class="tags">
             <a href="https://wiki.lydocia.com/2019/the-banhammer-bot/" class="tag">Wiki</a>
             <!--<a href="banhammer.html" class="tag">Docs</a>-->
+            <a href="https://discord.gg/9JrGC8f" target="_blank" class="tag">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container" id="banhammer-py">
+      <div class="box">
+        <div class="title banhammer">
+          <a href="banhammer-py.html">
+            <p>Banhammer.py</p>
+            <img src="img/banhammer/banhammer.png" alt="">
+          </a>
+        </div>
+        <div class="content">
+          <p>
+            <b>Banhammer.py</b> is a framework built for the Discord.py Discord API Wrapper that enables you to create your very own Banhammer!
+            <br>
+            <br>
+            By working with the <code>asyncio</code> event loop it will stream new and reported items to your bot as well as handle the reactions.
+          </p>
+          <div class="tags">
+            <!--<a href="banhammer-py.html" class="tag">Docs</a>-->
             <a href="https://discord.gg/9JrGC8f" target="_blank" class="tag">Discord</a>
           </div>
         </div>
@@ -171,16 +201,13 @@
         </div>
         <div class="content">
           <p>
-            <b>Reddify</b> is a Discord bot, that intends to connect your Reddit account with your Discord one via 2FA. Simply use <code>!verify</code> to have it send you a message and respond with "verify" to the message in Reddit and Reddify will take care of the rest!
-            <br>
-            <br>
-            <i>Server admins can use <code>!toggle [nick/role]</code> to disable or enable the nickname and role feature on Reddify which changes the user's nickname (Reddit username)/role ('VERIFIED REDDITOR').</i>
+            <b>Reddify</b> is a Discord bot, that intends to connect your Reddit account with your Discord one via 2FA.
+            Once you've verified your Reddit account once, you won't have to do it again! Every server will now know you and apply the configured settings.
           </p>
           <div class="tags">
             <a href="https://wiki.lydocia.com/2019/reddify/" class="tag">Wiki</a>
             <a href="reddify.html" class="tag">Docs</a>
-            <a href="https://discordapp.com/oauth2/authorize?client_id=555093732010229760&scope=bot&permissions=8" target="_blank" class="tag">Discord</a>
-            <a href="https://discord.gg/XyKZgzN" target="_blank" class="tag">Invite</a>
+            <a href="https://discordapp.com/oauth2/authorize?client_id=555093732010229760&scope=bot&permissions=8" target="_blank" class="tag">Invite</a>
           </div>
         </div>
       </div>
@@ -197,11 +224,10 @@
         <div class="content">
           <p>
             <b>Melon</b> is the first Discord bot to officially use <a href="fuzzle.html">Fuzzle</a>.
-            <b>She</b> is capable of storing "Melons" categorized by the devs that can be summoned by typing <code>!melon [search]</code>.
-            She will then find the closest matches and if there isn't a 100% match, offer you to select one of them with reactions.
+            She's the ideal server utility bot with features such as reaction-roles, Automoji, poll support and of course - Melons.
             <br>
             <br>
-            Other handy feature include reaction-roles: use <code>!addreactrole [emoji, role, msg, channel]</code> to have her add a reaction to a message that allows users to sign-up for roles in that server!
+            Melons are tidbits of information that can be searched through by using <code>!melon [search]</code>.
           </p>
           <div class="tags">
             <a href="https://wiki.lydocia.com/2019/melon/" target="_blank" class="tag">Wiki</a>
@@ -270,9 +296,9 @@
         <div class="content">
           <p>
             <b>Staxel Modding and Related Tools</b> is a GUI application built on the JavaFX framework for players and modders of the game Staxel that enhances the experience of creating mods as well as playing the game.
+            <!--<br>
             <br>
-            <br>
-            Currently it features a Lang builder as well as a mod builder for <code>.tile</code> files, but more is in the works!
+            Currently it features a Lang builder as well as a mod builder for <code>.tile</code> files, but more is in the works!-->
           </p>
           <div class="tags">
             <!--<a href="https://wiki.lydocia.com/2019/substarters/" target="_blank" class="tag">Wiki</a>-->
