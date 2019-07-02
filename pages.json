@@ -224,6 +224,26 @@
         "url": "./Im17A v2/index.html"
     },
     {
+        "key": "Banhammer.py",
+        "description": "Banhammer.py is a Discord.py extension framework that allows you to create your very own Banhammer!",
+        "tags": [
+            "Banhammer",
+            "Discord",
+            "Discord.py",
+            "Reddit",
+            "Mariavi",
+            "Ravi",
+            "Reddify",
+            "Moderate",
+            "Moderation",
+            "Mod",
+            "Lydocia",
+            "Amy",
+            "Python"
+        ],
+        "url": "./mariavi/banhammer-py.html"
+    },
+    {
         "key": "Banhammer",
         "description": "Banhammer is a Discord bot that allows you moderate your subreddit from the comfort of your Discord server!",
         "tags": [
@@ -418,5 +438,20 @@
             "KEYWORDS"
         ],
         "url": "./html/templates/wiki.html"
+    },
+    {
+        "key": "Substarters",
+        "description": "Substarters is a community by Redditor for Redditors with the intention of helping new moderators/subreddits getting started.",
+        "tags": [
+            "Amy",
+            "Ravi",
+            "Lydocia",
+            "Subtar",
+            "Submoon",
+            "Astronaut",
+            "Reddit",
+            "Discord"
+        ],
+        "url": "./mariavi/css/substarters.html"
     }
 ]
