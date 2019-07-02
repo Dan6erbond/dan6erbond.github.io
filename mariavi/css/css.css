@@ -29,6 +29,10 @@
   background-image: url("../../img/icons/patreon.svg")
 }
 
+.page.discord .img {
+  background-image: url("../../img/icons/discord.svg")
+}
+
 .page .text {
   display: block;
   text-decoration: none;
