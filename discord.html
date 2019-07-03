@@ -259,10 +259,10 @@
           <b>Manage Server:</b> With this permission users can change the server's name and region.
         </li>
         <li>
-          <b>Manage Roles:</b>
+          <b>Manage Roles:</b> This allows the user to create new roles as well as edit roles that are below them in the hierarchy.
         </li>
         <li>
-          <b>Manage Channels:</b>
+          <b>Manage Channels</b>
         </li>
         <li>
           <b>Kick Members</b>
@@ -274,16 +274,16 @@
           <b>Create Instant Invite</b>
         </li>
         <li>
-          <b>Change Nickname:</b>
+          <b>Change Nickname:</b> This allows the user to set their own nickname.
         </li>
         <li>
-          <b>Manage Nicknames:</b>
+          <b>Manage Nicknames:</b> Allows the user to edit other member's nickname that are below them in the hierarchy.
         </li>
         <li>
-          <b>Manage Emojis:</b>
+          <b>Manage Emojis:</b> Allows the user to add new emojis to the server as well as change existing emojis names.
         </li>
         <li>
-          <b>Manage Webhooks:</b>
+          <b>Manage Webhooks:</b> Allows a user to create webhooks for either the channel or guild (which allows them to add a webhook to any channel).
         </li>
         <li>
           <b>Read Text Channels & See Voice Channels</b>
@@ -295,28 +295,30 @@
           <b>Send Messages</b>
         </li>
         <li>
-          <b>Send TTS Messages:</b>
+          <b>Send TTS Messages:</b> Allows a user to send text-to-speech messages that are read out loud for members that have TTS enabled.
         </li>
         <li>
-          <b>Manage Messages:</b>
+          <b>Manage Messages:</b> Allows a user to delete and pin messages.
         </li>
         <li>
-          <b>Embed Links:</b>
+          <b>Embed Links:</b> URLs will only be turned into embeds if the user has this permission.
         </li>
         <li>
           <b>Attach Files</b>
         </li>
         <li>
-          <b>Read Message History:</b>
+          <b>Read Message History:</b> If only 'Read Messages' is enabled, the user won't see messages a second time.
+          This gives them that permission.
         </li>
         <li>
-          <b>Mention Everyone:</b>
+          <b>Mention Everyone:</b> Allows the user to use <code>@everyone</code> and <code>@here</code> to ping either everyone in the guild or everyone that is currently online and sees the channel the ping was sent to.
         </li>
         <li>
-          <b>Use External Emojis:</b>
+          <b>Use External Emojis:</b> Allows Nitro users to show off their Nitro emotes.
         </li>
         <li>
-          <b>Add Reactions:</b>
+          <b>Add Reactions:</b> Allows a user to add reactions to a message.
+          Otherwise they can only click on already added reactions.
         </li>
       </ul>
       <b>Voice</b>
@@ -375,11 +377,17 @@
       <li>
         You don't want most of the server to be visible to people without the <code>@verified redditors</code> role.
         On the guild-level you'll want to disable the 'Read Messages' permission for <code>@everyone</code> and then enable it for <code>@verified redditors</code>.
-        If you have a <code>#welcome</code> channel or the sorts that you want everyone to have access to, go into its permission settings and set 'Read Messages' explicitely to ✔.
+        If you have a <code>#welcome</code> channel or the sorts that you want everyone to have access to, go into its permission settings and set 'Read Messages' explicitly to ✔.
       </li>
       <li>
         People with the <code>@web-dev</code> role shouldn't have access to the <code>PROGRAMMING</code> category.
         If the role's guild-level permissions for 'Read Messages' are enabled, head to the <code>PROGRAMMING</code> category, add the role if it isn't already added, and set the permission to ❌.
+      </li>
+      <li>
+        Creating a secret channel for one specific member/role is done differently.
+        Go into the channel's settings and explicitly set <code>@everyone</code>'s permissions for 'Read Messages' to ❌.
+        Disabling 'Read Messages' won't allow them to send anything either as they cannot view the channel.
+        Then add the role/member that should have access to this channel, for example <code>@friends</code> and set 'Read Messages' to ✔.
       </li>
     </ol>
   </main>
