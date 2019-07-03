@@ -46,7 +46,15 @@
     <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
     <ol class="index">
       <li>
-        <a href="#creation">Creating a server</a>
+        <a href="#general">General</a>
+        <ul>
+          <li>
+            <a href="#creation">Creating a server</a>
+          </li>
+          <li>
+            <a href="#settings">Accessing the server settings</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#chancats">Channels and categories</a>
@@ -76,7 +84,8 @@
       </li>
     </ol>
 
-    <h2 id="creation">Creating a server<a onclick="copyToClipboard(this.href);" href="#creation">🔗</a></h2>
+    <h2 id="general">General<a onclick="copyToClipboard(this.href);" href="#general">🔗</a></h2>
+    <h3 id="creation">Creating a server<a onclick="copyToClipboard(this.href);" href="#creation">🔗</a></h3>
     <p>
       Creating a server is easy!
       Use this big button to get started and then follow <a href="https://support.discordapp.com/hc/en-us/articles/204849977-How-do-I-create-a-server-" target="_blank">Discord's official tutorial</a> to create a basic server.
@@ -95,6 +104,17 @@
       Now that you have your very own server, it's time to customize it.
       Follow the steps below to get the server exactly where you want it!
     </p>
+    <h3 id="settings">Accessing the server settings<a onclick="copyToClipboard(this.href);" href="#settings">🔗</a></h3>
+    <p>
+      Now that you have your own server, you'll probably want to take a look at its settings to edit stuff like the icon and <a href="#roles">roles</a>.
+      For that click on the icon to the right of your server's name in the sidebar (left of the chat box) and select 'Server Settings':
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/discord/server-dropdown.jpg" alt="">
+        <p>The dropdown allows you to acess the server's setting and more.</p>
+      </div>
+    </div>
 
     <h2 id="chancats">Setting up channels and categories<a onclick="copyToClipboard(this.href);" href="#chancats">🔗</a></h2>
     <p>
@@ -176,7 +196,26 @@
     <p>
       Roles are essential to an organized server.
       They allow you to distinguish members, assign colors and of course, configure permissions for each member.
-      Roles can be created and configured in the Server Settings under 'Roles'.
+      Roles can be created and configured in the server's settings under 'Roles'.
+      <br>
+      <br>
+      In the role configuration menu you'll see a list of roles to the left and the selected role's settings to the right.
+      <code>@everyone</code> is the default "role" everyone has, it cannot be configured in terms of colors/name, but its permissions can be altered which we will go into more detail later.
+      <br>
+      <br>
+      Selecting any other role will allow you to edit its name, which supports emojis just like channels/categories do and its color.
+      A handy method of getting HEX color codes is by using <a href="mariavi/melon.html">Melon's</a> <code>!color</code> command which will show you the most common colors in an image.
+      <br>
+      <br>
+      Additionally you can decide whether a role should be mentionable and distinguished.
+      Generally you only want people to be able to mention roles that serve a functional purpose.
+      A good example for that are the moderators or developers.
+      <br>
+      <br>
+      Distinguishing a role means in addition to the name of a user with the role receiving the role's color, the user will be moved into a separate category on the user-overview.
+      <br>
+      <br>
+      If a user has multiple roles, they will be take over the color as well as be distinguished based on the role that's the highest in the list.
     </p>
   </main>
 
