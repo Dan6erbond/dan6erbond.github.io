@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108473273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108473273-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="An introduction to setting up Discord servers and moderating them.">
+  <meta name="keywords" content="Discord,Moderation,Admin,Server,Ravi,Dan6erbond">
+  <meta name="author" content="RaviAnand Mohabir">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+
+  <link href="css/css.css" rel="stylesheet" />
+  <link href="css/wiki.css" rel="stylesheet" />
+
+  <script src="js/w3.js"></script>
+  <script src="js/d6b.js"></script>
+
+  <title>Discord Admin Guide</title>
+</head>
+
+<body>
+  <div w3-include-html="html/header.html"></div>
+
+  <main>
+    <h1>Discord Admin Guide<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+    <p>Version: 1.0</p>
+
+    <br>
+
+    This guide serves the purpose of showing users the basics of setting up a server, permissions, moderation tips and more.
+
+    <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
+    <ol class="index">
+      <li>
+        <a href="#creation">Creating a server</a>
+      </li>
+      <li>
+        <a href="#chancats">Channels and categories</a>
+        <ul>
+          <li>
+            <a href="#categories">Categories</a>
+          </li>
+          <li>
+            <a href="#channels">Channels</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#roles">Roles</a>
+      </li>
+      <li>
+        <a href="#permissions">Permissions</a>
+      </li>
+      <li>
+        <a href="#webhooks">Webhooks</a>
+      </li>
+      <li>
+        <a href="#invites">Invites</a>
+      </li>
+      <li>
+        <a href="#bots">Adding bots</a>
+      </li>
+    </ol>
+
+    <h2 id="creation">Creating a server<a onclick="copyToClipboard(this.href);" href="#creation">🔗</a></h2>
+    <p>
+      Creating a server is easy!
+      Use this big button to get started and then follow <a href="https://support.discordapp.com/hc/en-us/articles/204849977-How-do-I-create-a-server-" target="_blank">Discord's official tutorial</a> to create a basic server.
+      Make sure you select a server region that's close to where you are to reduce lag and ping times:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img"  style="max-width: 150px">
+        <img src="img/discord/create-server.png" alt="">
+        <p>Starting creating a server with this button which can be found below your server-list.</p>
+      </div>
+    </div>
+    <p>
+      After that you'll be greeted by a server with two channels: <code>#general</code> and <code>#voice</code>
+      <br>
+      <br>
+      Now that you have your very own server, it's time to customize it.
+      Follow the steps below to get the server exactly where you want it!
+    </p>
+
+    <h2 id="chancats">Setting up channels and categories<a onclick="copyToClipboard(this.href);" href="#chancats">🔗</a></h2>
+    <p>
+      Channels and categories are the most important part about a server.
+      They'll help you keep your server organized and separate topics and most importantly, allow you to hide topics based on permissions.
+      <br>
+      <br>
+      To create a channel or category, right-click on the sidebar of your server and select the one you wish to create:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img" style="max-width: 250px">
+        <img src="img/discord/server-options.png" alt="">
+        <p>Right-click on your server's sidebar to create a channel or category.</p>
+      </div>
+    </div>
+    <p>
+      Creating a channel will ask you if you want to create a text- or voice-channel.
+      As you'd expect, text-channels don't allow users to connect with each other over Discord's voice-chat and vice-versa.
+      <br>
+      <br>
+      When creating either of the two, you additionally get the option to make it 'private'.
+      Selecting that option will show you a list of roles for which the channel/category will then be visible.
+      Everyone else won't have read/send access to the newly created item:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img">
+        <img src="img/discord/private-category-roles.jpg" alt="">
+      </div>
+    </div>
+    <p>
+      If you're unhappy with the position of the newly created channel or category, you can hold and drag it around with your mouse and drop it to the desired position.
+    </p>
+    <h3 id="categories">Categories<a onclick="copyToClipboard(this.href);" href="#categories">🔗</a></h3>
+    <p>
+      Categories are like containers for your text- and voice-channels.
+      They allow you to group relevant ones together and setup permissions that will be taken over by the category's channels unless you wish to override them.
+      <br>
+      <br>
+      Dragging a channel below a category will automatically make it a child of the category and if the permissions of the channel don't align with those of the category, Discord will offer you to 'sync' them which means to take over those permissions of the category.
+      If the permissions aren't synced, the original permissions of the channel will be kept.
+    </p>
+    <h3 id="channels">Channels<a onclick="copyToClipboard(this.href);" href="#channels">🔗</a></h3>
+    <h4 id="text-channels">Text Channels<a onclick="copyToClipboard(this.href);" href="#text-channels">🔗</a></h4>
+    <p>
+      Text channels are where users can post, well, text!
+      Hovering over a text-channel will reveal a tooth-weel that allows you to configure it:
+    </p>
+    <div class="img-container">
+      <div class="wiki-img" style="max-width: 250px">
+        <img src="img/discord/channel-hover.jpg" alt="">
+        <p>Hovering over a channel allows you to enter its settings.</p>
+      </div>
+    </div>
+    <p>
+      There are a few key settings you'll want to look at and configure to your liking:
+      <ul>
+        <li>
+          <b>Topic:</b> This is basically a channel's description.
+          It supports regular characters as well as unicode emojis.
+        </li>
+        <li>
+          <b>Slowmode:</b> Slowmode, when enabled, will limit a user's message-rate.
+          If it's set to 5 seconds, users can only send one message every 5 seconds.
+          This can be quite useful for servers with lots of members.
+        </li>
+        <li>
+          <b>NSFW:</b> If a channel is dedicated to 18+ content, it's recommended to toggle this option as it will warn users before they join the channel.
+        </li>
+      </ul>
+      Permissions, invites and webhooks are topics that will be discussed in further detail in their own sections.
+    </p>
+    <h4 id="voice-channels">Voice Channels<a onclick="copyToClipboard(this.href);" href="#voice-channels">🔗</a></h4>
+    <p>
+      👷‍ 🚧 Work in progress! 🚧
+    </p>
+  </main>
+
+  <div w3-include-html="html/tags.html"></div>
+  <div w3-include-html="html/footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
