@@ -37,7 +37,7 @@
 
   <main>
     <h1>Discord Admin Guide<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
-    <p>Version: 1.2</p>
+    <p>Version: 1.4</p>
 
     <br>
 
@@ -72,12 +72,23 @@
       </li>
       <li>
         <a href="#permissions">Permissions</a>
-      </li>
-      <li>
-        <a href="#webhooks">Webhooks</a>
+        <ul>
+          <li>
+            <a href="#permissionsettings">Permission Settings</a>
+          </li>
+          <li>
+            <a href="#overrides">Overrides</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#invites">Invites</a>
+      </li>
+      <li>
+        <a href="#log">Audit Log</a>
+      </li>
+      <li>
+        <a href="#webhooks">Webhooks</a>
       </li>
       <li>
         <a href="#bots">Adding bots</a>
@@ -216,7 +227,161 @@
       <br>
       <br>
       If a user has multiple roles, they will be take over the color as well as be distinguished based on the role that's the highest in the list.
+      <br>
+      <br>
+      In terms of permissions, Discord will assign a user's permissions based on his/her highest permissions.
+      Meaning that if a user has three roles, one with the 'Manage Messages' permission, the user will have those permissions where they aren't configured otherwise.
     </p>
+
+    <h2 id="permissions">Permissions<a onclick="copyToClipboard(this.href);" href="#permissions">🔗</a></h2>
+    <p>
+      Discord has a fairly complex system that allows server admins to limit the members' capabilities within a certain space.
+      There are three levels in the permission system, each of them can be overriden by a lower level:
+      <ul>
+        <li>Guild</li>
+        <li>Category</li>
+        <li>Channel</li>
+      </ul>
+      This means that it's recommended to configure a role/member's permissions on a guild-level and just override from there.
+    </p>
+    <h3 id="permissionsettings">Permission Settings<a onclick="copyToClipboard(this.href);" href="#permissionsettings">🔗</a></h3>
+    <p>
+      Before we get to the fancy overrides, let's take a look at what permissions there are that can be configured:
+      <ul>
+        <li>
+          <b>Administrator:</b> Quite simple, with this permission the user can do everything to anyone except the few permissions only a server owner has.
+          Namely deleting the server and changing the owner's nickname.
+        </li>
+        <li>
+          <b>View Audit Log</b>
+        </li>
+        <li>
+          <b>Manage Server:</b> With this permission users can change the server's name and region.
+        </li>
+        <li>
+          <b>Manage Roles:</b>
+        </li>
+        <li>
+          <b>Manage Channels:</b>
+        </li>
+        <li>
+          <b>Kick Members</b>
+        </li>
+        <li>
+          <b>Ban Members</b>
+        </li>
+        <li>
+          <b>Create Instant Invite</b>
+        </li>
+        <li>
+          <b>Change Nickname:</b>
+        </li>
+        <li>
+          <b>Manage Nicknames:</b>
+        </li>
+        <li>
+          <b>Manage Emojis:</b>
+        </li>
+        <li>
+          <b>Manage Webhooks:</b>
+        </li>
+        <li>
+          <b>Read Text Channels & See Voice Channels</b>
+        </li>
+      </ul>
+      <b>Text Permissions</b>
+      <ul>
+        <li>
+          <b>Send Messages</b>
+        </li>
+        <li>
+          <b>Send TTS Messages:</b>
+        </li>
+        <li>
+          <b>Manage Messages:</b>
+        </li>
+        <li>
+          <b>Embed Links:</b>
+        </li>
+        <li>
+          <b>Attach Files</b>
+        </li>
+        <li>
+          <b>Read Message History:</b>
+        </li>
+        <li>
+          <b>Mention Everyone:</b>
+        </li>
+        <li>
+          <b>Use External Emojis:</b>
+        </li>
+        <li>
+          <b>Add Reactions:</b>
+        </li>
+      </ul>
+      <b>Voice</b>
+      <ul>
+        <li>
+          <b>Connect</b>
+        </li>
+        <li>
+          <b>Speak</b>
+        </li>
+        <li>
+          <b>Mute Members</b>
+        </li>
+        <li>
+          <b>Deafen Members</b>
+        </li>
+        <li>
+          <b>Move Members</b>
+        </li>
+        <li>
+          <b>Use Voice Activity</b>
+        </li>
+        <li>
+          <b>Priority Speaker</b>
+        </li>
+      </ul>
+    </p>
+    <h3 id="overrides">Overrides<a onclick="copyToClipboard(this.href);" href="#overrides">🔗</a></h3>
+    <p>
+      Now that you know what permissions can be assigned to a user/role, it's time to setup overrides.
+      <br>
+      <br>
+      Overrides are simple once you've gotten the hang of them, the basic idea is that you have guild-wide permissions that will be used <u>most</u> of the time and those are overriden in the cases where different settings are required.
+      <br>
+      <br>
+      This usually means you'll be more restrictive on the guild-level and give users limited permissions for a channel or category.
+      <br>
+      <br>
+      As previously mentioned, once a user has a permission, it doesn't matter what other roles the user has.
+      This means that basic permissions should be setup with <code>@everyone</code>, namely those that, well, everyone should have.
+      <br>
+      <br>
+      On the guild-level permissions can only be enabled/disabled.
+      To override them, you go to a category or channel's settings and change the permission for a user/roles.
+      By default the permission is set to "/", if you want to enable it for a certain area, it will need to be set to ✔ and to disable it, change it to ❌.
+      <br>
+      <br>
+      <b>Examples:</b>
+    </p>
+    <ol>
+      <li>
+        The role <code>@coders</code> does <u>not</u> have the permission to manage messages on the guild-level, but you'd like them to have that only in the coding channel.
+        For that you right-click on the channel, select 'Edit Channel' and then go to the 'Permissions' tab.
+        Over there you can add a new role to the list, in this case the <code>@coders</code> role and assign them the 'Manage Messages' permission by setting it to ✔.
+      </li>
+      <li>
+        You don't want most of the server to be visible to people without the <code>@verified redditors</code> role.
+        On the guild-level you'll want to disable the 'Read Messages' permission for <code>@everyone</code> and then enable it for <code>@verified redditors</code>.
+        If you have a <code>#welcome</code> channel or the sorts that you want everyone to have access to, go into its permission settings and set 'Read Messages' explicitely to ✔.
+      </li>
+      <li>
+        People with the <code>@web-dev</code> role shouldn't have access to the <code>PROGRAMMING</code> category.
+        If the role's guild-level permissions for 'Read Messages' or enabled, head to the <code>PROGRAMMING</code> category, add the role if it isn't already added and set the permission to ❌.
+      </li>
+    </ol>
   </main>
 
   <div w3-include-html="html/tags.html"></div>
