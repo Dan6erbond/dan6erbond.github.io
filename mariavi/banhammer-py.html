@@ -38,7 +38,7 @@
 
   <main>
     <h1>Banhammer.py<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
-    <p>Version: 1.3</p>
+    <p>Version: 1.4</p>
 
     <div class="top">
       <div class="summary">
@@ -273,9 +273,25 @@
       <br>
       str - The message that was generated.
     </p>
-    <pre id="banhammer.MessageBuilder.get_item_embed" class="python member">get_item_message (item, embed_color=None)<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.MessageBuilder.get_item_embed" class="python member">get_item_embed (item, embed_color=None)<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
     <p>
       Generates a <a href="https://discordpy.readthedocs.io/en/latest/api.html?#discord.Embed">discord.Embed</a> for the given item.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>item</code> (<a href="#banhammer.RedditItem">RedditItem</a>) - The item for which the embed will be generated.
+        </li>
+        <li>
+          <code>embed_color</code> (Optional[<a href="https://discordpy.readthedocs.io/en/latest/api.html#colour">discord.Colour</a>]) - The color that should be used for the embed, defaults to banhammer.Banhammer.embed_color.
+        </li>
+      </ul>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a> - The embed that was generated for the item.
     </p>
     <h3 id="exceptions">Exceptions<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
     <p>
