@@ -158,7 +158,54 @@
           <code>reaction_handler</code> (Optional[<a href="#banhammer.ReactionHandler">ReactionHandler</a>]) - The ReactionHandler that should be used when <a href="#banhammer.Reaction.handle">Reaction.handle()</a> is called.
         </li>
       </ul>
+      <b>Attributes</b>
     </p>
+    <table class="python attributes">
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>reddit</code></td>
+        <td>An instance of <a href="https://praw.readthedocs.io/en/latest/code_overview/reddit_instance.html">praw.Reddit</a> that Banhammer will use to scan and take action on Reddit.</td>
+      </tr>
+      <tr>
+        <td><code>subreddits</code></td>
+        <td><code>list(banhammer.Subreddit)</code> - The subreddits that are assigned to Banhammer and it can scan.</td>
+      </tr>
+      <tr>
+        <td><code>item_funcs</code></td>
+        <td><code>list(dict)</code> - The functions assigned to Banhammer to call when a new item is found on the assigned subreddits.</td>
+      </tr>
+      <tr>
+        <td><code>action_funcs</code></td>
+        <td><code>list(dict)</code> - The functions assigned to Banhammer to call when a new action is performed on the assigned subreddits.</td>
+      </tr>
+      <tr>
+        <td><code>loop_time</code></td>
+        <td>Seconds to wait between loops, of type <code>int</code> and defaulted to 300.</td>
+      </tr>
+      <tr>
+        <td><code>message_builder</code></td>
+        <td><a href="#banhammer.MessageBuilder">banhammer.MessageBuilder</a> - The MessageBuilder items will use.</td>
+      </tr>
+      <tr>
+        <td><code>reaction_handler</code></td>
+        <td><a href="#banhammer.ReactionHandler">banhammer.ReactionHandler</a> - The ReactionHandler assigned to Banhammer that reactions will use.</td>
+      </tr>
+      <tr>
+        <td><code>bot</code></td>
+        <td>the <a href="https://discordpy.readthedocs.io/en/latest/api.html#client">discord.Client</a> that Banhammer is running under, required if presence needs to be changed.</td>
+      </tr>
+      <tr>
+        <td><code>embed_color</code></td>
+        <td>The color <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> and <a href="#banhammer.MessageBuilder">banhammer.MessageBuilder</a> will make use of to generate embeds.</td>
+      </tr>
+      <tr>
+        <td><code>change_presence</code></td>
+        <td><code>boolean</code> that tells Banhammer if it should change the discord.Client status to "Watching Reddit" when the scans are running.</td>
+      </tr>
+    </table>
     <pre id="banhammer.Banhammer.add_subreddits" class="python member">add_subreddits (*subs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_subreddits">🔗</a></pre>
     <p>
       Adds the given subreddits to Banhammer's internal list to monitor.
