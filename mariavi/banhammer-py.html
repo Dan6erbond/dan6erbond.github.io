@@ -38,7 +38,7 @@
 
   <main>
     <h1>Banhammer.py<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
-    <p>Version: 1.4</p>
+    <p>Version: 1.5</p>
 
     <div class="top">
       <div class="summary">
@@ -52,7 +52,7 @@
         With its modular design you can take over as much as you want or stay minimalist and let Banhammer.py do the work.
         Banhammer.py is open-source, which means we'll be accepting pull requests on its <a href="#https://github.com/Dan6erbond/Banhammer.py">GitHub repository</a>!
 
-        <h2 id="index">Index<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h2>
+        <h2 id="index">Index<a onclick="copyToClipboard(this.href);" href="#index">🔗</a></h2>
         <ol class="index">
           <li>
             <a href="#introduction">Introduction</a>
@@ -116,22 +116,22 @@
       </div>
     </div>
 
-    <h2 id="introduction">Introduction<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h2>
-    <h3 id="installation">Installation<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h2 id="introduction">Introduction<a onclick="copyToClipboard(this.href);" href="#introduction">🔗</a></h2>
+    <h3 id="installation">Installation<a onclick="copyToClipboard(this.href);" href="#installation">🔗</a></h3>
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>
-    <h3 id="examples">Examples<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h3 id="examples">Examples<a onclick="copyToClipboard(this.href);" href="#examples">🔗</a></h3>
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>
 
-    <h2 id="api">API Reference<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h2>
-    <h3 id="banhammer.Banhammer">Banhammer<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h2 id="api">API Reference<a onclick="copyToClipboard(this.href);" href="#api">🔗</a></h2>
+    <h3 id="banhammer.Banhammer">Banhammer<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer">🔗</a></h3>
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>
-    <h3 id="events">Event Reference<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h3 id="events">Event Reference<a onclick="copyToClipboard(this.href);" href="#events">🔗</a></h3>
     <ul>
       <li>
         <a href="#banhammer.Banhammer.new">Banhammer.new()</a>
@@ -152,7 +152,7 @@
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>
-    <h3 id="utility">Utility Functions<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h3 id="utility">Utility Functions<a onclick="copyToClipboard(this.href);" href="#utility">🔗</a></h3>
     <ul>
       <li>
         <a href="#banhammer.RedditHelper.get_item">reddithelper.get_item()</a>
@@ -173,7 +173,7 @@
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>
-    <h3 id="models">Banhammer Models<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h3 id="models">Banhammer Models<a onclick="copyToClipboard(this.href);" href="#models">🔗</a></h3>
     <ul>
       <li>
         <a href="#banhammer.Subreddit">Subreddit</a>
@@ -188,12 +188,12 @@
         <a href="#banhammer.RedditItem">RedditItem</a>
       </li>
     </ul>
-    <h4 id="banhammer.ReactionHandler">ReactionHandler<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h4>
-    <pre class="python class"><i>class</i> banhammer.reaction.ReactionHandler<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <h4 id="banhammer.ReactionHandler">ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
+    <pre class="python class"><i>class</i> banhammer.reaction.ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
     <p>
       The default object that handles reactions unless a different implementation is given to <a href="#banhammer">Banhammer</a>.
     </p>
-    <pre id="banhammer.ReactionHandler.handle" class="python member">handle (reaction, item, payload)<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionHandler.handle" class="python member">handle (reaction, item, payload)<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler.handle">🔗</a></pre>
     <p>
       Calls <a href="#banhammer.ReactionHandler.gen_handle">ReactionHandler.gen_handle()</a> in its default implementation.
       This function should not be called directly, but instead over <a href="#banhammer.Reaction.handle">Reaction.handle()</a>.
@@ -217,7 +217,7 @@
       <br>
       <a href="#banhammer.ReactionPayload">ReactionPayload</a> - The payload that was returned by <a href="#banhammer.Reaction.handle">Reaction.handle()</a>.
     </p>
-    <pre id="banhammer.ReactionHandler.gen_handle" class="python member">gen_handle (reaction, item, payload)<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionHandler.gen_handle" class="python member">gen_handle (reaction, item, payload)<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler.gen_handle">🔗</a></pre>
     <p>
       The default implementation of reaction-handling that can remove, approve, lock, reply to, set the flair and mark posts as NSFW as well as ban the author permanently/temporarily.
       <br>
@@ -242,7 +242,7 @@
       <a href="#banhammer.ReactionPayload">ReactionPayload</a> - The payload that was given and fed with information.
     </p>
 
-    <h3 id="data">Data Classes<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h3 id="data">Data Classes<a onclick="copyToClipboard(this.href);" href="#data">🔗</a></h3>
     <ul>
       <li>
         <a href="#banhammer.MessageBuilder">MessageBuilder</a>
@@ -251,12 +251,12 @@
         <a href="#banhammer.ReactionPayload">ReactionPayload</a>
       </li>
     </ul>
-    <h4 id="banhammer.MessageBuilder">MessageBuilder<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h4>
+    <h4 id="banhammer.MessageBuilder">MessageBuilder<a onclick="copyToClipboard(this.href);" href="#banhammer.MessageBuilder">🔗</a></h4>
     <pre class="python class"><i>class</i> banhammer.MessageBuilder<a onclick="copyToClipboard(this.href);" href="#banhammer.MessageBuilder">🔗</a></pre>
     <p>
       The default implementation of the MessageBuilder which is fed to <a href="#banhammer">Banhammer</a> and used when generic messages need to be created, such as embeds for <a href="#reddititem">RedditItems</a>.
     </p>
-    <pre id="banhammer.MessageBuilder.get_item_message" class="python member">get_item_message (item)<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.MessageBuilder.get_item_message" class="python member">get_item_message (item)<a onclick="copyToClipboard(this.href);" href="#banhammer.MessageBuilder.get_item_message">🔗</a></pre>
     <p>
       Generates a type(str) message for the given <code>RedditItem</code>.
       <br>
@@ -273,7 +273,7 @@
       <br>
       str - The message that was generated.
     </p>
-    <pre id="banhammer.MessageBuilder.get_item_embed" class="python member">get_item_embed (item, embed_color=None)<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.MessageBuilder.get_item_embed" class="python member">get_item_embed (item, embed_color=None)<a onclick="copyToClipboard(this.href);" href="#banhammer.MessageBuilder.get_item_embed">🔗</a></pre>
     <p>
       Generates a <a href="https://discordpy.readthedocs.io/en/latest/api.html?#discord.Embed">discord.Embed</a> for the given item.
       <br>
@@ -293,12 +293,49 @@
       <br>
       <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a> - The embed that was generated for the item.
     </p>
-    <h4 id="banhammer.ReactionPayload">ReactionPayload<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h4>
+    <h4 id="banhammer.ReactionPayload">ReactionPayload<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload">🔗</a></h4>
     <pre class="python class"><i>class</i> banhammer.ReactionPayload<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload">🔗</a></pre>
+    <p><b>Attributes</b></p>
+    <table class="python attributes">
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>item</code></td>
+        <td>The item that is being handled by the reaction.</td>
+      </tr>
+      <tr>
+        <td><code>user</code></td>
+        <td>
+          The user that is performing the actions.
+          Defaults to "Banhammer".
+        </td>
+      </tr>
+      <tr>
+        <td><code>actions</code></td>
+        <td>A list of type(str) that contains all the actions that were performed on the item.</td>
+      </tr>
+      <tr>
+        <td><code>approved</code></td>
+        <td>
+          A boolean, whether the item was approved or removed.
+          Only applicable for submissions and comments.
+        </td>
+      </tr>
+      <tr>
+        <td><code>reply</code></td>
+        <td>The reply that was sent to the item, if applicable.</td>
+      </tr>
+      <tr>
+        <td><code>emoji</code></td>
+        <td>The emoji that was used to perform the action.</td>
+      </tr>
+    </table>
     <p>
       A data class that holds the actions performed on an item as well as other information and can be overriden to return custom messages/embeds.
     </p>
-    <pre id="banhammer.ReactionPayload.__init__" class="python member">__init__ (user="Banhammer")<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionPayload.__init__" class="python member">__init__ (user="Banhammer")<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload.__init__">🔗</a></pre>
     <p>
       Constructs the ReactionPayload and initializes its variables.
       <br>
@@ -316,7 +353,7 @@
       <br>
       <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> - the payload that was just instantiated.
     </p>
-    <pre id="banhammer.ReactionPayload.__str__" class="python member">__str__ ()<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionPayload.__str__" class="python member">__str__ ()<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload.__str__">🔗</a></pre>
     <p>
       Returns the message that was created through <code>banhammer.ReactionPayload.get_message()</code>.
       <br>
@@ -326,7 +363,7 @@
       <br>
       str - The message that was returned by <code>banhammer.ReactionPayload.get_message()</code>.
     </p>
-    <pre id="banhammer.ReactionPayload.feed" class="python member">feed (item, approved, user="", emoji="", reply="")<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionPayload.feed" class="python member">feed (item, approved, user="", emoji="", reply="")<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload.feed">🔗</a></pre>
     <p>
       Inject information into the payload, useful when manipulating more than one attribute at a time.
       <br>
@@ -352,7 +389,7 @@
         </li>
       </ul>
     </p>
-    <pre id="banhammer.ReactionPayload.get_message" class="python member">get_message ()<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionPayload.get_message" class="python member">get_message ()<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload.get_message">🔗</a></pre>
     <p>
       Generates a message with the information from the payload's attributes.
       <br>
@@ -362,7 +399,7 @@
       <br>
       str - The message that was generated.
     </p>
-    <h3 id="exceptions">Exceptions<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
+    <h3 id="exceptions">Exceptions<a onclick="copyToClipboard(this.href);" href="#exceptions">🔗</a></h3>
     <p>
       👷‍ 🚧 Work in progress! 🚧
     </p>

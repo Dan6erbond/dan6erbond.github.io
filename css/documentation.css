@@ -10,3 +10,21 @@ pre.python.member {
   padding: 5px;
   background-color: var(--light-dark-grey);
 }
+
+table.python.attributes {
+  border-collapse: collapse;
+}
+
+table.python.attributes th, table.python.attributes td {
+  text-align: left;
+  border: 2px solid var(--light-dark-grey);
+  padding: 5px;
+}
+
+table.python.attributes th {
+  border-bottom:  2px solid var(--light-dark-turquoise);
+}
+
+table.python.attributes {
+  width: 90%;
+}
