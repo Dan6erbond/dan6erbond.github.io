@@ -25,6 +25,7 @@
 
   <link href="/css/css.css" rel="stylesheet" />
   <link href="/css/wiki.css" rel="stylesheet" />
+  <link href="/css/python.css" rel="stylesheet" />
 
   <script src="/js/w3.js"></script>
   <script src="/js/d6b.js"></script>
@@ -37,6 +38,7 @@
 
   <main>
     <h1>Banhammer.py<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+    <p>Version: 1.2</p>
 
     <div class="top">
       <div class="summary">
@@ -180,12 +182,66 @@
         <a href="#reaction">Reaction</a>
       </li>
       <li>
+        <a href="#reactionhandler">ReactionHandler</a>
+      </li>
+      <li>
         <a href="#reddititem">RedditItem</a>
       </li>
     </ul>
+    <h4 id="reactionhandler">ReactionHandler<a onclick="copyToClipboard(this.href);" href="#reactionhandler">🔗</a></h4>
+    <pre class="python class"><i>class</i> banhammer.reaction.ReactionHandler<a onclick="copyToClipboard(this.href);" href="#reactionhandler">🔗</a></pre>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      The default object that handles reactions unless a different implementation is given to <a href="#banhammer">Banhammer</a>.
     </p>
+    <pre id="reactionhandler-handle" class="python member">handle (reaction, item, payload)<a onclick="copyToClipboard(this.href);" href="#reactionhandler-handle">🔗</a></pre>
+    <p>
+      Calls <a href="#reactionhandler-gen_handle">ReactionHandler.gen_handle()</a> in its default implementation.
+      This function should not be called directly, but instead over <a href="#reaction-handle">Reaction.handle()</a>.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>reaction</code> (<a href="#reaction">Reaction</a>) - The reaction that contains the information of what actions should be performed.
+        </li>
+        <li>
+          <code>item</code> (<a href="#reddititem">RedditItem</a>) - The item that is being handled.
+        </li>
+        <li>
+          <code>payload</code> (<a href="#reactionpayload">ReactionPayload</a>) - The payload that will be fed with information.
+        </li>
+      </ul>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#reactionpayload">ReactionPayload</a> - The payload that was returned by <a href="#reaction-handle">Reaction.handle()</a>.
+    </p>
+    <pre id="reactionhandler-gen_handle" class="python member">gen_handle (reaction, item, payload)<a onclick="copyToClipboard(this.href);" href="#reactionhandler-handle">🔗</a></pre>
+    <p>
+      The default implementation of reaction-handling that can remove, approve, lock, reply to, set the flair and mark posts as NSFW as well as ban the author permanently/temporarily.
+      <br>
+      <br>
+      Uses the information in <code>reaction</code> as well as the type of <code>item</code> to determine which actions to perform.
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>reaction</code> (<a href="#reaction">Reaction</a>) - The reaction that contains the information of what actions should be performed.
+        </li>
+        <li>
+          <code>item</code> (<a href="#reddititem">RedditItem</a>) - The item that is being handled.
+        </li>
+        <li>
+          <code>payload</code> (<a href="#reactionpayload">ReactionPayload</a>) - The payload that will be fed with information.
+        </li>
+      </ul>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#reactionpayload">ReactionPayload</a> - The payload that was given and fed with information.
+    </p>
+
     <h3 id="data">Data Classes<a onclick="copyToClipboard(this.href);" href="#data">🔗</a></h3>
     <ul>
       <li>

@@ -48,6 +48,19 @@
         "url": "./contact.html"
     },
     {
+        "key": "Discord Admin Guide",
+        "description": "An introduction to setting up Discord servers and moderating them.",
+        "tags": [
+            "Discord",
+            "Moderation",
+            "Admin",
+            "Server",
+            "Ravi",
+            "Dan6erbond"
+        ],
+        "url": "./discord.html"
+    },
+    {
         "key": "Documentations",
         "description": "Documentations of my projects, scripts, programs, organizations and more!.",
         "tags": [

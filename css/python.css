@@ -1,0 +1,12 @@
+pre.python.class {
+  border-top: 2px solid var(--light-dark-turquoise);
+  box-shadow: none;
+  padding: 5px;
+  background-color: var(--light-dark-grey);
+}
+
+pre.python.member {
+  box-shadow: none;
+  padding: 5px;
+  background-color: var(--light-dark-grey);
+}
