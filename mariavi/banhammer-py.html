@@ -287,6 +287,9 @@
     <p>
       There are two ways of registering events to your bot.
       In either case the function that the event is registered will be called whenever there's a new item.
+      Whenever the event is triggered, the function that it's assigned to call will receive whatever the event "returns" so make sure that is added to the function's parameters.
+      <br>
+      <br>
       The first way is by using the decorators once an instance of Banhammer has been created, such as <code>Banhammer.new()</code>.
       The second way is by manually feeding all the arguments with the functions provided above such as <a href="#banhammer.Banhammer.add_new_func">Banhammer.add_new_func()</a>.
       Following events are currently available in the Banhammer class:
@@ -320,6 +323,10 @@
           <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
         </li>
       </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.RedditItem">RedditItem</a> - The item that was found.
     </p>
     <pre id="banhammer.Banhammer.comments" class="python member">Banhammer.comments (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.comments">🔗</a></pre>
     <p>
@@ -333,6 +340,10 @@
           <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
         </li>
       </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.RedditItem">RedditItem</a> - The item that was found.
     </p>
     <pre id="banhammer.Banhammer.queue" class="python member">Banhammer.queue (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.queue">🔗</a></pre>
     <p>
@@ -345,6 +356,10 @@
           <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
         </li>
       </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.RedditItem">RedditItem</a> - The item that was found.
     </p>
     <pre id="banhammer.Banhammer.reports" class="python member">Banhammer.reports (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.reports">🔗</a></pre>
     <p>
@@ -357,6 +372,10 @@
           <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
         </li>
       </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.RedditItem">RedditItem</a> - The item that was found.
     </p>
     <pre id="banhammer.Banhammer.mod_actions" class="python member">Banhammer.mod_actions (*args, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.mod_actions">🔗</a></pre>
     <p>
@@ -377,6 +396,10 @@
           <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
         </li>
       </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.RedditItem">RedditItem</a> - The item that was found.
     </p>
     <h3 id="utility">Utility Functions<a onclick="copyToClipboard(this.href);" href="#utility">🔗</a></h3>
     <ul>
