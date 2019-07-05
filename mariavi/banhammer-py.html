@@ -155,13 +155,13 @@
     <h3 id="utility">Utility Functions<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
     <ul>
       <li>
-        <a href="#banhammer.reddithelper.get_item">reddithelper.get_item()</a>
+        <a href="#banhammer.RedditHelper.get_item">reddithelper.get_item()</a>
       </li>
       <li>
-        <a href="#banhammer.reddithelper.get_item_from_url">reddithelper.get_item_from_url()</a>
+        <a href="#banhammer.RedditHelper.get_item_from_url">reddithelper.get_item_from_url()</a>
       </li>
       <li>
-        <a href="#banhammer.reddithelper.is_url">reddithelper.is_url()</a>
+        <a href="#banhammer.RedditHelper.is_url">reddithelper.is_url()</a>
       </li>
       <li>
         <a href="#banhammer.Reaction.get_reactions">reaction.get_reactions()</a>
@@ -252,7 +252,7 @@
       </li>
     </ul>
     <h4 id="banhammer.MessageBuilder">MessageBuilder<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h4>
-    <pre class="python class"><i>class</i> banhammer.messagebuilder.MessageBuilder<a onclick="copyToClipboard(this.href);" href="#messagebuilder">🔗</a></pre>
+    <pre class="python class"><i>class</i> banhammer.MessageBuilder<a onclick="copyToClipboard(this.href);" href="#banhammer.MessageBuilder">🔗</a></pre>
     <p>
       The default implementation of the MessageBuilder which is fed to <a href="#banhammer">Banhammer</a> and used when generic messages need to be created, such as embeds for <a href="#reddititem">RedditItems</a>.
     </p>
@@ -292,6 +292,33 @@
       <br>
       <br>
       <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a> - The embed that was generated for the item.
+    </p>
+    <h4 id="banhammer.ReactionPayload">ReactionPayload<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h4>
+    <pre class="python class"><i>class</i> banhammer.ReactionPayload<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload">🔗</a></pre>
+    <p>
+      A data class that holds the actions performed on an item as well as other information and can be overriden to return custom messages/embeds.
+    </p>
+    <pre id="banhammer.ReactionPayload.__init__" class="python member">__init__ (user="Banhammer")<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <p>
+      Constructs the ReactionPayload and initializes its variables.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>user</code> (Optional[str]) - The user that is performing the actions.
+          If the payload is being handled by banhammer.Reaction.handle(), the user fed to <code>handle()</code> will be prioritized over the default.
+        </li>
+      </ul>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> - the payload that was just instantiated.
+    </p>
+    <pre id="banhammer.ReactionPayload.__str__" class="python member">__str__<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <p>
+      Returns the message that was created through <code>banhammer.ReactionPayload.get_message()</code>.
     </p>
     <h3 id="exceptions">Exceptions<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
     <p>
