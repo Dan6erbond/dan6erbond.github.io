@@ -316,9 +316,51 @@
       <br>
       <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> - the payload that was just instantiated.
     </p>
-    <pre id="banhammer.ReactionPayload.__str__" class="python member">__str__<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <pre id="banhammer.ReactionPayload.__str__" class="python member">__str__ ()<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
     <p>
       Returns the message that was created through <code>banhammer.ReactionPayload.get_message()</code>.
+      <br>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      str - The message that was returned by <code>banhammer.ReactionPayload.get_message()</code>.
+    </p>
+    <pre id="banhammer.ReactionPayload.feed" class="python member">feed (item, approved, user="", emoji="", reply="")<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <p>
+      Inject information into the payload, useful when manipulating more than one attribute at a time.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <br>
+      <ul>
+        <li>
+          <code>item</code> (<a href="#banhammer.RedditItem">RedditItem</a>) - The item that this payload is carrying.
+        </li>
+        <li>
+          <code>approved</code> (boolean) - Whether the item is being approved or removed.
+        </li>
+        <li>
+          <code>user</code> (Optional[str]) - The user that is performing the actions.
+          This attribute should be automatically fed by <a href="#banhammer.ReactionHandler.handle">ReactionHandler.handle()</a>.
+        </li>
+        <li>
+          <code>emoji</code> (Optional[str]) - The emoji that the payload is working under.
+        </li>
+        <li>
+          <code>reply</code> (Optional[str]) - The reply that's being sent to the item.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.ReactionPayload.get_message" class="python member">get_message ()<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></pre>
+    <p>
+      Generates a message with the information from the payload's attributes.
+      <br>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      str - The message that was generated.
     </p>
     <h3 id="exceptions">Exceptions<a onclick="copyToClipboard('#' + this.parentNode.id);">🔗</a></h3>
     <p>

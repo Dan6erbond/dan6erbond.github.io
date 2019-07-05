@@ -21,7 +21,7 @@ function topFunction() {
 
 function copyToClipboard(str){
   const el = document.createElement('textarea');
-  el.value = !str.startsWith("#") ? str : document.location.href + str;
+  el.value = !str.startsWith("#") ? str : document.location.href.split("#")[0] + str;
   document.body.appendChild(el);
   el.select();
   document.execCommand('copy');
