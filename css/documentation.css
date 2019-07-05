@@ -6,6 +6,7 @@ pre.python.class {
 }
 
 pre.python.member {
+  border-left: 2px solid var(--light-dark-turquoise);
   box-shadow: none;
   padding: 5px;
   background-color: var(--light-dark-grey);

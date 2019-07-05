@@ -38,7 +38,7 @@
 
   <main>
     <h1>Banhammer.py<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
-    <p>Version: 1.5</p>
+    <p>Version: 1.6</p>
 
     <div class="top">
       <div class="summary">
@@ -128,46 +128,272 @@
 
     <h2 id="api">API Reference<a onclick="copyToClipboard(this.href);" href="#api">🔗</a></h2>
     <h3 id="banhammer.Banhammer">Banhammer<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer">🔗</a></h3>
+    <pre class="python class"><i>class</i> banhammer.Banhammer (reddit, loop_time=5 * 60, bot=None, embed_color=banhammer_purple, change_presence=False,
+                           message_builder=MessageBuilder(), reaction_handler=ReactionHandler())<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer">🔗</a></pre>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      Represents a banhammer instance that will work with the Discord.py and PRAW to interact with Reddit and Discord.
+      A number of options can be passed to <a href="#banhammer.Banhammer">Banhammer</a>, some of which are optional.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>reddit</code> (<a href="https://praw.readthedocs.io/en/latest/code_overview/reddit_instance.html#praw.Reddit">praw.Reddit</a>) - The Reddit instance with which actions will be performed.
+        </li>
+        <li>
+          <code>loop_time</code> (Optional[int]) - The number of seconds Banhammer should wait between loops, should be at least 120 to avoid rate-limits.
+          Defaults to 300 to give the bot time to handle user input as PRAW blocks asyncio event loops.
+        </li>
+        <li>
+          <code>bot</code> (Optional[<a href="https://discordpy.readthedocs.io/en/latest/api.html#client">discord.Client</a>]) - The bot that Banhammer is working for, only required if you need Banhammer to change the bot's presence.
+        </li>
+        <li>
+          <code>change_presence</code> (Optional[boolean]) - Whether Banhammer should change the bot's presence to "Watching Reddit" when it's scanning for items.
+          Defaults to <code>False</code>.
+        </li>
+        <li>
+          <code>message_builder</code> (Optional[<a href="#banhammer.MessageBuilder">MessageBuilder</a>]) - The MessageBuilder that Banhammer should use to generate item messages.
+        </li>
+        <li>
+          <code>reaction_handler</code> (Optional[<a href="#banhammer.ReactionHandler">ReactionHandler</a>]) - The ReactionHandler that should be used when <a href="#banhammer.Reaction.handle">Reaction.handle()</a> is called.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.add_subreddits" class="python member">add_subreddits (*subs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_subreddits">🔗</a></pre>
+    <p>
+      Adds the given subreddits to Banhammer's internal list to monitor.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>subs</code> (*str or *<a href="#banhammer.Subreddit">Subreddit</a>) - The set of subreddits to monitor.
+          <code>list()</code> can be converted to <code>*arg</code> with <code>*[item1, item2, item3]</code>.
+          Note the '*' before the list.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.remove_subreddit" class="python member">remove_subreddit (subreddit)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.remove_subreddit">🔗</a></pre>
+    <p>
+      Removes the given subreddit from the list of subreddits that are being monitored.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>subreddit</code> (str or <a href="#banhammer.Subreddit">banhammer.Subreddit</a>) - The name of the subreddit that should be removed.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.add_new_func" class="python member">add_new_func (func, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_new_func">🔗</a></pre>
+    <pre id="banhammer.Banhammer.add_comments_func" class="python member">add_comments_func (func, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_comments_func">🔗</a></pre>
+    <pre id="banhammer.Banhammer.add_mail_func" class="python member">add_mail_func (func, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_mail_func">🔗</a></pre>
+    <pre id="banhammer.Banhammer.add_queue_func" class="python member">add_queue_func (func, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_queue_func">🔗</a></pre>
+    <pre id="banhammer.Banhammer.add_report_func" class="python member">add_report_func (func, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_queue_func">🔗</a></pre>
+    <p>
+      Add a function that Banhammer should call when either a new post, a comment, mail, report or queue item was found by one of the subreddits that are registered to Banhammer.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>func</code> (async def) - The function that should be registered to this event.
+        </li>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this function should be called.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.add_items_func" class="python member">add_items_func (func, sub_func, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_queue_func">🔗</a></pre>
+    <p>
+      Adds a function that Banhammer should call if the subreddit's function yields any items.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>func</code> (async def) - The function that should be registered to this event.
+        </li>
+        <li>
+          <code>sub_func</code> (str) - The name of the function that should be called within the subreddit(s).
+          One of either "get_new", "get_comments", "get_reports", "get_queue" or "get_mail".
+        </li>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this function should be called.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.add_mod_actions_func" class="python member">add_mod_actions_func (func, *args, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.add_queue_func">🔗</a></pre>
+    <p>
+      Adds a function to Banhammer's loop that will be called when a new mod-action was made.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>func</code> (async def) - The function that should be called when a new item was found.
+        </li>
+        <li>
+          <code>*args or mods</code> (Optional[list(str)]) - A list of moderator names for which the actions should be streamed.
+          If left empty all mod actions will be streamed as can be seen in <a href="#banhammer.Subreddit.get_mod_actions">Subreddit.get_mod_actions()</a>.
+        </li>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this function should be registered.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.get_item" class="python member">get_item (c)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.get_item">🔗</a></pre>
+    <p>
+      Returns a <a href="#banhammer.RedditItem">banhammer.RedditItem</a> if one was found in the given message or embed.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>c</code> (str or <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a>) - The text or discord.Embed that will be scanned for a URL pointing to an item in one of the registered subreddits.
+        </li>
+      </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="#banhammer.RedditItem">banhammer.RedditItem</a> if one was found, otherwise <code>None</code>.
+    </p>
+    <pre id="banhammer.Banhammer.get_reactions_embed" class="python member">get_reactions_embed ()<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.get_reactions_embed">🔗</a></pre>
+    <p>
+      Generates an embed displaying the reactions configured for each registered subreddit.
+      <br>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a> - The embed that was generated.
+    </p>
+    <pre id="banhammer.Banhammer.get_subreddits_embed" class="python member">get_subreddits_embed ()<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.get_subreddits_embed">🔗</a></pre>
+    <p>
+      Generates an embed displaying all the subreddits configured in Banhammer as well as their settings.
+      <br>
+      <br>
+      <b>Returns</b>
+      <br>
+      <br>
+      <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a> - The embed that was generated.
+    </p>
+    <pre id="banhammer.Banhammer.run" class="python member">run ()<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.run">🔗</a></pre>
+    <p>
+      Assigns all the previously locally assigned functions to the asyncio event loop for Banhammer to be able to call those functions after scans.
+      <u>This function must be called if the events are being made use of.</u>
     </p>
     <h3 id="events">Event Reference<a onclick="copyToClipboard(this.href);" href="#events">🔗</a></h3>
-    <ul>
-      <li>
-        <a href="#banhammer.Banhammer.new">Banhammer.new()</a>
-      </li>
-      <li>
-        <a href="#banhammer.Banhammer.comments">Banhammer.comments()</a>
-      </li>
-      <li>
-        <a href="#banhammer.Banhammer.reports">Banhammer.reports()</a>
-      </li>
-      <li>
-        <a href="#banhammer.Banhammer.queue">Banhammer.queue()</a>
-      </li>
-      <li>
-        <a href="#banhammer.Banhammer.actions">Banhammer.actions()</a>
-      </li>
-    </ul>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      There are two ways of registering events to your bot.
+      In either case the function that the event is registered will be called whenever there's a new item.
+      The first way is by using the decorators once an instance of Banhammer has been created, such as <code>Banhammer.new()</code>.
+      The second way is by manually feeding all the arguments with the functions provided above such as <a href="#banhammer.Banhammer.add_new_func">Banhammer.add_new_func()</a>.
+      Following events are currently available in the Banhammer class:
+      <ul>
+        <li>
+          <a href="#banhammer.Banhammer.new">Banhammer.new()</a>
+        </li>
+        <li>
+          <a href="#banhammer.Banhammer.comments">Banhammer.comments()</a>
+        </li>
+        <li>
+          <a href="#banhammer.Banhammer.reports">Banhammer.reports()</a>
+        </li>
+        <li>
+          <a href="#banhammer.Banhammer.queue">Banhammer.queue()</a>
+        </li>
+        <li>
+          <a href="#banhammer.Banhammer.actions">Banhammer.mod_actions()</a>
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.new" class="python member">Banhammer.new (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.new">🔗</a></pre>
+    <p>
+      Called when a new submission has been made on the subreddit.
+      Unlike <a href="#banhammer.Banhammer.queue">Banhammer.queue()</a> this does not apply to items currently still in the queue.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.comments" class="python member">Banhammer.comments (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.comments">🔗</a></pre>
+    <p>
+      Called when a new post has been found on the subreddit.
+      Does not go through the queue or reports like <a href="#banhammer.Banhammer.reports">Banhammer.reports()</a> does.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.queue" class="python member">Banhammer.queue (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.queue">🔗</a></pre>
+    <p>
+      Called when a new item is present in the queue, this can be either a submission or a comment.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.reports" class="python member">Banhammer.reports (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.reports">🔗</a></pre>
+    <p>
+      Called when an item has been reported, works for both submissions or comments.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
+        </li>
+      </ul>
+    </p>
+    <pre id="banhammer.Banhammer.mod_actions" class="python member">Banhammer.mod_actions (*args, **kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.Banhammer.mod_actions">🔗</a></pre>
+    <p>
+      Called when an actions has been taken by certain moderators/administrators on the subreddits.
+      <br>
+      <br>
+      <b>Note:</b> It is recommended to at least enable this for the "Anti-Evil Operations" team on Reddit.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>moderators</code> (Optional[list(str)]) - The moderators for which actions should be collected.
+          If left empty all actions will be streamed.
+          See more info on how to convert lists to <code>*args</code> in <a href="#banhammer.Banhammer.add_mod_actions_func">Banhammer.add_mod_actions_func()</a>.
+        </li>
+        <li>
+          <code>subreddit</code> (Optional[str]) - The subreddit for which this event should be registered to.
+        </li>
+      </ul>
     </p>
     <h3 id="utility">Utility Functions<a onclick="copyToClipboard(this.href);" href="#utility">🔗</a></h3>
     <ul>
       <li>
-        <a href="#banhammer.RedditHelper.get_item">reddithelper.get_item()</a>
+        <a href="#banhammer.RedditHelper.get_item">RedditHelper.get_item()</a>
       </li>
       <li>
-        <a href="#banhammer.RedditHelper.get_item_from_url">reddithelper.get_item_from_url()</a>
+        <a href="#banhammer.RedditHelper.get_item_from_url">RedditHelper.get_item_from_url()</a>
       </li>
       <li>
-        <a href="#banhammer.RedditHelper.is_url">reddithelper.is_url()</a>
+        <a href="#banhammer.RedditHelper.is_url">RedditHelper.is_url()</a>
       </li>
       <li>
-        <a href="#banhammer.Reaction.get_reactions">reaction.get_reactions()</a>
+        <a href="#banhammer.ReactionHelper.get_reactions">ReactionHelper.get_reactions()</a>
       </li>
       <li>
-        <a href="#banhammer.Reaction.ignore_reactions">reaction.ignore_reactions()</a>
+        <a href="#banhammer.ReactionHelper.ignore_reactions">ReactionHelper.ignore_reactions()</a>
       </li>
     </ul>
     <p>
@@ -211,7 +437,6 @@
           <code>payload</code> (<a href="#banhammer.ReactionPayload">ReactionPayload</a>) - The payload that will be fed with information.
         </li>
       </ul>
-      <br>
       <b>Returns</b>
       <br>
       <br>
@@ -287,18 +512,24 @@
           <code>embed_color</code> (Optional[<a href="https://discordpy.readthedocs.io/en/latest/api.html#colour">discord.Colour</a>]) - The color that should be used for the embed, defaults to banhammer.Banhammer.embed_color.
         </li>
       </ul>
-      <br>
       <b>Returns</b>
       <br>
       <br>
       <a href="https://discordpy.readthedocs.io/en/latest/api.html#embed">discord.Embed</a> - The embed that was generated for the item.
     </p>
     <h4 id="banhammer.ReactionPayload">ReactionPayload<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload">🔗</a></h4>
-    <pre class="python class"><i>class</i> banhammer.ReactionPayload<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload">🔗</a></pre>
+    <pre class="python class"><i>class</i> banhammer.ReactionPayload (user="Banhammer")<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload">🔗</a></pre>
     <p>
       A data class that holds the actions performed on an item as well as other information and can be overriden to return custom messages/embeds.
       <br>
       <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>user</code> (Optional[str]) - The user that is performing the actions.
+          If the payload is being handled by banhammer.Reaction.handle(), the user fed to <code>handle()</code> will be prioritized over the default.
+        </li>
+      </ul>
       <b>Attributes</b>
     </p>
     <table class="python attributes">
@@ -337,24 +568,6 @@
         <td>The emoji that was used to perform the action.</td>
       </tr>
     </table>
-    <pre id="banhammer.ReactionPayload.__init__" class="python member">__init__ (user="Banhammer")<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload.__init__">🔗</a></pre>
-    <p>
-      Constructs the ReactionPayload and initializes its variables.
-      <br>
-      <br>
-      <b>Parameters</b>
-      <ul>
-        <li>
-          <code>user</code> (Optional[str]) - The user that is performing the actions.
-          If the payload is being handled by banhammer.Reaction.handle(), the user fed to <code>handle()</code> will be prioritized over the default.
-        </li>
-      </ul>
-      <br>
-      <b>Returns</b>
-      <br>
-      <br>
-      <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> - the payload that was just instantiated.
-    </p>
     <pre id="banhammer.ReactionPayload.__str__" class="python member">__str__ ()<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionPayload.__str__">🔗</a></pre>
     <p>
       Returns the message that was created through <code>banhammer.ReactionPayload.get_message()</code>.
