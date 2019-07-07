@@ -17,7 +17,8 @@ bots = [
   {
     "id": "banhammer",
     "name": "Banhammer",
-    "img": "/mariavi/img/banhammer/banhammer.png"
+    "img": "/mariavi/img/banhammer/banhammer.png",
+    "url": "https://discordapp.com/oauth2/authorize?client_id=548006867734102029&scope=bot&permissions=8"
   },
   {
     "id": "melon",
@@ -28,7 +29,8 @@ bots = [
   {
     "id": "reddify",
     "name": "Reddify",
-    "img": "/mariavi/img/reddify/reddify.png"
+    "img": "/mariavi/img/reddify/reddify.png",
+    "url": "https://discordapp.com/oauth2/authorize?client_id=555093732010229760&scope=bot&permissions=8"
   },
   {
     "id": "submoon",

@@ -38,7 +38,7 @@
 
   <main>
     <h1>Banhammer.py<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
-    <p>Version: 1.6</p>
+    <p>Version: 1.7</p>
 
     <div class="top">
       <div class="summary">
@@ -487,7 +487,8 @@
     <h4 id="banhammer.Reaction">Reaction<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
     <pre class="python class"><i>class</i> banhammer.Reaction (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
     <p>
-      Represents a reaction that is loaded from the wiki or local files by feeding it a dictionary.
+      Represents a reaction that is loaded from the wiki or local files by feeding it <code>**kwargs</code>.
+      Dictionaries can be converted to <code>**kwargs</code> by using <code>**dict_name</code>.
       <br>
       <br>
       <b>Parameters</b>
@@ -548,8 +549,65 @@
         <td>All the arguments given to <code>**kwargs</code> stored in the dictionary format.</td>
       </tr>
       <tr>
-        <td><code>config</code></td>
-        <td></td>  
+        <td><code>emoji</code></td>
+        <td>The emoji assigned to this reaction, should be a unicode emoji or follow the Discord custom emoji format for bots.</td>
+      </tr>
+      <tr>
+        <td><code>type</code></td>
+        <td>
+          The type of items this reaction is designed to handle.
+          Used in <a href="#banhammer.Reaction.is_eligible">Reaction.is_eligible()</a>.
+        </td>
+      </tr>
+      <tr>
+        <td><code>flair</code></td>
+        <td>Whether the submission should be approved.</td>
+      </tr>
+      <tr>
+        <td><code>approve</code></td>
+        <td>
+          Whether the post should be approved.
+          Defaults to <code>False</code>.
+        </td>
+      </tr>
+      <tr>
+        <td><code>lock</code></td>
+        <td>Whether the post should be locked.</td>
+      </tr>
+      <tr>
+        <td><code>reply</code></td>
+        <td>Whether the post should be replied to.</td>
+      </tr>
+      <tr>
+        <td><code>distinguish_reply</code></td>
+        <td>Whether the reply (if given) should be distinguished.</td>
+      </tr>
+      <tr>
+        <td><code>sticky_reply</code></td>
+        <td>Whether the reply (if given) should be stickied.</td>
+      </tr>
+      <tr>
+        <td><code>ban</code></td>
+        <td>
+          If the post's author should be banned.
+          <code>None</code> if no ban or <code>0</code> for a permanent ban.
+        </td>
+      </tr>
+      <tr>
+        <td><code>archive</code></td>
+        <td>Whether the modmail conversation should be archived.</td>
+      </tr>
+      <tr>
+        <td><code>mute</code></td>
+        <td>Whether the modmail's participant should be muted for 72 hours.</td>
+      </tr>
+      <tr>
+        <td><code>min_votes</code></td>
+        <td>The minimum amount of votes required for the reactino's configured actions to be performed.</td>
+      </tr>
+      <tr>
+        <td><code>item</code></td>
+        <td>The <a href="#banhammer.RedditItem">RedditItem</a> assigned to this reaction if it was retrieved through <a href="#banhammer.Reaction.get_reaction()">Reaction.get_reaction()</a> or <a href="#banhammer.Reaction.get_reactions()">Reaction.get_reactions()</a> otherwise <code>None</code>.</td>
       </tr>
     </table>
     <h4 id="banhammer.ReactionHandler">ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
