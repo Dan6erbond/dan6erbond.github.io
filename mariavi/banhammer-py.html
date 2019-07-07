@@ -484,8 +484,76 @@
         <a href="#banhammer.RedditItem">RedditItem</a>
       </li>
     </ul>
+    <h4 id="banhammer.Reaction">Reaction<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
+    <pre class="python class"><i>class</i> banhammer.Reaction (**kwargs)<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
+    <p>
+      Represents a reaction that is loaded from the wiki or local files by feeding it a dictionary.
+      <br>
+      <br>
+      <b>Parameters</b>
+      <ul>
+        <li>
+          <code>emoji</code> (str) - The emoji that this reaction represents.
+        </li>
+        <li>
+          <code>type</code> (str) - One of either "submission", "comment", "modmail" or left empty.
+          Thi is used when determining if the reaction is applicable for a certain item.
+        </li>
+        <li>
+          <code>flair</code> (str, Submissions only) - The flair that should be applied to a post.
+        </li>
+        <li>
+          <code>approve</code> (boolean) - Whether the post should be approved or removed.
+          Defaults to <code>False</code>.
+        </li>
+        <li>
+          <code>mark_nsfw</code> (boolean, Submissions only) - Whether the post should be marked NSFW, defaults to <code>False</code>.
+        </li>
+        <li>
+          <code>lock</code> (boolean) - Whether the post should be locked by the bot.
+          Is set to <code>True</code> of <code>approve</code> is set to <code>False</code>.
+        </li>
+        <li>
+          <code>reply</code> (str) - The text to reply to the post with.
+          Can be left empty.
+        </li>
+        <li>
+          <code>distinguish_reply</code> (boolean) - Whether the reply should be distinguished (if one is present).
+        </li>
+        <li>
+          <code>sticky_reply</code> (boolean) - Whether the reply should be stickied (if one is present).
+        </li>
+        <li>
+          <code>ban</code> (int) - Whether the post author should be banned, <code>None</code> represents no ban while <code>0</code> represents a permanent one and every other number is a temporary ban of X days.
+        </li>
+        <li>
+          <code>archive</code> (boolean, ModMail only) - Whether the modmail conversation should be archived.
+        </li>
+        <li>
+          <code>mute</code> (boolean, ModMail only) - Whether the modmail's participant should be muted for 72 hours.
+        </li>
+        <li>
+          <code>min_votes</code> (int) - The minimum amount of votes required for the reaction's configured actions to be performed.
+        </li>
+      </ul>
+      <b>Attributes</b>
+    </p>
+    <table class="python attributes">
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>config</code></td>
+        <td>All the arguments given to <code>**kwargs</code> stored in the dictionary format.</td>
+      </tr>
+      <tr>
+        <td><code>config</code></td>
+        <td></td>  
+      </tr>
+    </table>
     <h4 id="banhammer.ReactionHandler">ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
-    <pre class="python class"><i>class</i> banhammer.reaction.ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
+    <pre class="python class"><i>class</i> banhammer.ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
     <p>
       The default object that handles reactions unless a different implementation is given to <a href="#banhammer">Banhammer</a>.
     </p>
