@@ -610,6 +610,61 @@
         <td>The <a href="#banhammer.RedditItem">RedditItem</a> assigned to this reaction if it was retrieved through <a href="#banhammer.Reaction.get_reaction()">Reaction.get_reaction()</a> or <a href="#banhammer.Reaction.get_reactions()">Reaction.get_reactions()</a> otherwise <code>None</code>.</td>
       </tr>
     </table>
+    <pre id="banhammer.Reaction.__str__" class="python member">__str__ ()<a onclick="copyToClipboard(this.href);" href="#banhammer.Reaction.__str__">🔗</a></pre>
+    <p>
+      Generates a string display the most important attributes of the reaction that were hard-coded into the method.
+      <br>
+      <br>
+      <b>Examples:</b>
+      <ul>
+        <li>✔ | approve</li>
+        <li>❌ | remove | lock</li>
+        <li>🍆 | approve | mark NSFW</li>
+        <li>🔒 | approve | lock</li>
+        <li>🤛 | remove | lock | 3 day ban</li>
+        <li>💀 | remove | lock | permanent ban</li>
+      </ul>
+      <b>Returns</b>
+      <br>
+      <br>
+      str - The generated string which can be displayed in embeds, messages and console outputs.
+    </p>
+    <pre id="banhammer.Reaction.handle" class="python member">handle (payload=ReactionPayload(), user="", item=None)<a onclick="copyToClipboard(this.href);" href="#banhammer.Reaction.handle">🔗</a></pre>
+    <p>
+      Uses the Banhammer.reaction_handler to handle actions the reaction is assigned to and returns the given payload after feeding it with data.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>payload</code> (<a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a>) - The payload to feed data with and then return.
+        </li>
+        <li>
+          <code>user</code> (str) - The user that is performing the action, can be fed to the payload directly.
+          If none is given, ReactionPayload.user is used which defaults to "Banhammer".
+        </li>
+        <li>
+          <code>item</code> (<a href="#banhammer.RedditItem">banhammer.RedditItem</a>) - The item that is to be handled.
+          If none is given, the reaction's assigned item will be used.
+          An item is assigned to the reaction if <a href="#banhammer.Reaction.get_reaction">Reaction.get_reaction()</a> or <a href="#banhammer.Reaction.get_reactions">Reaction.get_reactions()</a> is used to retrieve the reaction.
+        </li>
+      </ul>
+      <b>Raises:</b>
+      <ul>
+        <li>
+          <a href="#banhammer.exceptions.NoItemGiven">exceptions.NoItemGiven</a> - No item was assigned to the reaction or given to the method to handle.
+        </li>
+        <li>
+          <a href="#banhammer.exceptions.NotEligibleItem">exceptions.NotEligibleItem</a> - The reaction wasn't designed to handle the given item.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <ul>
+        <li>
+          <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> - The payload previously given to the method, fed with the performed actions and other meta-data.
+        </li>
+      </ul>
+    </p>
     <h4 id="banhammer.ReactionHandler">ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
     <pre class="python class"><i>class</i> banhammer.ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
     <p>
