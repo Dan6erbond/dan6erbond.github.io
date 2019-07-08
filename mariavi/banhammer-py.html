@@ -38,7 +38,7 @@
 
   <main>
     <h1>Banhammer.py<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
-    <p>Version: 1.7</p>
+    <p>Version: 1.8</p>
 
     <div class="top">
       <div class="summary">
@@ -465,9 +465,102 @@
       <li>
         <a href="#banhammer.ReactionHelper.ignore_reactions">ReactionHelper.ignore_reactions()</a>
       </li>
+      <li>
+        <a href="#banhammer.YAMLParser.get_list">YAMLParser.get_list()</a>
+      </li>
+      <li>
+        <a href="#banhammer.YAMLParser.get_dict">YAMLParser.get_list()</a>
+      </li>
+      <li>
+        <a href="#banhammer.YAMLParser.eval_value">YAMLParser.eval_value()</a>
+      </li>
     </ul>
+    <h4 id="banhammer.ReactionHelper">ReactionHelper<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHelper">🔗</a></h4>
+    <pre id="banhammer.ReactionHelper.get_reactions" class="python member">get_reactions (yaml)<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHelper.get_reactions">🔗</a></pre>
     <p>
-      👷‍ 🚧 Work in progress! 🚧
+      Generates a list of reactions from the given YAML using <a href="#banhammer.YAMLParser.get_list">YAMLParser.get_list()</a> while verifying the reactions contains at least a valid emoji.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>yml</code> (str) - The YAML string to parse.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <br>
+      <br>
+      dict - A dictionary with the keys "ignore" and "reactions" where "ignore" is a list of emojis that shouldn't be used and "reactions" the list of emojis that were retrieved from the YAML otherwise.
+    </p>
+    <pre id="banhammer.ReactionHelper.ignore_reactions" class="python member">ignore_reactions (yaml, remove)<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHelper.ignore_reactions">🔗</a></pre>
+    <p>
+      Removes all reactions with the given emojis from the list and returns it.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>reactions</code> (list(<a href="#banhammer.Reaction">banhammer.Reaction</a>)) - The list of reactions to clean up.
+        </li>
+        <li>
+          <code>remove</code> (list(str or <a href="#banhammer.Reaction">banhammer.Reaction</a>)) - The emojis or reactions with the emojis that should be removed from the given list.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <br>
+      <br>
+      list(<a href="#banhammer.Reaction">banhammer.Reaction</a>) - The clean list of reactions without the previously given emojis.
+    </p>
+    <h4 id="banhammer.YAMLParser">YAMLParser<a onclick="copyToClipboard(this.href);" href="#banhammer.YAMLParser">🔗</a></h4>
+    <pre id="banhammer.YAMLParser.get_list" class="python member">get_list (str)<a onclick="copyToClipboard(this.href);" href="#banhammer.YAMLParser.get_list">🔗</a></pre>
+    <p>
+      Returns a list of dictionaries yielded from the YAML string.
+      Dictionaries in YAML are separated with hyphens between the dictionaries.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>str</code> (str) - The string to parse.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <br>
+      <br>
+      list(dict) - The list of dictionaries that were parsed from the string.
+    </p>
+    <pre id="banhammer.YAMLParser.get_dict" class="python member">get_dict (str)<a onclick="copyToClipboard(this.href);" href="#banhammer.YAMLParser.get_dict">🔗</a></pre>
+    <p>
+      Generates a dictionary from the given string.
+      Evaluates the input and checks if the item represents a JSON-parsable value.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>str</code> (str) - The string to parse.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <br>
+      <br>
+      dict - The dictionary that was parsed from the string.
+    </p>
+    <pre id="banhammer.YAMLParser.eval_value" class="python member">eval_value (str)<a onclick="copyToClipboard(this.href);" href="#banhammer.YAMLParser.eval_value">🔗</a></pre>
+    <p>
+      Checks if the given string can be evaluated in any way, such as a list or boolean before returning the original, stripped string.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>str</code> (str) - The string to check for values.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <br>
+      <br>
+      (object) - The value that was retrieved from the string.
     </p>
     <h3 id="models">Banhammer Models<a onclick="copyToClipboard(this.href);" href="#models">🔗</a></h3>
     <ul>
@@ -664,6 +757,23 @@
           <a href="#banhammer.ReactionPayload">banhammer.ReactionPayload</a> - The payload previously given to the method, fed with the performed actions and other meta-data.
         </li>
       </ul>
+    </p>
+    <pre id="banhammer.Reaction.eligible" class="python member">eligible (item)<a onclick="copyToClipboard(this.href);" href="#banhammer.Reaction.eligible">🔗</a></pre>
+    <p>
+      Checks if the reaction was designed for given item.
+      This method does not need to be used before calling <a href="#banhammer.Reaction.handle">Reaction.handle()</a> if it was retrieved over <a href="#banhammer.RedditItem.get_reaction">RedditItem.get_reaction()</a> or <a href="#banhammer.RedditItem.get_reactions">RedditItem.get_reactions()</a> as the check will have already been performed.
+      <br>
+      <br>
+      <b>Parameters:</b>
+      <ul>
+        <li>
+          <code>item</code> (<a href="#banhammer.RedditItem">RedditItem</a>) - The item that the check should be performed for.
+        </li>
+      </ul>
+      <b>Returns:</b>
+      <br>
+      <br>
+      boolean - Whether the current reaction is able to handle the item.
     </p>
     <h4 id="banhammer.ReactionHandler">ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></h4>
     <pre class="python class"><i>class</i> banhammer.ReactionHandler<a onclick="copyToClipboard(this.href);" href="#banhammer.ReactionHandler">🔗</a></pre>
