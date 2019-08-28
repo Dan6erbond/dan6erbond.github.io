@@ -1,0 +1,156 @@
+#headshot {
+  height: 250px;
+  border-top-right-radius: 15%;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border: 5px solid var(--dark-blue);
+  /*box-shadow: 0px 0px 5px black;*/
+  filter: none;
+  animation: remove-filter 1.5s;
+}
+
+@keyframes remove-filter {
+  0% {
+    filter: grayscale(100%) brightness(0);
+  }
+
+  40% {
+    filter: grayscale(100%) brightness(0);
+  }
+
+  100% {
+    filter: none;
+  }
+}
+
+.scroll-down {
+  display: block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: 60px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: -40px;
+  text-align: center;
+}
+
+.scroll-down:hover {
+  opacity: .5;
+}
+
+.scroll-down span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+.section {
+  min-height: calc(100vh - 80px);
+}
+
+.section .content {
+  min-height: calc(100vh - 260px);
+}
+
+.section h2 {
+  text-align: center;
+}
+
+main {
+  padding-top: 0;
+}
+
+.skill {
+  display: inline-flex;
+  margin: 25px 35px 0 0;
+}
+
+.skill p {
+  padding: 0;
+  margin: 0;
+}
+
+.skill p:first-of-type {
+  min-width: 80px;
+}
+
+.skill .bar {
+  margin: 6px 15px 0 15px;
+  height: 10px;
+  background-color: var(--light-dark-grey);
+  width: 200px;
+}
+
+.skill .bar div {
+  height: 100%;
+  background-color: var(--light-dark-turquoise);
+}
+
+.skill .count {
+  color: var(--light-grey);
+}
+
+/*.progress-bar {
+  position: fixed;
+  height: calc(100% - 100px);
+  top: 60px;
+  right: 0;
+  width: 5px;
+  background-color: white;
+}/
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding-top: 5px;
+  }
+
+  .section {
+    min-height: calc(100vh - 60px);
+  }
+
+  .section .content {
+    min-height: calc(100vh - 220px);
+  }
+}

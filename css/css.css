@@ -52,7 +52,7 @@
 }
 
 code {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 2.5px;
 }
 
@@ -79,6 +79,11 @@ h1 {
   height: 80px;
   visibility: hidden;
   pointer-events: none;
+}
+
+div:target::before {
+  margin-top: -60px;
+  height: 60px;
 }
 
 h1 a, h2 a, h3 a, h4 a, pre a {
@@ -242,7 +247,7 @@ ol.index ul li::before {
     }
   }
 
-  .copyText{
+  .copyText {
     padding: 2px;
   }
 
