@@ -153,4 +153,55 @@ main {
   .section .content {
     min-height: calc(100vh - 220px);
   }
+}*/
+
+.page {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  box-shadow: var(--material-shadow-light);
+  height: 27vh;
+  width: 19vw;
+  min-height: 250px;
+  min-width: 350px;
+  overflow: hidden;
+}
+
+.page .img-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page .img-container img {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.page .text {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(56, 63, 86, 0.9);
+}
+
+.page:hover .text {
+  opacity: 1;
+}
+
+.page .text p {
+  margin: 0;
+  padding: 10px;
 }
