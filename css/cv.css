@@ -126,6 +126,11 @@ main {
 .skill .bar div {
   height: 100%;
   background-color: var(--light-dark-turquoise);
+  transition: width 1s;
+}
+
+.skill .bar div.collapsed {
+  width: 0% !important;  
 }
 
 .skill .count {
