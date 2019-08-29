@@ -120,7 +120,7 @@ main {
   margin: 6px 15px 0 15px;
   height: 10px;
   background-color: var(--light-dark-grey);
-  width: 200px;
+  width: 150px;
 }
 
 .skill .bar div {
@@ -139,7 +139,7 @@ main {
   right: 0;
   width: 5px;
   background-color: white;
-}/
+}*/
 
 @media only screen and (max-width: 600px) {
   main {
@@ -153,7 +153,7 @@ main {
   .section .content {
     min-height: calc(100vh - 220px);
   }
-}*/
+}
 
 .page {
   display: inline-block;

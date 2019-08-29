@@ -255,4 +255,10 @@ ol.index ul li::before {
     margin-top: -50px;
     height: 50px;
   }
+
+
+  div:target::before {
+    margin-top: -30px;
+    height: 30px;
+  }
 }
