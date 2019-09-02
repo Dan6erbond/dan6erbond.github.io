@@ -12,10 +12,15 @@ $(window).scroll(function() {
       $(this).children("div").children("div").removeClass("collapsed");
       // console.log("visible");
     });
-  } /* else {
-    $(".skill").each(function() {
-      $(this).children("div").children("div").addClass("collapsed");
-      console.log("invisible");
+  }
+  if (isVisible($('#hobbies'))) {
+    var d = 400;
+    $("#hobbies .items .item").each(function(){
+      $(this).delay(d).queue(function(next){
+        $(this).css({"opacity": 1});
+        next();
+      });
+      d += 400;
     });
-  } */
+  }
 });
