@@ -29,9 +29,9 @@
   <link href="css/box.css" rel="stylesheet" />
   <link href="css/cv.css" rel="stylesheet" />
 
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/w3.js"></script>
   <script src="js/d6b.js"></script>
-  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/cv.js"></script>
 
   <title>Dan6erbond</title>
@@ -41,13 +41,18 @@
   <div w3-include-html="html/header.html"></div>
 
   <div class="progress-bar">
-
   </div>
+
+  <style id="lang" type="text/css"></style>
 
   <main>
     <div class="section">
       <div class="content">
-        <h1>Resumé<a onclick="copyToClipboard(this.href);" href="#">🔗</a></h1>
+        <h1>
+          <span class="en">Resumé</span>
+          <span class="de">Lebenslauf</span>
+          <a onclick="copyToClipboard(this.href);" href="#">🔗</a>
+        </h1>
         <div style="display: flex;flex-wrap: wrap;">
           <div style="text-align: center;min-width: 300px;min-height: 280px;flex: 1;">
             <img id="headshot" src="img/cv/ravi.png" alt="">
@@ -55,15 +60,26 @@
 
           <div style="min-width: 300px;flex: 100;">
             <h2 style="text-align: left;">RaviAnand Mohabir</h2>
-            <p>
+            <p class="en">
               Motivated engineering student with a passion for computer sciences and digital media.
               Seeking to work on creating reliable systems and interesting technology.
               Created many systems used by others such as the Fuzzle search algorithm.
             </p>
+            <p class="de">
+              Motivierter Informatikmittelschüler mit einem grossen Interesse für ICT und digitale Medien.
+              Ich mag es, zuverlässige sowie vertrauenswürdige Produkten zu realisieren und beschäftige mich gerne mit neuen Technologien.
+              Habe bereits mehrere Systeme entwickelt, wie bspw. den Fuzzle Such-Algorithmus.
+            </p>
             <br>
-            <a href="https://github.com/Dan6erbond">My GitHub</a>
+            <a href="https://github.com/Dan6erbond">
+              <span class="en">My GitHub</span>
+              <span class="de">Mein GitHub</span>
+            </a>
             <br>
-            <a href="mailto:moravrav@gmail.com">Contact me</a>
+            <a href="mailto:moravrav@gmail.com">
+              <span class="en">Contact me</span>
+              <span class="de">Kontaktiere mich</span>
+            </a>
           </div>
         </div>
       </div>
@@ -71,7 +87,11 @@
     </div>
     <div id="skills" class="section">
       <div class="content">
-        <h2>Skills<a onclick="copyToClipboard(this.href);" href="#skills">🔗</a></h2>
+        <h2>
+          <span class="en">Skills</span>
+          <span class="de">Kenntnisse</span>
+          <a onclick="copyToClipboard(this.href);" href="#skills">🔗</a>
+        </h2>
         <div class="skill">
           <p>Java</p>
           <div class="bar">
@@ -147,137 +167,201 @@
         <br>
         <br>
         <br>
-        <p>
-          Besides programming I have experience in using CMS, Google services and other software, some of which are listed below:
-          <ul>
-            <li>Adobe PhotoShop</li>
-            <li>Adobe Premiere Pro</li>
-            <li>Microsoft Office</li>
-            <li>Microsoft Access</li>
-            <li>Blender 3D</li>
-          </ul>
+        <h3>
+          <span class="en">Others</span>
+          <span class="de">Weitere</span>
+        </h3>
+        <p class="en">
+          Besides programming I've made use of CMS such as Wordpress, worked with Google services and APIs as well as the Microsoft Office Suite and similar software and environments.
         </p>
-        <br>
-        <h3>Languages</h3>
+        <p class="de">
+          Neben dem Programmieren habe ich bereits mit CMS wie Wordpress gearbeitet, sowie mich mit den Google Angeboten sowie APIs gearbeitet und kenne mich gut mit der Microsoft Office Suite sowie weitere Programme aus.
+        </p>
         <hr>
         <div class="skill">
-          <p>English</p>
+          <p>APP*</p>
+          <div class="bar">
+            <div class="collapsed" style="width: 80%;">
+            </div>
+          </div>
+          <p class="count">8/10</p>
+        </div>
+        <div class="skill">
+          <p>PhotoShop</p>
+          <div class="bar">
+            <div class="collapsed" style="width: 70%;">
+            </div>
+          </div>
+          <p class="count">7/10</p>
+        </div>
+        <div class="skill">
+          <p>Blender3D</p>
+          <div class="bar">
+            <div class="collapsed" style="width: 70%;">
+            </div>
+          </div>
+          <p class="count">7/10</p>
+        </div>
+        <br>
+        <p style="color: grey;">
+          <span class="en">*APP stands for Adobe Premiere Pro</span>
+          <span class="de">*APP steht für Adobe Premiere Pro</span>
+        </p>
+        <br>
+        <h3>
+          <span class="en">Languages</span>
+          <span class="de">Sprachen</span>
+        </h3>
+        <hr>
+        <div class="skill">
+          <p>
+            <span class="en">English</span>
+            <span class="de">Englisch</span>
+          </p>
           <div class="bar">
             <div class="collapsed" style="width: 100%;">
             </div>
           </div>
-          <p class="count">Native</p>
+          <p class="count">
+            <span class="en">Native</span>
+            <span class="de">Muttersprache</span>
+          </p>
         </div>
         <div class="skill">
-          <p>German</p>
+          <p>
+            <span class="en">German</span>
+            <span class="de">Deutsch</span>
+          </p>
           <div class="bar">
             <div class="collapsed" style="width: 100%;">
             </div>
           </div>
-          <p class="count">Native</p>
+          <p class="count">
+            <span class="en">Native</span>
+            <span class="de">Muttersprache</span>
+          </p>
         </div>
         <div class="skill">
-          <p>French</p>
+          <p>
+            <span class="en">French</span>
+            <span class="de">Französisch</span>
+          </p>
           <div class="bar">
-            <div class="collapsed" style="width: 50%;">
+            <div class="collapsed" style="width: 40%;">
             </div>
           </div>
-          <p class="count">B1</p>
+          <p class="count">
+            <span class="en">B1</span>
+            <span class="de">B1 Niveau</span>
+          </p>
         </div>
       </div>
       <a class="scroll-down" href="#experience"><span></span>Scroll</a>
     </div>
     <div id="experience" class="section">
       <div class="content">
-        <h2>Experience<a onclick="copyToClipboard(this.href);" href="#experience">🔗</a></h2>
+        <h2>
+          <span class="en">Experience</span>
+          <span class="de">Erfahrung</span>
+          <a onclick="copyToClipboard(this.href);" href="#experience">🔗</a>
+        </h2>
         <h3>2019</h3>
         <hr>
-        <ul>
-          <li>Implemented the website for the WDS' insurance comparison service.</li>
+        <ul class="en">
+          <li>Implemented the <a href="kantonalekrankenversicherung.ch">website</a> for the WDS' insurance comparison service.</li>
           <li>Developing the aPRAW library in Python to communicate asynchronously with the Reddit API.</li>
           <li>Wrote the code for a digital slot machine implemented into the digital casino made with Java.</li>
           <li>Developed the fast and simple search algorithm known as Fuzzle.</li>
           <li>Made an alarm clock with the Arduino UNO and created its casing with Blender3D.</li>
         </ul>
+        <ul class="de">
+          <li><a href="kantonalekrankenversicherung.ch">Webauftritt</a> für die WDS realisiert.</li>
+          <li>Entwickle die aPRAW Python Bibliothek welche asynchron mit der Reddit API kommuniziert.</li>
+          <li>Slot-Machine für das Digitale Casino der Programmierwoche 2019 programmiert.</li>
+          <li>Fuzzle Such-Algorithmus entwickelt und in Python sowie JavaScript implementiert.</li>
+          <li>Mit dem Arduino UNO und C++ einen Wecker programmiert sowie die Hülle mit Blender3D modelliert und ausgedruckt.</li>
+        </ul>
         <h3>2018</h3>
         <hr>
-        <ul>
+        <ul class="en">
           <li>Wrote an Android app in Java for the school.</li>
+        </ul>
+        <ul class="de">
+          <li>Android-App welche mit APIs kommuniziert mit Java für die Schulklasse geschrieben.</li>
         </ul>
         <h3>2016</h3>
         <hr>
-        <ul>
+        <ul class="en">
           <li>Wrote a game in Unity with C# and made the 3D models with Blender.</li>
+        </ul>
+        <ul class="de">
+          <li>Videospiel mit C# in Unity3D realisiert und die 3D-Modelle mit Blender3D modelliert.</li>
         </ul>
       </div>
       <a class="scroll-down" href="#education"><span></span>Scroll</a>
     </div>
     <div id="education" class="section">
       <div class="content">
-        <h2>Education<a onclick="copyToClipboard(this.href);" href="#education">🔗</a></h2>
-        <h3>Junior High School - Bezirksschule Zofingen</h3>
+        <h2>
+          <span class="en">Education</span>
+          <span class="de">Ausbildung</span>
+          <a onclick="copyToClipboard(this.href);" href="#education">🔗</a>
+        </h2>
+        <h3>
+          <span class="en">Junior High School - Bezirksschule Zofingen</span>
+          <span class="de">Sekundarstufe I - Bezirksschule Zofingen</span>
+        </h3>
         <hr>
         <p>
           Rebbergstrasse 4, 4800 Zofingen
           <br>
           <br>
-          <b>Relevant classes:</b> Mathematics, Programming & 3D-Design
+          <span class="en"><b>Relevant classes:</b> Mathematics, Programming & 3D-Design</span>
+          <span class="de"><b>Relevante Fächer:</b> Mathematik, Projekte & Recherchen</span>
           <br>
           <br>
-          <b>Graduated:</b> 2017
+          <span class="en"><b>Graduated:</b> 2017</span>
+          <span class="de"><b>Abgeschlossen:</b> 2017</span>
         </p>
         <br>
-        <h3>High School - Informatikmittelschule Aarau</h3>
+        <h3>
+          <span class="en">High School - Informatikmittelschule Aarau</span>
+          <span class="de">Sekundarstufe II - Informatikmittelschule Aarau</span>
+        </h3>
         <hr>
         <p>
           Bahnhofstrasse 91, 5001 Aarau
           <br>
           <br>
-          <b>Relevant classes:</b> Mathematics, Finance, Economics, Computer Science
+          <span class="en"><b>Relevant classes:</b> Mathematics, Finance, Economics, Computer Science</span>
+          <span class="de"><b>Relevante Fächer:</b> Mathematik, Rechnungswesen, Wirtschaft, Informatik</span>
           <br>
           <br>
-          <b>Expected gruduation:</b> 2021
+          <span class="en"><b>Expected gruduation:</b> 2021</span>
+          <span class="de"><b>Erwarteter Abschluss:</b> 2021</span>
         </p>
       </div>
       <a class="scroll-down" href="#hobbies"><span></span>Scroll</a>
     </div>
-    <style media="screen">
-      #hobbies .items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-
-      #hobbies .items .item {
-        flex: 1;
-        padding: 15px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.75s;
-      }
-
-      #hobbies img {
-        height: 150px;
-        transition: filter 0.25s;
-      }
-
-      #hobbies img:hover {
-        filter: invert(0.5) sepia(1) hue-rotate(110deg);
-      }
-    </style>
     <div id="hobbies" class="section">
       <div class="content">
-        <h2>Hobbies<a onclick="copyToClipboard(this.href);" href="#hobbies">🔗</a></h2>
+        <h2>
+          <span class="en">Hobbies</span>
+          <span class="de">Hobbys</span>
+          <a onclick="copyToClipboard(this.href);" href="#hobbies">🔗</a>
+        </h2>
         <br>
         <br>
         <div class="items">
           <div class="item">
             <img src="img/cv/camera-solid.svg" alt="">
-            <p>Photography</p>
+            <p class="en">Photography</p>
+            <p class="de">Fotografie</p>
           </div>
           <div class="item">
             <img src="img/cv/guitar-solid.svg" alt="">
-            <p>Guitar</p>
+            <p class="en">Guitar</p>
+            <p class="de">Gitarre</p>
           </div>
           <div class="item">
             <img src="img/cv/medal-solid.svg" alt="">
@@ -285,7 +369,8 @@
           </div>
           <div class="item">
             <img src="img/cv/running-solid.svg" alt="">
-            <p>Running</p>
+            <p class="en">Running</p>
+            <p class="de">Joggen</p>
           </div>
         </div>
       </div>

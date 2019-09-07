@@ -1,8 +1,57 @@
+$(function() {
+  var lang = getCookie("lang");
+  if (lang == "") {
+    lang = navigator.language;
+  }
+  lang = setLang(lang);
+  $("#lang-select").val(lang.substring(0, 2));
+  $("#lang-select").change(function(){
+    setLang($(this).val());
+  });
+});
+
+function setLang(lang) {
+  var style = '';
+  if (lang.substring(0, 2) == "de") {
+    style = '.en{display: none !important;}';
+  } else {
+    style = '.de{display: none !important;}';
+    lang = "de-DE"
+  }
+  setCookie("lang", lang, 365);
+  $("#lang").html(style);
+  return lang;
+}
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 
 function scrollFunction() {
-  if (document.getElementById("scrollUp") == null){
+  if (document.getElementById("scrollUp") == null) {
     return;
   }
 
@@ -19,7 +68,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function copyToClipboard(str){
+function copyToClipboard(str) {
   const el = document.createElement('textarea');
   el.value = !str.startsWith("#") ? str : document.location.href.split("#")[0] + str;
   document.body.appendChild(el);
@@ -32,19 +81,19 @@ function copyToClipboard(str){
   document.getElementsByTagName("body")[0].appendChild(div);
   div.className = "copyText";
 
-  setTimeout(function(){
+  setTimeout(function() {
     div.classList.add("active");
-    setTimeout(function(){
+    setTimeout(function() {
       div.classList.remove("active");
     }, 1000);
   }, 5);
 }
 
-function openMenu(){
+function openMenu() {
   var ul = document.getElementsByTagName("ul")[0];
   var btn = document.getElementsByClassName("mobile-open")[0].childNodes[1].childNodes[1];
 
-  if (!ul.classList.contains("open")){
+  if (!ul.classList.contains("open")) {
     ul.classList.add("open");
     btn.classList.remove("close");
     btn.classList.add("open");
@@ -55,52 +104,52 @@ function openMenu(){
   }
 }
 
-function includeCode(){
+function includeCode() {
   var elmnts, elmnt, file;
 
   elmnts = document.getElementsByTagName("pre");
-  for (i in elmnts){
+  for (i in elmnts) {
     elmnt = elmnts[i];
     try {
       file = elmnt.getAttribute("src");
     } catch {
       continue;
     }
-    if (file != null){
+    if (file != null) {
       xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            var start = elmnt.getAttribute("start");
-            var length = elmnt.getAttribute("length");
-            var content = this.responseText;
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var start = elmnt.getAttribute("start");
+          var length = elmnt.getAttribute("length");
+          var content = this.responseText;
 
-            if (start != null){
-              var lines = content.split("\n");
-              content = lines.slice(start, lines.length-1).join("\n");
-            }
-
-            if (length != null){
-              var lines = content.split("\n");
-              content = lines.slice(0, length).join("\n");
-            }
-
-            var div = document.createElement("div");
-            div.innerHTML = file.split("/")[file.split("/").length-1];
-            div.style = 'text-decoration: underline;margin: -15px -15px 15px -15px;padding: 2px;"';
-
-            var a = document.createElement("a");
-            a.innerHTML = "📄";
-            a.onclick = function(){
-              copyToClipboard(content)
-            };
-            div.appendChild(a);
-
-            elmnt.appendChild(div);
-
-            elmnt.appendChild(document.createTextNode(content));
-            elmnt.removeAttribute("src");
-            includeCode();
+          if (start != null) {
+            var lines = content.split("\n");
+            content = lines.slice(start, lines.length - 1).join("\n");
           }
+
+          if (length != null) {
+            var lines = content.split("\n");
+            content = lines.slice(0, length).join("\n");
+          }
+
+          var div = document.createElement("div");
+          div.innerHTML = file.split("/")[file.split("/").length - 1];
+          div.style = 'text-decoration: underline;margin: -15px -15px 15px -15px;padding: 2px;"';
+
+          var a = document.createElement("a");
+          a.innerHTML = "📄";
+          a.onclick = function() {
+            copyToClipboard(content)
+          };
+          div.appendChild(a);
+
+          elmnt.appendChild(div);
+
+          elmnt.appendChild(document.createTextNode(content));
+          elmnt.removeAttribute("src");
+          includeCode();
+        }
       }
       xhttp.open("GET", file, true);
       xhttp.send();

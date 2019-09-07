@@ -146,6 +146,29 @@ main {
   background-color: white;
 }*/
 
+#hobbies .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#hobbies .items .item {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.75s;
+}
+
+#hobbies img {
+  height: 150px;
+  transition: filter 0.25s;
+}
+
+#hobbies img:hover {
+  filter: invert(0.5) sepia(1) hue-rotate(110deg);
+}
+
 @media only screen and (max-width: 600px) {
   main {
     padding-top: 5px;
