@@ -1,6 +1,43 @@
 [
   {
     "comp_name": "Andeo",
-    "ref_nr": "1"
+    "ref_nr": 1,
+    "position": [
+      {
+        "selector": "#linux",
+        "index": 0
+      },
+      {
+        "selector": "#windows",
+        "index": 1
+      },
+      {
+        "selector": "#macos",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "comp_name": "Suxesiv",
+    "ref_nr": "2",
+    "position": [
+      {
+        "selector": "#html-css",
+        "index": 0
+      },
+      {
+        "selector": "#php",
+        "index": 1
+      },
+      {
+        "selector": "#js",
+        "index": 2
+      },
+      {
+        "selector": "#sql",
+        "index": 3
+      }
+    ],
+    "hide": ["#c-plus-plus", "#kotlin", "#macos", "#blender3d", "#casino", "#alarm"]
   }
 ]
