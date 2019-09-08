@@ -19,7 +19,7 @@
   },
   {
     "comp_name": "Suxesiv",
-    "ref_nr": "2",
+    "ref_nr": 2,
     "position": [
       {
         "selector": "#html-css",
@@ -39,5 +39,13 @@
       }
     ],
     "hide": ["#c-plus-plus", "#kotlin", "#macos", "#blender3d", "#casino", "#alarm"]
+  },
+  {
+    "comp_name": "Ticketino",
+    "ref_nr": 3
+  },
+  {
+    "comp_name": "Novalink",
+    "ref_nr": 4
   }
 ]
