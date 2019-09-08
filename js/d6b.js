@@ -1,14 +1,28 @@
-$(function() {
+$(document).ready(function() {
   var lang = getCookie("lang");
   if (lang == "") {
     lang = navigator.language;
   }
   lang = setLang(lang);
-  $("#lang-select").val(lang.substring(0, 2));
-  $("#lang-select").change(function(){
-    setLang($(this).val());
+
+  var select = $("#lang-select");
+  waitForEl(select, function() {
+    $(select).val(lang.substring(0, 2));
+    $(select).change(function() {
+      setLang($(this).val());
+    });
   });
 });
+
+function waitForEl(selector, callback) {
+  if ($(selector).length) {
+    callback();
+  } else {
+    setTimeout(function() {
+      waitForEl(selector, callback);
+    }, 100);
+  }
+};
 
 function setLang(lang) {
   var style = '';
@@ -16,7 +30,7 @@ function setLang(lang) {
     style = '.en{display: none !important;}';
   } else {
     style = '.de{display: none !important;}';
-    lang = "de-DE"
+    lang = "en";
   }
   setCookie("lang", lang, 365);
   $("#lang").html(style);
