@@ -126,7 +126,7 @@ function includeCode() {
     elmnt = elmnts[i];
     try {
       file = elmnt.getAttribute("src");
-    } catch {
+    } catch (err) {
       continue;
     }
     if (file != null) {
