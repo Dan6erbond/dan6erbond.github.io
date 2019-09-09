@@ -36,9 +36,13 @@
       {
         "selector": "#sql",
         "index": 3
+      },
+      {
+        "selector": "#windows",
+        "index": 0
       }
     ],
-    "hide": ["#c-plus-plus", "#kotlin", "#macos", "#blender3d", "#casino", "#alarm"]
+    "hide": ["#c-plus-plus", "#kotlin", "#macos", "#blender3d", "#casino", "#alarm", "#linux", "#csharp", "#javafx", "#xamarin", "#premiere-pro", "#photoshop", "#premiere-pro-legend"]
   },
   {
     "comp_name": "Ticketino",
