@@ -65,14 +65,12 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.getElementById("scrollUp") == null) {
-    return;
-  }
-
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("scrollUp").style.display = "block";
+    document.getElementById("mailButton").style.display = "block";
   } else {
     document.getElementById("scrollUp").style.display = "none";
+    document.getElementById("mailButton").style.display = "none";
   }
 }
 
