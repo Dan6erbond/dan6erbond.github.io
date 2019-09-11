@@ -7,12 +7,19 @@ function isVisible(elem) {
 }
 
 $(window).scroll(function() {
-  if (isVisible($('#skills'))) {
+  $(".skill-container").each(function(){
+    if (isVisible($(this))) {
+      $(this).children(".skill").each(function(){
+        $(this).children("div").children("div").removeClass("collapsed");
+      });
+    }
+  });
+  /*if (isVisible($('#skills'))) {
     $(".skill").each(function() {
       $(this).children("div").children("div").removeClass("collapsed");
       // console.log("visible");
     });
-  }
+  }*/
   if (isVisible($('#hobbies'))) {
     var d = 400;
     $("#hobbies .items .item").each(function(){
