@@ -173,6 +173,45 @@
         "url": "./substarters.html"
     },
     {
+        "key": "ChoreApp | Disclaimer",
+        "description": "ChoreApp is an app made for parents to organize their family chores.",
+        "tags": [
+            "Ravi",
+            "RaviAnand",
+            "TechDog",
+            "ChoreApp",
+            "Android"
+        ],
+        "url": "./chore-app/disclaimer.html"
+    },
+    {
+        "key": "Dan6erbond",
+        "description": "I'm a motivated engineering student with a passion for computer sciences and digital media. Give my CV a look.",
+        "tags": [
+            "Programming",
+            "Python",
+            "C#",
+            "Fuzzle",
+            "TechDog",
+            "Domination",
+            "Dan6erbond",
+            "Zofingen",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Java",
+            "Kotlin",
+            "RaviAnand",
+            "Mohabir",
+            "Alte Kantonsschule Aarau",
+            "AKSA",
+            "Informatik",
+            "Informatikmittelschule",
+            "BBBaden"
+        ],
+        "url": "./cv/index.html"
+    },
+    {
         "key": "I1A",
         "url": "./I1A/index.html"
     },
