@@ -1,0 +1,42 @@
+#fuzzleDemo select {
+    padding: 2px 10px 2px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--light-dark-turquoise);
+    border-bottom: 1px solid var(--light-dark-turquoise);
+}
+
+#fuzzleDemo select:after {
+    background-color: white;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+#fuzzleDemo input[type=search] {
+    background-color: transparent;
+    max-width: 150px;
+    padding: 2px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-right: -2px;
+    color: var(--light-dark-turquoise);
+    border-bottom: solid var(--light-dark-turquoise) 1px;
+}
+
+#fuzzleDemo input[type=search]:focus {
+    outline: none;
+}
+
+#fuzzleDemo input[type=submit] {
+    padding: 5px;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-left: -2px;
+    color: var(--light-dark-turquoise);
+    background-color: transparent;
+    box-shadow: none;
+}

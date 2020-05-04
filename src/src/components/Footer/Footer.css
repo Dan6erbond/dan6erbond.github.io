@@ -1,0 +1,105 @@
+#scrollUp, #mailButton {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--dark-turquoise);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: var(--material-shadow-light);
+}
+
+#scrollUp {
+    right: 10px;
+}
+
+#mailButton {
+    left: 10px;
+}
+
+#scrollUp:hover, #mailButton:hover {
+    background-color: var(--dark-turquoise-pressed);
+}
+
+#scrollUp div {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+/*#mailButton div {
+  width: 35px;
+  height: 35px;
+  margin-top: 50%;
+  background-image: url("/img/icons/envelope-regular.svg");
+}*/
+
+#mailButton img {
+    margin-top: 12.5px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: var(--dark-blue);
+    box-shadow: var(--material-shadow);
+    bottom: -1px;
+    right: 0;
+    padding: 10px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer div {
+    height: 20px;
+}
+
+footer .right {
+    float: right;
+    /*margin-right: 20px;*/
+}
+
+footer .left {
+    float: left;
+    margin-left: 20px;
+}
+
+footer .sm {
+    height: 100%;
+    padding: 2px;
+    border-radius: 4px;
+    transition: filter 0.1s;
+}
+
+footer .sm:hover {
+    filter: invert(0.5) sepia(1) hue-rotate(110deg);
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    footer div {
+        height: 12px;
+        padding-bottom: 5px;
+    }
+
+    footer .left {
+        margin-left: 10px;
+    }
+}
