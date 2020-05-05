@@ -1,7 +1,10 @@
 import React, {RefObject} from 'react';
-import './Home.scss';
-import {faArrowAltCircleDown} from "@fortawesome/free-solid-svg-icons";
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowAltCircleDown} from "@fortawesome/free-solid-svg-icons";
+
+import './Home.scss';
+import Timeline from "./Timeline";
 
 export default function Home() {
     const aboutRef = React.useRef(null);
@@ -37,6 +40,8 @@ export default function Home() {
                     <h2>About Me</h2>
                     <br/>
                     <div className="profile-img"/>
+                    <br/>
+                    <Timeline/>
                 </div>
             </div>
         </React.Fragment>

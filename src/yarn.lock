@@ -1603,6 +1603,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-vertical-timeline-component@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@types/react-vertical-timeline-component/-/react-vertical-timeline-component-2.5.0.tgz#e7f6a2936e89704b7fb6293a9c05478a0fb15525"
+  integrity sha512-sHLpl4U/3GsoJ3QobOqX9eJ4CCEZqzEO4cZa3wk1B9/xXV8LyyxxWuIalI25ISbThCkMUQ+nXz2gErE2KfoeAw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.9.0", "@types/react@^16.9.11", "@types/react@^16.9.23":
   version "16.9.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
@@ -9175,6 +9182,22 @@ react-transition-group@^4.0.0:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-vertical-timeline-component@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-2.6.2.tgz#320bcea8f5913bbf279449902e9a0d428197963f"
+  integrity sha512-4RX2BOYyxvFb4cXVUxNcMrLnktthRpz3kFvpwgtlPTBZYYLasj+qAxB9Y2x6No8fBqiactr1xU9BSuC2q6YNjg==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+    react-visibility-sensor "^5.1.1"
+
+react-visibility-sensor@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
+  integrity sha512-cTUHqIK+zDYpeK19rzW6zF9YfT4486TIgizZW53wEZ+/GPBbK7cNS0EHyJVyHYacwFEvvHLEKfgJndbemWhB/w==
+  dependencies:
+    prop-types "^15.7.2"
 
 react@^16.13.1:
   version "16.13.1"

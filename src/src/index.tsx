@@ -6,6 +6,7 @@ import {Router} from "react-router-dom";
 import { createHashHistory } from 'history'
 
 import './index.scss';
+import 'react-vertical-timeline-component/style.min.css';
 
 const hashHistory = createHashHistory();
 

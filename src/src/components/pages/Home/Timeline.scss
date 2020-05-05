@@ -1,0 +1,25 @@
+@import "../../../index";
+
+.vertical-timeline-element {
+  .vertical-timeline-element-date {
+    @media only screen and (min-width: 1170px) {
+      color: black;
+    }
+  }
+
+  .vertical-timeline-element-icon {
+    background: $light-dark-turquoise;
+    color: white;
+  }
+}
+
+.vertical-timeline-element-active {
+  .vertical-timeline-element-content {
+    background: $light-dark-turquoise;
+    color: white;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    border-right: 7px solid  $light-dark-turquoise;
+  }
+}
