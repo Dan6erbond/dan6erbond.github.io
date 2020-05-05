@@ -1,7 +1,7 @@
 import React from 'react';
+import {Page, PageContainer, PageContent, PageTag, PageTags, PageTitle} from "./Page";
 import './Home.css';
 import '../../../css/box.css';
-import {Page, PageContainer, PageContent, PageTag, PageTags, PageTitle} from "./Page";
 
 export default function Home() {
     return (
@@ -33,7 +33,8 @@ export default function Home() {
                     <PageContent>
                         <p>
                             Together with <a href="https://www.lydocia.com" target="_blank"
-                                             style={{textDecoration: 'underline'}}>Amy</a> I form <b>Mariavi</b>!
+                                             style={{textDecoration: 'underline'}}
+                                             rel="noopener noreferrer">Amy</a> I form <b>Mariavi</b>!
                             A team that works on tons of projects.
                             <br/>
                             <br/>

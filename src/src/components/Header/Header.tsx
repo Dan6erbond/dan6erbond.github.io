@@ -1,12 +1,31 @@
-import React from "react";
+import React, {FormEvent} from "react";
 import "./Header.css";
+import {Link} from "react-router-dom";
+import {History} from "history";
 
-export default function Header() {
+interface HeaderProps {
+    history: History;
+}
+
+export default function Header(props: HeaderProps) {
+    const [mobileOpen, setMobileOpen] = React.useState<boolean>(false);
+    const [searchQuery, setSearchQuery] = React.useState<string>("");
+
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        props.history.push(`search?q=${searchQuery}`);
+    };
+
+    const handleChange = (event: FormEvent<HTMLInputElement>) => {
+        event.preventDefault();
+        setSearchQuery(event.currentTarget.value);
+    }
+
     return (
         <nav className="menu">
-            <ul>
+            <ul className={mobileOpen ? "open" : ""}>
                 <li>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     <select id="lang-select">
@@ -15,31 +34,31 @@ export default function Header() {
                     </select>
                 </li>
                 <li className="dropdown">
-                    <a href="#" className="dropbtn search">Search</a>
+                    <Link to="#" className="dropbtn search">Search</Link>
                     <div className="dropcnt search">
-                        <form className="" action="/search.html" method="get">
-                            Search:&nbsp;&nbsp;<input type="search" name="q" placeholder="Powered by Fuzzle"/>
+                        <form onSubmit={handleSubmit} className="">
+                            Search:&nbsp;&nbsp;<input type="search" onChange={handleChange} placeholder="Powered by Fuzzle"/>
                             <input type="submit" value="Go"/>
                         </form>
                     </div>
                 </li>
                 <li>
-                    <a href="/docs.html">Docs</a>
+                    <Link to="docs">Docs</Link>
                 </li>
                 <li className="dropdown">
-                    <a href="/projects.html" className="dropbtn">Projects</a>
+                    <Link to="projects" className="dropbtn">Projects</Link>
                     <div className="dropcnt">
-                        <a href="/mariavi">Mariavi</a>
-                        <a href="/fuzzle.html">Fuzzle</a>
-                        <a href="/reddit.html">Reddit</a>
+                        <Link to="mariavi">Mariavi</Link>
+                        <Link to="fuzzle">Fuzzle</Link>
+                        <Link to="reddit">Reddit</Link>
                     </div>
                 </li>
                 <li>
-                    <a href="/about-me.html">About</a>
+                    <Link to="about">About</Link>
                 </li>
                 <li className="mobile-open">
-                    <a>
-                        <div className="close"></div>
+                    <a onClick={() => setMobileOpen(!mobileOpen)}>
+                        <div className={mobileOpen ? "open" : "close"}/>
                     </a>
                 </li>
             </ul>
