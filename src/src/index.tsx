@@ -10,7 +10,7 @@ const hashHistory = createHashHistory();
 
 ReactDOM.render(
     <Router history={hashHistory}>
-        <App history={hashHistory}/>
+        <App/>
     </Router>,
     document.getElementById('root')
 );
