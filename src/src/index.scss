@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+$font-family-sans-serif: 'Quicksand', sans-serif;
+$font-family-serif: 'Lora', serif;
+$font-family-monospace: 'Anonymous Pro', monospace;
+
+$light-grey: rgb(176, 176, 176);
+$light-dark-grey: rgb(68, 68, 68);
+$dark-grey: rgb(44, 45, 48);
+$dark-blue: rgb(56, 63, 86);
+$dark-blue-pressed: rgb(51, 56, 71);
+$light-dark-turquoise: rgb(64, 153, 130);
+$dark-turquoise: rgb(70, 109, 99);
+$dark-turquoise-pressed: rgb(65, 94, 86);
+$material-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+$material-shadow-light: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+$banhammer-purple: rgb(205, 206, 255);
+$substarters-yellow: rgb(252, 175, 23);
+$substarters-blue: rgb(0, 17, 60);
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import "~bootstrap/scss/bootstrap";

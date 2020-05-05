@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Router} from "react-router-dom";
-import { createHashHistory } from 'history';
+import { createHashHistory } from 'history'
+
+import './index.scss';
 
 const hashHistory = createHashHistory();
 
