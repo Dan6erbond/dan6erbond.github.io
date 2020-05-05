@@ -1,20 +1,11 @@
 @import '../../../index';
 
 .full-page {
-  height: 100vh;
+  min-height: 100vh;
 
   .content {
     padding: 15px;
   }
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
 }
 
 .full-page.center {
@@ -22,7 +13,19 @@
   text-align: center;
 
   .content {
-    @extend .vertical-center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+
+    @media (max-aspect-ratio: 3/4) {
+      top: 25%;
+      -ms-transform: translateY(-25%);
+      transform: translateY(-25%);
+    }
   }
 }
 
@@ -30,12 +33,23 @@
   position: relative;
   margin: 0;
   text-align: left;
-  height: 50vw;
-  color: $light-dark-turquoise;
   font-weight: bold;
 
+  h2, p, span {
+    color: $light-dark-turquoise;
+  }
+
   .banner-content {
-    @extend .vertical-center;
+    .banner-image {
+      width: 100%;
+      height: 50vh;
+      background: url("/res/img/code.jpg");
+      background-size: cover;
+
+      @media (max-aspect-ratio: 3/4) {
+        height: 25vh;
+      }
+    }
 
     .content-container {
       width: 70%;
@@ -50,18 +64,6 @@
     }
   }
 }
-
-/*.banner::after {
-  content: "";
-  background: url("/res/img/code.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}*/
 
 .scroll-down {
   text-align: center;
@@ -94,4 +96,22 @@
       color: $dark-turquoise-pressed;
     }
   }
+}
+
+h2 {
+  color: $dark-blue;
+}
+
+.profile-img {
+  background: url('/res/img/cv/ravi.png') no-repeat center;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-color: $dark-blue;
+  border-width: 5px;
+  border-style: solid;
+  display: inline-block;
 }

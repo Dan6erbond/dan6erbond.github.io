@@ -44,16 +44,19 @@ export default function Navigation() {
                 <FontAwesomeIcon icon={faBars}/>
             </div>
 
-            <div className="menu" style={{opacity: menuOpacity, visibility: menuVisibility}} onClick={() => disableMenu()}>
-                <div className="logo">
-                    <img alt="logo"
-                         src="/res/img/logo/logo - green.png"
-                         width="30"
-                         height="30"
-                         className="d-inline-block align-top"
-                    />{' '}
-                    RaviAnand
-                </div>
+            <div className="menu" style={{opacity: menuOpacity, visibility: menuVisibility}}
+                 onClick={() => disableMenu()}>
+                <Link to="/">
+                    <div className="logo">
+                        <img alt="logo"
+                             src="/res/img/logo/logo - green.png"
+                             width="30"
+                             height="30"
+                             className="d-inline-block align-top"
+                        />{' '}
+                        RaviAnand
+                    </div>
+                </Link>
                 <div className="menu-close-button" onClick={() => disableMenu()}>
                     <FontAwesomeIcon icon={faTimes}/>
                 </div>
@@ -62,7 +65,7 @@ export default function Navigation() {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about" >About</Link>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
                         <Link to="/projects">Projects</Link>

@@ -24,6 +24,7 @@
   position: fixed;
   right: 10px;
   top: 10px;
+  z-index: 1;
 }
 
 .menu-button svg, .menu-close-button svg {
@@ -55,6 +56,23 @@ hr {
   -o-transition: visibility 0s, opacity 0.5s;
   transition: visibility 0s, opacity 0.5s;
   z-index: 1;
+  padding: 0;
+  margin: 0;
+
+  a {
+    color: $light-dark-turquoise;
+    text-decoration: none;
+    -webkit-transition: color 0.25s;
+    -moz-transition: color 0.25s;
+    -ms-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    transition: color 0.25s;
+  }
+
+  a:hover {
+    color: $dark-turquoise-pressed;
+    text-decoration: none;
+  }
 
   .logo {
     margin-top: 20px;
@@ -63,23 +81,19 @@ hr {
   ul {
     width: 100%;
     font-size: 36px;
-    margin: 0;
+    margin: 0 auto;
     position: absolute;
+    display: block;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     line-height: 2;
+    list-style-type: none;
+    padding: 0;
 
     li {
-      a {
-        text-decoration: none;
-        color: $light-dark-turquoise;
-        transition: color 0.25s;
-      }
-
-      a:hover {
-        color: $dark-turquoise-pressed;
-      }
+      margin: 0;
+      padding: 0;
     }
   }
 }

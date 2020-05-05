@@ -14,6 +14,7 @@ export default function Home() {
                 <div className="content">
                     <div className="banner">
                         <div className="banner-content">
+                            <div className="banner-image"/>
                             <div className="content-container">
                                 <h2 className="banner-title">RaviAnand Mohabir</h2>
                                 <p className="banner-text">
@@ -34,6 +35,8 @@ export default function Home() {
             <div className="full-page" ref={aboutRef}>
                 <div className="content">
                     <h2>About Me</h2>
+                    <br/>
+                    <div className="profile-img"/>
                 </div>
             </div>
         </React.Fragment>
