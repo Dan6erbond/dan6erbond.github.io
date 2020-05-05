@@ -25,6 +25,7 @@
   right: 10px;
   top: 10px;
   z-index: 1;
+  background: white;
 }
 
 .menu-button svg, .menu-close-button svg {
@@ -75,7 +76,8 @@ hr {
   }
 
   .logo {
-    margin-top: 20px;
+    margin: 8px 0 0 16px;
+    float: left;
   }
 
   ul {

@@ -47,7 +47,7 @@ export default function Navigation() {
             <div className="menu" style={{opacity: menuOpacity, visibility: menuVisibility}}
                  onClick={() => disableMenu()}>
                 <Link to="/">
-                    <div className="logo">
+                    <Navbar.Brand className="logo">
                         <img alt="logo"
                              src="/res/img/logo/logo - green.png"
                              width="30"
@@ -55,7 +55,7 @@ export default function Navigation() {
                              className="d-inline-block align-top"
                         />{' '}
                         RaviAnand
-                    </div>
+                    </Navbar.Brand>
                 </Link>
                 <div className="menu-close-button" onClick={() => disableMenu()}>
                     <FontAwesomeIcon icon={faTimes}/>

@@ -51,7 +51,7 @@ const timelineElements: TimelineElement[] = [{
 
 export default function Timeline() {
     return (
-        <div>
+        <React.Fragment>
             <VerticalTimeline>
                 {timelineElements.map((e, i) => <VerticalTimelineElement key={i}
                                                                          className={e.active ? "vertical-timeline-element-active" : undefined}
@@ -64,6 +64,6 @@ export default function Timeline() {
                     </p> : null}
                 </VerticalTimelineElement>)}
             </VerticalTimeline>
-        </div>
+        </React.Fragment>
     );
 }

@@ -21,7 +21,7 @@ export default function Home() {
                             <div className="content-container">
                                 <h2 className="banner-title">RaviAnand Mohabir</h2>
                                 <p className="banner-text">
-                                    A full-stack software developer in Switzerland, experienced with Java, C# and
+                                    An engineering student in Switzerland, experienced with Java, C# and
                                     Python.
                                 </p>
                                 <div className="scroll-down">
@@ -41,6 +41,11 @@ export default function Home() {
                     <br/>
                     <div className="profile-img"/>
                     <br/>
+                    <p style={{margin: 0}}>
+                        I'm a motivated engineering student with a passion for computer sciences and digital media.
+                        Seeking to work on creating reliable systems and interesting technology.
+                        Created many systems used by others such as the Fuzzle search algorithm.
+                    </p>
                     <Timeline/>
                 </div>
             </div>
