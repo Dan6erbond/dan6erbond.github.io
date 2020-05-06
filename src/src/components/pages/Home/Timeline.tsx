@@ -6,6 +6,8 @@ import {faBuilding, faSchool} from "@fortawesome/free-solid-svg-icons";
 
 import "./Timeline.scss";
 
+import {ReactComponent as FrenchFlag} from "./french_flag.svg";
+
 interface TimelineElement {
     date: string;
     name: string;
@@ -19,7 +21,7 @@ const timelineElements: TimelineElement[] = [{
     active: false,
     name: "BlueMouse GmbH",
     subtitle: "Internship",
-    description: "Will spend a year as an internet at the BlueMouse GmbH developing websites.",
+    description: "Will spend a year as an intern at the BlueMouse GmbH developing websites.",
     date: "2020 - 2021",
     icon: <FontAwesomeIcon style={{width: '24px'}}
                            icon={faBuilding}/>
@@ -31,6 +33,13 @@ const timelineElements: TimelineElement[] = [{
     date: "2017 - present",
     icon: <FontAwesomeIcon style={{width: '24px'}}
                            icon={faSchool}/>
+}, {
+    active: false,
+    name: "Studied in Montpellier, France",
+    subtitle: "Language Stay",
+    description: "Spent three weeks at the ILA French language school in Montpellier to brush up on my French skills.",
+    date: "September 2020",
+    icon: <FrenchFlag/>
 }, {
     active: false,
     name: "Bezirksschule Zofingen",

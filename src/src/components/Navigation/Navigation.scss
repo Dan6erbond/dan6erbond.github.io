@@ -1,48 +1,5 @@
 @import "../../index";
 
-.navbar-brand {
-  color: $light-dark-turquoise !important;
-}
-
-.menu-button {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border-color: $light-dark-turquoise;
-  border-style: solid;
-  border-width: 2px;
-  padding: 5px;
-  position: fixed;
-  text-align: center;
-}
-
-.menu-button, .menu-close-button {
-  height: 35px;
-  width: 35px;
-  cursor: pointer;
-  display: inline-block;
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 1;
-  background: white;
-}
-
-.menu-button svg, .menu-close-button svg {
-  color: $light-dark-turquoise;
-}
-
-.menu-close-button svg {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-hr {
-  margin-top: 0 !important;
-  border-color: $light-dark-turquoise !important;
-  border-width: 2px !important;
-}
-
 .menu {
   top: 0;
   right: 0;

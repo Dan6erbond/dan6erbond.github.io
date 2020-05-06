@@ -24,4 +24,30 @@ html {
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $light-dark-turquoise;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-turquoise;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2.5px;
+}
+
+::selection {
+  color: white;
+  background: $light-dark-turquoise;
+}
+
 @import "~bootstrap/scss/bootstrap";

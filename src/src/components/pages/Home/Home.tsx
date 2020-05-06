@@ -1,4 +1,5 @@
 import React, {RefObject} from 'react';
+import {motion} from "framer-motion"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowAltCircleDown} from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,14 @@ export default function Home() {
 
     const scrollToRef = (ref: RefObject<HTMLDivElement>) => window.scrollTo(0, ref.current!!.offsetTop);
 
+    const [inProp, setInProp] = React.useState<boolean>(false);
+
+    React.useEffect(() => {
+        if (!inProp) {
+            setTimeout(() => setInProp(true), 1);
+        }
+    });
+
     return (
         <React.Fragment>
             <div className="full-page center">
@@ -19,15 +28,20 @@ export default function Home() {
                         <div className="banner-content">
                             <div className="banner-image"/>
                             <div className="content-container">
-                                <h2 className="banner-title">RaviAnand Mohabir</h2>
-                                <p className="banner-text">
-                                    An engineering student in Switzerland, experienced with Java, C# and
-                                    Python.
-                                </p>
+                                <motion.div initial={{opacity: 0, translateY: "-20%"}}
+                                            animate={{opacity: 1, translateY: 0}}
+                                            transition={{duration: 0.5}}>
+                                    <h2 className="banner-title">RaviAnand Mohabir</h2>
+                                    <p className="banner-text">
+                                        An engineering student in Switzerland, experienced with Java, C# and
+                                        Python.
+                                    </p>
+                                </motion.div>
                                 <div className="scroll-down">
-                                    <button onClick={() => scrollToRef(aboutRef)}>
+                                    <motion.button onClick={() => scrollToRef(aboutRef)} whileHover={{scale: 1.1}}
+                                                   whileTap={{scale: 0.9}}>
                                         <FontAwesomeIcon icon={faArrowAltCircleDown}/>
-                                    </button>
+                                    </motion.button>
                                     <span>About Me</span>
                                 </div>
                             </div>
