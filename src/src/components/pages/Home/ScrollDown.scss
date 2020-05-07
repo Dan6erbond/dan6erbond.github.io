@@ -1,0 +1,32 @@
+.scroll-down {
+  text-align: center;
+  padding-top: 25px;
+
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    height: 50px;
+    width: 50px;
+
+    svg {
+      height: 100% !important;
+      width: 100% !important;
+      color: $light-dark-turquoise;
+      -webkit-transition: color 0.25s;
+      -moz-transition: color 0.25s;
+      -ms-transition: color 0.25s;
+      -o-transition: color 0.25s;
+      transition: color 0.25s;
+    }
+
+    svg:hover {
+      color: $dark-turquoise-pressed;
+    }
+  }
+}
