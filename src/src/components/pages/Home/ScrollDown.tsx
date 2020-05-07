@@ -2,24 +2,26 @@ import {motion} from "framer-motion";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowAltCircleDown} from "@fortawesome/free-solid-svg-icons";
 import React, {RefObject} from "react";
-import {icon} from "@fortawesome/fontawesome-svg-core";
+
+import "./ScrollDown.scss";
 
 interface ScrollDownProps {
-    ref: RefObject<HTMLDivElement>;
+    targetRef: RefObject<HTMLDivElement>;
+    label: string;
 }
 
 export default function ScrollDown(props: ScrollDownProps) {
-    const {ref} = props;
+    const {targetRef, label} = props;
 
     const scrollToRef = (ref: RefObject<HTMLDivElement>) => window.scrollTo(0, ref.current!!.offsetTop);
 
     return (
         <div className="scroll-down">
-            <motion.button onClick={() => scrollToRef(ref)} whileHover={{scale: 1.1}}
+            <motion.button onClick={() => scrollToRef(targetRef)} whileHover={{scale: 1.1}}
                            whileTap={{scale: 0.9}}>
                 <FontAwesomeIcon icon={faArrowAltCircleDown}/>
             </motion.button>
-            <span>About Me</span>
+            <span>{label}</span>
         </div>
     );
 }

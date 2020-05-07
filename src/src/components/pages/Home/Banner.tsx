@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowAltCircleDown} from "@fortawesome/free-solid-svg-icons";
 import React, {RefObject} from "react";
 import ScrollDown from "./ScrollDown";
+
+import "./Banner.scss";
 
 interface BannerProps {
     aboutRef: RefObject<HTMLDivElement>;
@@ -25,7 +25,7 @@ export default function Banner(props: BannerProps) {
                             Python.
                         </p>
                     </motion.div>
-                    <ScrollDown ref={aboutRef}/>
+                    <ScrollDown targetRef={aboutRef} label="About Me"/>
                 </div>
             </div>
         </div>
