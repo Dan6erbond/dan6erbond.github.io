@@ -1,0 +1,24 @@
+@import '../../index';
+
+footer {
+  padding: 30px;
+  background: $dark-turquoise;
+  color: white;
+  display: flex !important;
+  justify-content: space-between;
+
+  a {
+    overflow: auto;
+
+    svg {
+      color: white;
+      transition: color 0.2s;
+      height: 1.5em !important;
+      width: 1.5em !important;
+    }
+
+    svg:hover {
+      color: $light-dark-turquoise;
+    }
+  }
+}

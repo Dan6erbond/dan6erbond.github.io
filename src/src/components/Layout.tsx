@@ -15,6 +15,7 @@ export default function Layout(props: LayoutProps) {
             <main>
                 {props.children}
             </main>
+            <br/>
             <Footer/>
         </React.Fragment>
     );
