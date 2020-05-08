@@ -22,6 +22,7 @@
     "@types/react-router-dom": "^5.1.4",
     "@types/react-transition-group": "^4.2.4",
     "@types/react-vertical-timeline-component": "^2.5.0",
+    "@types/react-visibility-sensor": "^5.0.1",
     "bootstrap": "^4.4.1",
     "framer-motion": "^1.10.3",
     "node-sass": "^4.14.1",
@@ -32,6 +33,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-vertical-timeline-component": "^2.6.2",
+    "react-visibility-sensor": "^5.1.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
