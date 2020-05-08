@@ -29,6 +29,19 @@
   }
 }
 
+.center-container {
+  position: relative;
+
+  .content {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
 h2 {
   color: $dark-blue;
 }
@@ -46,4 +59,19 @@ h2 {
   border-style: solid;
   display: block;
   margin: 0 auto;
+}
+
+.project {
+  width: 50%;
+  min-width: 300px;
+  max-width: 900px;
+  margin: 10px;
+
+  &.left {
+    float: left;
+  }
+
+  &.project.right {
+    float: right;
+  }
 }

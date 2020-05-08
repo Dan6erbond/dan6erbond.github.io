@@ -50,4 +50,8 @@ code {
   background: $light-dark-turquoise;
 }
 
+$theme-colors: (
+        "primary": $light-dark-turquoise
+);
+
 @import "~bootstrap/scss/bootstrap";
