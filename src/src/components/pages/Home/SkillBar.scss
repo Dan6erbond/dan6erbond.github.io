@@ -1,0 +1,45 @@
+@import '../../../index';
+
+$bar-background: rgb(220, 220, 220);
+
+.skill {
+  display: flex;
+  width: 100%;
+  margin: 25px 35px 0 0;
+  background: $bar-background;
+  padding: 0;
+
+  div {
+    margin: 0;
+    padding: 0;
+
+    &.bar {
+      flex: 100 1 0;
+      background: $bar-background;
+
+      div {
+        background-color: $dark-turquoise;
+        transition: width 1s;
+        height: 100%;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+
+    &:first-of-type {
+      width: 125px;
+      text-align: center;
+      background: $light-dark-turquoise;
+      color: white;
+    }
+
+    &.count {
+      width: auto;
+      color: $light-dark-grey;
+      background: none;
+    }
+  }
+}

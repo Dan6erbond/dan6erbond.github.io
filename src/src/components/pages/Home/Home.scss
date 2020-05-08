@@ -31,6 +31,8 @@
 
 .center-container {
   position: relative;
+  text-align: center;
+  height: 100%;
 
   .content {
     padding: 0;
@@ -58,7 +60,7 @@ h2 {
   border-width: 5px;
   border-style: solid;
   display: block;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 
 .project {

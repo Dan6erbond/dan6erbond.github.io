@@ -1,16 +1,9 @@
 import {motion} from "framer-motion";
-import React, {RefObject} from "react";
-import ScrollDown from "./ScrollDown";
+import React from "react";
 
 import "./Banner.scss";
 
-interface BannerProps {
-    aboutRef: RefObject<HTMLDivElement>;
-}
-
-export default function Banner(props: BannerProps) {
-    const {aboutRef} = props;
-
+export default function Banner() {
     return (
         <div className="banner">
             <div className="banner-content">
@@ -25,7 +18,6 @@ export default function Banner(props: BannerProps) {
                             Python.
                         </p>
                     </motion.div>
-                    <ScrollDown targetRef={aboutRef} label="About Me"/>
                 </div>
             </div>
         </div>
