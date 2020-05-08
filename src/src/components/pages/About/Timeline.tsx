@@ -6,7 +6,7 @@ import {faBuilding, faSchool} from "@fortawesome/free-solid-svg-icons";
 
 import "./Timeline.scss";
 
-import {ReactComponent as FrenchFlag} from "./french_flag.svg";
+import {ReactComponent as FrenchFlag} from "../../../img/french_flag.svg";
 
 interface TimelineElement {
     date: string;

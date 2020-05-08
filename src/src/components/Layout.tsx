@@ -12,7 +12,7 @@ export default function Layout(props: LayoutProps) {
         <React.Fragment>
             <Header/>
             <Navigation/>
-            <main>
+            <main style={{minHeight: '100vh'}}>
                 {props.children}
             </main>
             <br/>
