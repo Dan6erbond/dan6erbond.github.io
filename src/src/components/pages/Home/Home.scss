@@ -6,25 +6,4 @@
   .content {
     padding: 50px 15px 15px 15px;
   }
-
-  &.center {
-     position: relative;
-     text-align: center;
-
-     .content {
-       padding: 0;
-       margin: 0;
-       position: absolute;
-       top: 50%;
-       -ms-transform: translateY(-50%);
-       transform: translateY(-50%);
-       width: 100%;
-
-       @media (max-aspect-ratio: 3/4) {
-         top: 25%;
-         -ms-transform: translateY(-25%);
-         transform: translateY(-25%);
-       }
-     }
-   }
 }

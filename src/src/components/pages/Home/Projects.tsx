@@ -43,8 +43,8 @@ export default function Projects(props: ProjectsProps) {
                                     <React.Fragment>
                                         <h4>Interdisciplinary Project Work</h4>
                                         <p>
-                                            Project about the usage of IT Tools and Software in Company and
-                                            Private Workflows
+                                            Project about the usage of IT tools and software in corporate and
+                                            private workflows.
                                         </p>
                                         <Link className="btn btn-outline-primary flat-button"
                                               to="/projects/idpa">
@@ -68,30 +68,21 @@ export default function Projects(props: ProjectsProps) {
                                     opacity: 1
                                 }
                             }} transition={{duration: 0.6}}>
-                                <Card style={{height: '100%'}}>
-                                    <Card.Body>
-                                        <Container>
-                                            <Row>
-                                                <Col sm={12} md={4}>
-                                                    <img style={{width: '90%', minWidth: '150px', maxWidth: '300px'}}
+                                <ProjectCard image={<img style={{width: '90%', minWidth: '100px', maxWidth: '300px'}}
                                                          alt="Fuzzle" height="auto"
-                                                         src="/res/img/fuzzle/logo_text.png"/>
-                                                </Col>
-                                                <Col sm={12} md={8}>
-                                                    <h4>Fuzzle</h4>
-                                                    <p>
-                                                        A search algorithm initially written in Python, now ported to
-                                                        languages such as JavaScript and C#.
-                                                    </p>
-                                                    <Link className="btn btn-outline-primary flat-button"
-                                                          to="/projects/fuzzle">
-                                                        Read More
-                                                    </Link>
-                                                </Col>
-                                            </Row>
-                                        </Container>
-                                    </Card.Body>
-                                </Card>
+                                                         src="/res/img/fuzzle/logo_text.png"/>}>
+                                    <React.Fragment>
+                                        <h4>Fuzzle</h4>
+                                        <p>
+                                            A search algorithm initially written in Python, now ported to
+                                            languages such as JavaScript and C#.
+                                        </p>
+                                        <Link className="btn btn-outline-primary flat-button"
+                                              to="/projects/fuzzle">
+                                            Read More
+                                        </Link>
+                                    </React.Fragment>
+                                </ProjectCard>
                             </motion.div>
                         </Col>
                         <Col xs={12} md={6}>
@@ -105,30 +96,21 @@ export default function Projects(props: ProjectsProps) {
                                     opacity: 1
                                 }
                             }} transition={{duration: 0.6}}>
-                                <Card>
-                                    <Card.Body>
-                                        <Container>
-                                            <Row>
-                                                <Col sm={12} md={4}>
-                                                    <img style={{width: '90%', minWidth: '150px', maxWidth: '300px'}}
+                                <ProjectCard image={<img style={{width: '90%', minWidth: '100px', maxWidth: '300px'}}
                                                          alt="ASP.NET" height="auto"
-                                                         src="/res/img/icons/asp.net.png"/>
-                                                </Col>
-                                                <Col sm={12} md={8}>
-                                                    <h4>Who Wants To Be A Millionaire</h4>
-                                                    <p>
-                                                        Implementation of the Who Wants To Be A Millionaire game in C#
-                                                        with a React front-end.
-                                                    </p>
-                                                    <Link className="btn btn-outline-primary flat-button"
-                                                          to="/projects/wwtbam">
-                                                        Read More
-                                                    </Link>
-                                                </Col>
-                                            </Row>
-                                        </Container>
-                                    </Card.Body>
-                                </Card>
+                                                         src="/res/img/icons/asp.net.png"/>}>
+                                    <React.Fragment>
+                                        <h4>Who Wants To Be A Millionaire</h4>
+                                        <p>
+                                            Implementation of the Who Wants To Be A Millionaire game in C#
+                                            with a React front-end.
+                                        </p>
+                                        <Link className="btn btn-outline-primary flat-button"
+                                              to="/projects/wwtbam">
+                                            Read More
+                                        </Link>
+                                    </React.Fragment>
+                                </ProjectCard>
                             </motion.div>
                         </Col>
                     </Row>

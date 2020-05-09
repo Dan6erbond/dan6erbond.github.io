@@ -13,7 +13,7 @@ export default function About() {
             <h3 style={{textAlign: 'center'}}>About</h3>
             <Container fluid="sm" style={{margin: '0 auto', maxWidth: '600px'}}>
                 <p>
-                    Hi! I'm an engineering student based in Switzerland, currently studying at the IMS in Aarau.
+                    Hi! I'm an engineering student based in Switzerland, currently studying at the Computing College in Aarau.
                     <br/>
                     <br/>
                     I've worked on numerous professional and private projects in the fields of webdesign, back-end and

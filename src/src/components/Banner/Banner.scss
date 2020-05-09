@@ -1,0 +1,60 @@
+@import '../../index';
+
+.full-page {
+  min-height: 100vh;
+
+  &.center {
+    position: relative;
+    text-align: center;
+
+    .content {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 100%;
+
+      @media (max-aspect-ratio: 3/4) {
+        top: 25%;
+        -ms-transform: translateY(-25%);
+        transform: translateY(-25%);
+      }
+
+      .banner {
+        position: relative;
+        margin: 0;
+        text-align: left;
+        font-weight: bold;
+
+        h2, h3, p, span {
+          color: $turquoise;
+        }
+
+        .banner-content {
+          .banner-image {
+            width: 100%;
+            background-size: cover !important;
+
+            @media (max-aspect-ratio: 3/4) {
+              height: 25vh !important;
+            }
+          }
+
+          .content-container {
+            width: 70%;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+            margin: 0 auto;
+
+            .banner-title {
+              font-weight: bolder;
+            }
+          }
+        }
+      }
+    }
+  }
+}

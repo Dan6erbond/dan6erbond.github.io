@@ -28,8 +28,8 @@ const timelineElements: TimelineElement[] = [{
 }, {
     active: true,
     name: "IMS Aarau",
-    subtitle: "Highschool",
-    description: "Studying at the IT highschool in Aarau with a focus on software development.",
+    subtitle: "Computing College",
+    description: "Studying at the Computing College in Aarau with a focus on software development.",
     date: "2017 - present",
     icon: <FontAwesomeIcon style={{width: '24px'}}
                            icon={faSchool}/>

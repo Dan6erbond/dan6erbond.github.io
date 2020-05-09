@@ -12,7 +12,7 @@ export default function ProjectCard(props: LayoutProps) {
     const {image, children} = props;
 
     return (
-        <Card>
+        <Card style={{height: '100%'}}>
             <Card.Body>
                 <Container>
                     <Row>
