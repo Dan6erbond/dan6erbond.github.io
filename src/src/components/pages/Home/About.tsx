@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import SkillBar, {Skill} from "./SkillBar";
-import ScrollDown from "./ScrollDown";
+import ScrollDown from "../../ScrollDown/ScrollDown";
 import {motion} from "framer-motion";
 import VizSensor from 'react-visibility-sensor';
 

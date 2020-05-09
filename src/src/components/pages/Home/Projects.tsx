@@ -38,7 +38,7 @@ export default function Projects(props: ProjectsProps) {
                                 }
                             }} transition={{duration: 0.6}}>
                                 <ProjectCard image={<img className="idpa-image"
-                                                         alt="IDPA" height="auto"
+                                                         alt="IDPA | Informatikmitteleinsatz in Unternehmen" height="auto"
                                                          src="/res/img/projects/idpa.jpg"/>}>
                                     <React.Fragment>
                                         <h4>Interdisciplinary Project Work</h4>
@@ -74,7 +74,7 @@ export default function Projects(props: ProjectsProps) {
                                             <Row>
                                                 <Col sm={12} md={4}>
                                                     <img style={{width: '90%', minWidth: '150px', maxWidth: '300px'}}
-                                                         alt="IDPA" height="auto"
+                                                         alt="Fuzzle" height="auto"
                                                          src="/res/img/fuzzle/logo_text.png"/>
                                                 </Col>
                                                 <Col sm={12} md={8}>
@@ -111,16 +111,17 @@ export default function Projects(props: ProjectsProps) {
                                             <Row>
                                                 <Col sm={12} md={4}>
                                                     <img style={{width: '90%', minWidth: '150px', maxWidth: '300px'}}
-                                                         alt="IDPA" height="auto"
-                                                         src="/res/img/projects/idpa.jpg"/>
+                                                         alt="ASP.NET" height="auto"
+                                                         src="/res/img/icons/asp.net.png"/>
                                                 </Col>
                                                 <Col sm={12} md={8}>
-                                                    <h4>Interdisciplinary Project Work</h4>
-                                                    <p>Project about the usage of IT Tools and Software in Company and
-                                                        Private Workflows
+                                                    <h4>Who Wants To Be A Millionaire</h4>
+                                                    <p>
+                                                        Implementation of the Who Wants To Be A Millionaire game in C#
+                                                        with a React front-end.
                                                     </p>
                                                     <Link className="btn btn-outline-primary flat-button"
-                                                          to="/projects/idpa">
+                                                          to="/projects/wwtbam">
                                                         Read More
                                                     </Link>
                                                 </Col>

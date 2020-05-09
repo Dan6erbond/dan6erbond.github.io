@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "./Banner";
-import ScrollDown from "./ScrollDown";
+import ScrollDown from "../../ScrollDown/ScrollDown";
 import About from "./About";
 
 import './Home.scss';
