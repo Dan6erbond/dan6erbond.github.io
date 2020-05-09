@@ -41,13 +41,13 @@ $bar-background: rgb(220, 220, 220);
     &:first-of-type {
       width: 125px;
       text-align: center;
-      background: $light-dark-turquoise;
+      background: $turquoise;
       color: white;
     }
 
     &.count {
       width: auto;
-      color: $light-dark-grey;
+      color: $dark-grey;
       background: none;
     }
   }

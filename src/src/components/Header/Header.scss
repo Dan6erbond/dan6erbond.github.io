@@ -1,11 +1,20 @@
 @import "../../index";
 
-.navbar-brand {
-  color: $light-dark-turquoise !important;
+$shadow-grey: #e5e5e5;
+
+.navbar {
+  -webkit-box-shadow: 0 8px 6px 0 $shadow-grey;
+  -moz-box-shadow: 0 8px 6px 0 $shadow-grey;
+  box-shadow: 0 8px 6px 0 $shadow-grey;
+  padding: 1rem 1rem !important;
+
+  .navbar-brand {
+    color: $turquoise !important;
+  }
 }
 
 hr {
   margin-top: 0 !important;
-  border-color: $light-dark-turquoise !important;
+  border-color: $turquoise !important;
   border-width: 2px !important;
 }

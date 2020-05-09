@@ -1,0 +1,25 @@
+@import "../../../index";
+
+.hobby {
+  text-align: center;
+
+  div {
+    color: $dark-turquoise;
+    transition: color 0.1s step-end;
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
+
+  svg {
+    height: 75px !important;
+    width: 75px !important;
+  }
+}
+
+.col-sm-6 {
+  @media (max-width: 768px){
+    margin-bottom: 25px;
+  }
+}

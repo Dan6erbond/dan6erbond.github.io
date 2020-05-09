@@ -1,3 +1,5 @@
+@import '../../../index';
+
 .center-container {
   position: relative;
   text-align: center;
@@ -15,4 +17,19 @@
       }
     }
   }
+}
+
+.profile-img {
+  background: url('/res/img/cv/ravi.png') no-repeat center;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-color: $dark-blue;
+  border-width: 5px;
+  border-style: solid;
+  display: block;
+  margin: 25px auto;
 }

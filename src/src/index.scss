@@ -7,11 +7,11 @@ $font-family-serif: 'Lora', serif;
 $font-family-monospace: 'Anonymous Pro', monospace;
 
 $light-grey: rgb(176, 176, 176);
-$light-dark-grey: rgb(68, 68, 68);
-$dark-grey: rgb(44, 45, 48);
+$dark-grey: rgb(68, 68, 68);
+$dark-grey-pressed: rgb(44, 45, 48);
 $dark-blue: rgb(56, 63, 86);
 $dark-blue-pressed: rgb(51, 56, 71);
-$light-dark-turquoise: rgb(64, 153, 130);
+$turquoise: rgb(64, 153, 130);
 $dark-turquoise: rgb(70, 109, 99);
 $dark-turquoise-pressed: rgb(65, 94, 86);
 $material-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
@@ -32,7 +32,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $light-dark-turquoise;
+  background: $turquoise;
 }
 
 /* Handle on hover */
@@ -47,11 +47,11 @@ code {
 
 ::selection {
   color: white;
-  background: $light-dark-turquoise;
+  background: $turquoise;
 }
 
 $theme-colors: (
-        "primary": $light-dark-turquoise
+        "primary": $turquoise
 );
 
 @import "~bootstrap/scss/bootstrap";

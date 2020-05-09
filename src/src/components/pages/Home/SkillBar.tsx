@@ -15,7 +15,7 @@ export default function SkillBar (props: Skill) {
 
     return (
         <VizSensor onChange={(isVisible => {
-            if (isVisible && barWidth == 0) {
+            if (isVisible && barWidth === 0) {
                 setBarWidth(skillStrength*10);
             }
         })}>

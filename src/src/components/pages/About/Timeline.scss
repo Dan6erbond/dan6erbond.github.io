@@ -8,18 +8,18 @@
   }
 
   .vertical-timeline-element-icon {
-    background: $light-dark-turquoise;
+    background: $turquoise;
     color: white;
   }
 }
 
 .vertical-timeline-element-active {
   .vertical-timeline-element-content {
-    background: $light-dark-turquoise;
+    background: $turquoise;
     color: white;
   }
 
   .vertical-timeline-element-content-arrow {
-    border-right: 7px solid  $light-dark-turquoise;
+    border-right: 7px solid $turquoise;
   }
 }

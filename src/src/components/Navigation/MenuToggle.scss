@@ -1,6 +1,8 @@
 @import "../../index";
 
 .menu-toggle {
+  padding: 0;
+  margin: 0;
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -11,13 +13,39 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border-color: $light-dark-turquoise;
-  border-style: solid;
-  border-width: 2px;
+  border: none;
   background: white;
   z-index: 2;
   display: inline-block;
   position: fixed;
   right: 10px;
   top: 10px;
+
+  div {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    svg {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      &:first-of-type{
+        left: 0;
+      }
+
+      &:last-of-type {
+        left: 53%;
+        top: 53%;
+        -ms-transform: translateY(-53%) translateX(-53%);
+        transform: translateY(-53%) translateX(-53%);
+      }
+    }
+  }
 }

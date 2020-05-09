@@ -2,7 +2,7 @@ import React from "react";
 import {Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import {MenuToggle} from "./MenuToggle";
+import MenuToggle from "./MenuToggle";
 
 import './Navigation.scss';
 
