@@ -8,8 +8,8 @@
   }
 
   .container-md {
-    @media (min-width: 768px) {
-      margin-bottom: 15px;
+    @media (max-width: 768px) {
+      margin-bottom: -20px;
     }
   }
 }

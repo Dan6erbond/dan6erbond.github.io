@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd3ed8ff-e73d-44aa-8e92-d521f6b62b66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/Graphs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About/Timeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About/Timeline.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Projects.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,25 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/pages/Home/Home.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/pages/Home/Projects.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="45" column="85" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1207">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -82,20 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/pages/Home/Home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="583">
+              <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -103,7 +72,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/Graphs.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
@@ -127,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -140,8 +121,8 @@
       <list>
         <option value="CSS File" />
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -160,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/css/box.css" />
         <option value="$PROJECT_DIR$/src/components/pages/Home/Page.tsx" />
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/src/index.css" />
@@ -205,12 +185,13 @@
         <option value="$PROJECT_DIR$/src/components/Banner/Banner.tsx" />
         <option value="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" />
         <option value="$PROJECT_DIR$/src/components/pages/Home/Home.scss" />
-        <option value="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" />
         <option value="$PROJECT_DIR$/src/components/pages/Home/Projects.scss" />
         <option value="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.scss" />
-        <option value="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" />
-        <option value="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" />
         <option value="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pages/Projects/IDPA/Graphs.tsx" />
+        <option value="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" />
       </list>
     </option>
   </component>
@@ -257,13 +238,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio-page" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Banner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio-page" type="b2602c69:ProjectViewProjectNode" />
@@ -400,7 +374,7 @@
       <workItem from="1588868459996" duration="3982000" />
       <workItem from="1588955919973" duration="20530000" />
       <workItem from="1589028269738" duration="1173000" />
-      <workItem from="1589040688368" duration="1431000" />
+      <workItem from="1589040688368" duration="7155000" />
     </task>
     <task id="LOCAL-00001" summary="Add React SPA&#10;Add React SPA with base implementation of original site">
       <created>1588570557529</created>
@@ -413,7 +387,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70455000" />
+    <option name="totallyTimeSpent" value="76179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="0" width="1610" height="1408" extended-state="0" />
@@ -429,13 +403,13 @@
       <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2192" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32906324" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3272" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3272" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Run with VisualVM" order="11" />
@@ -463,16 +437,6 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-bootstrap/helpers.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -788,16 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pages/Home/Projects.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="45" column="85" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pages/Home/Projects.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -832,27 +786,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="629">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Home/Projects.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1207">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/nivo/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/Graphs.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
