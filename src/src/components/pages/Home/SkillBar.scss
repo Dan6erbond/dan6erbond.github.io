@@ -16,11 +16,20 @@ $bar-background: rgb(220, 220, 220);
     &.bar {
       flex: 100 1 0;
       background: $bar-background;
+      position: relative;
 
       div {
         background-color: $dark-turquoise;
         transition: width 1s;
         height: 100%;
+      }
+
+      span {
+        right: 5px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
     }
   }

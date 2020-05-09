@@ -1,5 +1,4 @@
 import * as React from "react";
-import {Col, Container, Row} from "react-bootstrap";
 
 import "./SkillBar.scss";
 
@@ -16,8 +15,8 @@ export default function SkillBar (props: Skill) {
             <p>{skillName}</p>
             <div className="bar">
                 <div style={{width: `${skillStrength*10}%`}}/>
+                <span>{skillStrength}/10</span>
             </div>
-            <p className="count">{skillStrength}/10</p>
         </div>
     )
 }
