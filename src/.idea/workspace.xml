@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd3ed8ff-e73d-44aa-8e92-d521f6b62b66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/res/docs/Informatikmitteleinsatz_in_Unternehmen_v5.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/ScrollDown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollDown/ScrollDown.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/ScrollDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollDown/ScrollDown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-    </list>
+    <list default="true" id="dd3ed8ff-e73d-44aa-8e92-d521f6b62b66" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -394,7 +382,7 @@
       <workItem from="1588765811771" duration="2963000" />
       <workItem from="1588847234667" duration="421000" />
       <workItem from="1588868459996" duration="3982000" />
-      <workItem from="1588955919973" duration="20359000" />
+      <workItem from="1588955919973" duration="20530000" />
     </task>
     <task id="LOCAL-00001" summary="Add React SPA&#10;Add React SPA with base implementation of original site">
       <created>1588570557529</created>
@@ -407,13 +395,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67680000" />
+    <option name="totallyTimeSpent" value="67851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="0" width="1610" height="1407" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29741937" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29741937" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -423,13 +410,13 @@
       <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2193755" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2193755" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32906324" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32746196" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32746196" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Run with VisualVM" order="11" />
