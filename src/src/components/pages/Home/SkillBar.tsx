@@ -1,4 +1,5 @@
 import * as React from "react";
+import VizSensor from 'react-visibility-sensor';
 
 import "./SkillBar.scss";
 
@@ -10,13 +11,21 @@ export interface Skill {
 export default function SkillBar (props: Skill) {
     const {skillName, skillStrength} = props;
 
+    const [barWidth, setBarWidth] = React.useState<number>(0);
+
     return (
-        <div className="skill">
-            <p>{skillName}</p>
-            <div className="bar">
-                <div style={{width: `${skillStrength*10}%`}}/>
-                <span>{skillStrength}/10</span>
+        <VizSensor onChange={(isVisible => {
+            if (isVisible && barWidth == 0) {
+                setBarWidth(skillStrength*10);
+            }
+        })}>
+            <div className="skill">
+                <p>{skillName}</p>
+                <div className="bar">
+                    <div style={{width: `${barWidth}%`}}/>
+                    <span>{skillStrength}/10</span>
+                </div>
             </div>
-        </div>
+        </VizSensor>
     )
 }

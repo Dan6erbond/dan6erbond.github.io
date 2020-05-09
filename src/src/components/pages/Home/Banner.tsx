@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import React from "react";
 
 import "./Banner.scss";
+import {Link} from "react-router-dom";
 
 export default function Banner() {
     return (
@@ -17,6 +18,10 @@ export default function Banner() {
                             An engineering student in Switzerland, experienced with Java, C# and
                             Python.
                         </p>
+                        <a className="btn btn-outline-primary flat-button"
+                           href="mailto:moravrav@gmail.com?subject=Hi!">
+                            Message Me
+                        </a>
                     </motion.div>
                 </div>
             </div>
