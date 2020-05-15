@@ -12,7 +12,7 @@ export default function Home() {
 
     return (
         <React.Fragment>
-            <Banner imageSrc="/res/img/code.jpg">
+            <Banner imageSrc="/res/img/home/code.jpg">
                 <React.Fragment>
                     <h2 className="banner-title">RaviAnand Mohabir</h2>
                     <p className="banner-text">

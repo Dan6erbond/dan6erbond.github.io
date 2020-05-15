@@ -22,7 +22,7 @@ function App() {
                 <Route path="/projects/idpa">
                     <IDPA/>
                 </Route>
-                <Route path="(/projects|/projects/fuzzle)">
+                <Route path="/projects">
                     <Container fluid="md">
                         <h4>
                             <FontAwesomeIcon icon={faHammer}/> Work in progress!
