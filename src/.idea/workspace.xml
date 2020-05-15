@@ -1,73 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd3ed8ff-e73d-44aa-8e92-d521f6b62b66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/res/docs/IDPA/moodle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/res/docs/IDPA/notification_on_file_delete.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/res/docs/IDPA/save_email_attachments.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Projects/ProjectCard/ProjectCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Projects/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/docs/Informatikmitteleinsatz_in_Unternehmen_v5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/docs/IDPA/Informatikmitteleinsatz_in_Unternehmen_v5.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/code.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/home/code.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/add-bot.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/add-bot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/channel-hover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/channel-hover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/create-server.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/create-server.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/private-category-roles.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/private-category-roles.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/private-category.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/private-category.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/server-dropdown.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/server-dropdown.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/discord/server-options.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/discord/server-options.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/fuzzle/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/fuzzle/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/fuzzle/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/fuzzle/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/fuzzle/logo_text.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/fuzzle/logo_text.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/linkbutton/linkbutton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/linkbutton/linkbutton.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/linkbutton/linkbutton_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/linkbutton/linkbutton_border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/linkbutton/linkbutton_box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/banhammer/banhammer.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/banhammer/banhammer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/automoji.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/automoji.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/color.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/color.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/melon-quote.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/melon-quote.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/melon-re.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/melon-re.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/melon-redesign.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/melon-redesign.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/melon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/melon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/poll-customoji.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/poll-customoji.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/poll-defaultmoji.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/poll-defaultmoji.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/poll-messagemoji.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/poll-messagemoji.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/poll.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/poll.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/quote.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/quote.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/melon/reaction-roles.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/melon/reaction-roles.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/reddify/reddify.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/reddify/reddify.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/reddify/verify.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/reddify/verify.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/submoon/dead-sub.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/submoon/dead-sub.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/submoon/potential-sub.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/submoon/potential-sub.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/submoon/submoon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/submoon/submoon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/substar/!css no permissions.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/substar/!css no permissions.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/substar/!css not mod.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/substar/!css not mod.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/substar/!css.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/substar/!css.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/substar/Astronaut.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/substar/Astronaut.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/substar/addsub.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/substar/addsub.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/sbsbots/substar/substar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/sbsbots/substar/substar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/smart/menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/smart/menu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/smart/staxel.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/smart/staxel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/mariavi/smart/staxel_text.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/mariavi/smart/staxel_text.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/projects/idpa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/idpa/idpa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/reddit/1000daysofpractice.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/reddit/1000daysofpractice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/substarters/leaderboard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/substarters/leaderboard.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/substarters/starma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/substarters/starma.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/substarters/substarters-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/substarters/substarters-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/res/img/substarters/substarters.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/res/img/projects/substarters/substarters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Projects/ProjectCard/ProjectCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/ProjectCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Projects/IDPA/IDPA.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="dd3ed8ff-e73d-44aa-8e92-d521f6b62b66" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -493,7 +427,7 @@
       <workItem from="1589131859359" duration="411000" />
       <workItem from="1589435535229" duration="157000" />
       <workItem from="1589521162497" duration="1619000" />
-      <workItem from="1589523608833" duration="3094000" />
+      <workItem from="1589523608833" duration="3471000" />
     </task>
     <task id="LOCAL-00001" summary="Add React SPA&#10;Add React SPA with base implementation of original site">
       <created>1588570557529</created>
@@ -506,13 +440,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83137000" />
+    <option name="totallyTimeSpent" value="83514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="0" width="1610" height="1407" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32903227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32903227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -522,13 +455,13 @@
       <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21857487" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21857487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32906324" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32666132" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32666132" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Run with VisualVM" order="11" />
