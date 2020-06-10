@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import { Route, Switch, useLocation } from "react-router";
 import Layout from "./components/Layout";
 import {Route, Switch} from "react-router";
 import Home from "./components/pages/Home/Home";
@@ -10,6 +11,12 @@ import {Link} from "react-router-dom";
 import {Container} from "react-bootstrap";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "development") window.scrollTo(0, 0);
+  }, [pathname]);
+
     return (
         <Layout>
             <Switch>
