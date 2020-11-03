@@ -46,6 +46,14 @@
       v-show="showSlideshow"
       ref="slideshow"
     >
+      <div class="slideshow-close-container d-flex justify-content-center py-3">
+        <b-button-close
+          class="slideshow-close"
+          text-variant="primary"
+          @click="closeSlideshow"
+        ></b-button-close>
+      </div>
+
       <b-carousel
         v-model="slideshowIndex"
         controls
@@ -167,6 +175,16 @@ export default {
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
   display: flex; // due to constraints of v-show and Boostrap !important
+
+  .slideshow-close {
+    color: white !important;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #b11226;
+    transition: opacity ease 0.25s;
+    padding: 6px;
+    width: 35px;
+  }
 }
 </style>
 
