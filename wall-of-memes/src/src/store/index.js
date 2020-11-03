@@ -268,8 +268,13 @@ export default new Vuex.Store({
         subtitle: `<span class="bg-dark px-2">I love you Cate, and I hope you have an amazing birthday. 💓</span>`,
       },
     ],
+    randomMemeIndex: null,
   },
-  mutations: {},
+  mutations: {
+    setRandomMemeIndex(state, { index }) {
+      state.randomMemeIndex = index;
+    },
+  },
   actions: {},
   modules: {},
 });

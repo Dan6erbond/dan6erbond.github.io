@@ -21,12 +21,25 @@
             @click="() => imgClick(index)"
             fluid-grow
             height="150"
+            :id="index == randomMemeIndex ? 'tooltip-img' : ''"
             class="cursor-pointer"
             alt="Happy birthday Cate! 🎉🎂"
           ></b-img>
         </b-col>
       </b-row>
     </b-container>
+
+    <b-tooltip
+      target="tooltip-img"
+      ref="img-tooltip"
+      variant="primary"
+      trigger="manual"
+      :show.sync="showImgTooltip"
+      :disabled.sync="imgTooltipDisabled"
+    >
+      Click me!
+    </b-tooltip>
+
     <div
       class="slideshow flex-column justify-content-center"
       @click.self="showSlideshow = false"
@@ -53,7 +66,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapMutations, mapState } from "vuex";
 
 export default {
   name: "Home",
@@ -61,18 +74,24 @@ export default {
     return {
       slideshowIndex: 0,
       showSlideshow: false,
+      imgTooltipDisabled: false,
+      showImgTooltip: true,
     };
   },
   computed: {
-    ...mapState(["memes"]),
+    ...mapState(["memes", "randomMemeIndex"]),
     filteredMemes() {
       return this.memes.filter((m) => !m.ignore);
     },
   },
   methods: {
+    ...mapMutations(["setRandomMemeIndex"]),
     imgClick(index) {
       this.slideshowIndex = index;
       this.showSlideshow = true;
+      this.imgTooltipDisabled = true;
+      this.showImgTooltip = false;
+      this.$refs["img-tooltip"].$emit("close");
     },
     getMemeTitle(meme) {
       let title = " ";
@@ -94,6 +113,15 @@ export default {
       }
       return subtitle;
     },
+  },
+  mounted() {
+    if (this.randomMemeIndex === null) {
+      const index = Math.floor(Math.random() * Math.min(this.memes.length, 10));
+      this.setRandomMemeIndex({
+        index,
+      });
+    }
+    this.$refs["img-tooltip"].$emit("open");
   },
 };
 </script>
