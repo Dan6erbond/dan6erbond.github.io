@@ -33,7 +33,7 @@ export default new Vuex.Store({
       {
         url: "https://www.reddit.com/r/me_irl/comments/e5l79p/me_irl/",
         img: "https://i.redd.it/l6cbm7idng241.jpg",
-        subtitle: `Honestly, I feel like you'll enjoy the second one more. 🤔`,
+        subtitle: `<span class="bg-dark px-2">Honestly, I feel like you'll enjoy the second one more. 🤔</span>`,
       },
       {
         url:
@@ -45,7 +45,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/sadcringe/comments/e09ljk/he_was_done_pudding_up_with_her/",
         img: "https://i.redd.it/dhvetdfkrb041.jpg",
-        title: `I tira miss you Cate. ♥`,
+        title: `I tira miss you Cate. 💓`,
       },
       {
         url:
@@ -91,6 +91,18 @@ export default new Vuex.Store({
       },
       {
         url:
+          "https://www.reddit.com/r/blursedimages/comments/gn4hqc/blursed_birthday/",
+        img: "https://i.redd.it/ckk1eklyiuz41.jpg",
+        title: `Again, bears, beets, FLEXTAPE!`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/blursedimages/comments/gp7vgu/blursed_anatomy/",
+        img: "https://i.redd.it/c3y7tblnkj051.jpg",
+        subtitle: `This would have made our fanny pack meeting idea real odd. 😳`,
+      },
+      {
+        url:
           "https://www.reddit.com/r/birdswitharms/comments/fj72jz/remember_to_wash_your_hands_kiddos/",
         img: "https://i.redd.it/g9bs68vq2wm41.jpg",
         subtitle: `<span class="text-dark">Now this is one responsible <b>majestic</b> bird. 😜`,
@@ -105,7 +117,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/ShittyLifeProTips/comments/ebddym/slpt_for_tall_people/",
         img: "https://i.redd.it/idah3w971z441.jpg",
-        subtitle: `Thank god we won't have to do this with each other. 😂`,
+        subtitle: `<span class="bg-dark px-2">Thank god we won't have to do this with each other. 😂</span>`,
       },
       {
         url:
@@ -114,10 +126,15 @@ export default new Vuex.Store({
         subtitle: `<span class="text-light bg-dark px-1">See Cate? You can toootally give me your yacht... 😜</span>`,
       },
       {
+        url: "https://www.reddit.com/r/me_irl/comments/g2wisg/me_irl/",
+        img: "https://i.redd.it/aayup9hgobt41.jpg",
+        subtitle: `Annoying Cate with puns on her birthday, oh yeahhh... 😎`,
+      },
+      {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/ebrja2/boop_boop_dig_dig/",
         img: "https://i.redd.it/v3i8czttq4541.jpg",
-        subtitle: `<span class="text-dark">I'll always be here for you. ♥</span>`,
+        subtitle: `<span class="text-dark">I'll always be here for you. 💓</span>`,
       },
       {
         url:
@@ -128,8 +145,12 @@ export default new Vuex.Store({
       {
         url: "https://www.reddit.com/r/funny/comments/ez88da/fine_legs/",
         img: "https://i.redd.it/7ujydvemc3f41.png",
-        title:
-          '<span class="text-light bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>',
+        title: `<span class="text-light bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>`,
+      },
+      {
+        url: "https://www.reddit.com/r/me_irl/comments/g6kvqc/me_irl/",
+        img: "https://i.redd.it/ekik0ilvxju41.jpg",
+        title: `No, I won't stop. 😜`,
       },
       {
         url:
@@ -142,6 +163,22 @@ export default new Vuex.Store({
           "https://www.reddit.com/r/blursedimages/comments/ex1kmh/blursed_leg/",
         img: "https://i.redd.it/3ph36ru729e41.jpg",
         subtitle: `Made for leg connoisseurs such as us. 😌`,
+      },
+      {
+        url: "https://www.reddit.com/r/puns/comments/g8hhpi/why_you_lie/",
+        img: "https://i.redd.it/t8hwlhb8x6v41.jpg",
+        title: `Have I made you groan yet? 😂`,
+      },
+      {
+        url: "https://www.reddit.com/r/HolUp/comments/gdc7rr/i_love_nature/",
+        img: "https://i.redd.it/zmbvzx7c9rw41.jpg",
+        title: `<span class="bg-light px-2 text-dark"><span class="font-weight-bold">ALMOST</span> as good as bird-watching tbh. 🔭</span>`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/ShittyLifeProTips/comments/ggdkrc/lpt_proper_first_aid_procedure/",
+        img: "https://i.redd.it/sgt69n7b1qx41.jpg",
+        title: `<span class="text-dark bg-light px-2">Amputation has always been a solution. 🤷🏽‍♂️</span>`,
       },
       {
         url:
@@ -159,7 +196,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/HistoryMemes/comments/g1jc5d/georgegeorge/",
         img: "https://i.redd.it/9cl4iy2c8ws41.jpg",
-        subtitle: `Y'all American'ts even come to Europe anymore smh.`,
+        subtitle: `<span class="bg-dark px-2">Y'all American'ts even come to Europe anymore smh.</span>`,
       },
       {
         url:
@@ -168,10 +205,21 @@ export default new Vuex.Store({
         subtitle: `Peaceful spin on your favorite birdie! 😊`,
       },
       {
+        url: "https://www.reddit.com/r/me_irl/comments/ggwv5n/me_irl/",
+        img: "https://i.redd.it/vuzqh2d81wx41.jpg",
+        title: `<span class="text-dark bg-light p-2">...</span>`,
+      },
+      {
         url:
           "https://www.reddit.com/r/starterpacks/comments/fxmjtt/love_or_hate_starter_pack/",
         img: "https://i.redd.it/2ynf2xbt9qr41.jpg",
-        subtitle: `Honestly I just put this here because of the seafood. 🤷‍♂️`,
+        subtitle: `<span class="bg-dark px-2">Honestly I just put this here because of the seafood. 🤷‍♂️</span>`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/Tinder/comments/ggxq8l/so_im_bad_at_roleplaying_i_guess/",
+        img: "https://i.redd.it/k0cuvpboewx41.jpg",
+        subtitle: `<span class="text-light bg-dark px-2">I know you love the <a href="https://reddit.com/r/Tinder" target="_blank">/r/Tinder</a> posts. SEXY FIREBALL!!! 🔥</span>`,
       },
       {
         url:
@@ -216,7 +264,8 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/wholesomememes/comments/dv40yz/lets_teach_the_youngins/",
         img: "https://i.redd.it/78ul9vera6y31.jpg",
-        subtitle: `I love you Cate, and I hope you have an amazing birthday. ♥`,
+        displayLink: true,
+        subtitle: `<span class="bg-dark px-2">I love you Cate, and I hope you have an amazing birthday. 💓</span>`,
       },
     ],
   },
