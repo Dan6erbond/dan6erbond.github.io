@@ -64,7 +64,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/wholesomememes/comments/e0n61y/recycle_yourself/",
         img: "https://i.redd.it/me11rs6urh041.jpg",
-        title: `<span class="text-light bg-dark d-block mt-4">Have you been counting the puns? 😛</span>`,
+        title: `<span class="bg-dark d-block mt-4">Have you been counting the puns? 😛</span>`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/e1hseb/me_irl/",
@@ -123,7 +123,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/clevercomebacks/comments/eauad1/i_also_want_to_exchange/",
         img: "https://i.redd.it/tiirkv403q441.jpg",
-        subtitle: `<span class="text-light bg-dark px-1">See Cate? You can toootally give me your yacht... 😜</span>`,
+        subtitle: `<span class="bg-dark px-1">See Cate? You can toootally give me your yacht... 😜</span>`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/g2wisg/me_irl/",
@@ -145,7 +145,7 @@ export default new Vuex.Store({
       {
         url: "https://www.reddit.com/r/funny/comments/ez88da/fine_legs/",
         img: "https://i.redd.it/7ujydvemc3f41.png",
-        title: `<span class="text-light bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>`,
+        title: `<span class="bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/g6kvqc/me_irl/",
@@ -156,7 +156,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/Tinder/comments/8aaf4y/ha_ha_depression_pickup_lines/",
         img: "https://i.redd.it/zy7wt5p04bq01.jpg",
-        subtitle: `<span class="text-light bg-dark px-1">I told you one day I'll use this on you. 😂</span>`,
+        subtitle: `<span class="bg-dark px-1">I told you one day I'll use this on you. 😂</span>`,
       },
       {
         url:
@@ -190,7 +190,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/cursedcomments/comments/erzfdo/cursed_toaster/",
         img: "https://i.redd.it/7dnwqejil6c41.jpg",
-        subtitle: `<span class="text-light bg-dark px-1">Panel 2 of posting toaster jokes. 😛</span>`,
+        subtitle: `<span class="bg-dark px-1">Panel 2 of posting toaster jokes. 😛</span>`,
       },
       {
         url:
@@ -219,7 +219,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/Tinder/comments/ggxq8l/so_im_bad_at_roleplaying_i_guess/",
         img: "https://i.redd.it/k0cuvpboewx41.jpg",
-        subtitle: `<span class="text-light bg-dark px-2">I know you love the <a href="https://reddit.com/r/Tinder" target="_blank">/r/Tinder</a> posts. SEXY FIREBALL!!! 🔥</span>`,
+        subtitle: `<span class="bg-dark px-2">I know you love the <a href="https://reddit.com/r/Tinder" target="_blank">/r/Tinder</a> posts. SEXY FIREBALL!!! 🔥</span>`,
       },
       {
         url:
