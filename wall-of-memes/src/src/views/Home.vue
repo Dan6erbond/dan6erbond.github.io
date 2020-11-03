@@ -42,8 +42,9 @@
 
     <div
       class="slideshow flex-column justify-content-center"
-      @click.self="showSlideshow = false"
+      @click.self="closeSlideshow"
       v-show="showSlideshow"
+      ref="slideshow"
     >
       <b-carousel
         v-model="slideshowIndex"
@@ -93,6 +94,12 @@ export default {
       this.showImgTooltip = false;
       this.$refs["img-tooltip"].$emit("close");
     },
+    closeSlideshow() {
+      this.showSlideshow = false;
+    },
+    escapeListener(event) {
+      if (event.key === "Escape") this.closeSlideshow();
+    },
     getMemeTitle(meme) {
       let title = " ";
       if (meme.title) {
@@ -122,6 +129,12 @@ export default {
       });
     }
     this.$refs["img-tooltip"].$emit("open");
+    document.addEventListener("backbutton", this.closeSlideshow, false);
+    window.addEventListener("keydown", this.escapeListener);
+  },
+  beforeDestroy() {
+    document.removeEventListener("backbutton", this.yourCallBackFunction);
+    window.removeEventListener("keydown", this.escapeListener);
   },
 };
 </script>
