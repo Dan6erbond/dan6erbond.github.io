@@ -93,7 +93,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/blursedimages/comments/gn4hqc/blursed_birthday/",
         img: "https://i.redd.it/ckk1eklyiuz41.jpg",
-        title: `Again, bears, beets, FLEXTAPE!`,
+        title: `Again, bears, beets, FLEXPASTE!`,
       },
       {
         url:
@@ -145,7 +145,7 @@ export default new Vuex.Store({
       {
         url: "https://www.reddit.com/r/funny/comments/ez88da/fine_legs/",
         img: "https://i.redd.it/7ujydvemc3f41.png",
-        title: `<span class="bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>`,
+        subtitle: `<span class="bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/g6kvqc/me_irl/",
@@ -184,25 +184,25 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/notliketheothergirls/comments/eylfby/this_annoyed_me/",
         img: "https://i.redd.it/yv6ithfjjue41.png",
-        title: `<span class="text-dark">Guess I'm just wired to think about you when I read chicken nuggets now. 🤷‍♂️</span>`,
+        subtitle: `<span class="text-dark">Guess I'm just wired to think about you when I read chicken nuggets now. 🤷‍♂️</span>`,
       },
       {
         url:
           "https://www.reddit.com/r/cursedcomments/comments/erzfdo/cursed_toaster/",
         img: "https://i.redd.it/7dnwqejil6c41.jpg",
-        subtitle: `<span class="bg-dark px-1">Panel 2 of posting toaster jokes. 😛</span>`,
+        title: `<span class="bg-dark px-1">Panel 2 of posting toaster jokes. 😛</span>`,
       },
       {
         url:
           "https://www.reddit.com/r/HistoryMemes/comments/g1jc5d/georgegeorge/",
         img: "https://i.redd.it/9cl4iy2c8ws41.jpg",
-        subtitle: `<span class="bg-dark px-2">Y'all American'ts even come to Europe anymore smh.</span>`,
+        subtitle: `<span class="text-left d-block" style="width: 50%">Y'all American'ts even come to Europe anymore smh.</span>`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/epj8bb/honks_wholesomely/",
         img: "https://i.redd.it/gxq1p9ru55b41.png",
-        subtitle: `Peaceful spin on your favorite birdie! 😊`,
+        title: `Peaceful spin on your favorite birdie! 😊`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/ggwv5n/me_irl/",
