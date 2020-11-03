@@ -156,7 +156,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/dankmemes/comments/d1ehrx/not_mine_but_i_had_to_post_it/",
         img: "https://i.redd.it/gg5zythruel31.jpg",
-        subtitle: `<span class="bg-dark px-1">I told you one day I'd use this meme on you. 😂</span>`,
+        subtitle: `<span class="bg-dark px-1">I told you one day I'd use this pick-up line on you. 😂</span>`,
       },
       {
         url:
