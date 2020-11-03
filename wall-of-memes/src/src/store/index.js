@@ -10,7 +10,7 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/wholesomememes/comments/dxxqrz/we_dont_do_that_here/",
         img: "https://i.redd.it/5r9o8so89dz31.jpg",
-        subtitle: "Not on my watch!",
+        subtitle: `Not on my watch!`,
       },
       {
         url:
@@ -23,29 +23,29 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/BirdsArentReal/comments/dxwcto/made_these_in_mm_store_in_times_square_gotta/",
         img: "https://i.redd.it/6g5v2kh7pcz31.jpg",
-        title: "Sorry to disappoint. 😔",
+        title: `Sorry to disappoint. 😔`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/dyieeb/me_irl/",
         img: "https://i.redd.it/xmrg8l498mz31.jpg",
-        title: "People just can't handle it. Smh.",
+        title: `To be fair with all these Indians you've been loving. 😜`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/e5l79p/me_irl/",
         img: "https://i.redd.it/l6cbm7idng241.jpg",
-        subtitle: "Honestly, I feel like you'll enjoy the second one more. 🤔",
+        subtitle: `Honestly, I feel like you'll enjoy the second one more. 🤔`,
       },
       {
         url:
           "https://www.reddit.com/r/facepalm/comments/e0cedl/not_sure_if_this_has_been_posted_before/",
         img: "https://i.redd.it/biz8aaunvc041.jpg",
-        title: "No comment. 😶",
+        title: `No comment. 😶`,
       },
       {
         url:
           "https://www.reddit.com/r/sadcringe/comments/e09ljk/he_was_done_pudding_up_with_her/",
         img: "https://i.redd.it/dhvetdfkrb041.jpg",
-        subtitle: "I tira miss you Cate. ♥",
+        title: `I tira miss you Cate. ♥`,
       },
       {
         url:
@@ -58,90 +58,120 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/PewdiepieSubmissions/comments/e0hwq2/slaps_glass/",
         img: "https://i.redd.it/iknsc2j4vf041.jpg",
-        title: "I've always told you Elon Musk is an idiot, Cate.",
+        subtitle: `I've always told you Elon Musk is an idiot, Cate.`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/e0n61y/recycle_yourself/",
         img: "https://i.redd.it/me11rs6urh041.jpg",
-        title: "Have you been counting the puns? 😛",
+        title: `<span class="text-light bg-dark d-block mt-4">Have you been counting the puns? 😛</span>`,
       },
       {
         url: "https://www.reddit.com/r/me_irl/comments/e1hseb/me_irl/",
         img: "https://i.redd.it/4s3kunecsu041.jpg",
-        subtitle: "Communism and love are the ultimate birthday present. 🎂",
+        title: `Communism and love are the ultimate birthday present. 🎂`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/e30qi6/got_a_whole_lotta_love/",
         img: "https://i.redd.it/e9j62llmkg141.jpg",
-        sutitle: "Pretty birdie. 😍",
+        sutitle: `Pretty birdie. 😍`,
       },
       {
         url:
           "https://www.reddit.com/r/blursedimages/comments/e7h47b/blursed_duel/",
         img: "https://i.redd.it/11bjwo7ey8341.jpg",
-        title: "BAGUETTE FIGHTS! 🥖",
+        title: `BAGUETTE FIGHTS! 🥖`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/e98tud/it_starts_fading_away/",
         img: "https://i.redd.it/xh4icgij01441.jpg",
-        subtitle: "You always manage to put a smile on my face. 😊",
+        title: `You always manage to put a smile on my face. 😊`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/birdswitharms/comments/fj72jz/remember_to_wash_your_hands_kiddos/",
+        img: "https://i.redd.it/g9bs68vq2wm41.jpg",
+        subtitle: `<span class="text-dark">Now this is one responsible <b>majestic</b> bird. 😜`,
       },
       {
         url:
           "https://www.reddit.com/r/ToiletPaperUSA/comments/ebhah1/sorry_for_quality_but_i_did_this_on_a_phone/",
         img: "https://i.redd.it/b83c1p6pu0541.jpg",
-        title: "In case laughing at conservatives hasn't gotten old yet...",
+        title: `In case laughing at conservatives hasn't gotten old yet...`,
       },
       {
         url:
           "https://www.reddit.com/r/ShittyLifeProTips/comments/ebddym/slpt_for_tall_people/",
         img: "https://i.redd.it/idah3w971z441.jpg",
-        subtitle: "Thank god we won't have to do this with each other. 😂",
+        subtitle: `Thank god we won't have to do this with each other. 😂`,
       },
       {
         url:
           "https://www.reddit.com/r/clevercomebacks/comments/eauad1/i_also_want_to_exchange/",
         img: "https://i.redd.it/tiirkv403q441.jpg",
-        subtitle: "See Cate? You can toootally give me your yacht... 😜",
+        subtitle: `<span class="text-light bg-dark px-1">See Cate? You can toootally give me your yacht... 😜</span>`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/ebrja2/boop_boop_dig_dig/",
         img: "https://i.redd.it/v3i8czttq4541.jpg",
-        subtitle: "I'll always be here for you. ♥",
+        subtitle: `<span class="text-dark">I'll always be here for you. ♥</span>`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/ecfcj2/ill_stand_by_you/",
         img: "https://i.redd.it/64cel9aqbf541.jpg",
-        subtitle: "In case I haven't said it enough.",
+        subtitle: `In case I haven't said it enough.`,
+      },
+      {
+        url: "https://www.reddit.com/r/funny/comments/ez88da/fine_legs/",
+        img: "https://i.redd.it/7ujydvemc3f41.png",
+        title:
+          '<span class="text-light bg-dark px-1">Not sure if this is "ok" in 2020 anymore to be honest. 🤔</span>',
       },
       {
         url:
           "https://www.reddit.com/r/Tinder/comments/8aaf4y/ha_ha_depression_pickup_lines/",
         img: "https://i.redd.it/zy7wt5p04bq01.jpg",
-        title: "I told you one day I'll use this on you. 😂",
-      },
-      {
-        url:
-          "https://www.reddit.com/r/cursedcomments/comments/erzfdo/cursed_toaster/",
-        img: "https://i.redd.it/7dnwqejil6c41.jpg",
-        subtitle: "In case once wasn't enough. 😛",
+        subtitle: `<span class="text-light bg-dark px-1">I told you one day I'll use this on you. 😂</span>`,
       },
       {
         url:
           "https://www.reddit.com/r/blursedimages/comments/ex1kmh/blursed_leg/",
         img: "https://i.redd.it/3ph36ru729e41.jpg",
-        subtitle: "Made for leg connoisseurs such as us. 😌",
+        subtitle: `Made for leg connoisseurs such as us. 😌`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/notliketheothergirls/comments/eylfby/this_annoyed_me/",
+        img: "https://i.redd.it/yv6ithfjjue41.png",
+        title: `<span class="text-dark">Guess I'm just wired to think about you when I read chicken nuggets now. 🤷‍♂️</span>`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/cursedcomments/comments/erzfdo/cursed_toaster/",
+        img: "https://i.redd.it/7dnwqejil6c41.jpg",
+        subtitle: `<span class="text-light bg-dark px-1">Panel 2 of posting toaster jokes. 😛</span>`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/HistoryMemes/comments/g1jc5d/georgegeorge/",
+        img: "https://i.redd.it/9cl4iy2c8ws41.jpg",
+        subtitle: `Y'all American'ts even come to Europe anymore smh.`,
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/epj8bb/honks_wholesomely/",
         img: "https://i.redd.it/gxq1p9ru55b41.png",
-        subtitle: "Peaceful spin on your favorite birdie! 😊",
+        subtitle: `Peaceful spin on your favorite birdie! 😊`,
+      },
+      {
+        url:
+          "https://www.reddit.com/r/starterpacks/comments/fxmjtt/love_or_hate_starter_pack/",
+        img: "https://i.redd.it/2ynf2xbt9qr41.jpg",
+        subtitle: `Honestly I just put this here because of the seafood. 🤷‍♂️`,
       },
       {
         url:
@@ -165,21 +195,28 @@ export default new Vuex.Store({
         url:
           "https://www.reddit.com/r/wholesomememes/comments/e1ocyt/how_i_feel_about_this_community_oc/",
         img: "https://i.redd.it/3xr2j1oetw041.jpg",
-        subtitle: "*panties drop*",
+        subtitle: `<span class="text-dark">*panties drop*</span>`,
       },
       {
-        title: "I owe you some OC. 😊",
+        title: `I owe you some OC. 😊`,
         img: require("../assets/img/photo_2020-11-02_23-54-11.jpg"),
       },
       {
-        title: "Happy Birthday dear. 😊🎂",
+        url:
+          "https://www.reddit.com/r/FoodPorn/comments/g3nuj0/homemade_lobstahhh_rolls/",
+        img: "https://i.redd.it/53lw0sti0lt41.jpg",
+        subtitle: `Not really a meme, but I thought you'd love this picture.`,
+        displayLink: true,
+      },
+      {
+        title: `Happy Birthday dear. 😊🎂`,
         img: require("../assets/img/photo_2020-11-02_00-00-11.jpg"),
       },
       {
         url:
           "https://www.reddit.com/r/wholesomememes/comments/dv40yz/lets_teach_the_youngins/",
         img: "https://i.redd.it/78ul9vera6y31.jpg",
-        subtitle: "I love you Cate, and I hope you have an amazing birthday. ♥",
+        subtitle: `I love you Cate, and I hope you have an amazing birthday. ♥`,
       },
     ],
   },
