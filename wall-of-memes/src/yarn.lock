@@ -4429,6 +4429,11 @@ he@1.2.x, he@^1.1.0:
   resolved "https://registry.npm.taobao.org/he/download/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha1-hK5l+n6vsWX922FWauFLrwVmTw8=
 
+headful@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/headful/-/headful-1.0.3.tgz#420936f6184358a0613b5f73f1c5b5c91a251895"
+  integrity sha512-vF9Vfddn1QWmziliht2mji6ayI78+hUuSC+Kt0GEqLw/51zWgi1KF7oLtIQf3nlkg8sQQOlznkkIaF4W9lIt9w==
+
 hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
@@ -8620,6 +8625,13 @@ vue-functional-data-merge@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/vue-functional-data-merge/download/vue-functional-data-merge-3.1.0.tgz#08a7797583b7f35680587f8a1d51d729aa1dc657"
   integrity sha1-CKd5dYO381aAWH+KHVHXKaodxlc=
+
+vue-headful@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vue-headful/-/vue-headful-2.1.0.tgz#a1d55c3d2340a6f61799b4b32997e2af4215eac4"
+  integrity sha512-HXMdJfVDgD3eoh8qk9Laz2wGraPVGYDbvfXd7+i1MVziWMXGHUm8gpRC2p11ugYYXKRAcaS2g6ycq4Pr+eqb7g==
+  dependencies:
+    headful "^1.0.3"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
