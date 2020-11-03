@@ -97,6 +97,12 @@ export default {
     closeSlideshow() {
       this.showSlideshow = false;
     },
+    backbuttonListener(event) {
+      if (this.showSlideshow) {
+        event.preventDefault();
+        this.closeSlideshow();
+      }
+    },
     escapeListener(event) {
       if (event.key === "Escape") this.closeSlideshow();
     },
@@ -129,11 +135,11 @@ export default {
       });
     }
     this.$refs["img-tooltip"].$emit("open");
-    document.addEventListener("backbutton", this.closeSlideshow, false);
+    document.addEventListener("backbutton", this.backbuttonListener, false);
     window.addEventListener("keydown", this.escapeListener);
   },
   beforeDestroy() {
-    document.removeEventListener("backbutton", this.yourCallBackFunction);
+    document.removeEventListener("backbutton", this.backbuttonListener);
     window.removeEventListener("keydown", this.escapeListener);
   },
 };
