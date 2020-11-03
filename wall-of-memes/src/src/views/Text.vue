@@ -53,7 +53,7 @@
   border: solid 10px #b11226;
   min-height: 75vh;
   padding: 20px;
-  background-image: url("/res/img/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg");
+  background-image: url("../assets/img/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

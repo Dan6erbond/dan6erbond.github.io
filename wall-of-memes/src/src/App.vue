@@ -94,7 +94,7 @@ body,
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-  background-image: url("/res/img/martin_garrix-khalid-ocean-1.jpg");
+  background-image: url("./assets/img/martin_garrix-khalid-ocean-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
