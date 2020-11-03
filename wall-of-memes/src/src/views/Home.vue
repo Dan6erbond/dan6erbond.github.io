@@ -1,5 +1,5 @@
 <template>
-  <div class="home p-3 pb-4">
+  <div class="home p-3">
     <vue-headful title="Cate B-Day 2020 | Wall of Memes" />
     <h2>Wall of Memes</h2>
     <span class="mb-3 d-block">
@@ -21,6 +21,7 @@
             @click="() => imgClick(index)"
             fluid-grow
             height="150"
+            class="cursor-pointer"
             alt="Happy birthday Cate! 🎉🎂"
           ></b-img>
         </b-col>
@@ -42,8 +43,8 @@
         <b-carousel-slide
           v-for="(meme, index) in filteredMemes"
           :key="index"
-          :caption="meme.title || ' '"
-          :text="meme.subtitle || ' '"
+          :caption-html="getMemeTitle(meme)"
+          :text-html="getMemeSubtitle(meme)"
           :img-src="meme.img"
         ></b-carousel-slide>
       </b-carousel>
@@ -73,6 +74,26 @@ export default {
       this.slideshowIndex = index;
       this.showSlideshow = true;
     },
+    getMemeTitle(meme) {
+      let title = " ";
+      if (meme.title) {
+        title = meme.title;
+      }
+      if (!meme.subtitle && meme.displayLink) {
+        title += ` <a href="${meme.url}" target="_blank">🔗</a>`;
+      }
+      return title;
+    },
+    getMemeSubtitle(meme) {
+      let subtitle = " ";
+      if (meme.subtitle) {
+        subtitle = meme.subtitle;
+        if (!meme.title && meme.displayLink) {
+          subtitle += ` <a href="${meme.url}" target="_blank">🔗</a>`;
+        }
+      }
+      return subtitle;
+    },
   },
 };
 </script>
@@ -86,10 +107,6 @@ export default {
   border: solid 10px #b11226;
   min-height: 75vh;
   padding: 20px;
-
-  .img-thumbnail {
-    cursor: pointer;
-  }
 }
 
 .slideshow {
