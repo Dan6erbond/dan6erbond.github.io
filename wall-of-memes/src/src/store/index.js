@@ -247,7 +247,7 @@ export default new Vuex.Store({
       },
       {
         title: `I owe you some OC. 😊`,
-        img: require("../assets/img/photo_2020-11-02_23-54-11.jpg"),
+        img: "/res/img/photo_2020-11-02_23-54-11.jpg",
       },
       {
         url:
@@ -258,7 +258,7 @@ export default new Vuex.Store({
       },
       {
         title: `Happy Birthday dear. 😊🎂`,
-        img: require("../assets/img/photo_2020-11-02_00-00-11.jpg"),
+        img: "/res/img/photo_2020-11-02_00-00-11.jpg",
       },
       {
         url:
