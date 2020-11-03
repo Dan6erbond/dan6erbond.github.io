@@ -64,7 +64,9 @@ export default {
     },
   },
   mounted() {
-    this.audio = new Audio("/res/aud/martin_garrix-khalid-ocean.mp3");
+    this.audio = new Audio(
+      require("./assets/aud/martin_garrix-khalid-ocean.mp3")
+    );
 
     this.audio.addEventListener("loadedmetadata", () => {
       this.audioDuration = this.audio.duration;
