@@ -23,7 +23,10 @@
       <p class="my-4">Do you have sound enabled? 🔊</p>
     </b-modal>
 
-    <div class="sound-panel">
+    <div
+      class="sound-panel"
+      :style="audioStarted ? 'height: 34px' : 'height: 0'"
+    >
       <div class="desc px-2 d-flex justify-content-between">
         <div>Martin Garrix feat. Khalid - Ocean</div>
 
@@ -50,6 +53,7 @@ export default {
       audio: null,
       audioTime: 0,
       audioDuration: 0,
+      audioStarted: false,
       paused: true,
     };
   },
@@ -57,6 +61,7 @@ export default {
     play() {
       this.audio && this.audio.play();
       this.paused = false;
+      this.audioStarted = true;
     },
     pause() {
       this.audio && this.audio.pause();
@@ -129,6 +134,8 @@ body,
   right: 0;
   width: 100%;
   background-color: white;
+  transition: height 0.35s ease;
+  overflow: hidden;
 
   .desc {
     background-color: #b11226;
