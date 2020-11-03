@@ -154,9 +154,15 @@ export default new Vuex.Store({
       },
       {
         url:
+          "https://www.reddit.com/r/dankmemes/comments/d1ehrx/not_mine_but_i_had_to_post_it/",
+        img: "https://i.redd.it/gg5zythruel31.jpg",
+        subtitle: `<span class="bg-dark px-1">I told you one day I'd use this meme on you. 😂</span>`,
+      },
+      {
+        url:
           "https://www.reddit.com/r/Tinder/comments/8aaf4y/ha_ha_depression_pickup_lines/",
         img: "https://i.redd.it/zy7wt5p04bq01.jpg",
-        subtitle: `<span class="bg-dark px-1">I told you one day I'll use this on you. 😂</span>`,
+        subtitle: `<span class="bg-dark px-1">Not nearly as good as the original. 😘</span>`,
       },
       {
         url:
