@@ -1,5 +1,5 @@
 <template>
-  <div class="text p-3 pb-4">
+  <div class="text p-3">
     <vue-headful title="Cate B-Day 2020 | Text" />
     <div class="page">
       <p>
