@@ -1,5 +1,5 @@
 <template>
-  <div class="home p-3">
+  <div class="home p-3 pb-4">
     <vue-headful title="Cate B-Day 2020 | Wall of Memes" />
     <h2>Wall of Memes</h2>
     <span class="mb-3 d-block">
