@@ -103,7 +103,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/img/martin_garrix-khalid-ocean-2.jpg");
+  background-image: url("/res/img/martin_garrix-khalid-ocean-2.jpg");
   border: solid 10px #b11226;
   min-height: 75vh;
   padding: 20px;
