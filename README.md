@@ -1,6 +1,6 @@
 # dan6erbond.github.io
 
-### This website is no longer active and the updated website can be found at https://ravianand.web.app.
+### This website is no longer active and the updated page can be found at https://ravianand.web.app.
 
 ## My Website
 
